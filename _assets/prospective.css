@@ -1,0 +1,98 @@
+h1 {
+    font-size: 350%;
+    font-weight: 400;
+    line-height: 130%;
+    margin-bottom: 5%;
+}
+
+h2 {
+    font-size: 250%;
+    font-weight: 400;
+    line-height: 130%;
+    margin-bottom: 1%;
+}
+
+h3 {
+    font-size: 180%;
+    line-height: 180%;
+    font-weight: 400;
+    margin-bottom: 5%;
+}
+
+img {
+    height: auto;
+    max-width: 100% !important;
+    vertical-align: middle;
+}
+
+.full-width-container {
+    margin-left: 0px !important;
+}
+
+#container {
+    padding-top: 0px !important;
+}
+
+.expand {}
+
+#content {
+    margin: 0;
+    padding: 0;
+}
+
+#ab-box {
+    background-image: url(http://lfs-ps.sites.olt.ubc.ca/files/2016/10/21352299053_f298e90871_z.jpg);
+    background-size: cover;
+    height: 300px;
+}
+
+#fnh-box {
+    background-image: url(http://lfs-ps.sites.olt.ubc.ca/files/2016/10/21352299053_f298e90871_z.jpg);
+    background-size: cover;
+    height: 300px;
+}
+
+#grs-box {
+    background-image: url(http://lfs-ps.sites.olt.ubc.ca/files/2016/10/21352299053_f298e90871_z.jpg);
+    background-size: cover;
+    height: 300px;
+}
+
+.overlay {
+    display: block;
+    position: relative;
+    background-color: rgba(12,35,68,.8);
+    height: 100%;
+    width: 100%;
+}
+
+.overlay:hover {
+    transition: background-color 0.2s ease;
+    background-color: rgba(12,35,68,0);;
+}
+
+@media (min-width: 1200px) {
+    
+}
+
+.center-box {
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.course-name {
+    color: white;
+    text-align: center;
+}
+
+.span12 {
+    margin-bottom: 5%;
+}
+
+.image-region {
+    position: relative;
+    margin-right: -15px;
+}
