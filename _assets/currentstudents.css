@@ -1,15 +1,9 @@
-h1 {
-    font-size: 350%;
-    font-weight: 400;
-    line-height: 130%;
-    margin-bottom: 5%;
-}
-
 h2 {
     font-size: 250%;
     font-weight: 400;
     line-height: 130%;
     margin-bottom: 1%;
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
 }
 
 h3 {
@@ -17,6 +11,11 @@ h3 {
     line-height: 180%;
     font-weight: 400;
     margin-bottom: 5%;
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+}
+
+h4 {
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
 }
 
 img {
@@ -36,24 +35,6 @@ img {
 #content {
     margin: 0;
     padding: 0;
-}
-
-#ab-box {
-    background-image: url(http://lfs-ps.sites.olt.ubc.ca/files/2016/10/21352299053_f298e90871_z.jpg);
-    background-size: cover;
-    height: 300px;
-}
-
-#fnh-box {
-    background-image: url(http://lfs-ps.sites.olt.ubc.ca/files/2016/10/21352299053_f298e90871_z.jpg);
-    background-size: cover;
-    height: 300px;
-}
-
-#grs-box {
-    background-image: url(http://lfs-ps.sites.olt.ubc.ca/files/2016/10/21352299053_f298e90871_z.jpg);
-    background-size: cover;
-    height: 300px;
 }
 
 .overlay {
@@ -77,10 +58,10 @@ img {
     width: 100%;
     max-width: 1920px;
     background: none;
-    background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.3));
-    background: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.3));
-    background: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.3));
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+    background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.4));
+    background: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.4));
+    background: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.4));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.4));
 }
 
 .header-text {
@@ -90,11 +71,7 @@ img {
     bottom: 0;
     color: white;
     margin-bottom: 3%;
-}
-
-.large-intro {
-    font-size: 400%;
-    line-height: 150%;
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
 }
 
 @media screen and (max-width: 979px) {
@@ -178,4 +155,13 @@ img {
 .image-region {
     position: relative;
     margin-right: -15px;
+}
+.large-intro {
+    font-size: 400%;
+    line-height: 150%;
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+}
+
+h1.page-title {
+    display: none;
 }
