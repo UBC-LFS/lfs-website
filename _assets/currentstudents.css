@@ -3,7 +3,6 @@ h2 {
     font-weight: 400;
     line-height: 130%;
     margin-bottom: 1%;
-    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
 }
 
 h3 {
@@ -11,11 +10,6 @@ h3 {
     line-height: 180%;
     font-weight: 400;
     margin-bottom: 5%;
-    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
-}
-
-h4 {
-    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
 }
 
 img {
@@ -164,4 +158,7 @@ img {
 
 h1.page-title {
     display: none;
+}
+a.programs {
+    text-decoration: none;
 }
