@@ -6,12 +6,15 @@ h2 {
 }
 
 h3 {
-    font-size: 180%;
-    line-height: 180%;
+    line-height: 120%;
     font-weight: 400;
     margin-bottom: 5%;
 }
 
+h4 {
+    line-height: 120%;
+    font-weight: 400;
+}
 img {
     height: auto;
     max-width: 100% !important;
@@ -104,6 +107,9 @@ img {
    .span12 {
         margin-bottom: 0;
     }
+    .bottom-margin {
+        margin-bottom: 3%;
+    }
 }
 @media screen and (max-width: 480px) {
     .large-intro {
@@ -161,4 +167,10 @@ h1.page-title {
 }
 a.programs {
     text-decoration: none;
+}
+.bottom-margin {
+    margin-bottom: 5%;
+}
+.support {
+    height: 225px;
 }
