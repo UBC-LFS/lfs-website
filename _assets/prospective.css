@@ -165,19 +165,50 @@ img {
 }
 .ranking-number {
     text-align: center;
-    font-size: 5em;
+    font-size: 6em;
     line-height: 1.2em;
     font-weight: 700;
     font-style: normal;
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+    color: #002145;
 }
 .ranking-title {
     text-align: center;
     font-size: 1.2em;
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+    color: #002145;
 }
 .source {
     text-align: center;
     font-size: 0.7em;
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+    color: #002145;
 }
+img.featured {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border-radius: 50%;
+    max-width: 100%;
+    margin: auto;
+}
+.featured-container:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+h2.featured {
+    text-align: center;
+    font-size: 1.4em;
+}
+h3.featured {
+    color: #0680a6;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 1%;
+}
+.explore-more {
+    float: right;
+    background-color: transparent;
+    color: #002145;
+    background-image: none;
+} 
