@@ -4,12 +4,6 @@ h3 {
     font-weight: 400;
 }
 
-img {
-    height: auto;
-    max-width: 100% !important;
-    vertical-align: middle;
-}
-
 .full-width-container {
     margin-left: 0px !important;
 }
@@ -52,20 +46,6 @@ img {
 .overlay:hover {
     transition: background-color 0.2s ease;
     background-color: rgba(12,35,68,0);;
-}
-
-.image-gradient {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    max-width: 1920px;
-    background: none;
-    background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.3));
-    background: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.3));
-    background: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.3));
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
 }
 
 .header-text {
@@ -112,6 +92,9 @@ img {
     }
    .span12 {
         margin-bottom: 0;
+    }
+    .explore-more {
+        margin-right: 15px;
     }
 }
 @media screen and (max-width: 480px) {
@@ -214,4 +197,5 @@ h3.featured {
     background-color: transparent;
     color: #002145;
     background-image: none;
+    margin-right: 30px;
 } 
