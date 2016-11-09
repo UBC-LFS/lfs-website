@@ -174,3 +174,8 @@ a.programs {
 .support {
     height: 225px;
 }
+.btn {
+    background-color: transparent;
+    color: #002145;
+    background-image: none;
+}
