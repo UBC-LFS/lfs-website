@@ -192,6 +192,9 @@ img.featured {
     max-width: 100%;
     margin: auto;
 }
+.featured-container {
+    padding: 10px;
+}
 .featured-container:hover {
     opacity: 0.5;
     filter: alpha(opacity=50);
