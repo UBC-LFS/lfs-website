@@ -199,3 +199,8 @@ h3.featured {
     background-image: none;
     margin-right: 30px;
 } 
+.apply-button {
+    background-color: transparent;
+    color: #002145;
+    background-image: none;
+}
