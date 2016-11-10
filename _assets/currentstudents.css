@@ -110,6 +110,9 @@ img {
     .bottom-margin {
         margin-bottom: 3%;
     }
+    .btn {
+        margin-bottom: 10px;
+    }
 }
 @media screen and (max-width: 480px) {
     .large-intro {
