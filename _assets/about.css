@@ -1,6 +1,8 @@
-.banner {
-  background: #3ba648;
-  text-align: center;
+h3 {
+    font-size: 180%;
+    line-height: 180%;
+    font-weight: 400;
+    margin-bottom: 5%;
 }
 
 .text-style {
@@ -133,4 +135,24 @@
 .large-intro {
     font-size: 400%;
     line-height: 150%;
+}
+
+h1.page-title {
+    display: none;
+}
+
+.ranking-number {
+    text-align: center;
+    font-size: 6em;
+    line-height: 1.2em;
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+    color: #002145;
+}
+.ranking-title {
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+    color: #002145;
 }
