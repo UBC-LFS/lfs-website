@@ -1,11 +1,37 @@
 jQuery(document).ready(function ($) {
-    $("div[role='main']").prepend($("#main-content"));
-    $("#main-content").prepend($("#content"));
-    $("#main-content").prepend($(".breadcrumb"));
-    $("#container").prepend($(".image-region"));
     $('.slick-slide').slick({
         infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+            },
+            {
+            breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 });

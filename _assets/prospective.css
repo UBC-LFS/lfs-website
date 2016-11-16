@@ -1,33 +1,9 @@
-h3 {
-    font-size: 150%;
-    line-height: 180%;
-    font-weight: 400;
-}
-
 .full-width-container {
     margin-left: 0px !important;
 }
 
 #container {
     padding-top: 0px !important;
-}
-
-#ab-box {
-    background-image: url(http://lfs-ps.sites.olt.ubc.ca/files/2016/10/21352299053_f298e90871_z.jpg);
-    background-size: cover;
-    height: 300px;
-}
-
-#fnh-box {
-    background-image: url(http://lfs-ps.sites.olt.ubc.ca/files/2016/10/21352299053_f298e90871_z.jpg);
-    background-size: cover;
-    height: 300px;
-}
-
-#grs-box {
-    background-image: url(http://lfs-ps.sites.olt.ubc.ca/files/2016/10/21352299053_f298e90871_z.jpg);
-    background-size: cover;
-    height: 300px;
 }
 
 .overlay {
@@ -140,25 +116,4 @@ h3 {
 .large-intro {
     font-size: 400%;
     line-height: 150%;
-}
-.ranking-number {
-    text-align: center;
-    font-size: 6em;
-    line-height: 1.2em;
-    font-weight: 700;
-    font-style: normal;
-    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
-    color: #002145;
-}
-.ranking-title {
-    text-align: center;
-    font-size: 1.2em;
-    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
-    color: #002145;
-}
-.source {
-    text-align: center;
-    font-size: 0.7em;
-    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
-    color: #002145;
 }
