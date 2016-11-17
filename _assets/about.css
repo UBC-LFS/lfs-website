@@ -1,8 +1,11 @@
 h3 {
-    font-size: 180%;
     line-height: 180%;
     font-weight: 400;
     margin-bottom: 5%;
+}
+
+h5 {
+    font-size: 130%;
 }
 
 .text-style {
