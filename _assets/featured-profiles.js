@@ -16,9 +16,10 @@ jQuery(document).ready(function ($) {
         }
         var span12id = "#span12-" + i;
         var span4id = "#span4-" + i;
+        var id = "#" + IDs[i];
 
         $("#span12-0").append(span4);
-        $(span4id).append($(IDs[i]));
+        $(span4id).append($(id));
 
         //$(span4id).append($(IDs[i]));
     }
