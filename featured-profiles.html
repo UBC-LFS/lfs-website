@@ -1,5 +1,23 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <div class="row-fluid border-bottom" id="featured">
     <h2>Meet our students, alumni, and faculty</h2>
-        [loop query="posts_per_page=3&amp;category_name=featured-profile"]
-        [the_post_thumbnail size=small]
+    [loop query="posts_per_page=3&amp;category_name=featured-profile"] 
+    [the_post_thumbnail size=small]
 </div>
+<script>
+    var IDs = $("#featured div[id]")         
+    .map(function() { return this.id; })
+    .get();
+    for (i = 0; i<IDs.length; i++) {
+        if (i%3===0) {
+            var span12= '<div class="span12"' + 'id="span12-' + Math.floor(i/3) + '"' + '></div>';
+            $("#featured").append(span12);
+        }
+        var span4 = '<div class="span4"' + 'id="span4-' + i + '"' + '></div>';
+        var span12id = "#span12-" + Math.floor(i/3);
+        var span4id = "#span4-" + i;
+        var profileID = "#" + IDs[i];
+        $(span12id).append(span4);
+        $(span4id).append($(profileID));
+    }
+</script>
