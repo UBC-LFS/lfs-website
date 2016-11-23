@@ -35,7 +35,7 @@
     </div>
 </div>
 <h2>Meet our students, alumni, and faculty</h2>
-<div class="span12 slick-slide myslider">
+<div class="span12 featured myslider">
     [loop query="posts_per_page=7&amp;category_name=featured-profile"] 
     [the_post_thumbnail size=small]
 </div>
@@ -67,9 +67,12 @@
     <h2>LFS in the News</h2>
 </div>
 <h2>Upcoming Events</h2>
-<div class="span12 slick-slide">
-     [eo_events] <a href="%event_url%">%event_title%</a> on %start{jS M Y}{ g:i:a}%, at %event_venue%  %event_thumbnail medium%[/eo_events]
+<div class="span12" style="margin-left: 0;">
+     [eo_events] <a href="%event_url%">%event_title%</a> on %start{jS M Y}{ g:i:a}%, at %event_venue%  %event_thumbnail{medium}%[/eo_events]
 </div>
+<script>
+    $('.eo-events-shortcode').addClass('events');
+</script>
 <div class="row-fluid border-bottom">
 </div>
 <div class="row-fluid">

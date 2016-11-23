@@ -1,8 +1,7 @@
 jQuery(document).ready(function ($) {
-    $('.slick-slide').slick({
+    $('.featured').slick({
         infinite: true,
         slidesToShow: 5,
-        slidesToScroll: 1,
         arrows: false,
         responsive: [
             {
@@ -21,6 +20,43 @@ jQuery(document).ready(function ($) {
                     centerMode: true,
                     centerPadding: '40px',
                     slidesToShow: 3
+                }
+            },
+            {
+            breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
+    $('.events').slick({
+        slide: 'li',
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 2
                 }
             },
             {
