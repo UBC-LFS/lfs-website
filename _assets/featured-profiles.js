@@ -5,22 +5,18 @@ jQuery(document).ready(function ($) {
 
     console.log(IDs);
 
-    var span12 = "<div class='span12' id='span12-0'></div>";
     for (i = 0; i<IDs.length; i++) {
         var span4 = '<div class="span4"' + 'id="span4-' + i + '"' + '></div>';
-        if (i===0) {
-            $("#featured").append(span12)
+        if (i%3===0) {
+            var span12= '<div class="span12"' + 'id="span12-' + Math.floor(i/3) + '"' + '></div>';
+            $("#featured").append(span12);
+            //span12= '<div class="span12"' + 'id="span12-' + i + '"' + '></div>';
         }
-        else if (i%3===0) {
-            span12= '<div class="span12"' + 'id="span12-' + i + '"' + '></div>';
-        }
-        var span12id = "#span12-" + i;
+        var span12id = "#span12-" + Math.floor(i/3);
         var span4id = "#span4-" + i;
-        var id = "#" + IDs[i];
+        var profileID = "#" + IDs[i];
 
-        $("#span12-0").append(span4);
-        $(span4id).append($(id));
-
-        //$(span4id).append($(IDs[i]));
+        $(span12id).append(span4);
+        $(span4id).append($(profileID));
     }
 });
