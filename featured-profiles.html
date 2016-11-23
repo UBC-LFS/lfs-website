@@ -1,11 +1,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <div class="row-fluid border-bottom" id="featured">
     <h2>Meet our students, alumni, and faculty</h2>
-    [loop query="posts_per_page=3&amp;category_name=featured-profile"] 
+    [loop query="posts_per_page=30&amp;category_name=featured-profile" pagination="true"] 
     [the_post_thumbnail size=small]
 </div>
-<script>
-    var IDs = $("#featured div[id]")         
+<script> 
+var IDs = $("#featured div[id]")         
     .map(function() { return this.id; })
     .get();
     for (i = 0; i<IDs.length; i++) {

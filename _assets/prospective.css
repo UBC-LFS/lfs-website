@@ -1,11 +1,9 @@
 .full-width-container {
     margin-left: 0px !important;
 }
-
 #container {
     padding-top: 0px !important;
 }
-
 .overlay {
     display: block;
     position: relative;
@@ -13,12 +11,10 @@
     height: 100%;
     width: 100%;
 }
-
 .overlay:hover {
     transition: background-color 0.2s ease;
     background-color: rgba(12,35,68,0);;
 }
-
 .header-text {
     position: absolute;
     text-align: left;
@@ -27,7 +23,6 @@
     color: white;
     margin-bottom: 3%;
 }
-
 @media screen and (max-width: 979px) {
     #container {
         padding-top: 0px !important;
@@ -77,9 +72,7 @@
     .box {
         height: 120px;
     }
-    
 }
-
 @media screen and (max-width: 300px) {
     .large-intro {
         font-size: 110%;
@@ -89,9 +82,7 @@
     .box {
         height: 70px;
     }
-    
 }
-
 .center-box {
     position: absolute;
     display: block;
@@ -99,16 +90,13 @@
     transform: translateY(-50%);
     width: 100%;
 }
-
 .course-name {
     color: white;
     text-align: center;
 }
-
 .span12 {
     margin-bottom: 5%;
 }
-
 .image-region {
     position: relative;
     margin-right: -15px;
@@ -122,11 +110,9 @@ h3 {
     line-height: 180%;
     font-weight: 400;
 }
-
 .full-width-container {
     margin-left: 0px !important;
 }
-
 #container {
     padding-top: 0px !important;
 }
@@ -137,12 +123,10 @@ h3 {
     height: 100%;
     width: 100%;
 }
-
 .overlay:hover {
     transition: background-color 0.2s ease;
     background-color: rgba(12,35,68,0);;
 }
-
 .header-text {
     position: absolute;
     text-align: left;
@@ -151,7 +135,6 @@ h3 {
     color: white;
     margin-bottom: 3%;
 }
-
 @media screen and (max-width: 979px) {
     #container {
         padding-top: 0px !important;
@@ -201,9 +184,7 @@ h3 {
     .box {
         height: 120px;
     }
-    
 }
-
 @media screen and (max-width: 300px) {
     .large-intro {
         font-size: 110%;
@@ -213,9 +194,7 @@ h3 {
     .box {
         height: 70px;
     }
-    
 }
-
 .center-box {
     position: absolute;
     display: block;
@@ -223,16 +202,13 @@ h3 {
     transform: translateY(-50%);
     width: 100%;
 }
-
 .course-name {
     color: white;
     text-align: center;
 }
-
 .span12 {
     margin-bottom: 5%;
 }
-
 .image-region {
     position: relative;
     margin-right: -15px;
@@ -262,7 +238,10 @@ h3 {
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
     color: #002145;
 }
-
 h1.page-title {
     display: none;
+}
+#span12-0 {
+    margin-left: 0;
+    margin-bottom: 0;
 }
