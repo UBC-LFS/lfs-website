@@ -1,20 +1,3 @@
-img.size-full {
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
-    border-radius: 50%;
-    max-width: 100%;
-    margin: auto;
-}
-
-.post-title {
-    display: none;
-}
-
-.post-byline {
-    display: none;
-}
-
-.post-meta {
-    display: none;
+.no-margin-left {
+    margin-left: 0 !important;
 }
