@@ -139,9 +139,6 @@ h3 {
     font-size: 400%;
     line-height: 150%;
 }
-.entry-content {
-    margin-left: 4%;
-}
 img.size-full {
     height: auto;
     max-width: 100%;
@@ -152,4 +149,7 @@ img.size-full {
 }
 .slick-initialized {
     margin-left:0;
+}
+.slick-slide {
+    margin: 0 15px;
 }
