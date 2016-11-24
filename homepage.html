@@ -34,7 +34,7 @@
         <div class="span4"><h4>Graduate Students</h4></div>
     </div>
 </div>
-<h2>Meet our students, alumni, and faculty</h2>
+<h2>Meet LFS</h2>
 <div class="span12 featured myslider">
     [loop query="posts_per_page=7&amp;category_name=featured-profile"] 
     [the_post_thumbnail size=small]
@@ -68,7 +68,9 @@
 </div>
 <h2>Upcoming Events</h2>
 <div class="span12" style="margin-left: 0;">
-     [eo_events] <a href="%event_url%">%event_title%</a> on %start{jS M Y}{ g:i:a}%, at %event_venue%  %event_thumbnail{medium}%[/eo_events]
+     [eo_events] <a href="%event_url%">%event_title% on %start{jS M Y}{ g:i:a}%,  %event_thumbnail{medium}%</a>[/eo_events]
+    <p><a style="text-decoration:none;" href="http://lfs-ps.sites.olt.ubc.ca/events/">See full calendar</a></p>
+    <p class="next" style="float:right; cursor:pointer;">See more events <i class="icon-angle-right"></i></p>
 </div>
 <script>
     $('.eo-events-shortcode').addClass('events');

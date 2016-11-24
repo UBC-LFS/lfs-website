@@ -147,3 +147,6 @@ img.size-full {
     max-width: 100%;
     margin: auto;
 }
+.slick-initialized {
+    margin-left:0;
+}
