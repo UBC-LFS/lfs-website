@@ -32,6 +32,9 @@ h2 {
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
 }
 h3 {
+    font-size: 150%;
+    line-height: 180%;
+    font-weight: 400;
     font-weight: 400;
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
 }
