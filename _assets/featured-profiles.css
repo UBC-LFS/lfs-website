@@ -1,8 +1,5 @@
-.no-margin-left {
-    margin-left: 0 !important;
-}
-img.size-full {
-    height: auto;
+img#featured {
+  height: auto;
     max-width: 100%;
     vertical-align: middle;
     border-radius: 50%;
