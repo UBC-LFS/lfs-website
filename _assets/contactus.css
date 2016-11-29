@@ -14,57 +14,14 @@ img {
     vertical-align: middle;
     width: 100%;
 }
-
-.full-width-container {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-}
-
-#container {
-    padding-top: 0px !important;
-}
-
-
 .image-region {
     position: relative;
    margin-right: -15px;
 }
-
-
-.header-text {
-    position: absolute;
-    text-align: left;
-    width: 100%;
-    bottom: 0;
-    color: white;
-    margin-bottom: 3%;
-}
-
-.large-intro {
-    font-size: 400%;
-    line-height: 150%;
-   
-}
-
 .image-region {
     position: relative;
    margin-right: -15px;
 }
-
-.image-gradient {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    max-width: 1920px;
-    background: none;
-    background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.3));
-    background: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.3));
-    background: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.3));
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
-}
-
 @media screen and (max-width: 979px) {
     #container {
         padding-top: 0px !important;
@@ -114,7 +71,6 @@ img {
         padding-left: 15px;
     }
 }
-
 p {
     font-size: 120%;
 }
