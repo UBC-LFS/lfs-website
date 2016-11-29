@@ -1,9 +1,3 @@
-.full-width-container {
-    margin-left: 0px !important;
-}
-#container {
-    padding-top: 0px !important;
-}
 .overlay {
     display: block;
     position: relative;
@@ -14,14 +8,6 @@
 .overlay:hover {
     transition: background-color 0.2s ease;
     background-color: rgba(12,35,68,0);;
-}
-.header-text {
-    position: absolute;
-    text-align: left;
-    width: 100%;
-    bottom: 0;
-    color: white;
-    margin-bottom: 3%;
 }
 @media screen and (max-width: 979px) {
     #container {
@@ -83,13 +69,6 @@
         height: 70px;
     }
 }
-.center-box {
-    position: absolute;
-    display: block;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-}
 .course-name {
     color: white;
     text-align: center;
@@ -100,21 +79,10 @@
 .image-region {
     position: relative;
     margin-right: -15px;
-}
-.large-intro {
-    font-size: 400%;
-    line-height: 150%;
 }
 h3 {
     font-size: 150%;
     line-height: 180%;
-    font-weight: 400;
-}
-.full-width-container {
-    margin-left: 0px !important;
-}
-#container {
-    padding-top: 0px !important;
 }
 .overlay {
     display: block;
@@ -126,14 +94,6 @@ h3 {
 .overlay:hover {
     transition: background-color 0.2s ease;
     background-color: rgba(12,35,68,0);;
-}
-.header-text {
-    position: absolute;
-    text-align: left;
-    width: 100%;
-    bottom: 0;
-    color: white;
-    margin-bottom: 3%;
 }
 @media screen and (max-width: 979px) {
     #container {
@@ -195,13 +155,6 @@ h3 {
         height: 70px;
     }
 }
-.center-box {
-    position: absolute;
-    display: block;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-}
 .course-name {
     color: white;
     text-align: center;
@@ -212,10 +165,6 @@ h3 {
 .image-region {
     position: relative;
     margin-right: -15px;
-}
-.large-intro {
-    font-size: 400%;
-    line-height: 150%;
 }
 .ranking-number {
     text-align: center;
@@ -244,4 +193,12 @@ h1.page-title {
 #span12-0 {
     margin-left: 0;
     margin-bottom: 0;
+}
+img.size-full {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border-radius: 50%;
+    max-width: 100%;
+    margin: auto;
 }

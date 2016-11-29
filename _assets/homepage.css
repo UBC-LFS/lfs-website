@@ -3,24 +3,10 @@ h3 {
     line-height: 180%;
     font-weight: 400;
 }
-
 .banner {
   background: #3ba648;
   text-align: center;
 }
-
-.text-style {
-  color: white;
-}
-  
-.full-width-container {
-    margin-left: 0px !important;
-}
-
-#container {
-    padding-top: 0px !important;
-}
-
 .overlay {
     display: block;
     position: relative;
@@ -28,21 +14,10 @@ h3 {
     height: 100%;
     width: 100%;
 }
-
 .overlay:hover {
     transition: background-color 0.2s ease;
     background-color: rgba(12,35,68,0);;
 }
-
-.header-text {
-    position: absolute;
-    text-align: left;
-    width: 100%;
-    bottom: 0;
-    color: white;
-    margin-bottom: 3%;
-}
-
 .myslider {
   left: 50%;
   transform: translateX(-50%);
@@ -117,13 +92,6 @@ h3 {
     }
     
 }
-.center-box {
-    position: absolute;
-    display: block;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-}
 .course-name {
     color: white;
     text-align: center;
@@ -134,11 +102,6 @@ h3 {
 .image-region {
     position: relative;
     margin-right: -15px;
-}
-.large-intro {
-    font-size: 400%;
-    line-height: 150%;
-   font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
 }
 img.size-full {
     height: auto;
