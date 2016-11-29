@@ -1,0 +1,181 @@
+@import url('//cloud.typography.com/6804272/781004/css/fonts.css');
+
+.banner {
+  background: #3ba648;
+  text-align: center;
+}
+
+.text-style {
+  color: white;
+}
+  
+#content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1170px;
+    float: none;
+}
+.breadcrumb {
+    margin-left: auto !important;
+    margin-right: auto  !important;
+    max-width: 1170px  !important;
+    float: none  !important;
+}
+
+h1 {
+    font-weight: 400;
+    margin-bottom: 1%;   
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+}
+h2 {
+    font-weight: 400;
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+}
+h3 {
+    font-weight: 400;
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+}
+h4 {
+    font-weight: 400;
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+}
+
+h5 {
+    font-weight: 400;
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+}
+
+p {
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+}
+.large-intro {
+    font-size: 400%;
+    line-height: 150%;
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+}
+.intro {
+    font-size: 130%;
+    line-height: 160%;
+    margin-bottom: 30px;
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+}
+.header-text {
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    margin-bottom: 3%;
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+}
+.full-width-container {
+    margin-left: 0px !important;
+}
+
+#container {
+    padding-top: 0px !important;
+}
+.border-bottom {
+    border-bottom: 1px solid #b2c6d3;
+}
+
+.btn {
+  font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;  
+}
+
+img {
+    height: auto;
+    max-width: 100% !important;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.image-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: none;
+    background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+    background: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+    background: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+}
+img.featured {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border-radius: 50%;
+    max-width: 100%;
+    margin: auto;
+}
+.featured-container {
+    padding: 10px;
+}
+.featured-container:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+h2.featured {
+    text-align: center;
+    font-size: 1.4em;
+}
+h3.featured {
+    color: #0680a6;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 1%;
+}
+.explore-more {
+    float: right;
+    background-color: transparent;
+    color: #002145;
+    background-image: none;
+    margin-right: 30px;
+} 
+.apply-button {
+    background-color: transparent;
+    color: #002145;
+    background-image: none;
+}
+div.intro {
+    color: #2F5D7C;
+    font-size: 175%;
+    letter-spacing: 0;
+    line-height: 150%;
+    margin: 0 0 3%;
+    font-weight: 300;
+}
+.paragraph {
+    background-color: #f3f6f8;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+.tab-pane {
+    background-color: transparent;
+    color: #002145;
+    background-image: none;
+}
+.icon-chevron-up {
+    color: #d7e0e7;
+    font-size: 175%;
+    line-height: normal;
+    vertical-align: baseline;
+}
+.post-title {
+    display: none;
+}
+.post-byline {
+    display: none;
+}
+.post-meta {
+    display: none;
+}
+.center-box {
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
