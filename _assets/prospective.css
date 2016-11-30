@@ -194,8 +194,8 @@ h1.page-title {
     margin-left: 0;
     margin-bottom: 0;
 }
-img.size-full {
-    height: auto;
+img.featured-profiles {
+  height: auto;
     max-width: 100%;
     vertical-align: middle;
     border-radius: 50%;

@@ -127,3 +127,11 @@ a.programs {
     color: #002145;
     background-image: none;
 }
+img.featured-profiles {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border-radius: 50%;
+    max-width: 100%;
+    margin: auto;
+}
