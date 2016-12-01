@@ -117,7 +117,21 @@ img.featured-profiles {
     max-width: 100%;
     margin: auto;
 }
+.news {
+    box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.2), 1px 1px 2px 1px rgba(0, 0, 0, 0.19);
+}
 .news:hover {
     opacity: 0.5;
     filter: alpha(opacity=50);
+}
+.news-title {
+    text-align: center;
+}
+.news-blurb {
+    padding: 0 10px;
+}
+.center-image {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
