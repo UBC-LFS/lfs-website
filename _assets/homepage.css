@@ -103,17 +103,17 @@ h3 {
     position: relative;
     margin-right: -15px;
 }
-img.size-full {
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
-    border-radius: 50%;
-    max-width: 100%;
-    margin: auto;
-}
 .slick-initialized {
     margin-left:0;
 }
 .slick-slide {
     margin: 0 15px;
+}
+img.featured-profiles {
+  height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border-radius: 50%;
+    max-width: 100%;
+    margin: auto;
 }
