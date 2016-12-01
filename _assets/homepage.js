@@ -1,7 +1,7 @@
 jQuery(document).ready(function ($) {
     $('.featured').slick({
         infinite: true,
-        slidesToShow: 5,
+        slidesToShow: 4,
         arrows: false,
         responsive: [
             {
@@ -10,7 +10,7 @@ jQuery(document).ready(function ($) {
                     arrows: false,
                     centerMode: true,
                     centerPadding: '40px',
-                    slidesToShow: 4
+                    slidesToShow: 3
                 }
             },
             {
@@ -19,7 +19,7 @@ jQuery(document).ready(function ($) {
                     arrows: false,
                     centerMode: true,
                     centerPadding: '40px',
-                    slidesToShow: 3
+                    slidesToShow: 2
                 }
             },
             {
