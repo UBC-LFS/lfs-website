@@ -117,3 +117,7 @@ img.featured-profiles {
     max-width: 100%;
     margin: auto;
 }
+.news:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
