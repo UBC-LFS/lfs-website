@@ -56,12 +56,12 @@
     <h2>In the News</h2>
     <div class="span12" style="margin-left: 0;">
         [loop query="posts_per_page=1&amp;category_name=featured-news"] 
-        <div class="span6 news">
-            <h4 class="news-title">[cf news-title]</h4>
-            [image_with_src]
-            <p class="news-blurb">[cf news-blurb]</p>
-            [link_with_content ]
-        </div>   
+            <p id="news-url">[cf news-url]</p>
+            <div class="span6 news" id ="news-1">
+                <h4 class="news-title">[cf news-title]</h4>
+                [image_with_src]
+                <p class="news-blurb">[cf news-blurb]</p>
+            </div>   
         [/loop]
         <div class="span6">
             [loop query="posts_per_page=2&amp;category_name=news"] 
