@@ -3,24 +3,19 @@ h3 {
     font-weight: 400;
     margin-bottom: 5%;
 }
-
 h5 {
     font-size: 130%;
     margin-top: 0;
 }
-
 .text-style {
   color: white;
 }
-  
 .full-width-container {
     margin-left: 0px !important;
 }
-
 #container {
     padding-top: 0px !important;
 }
-
 .overlay {
     display: block;
     position: relative;
@@ -28,12 +23,10 @@ h5 {
     height: 100%;
     width: 100%;
 }
-
 .overlay:hover {
     transition: background-color 0.2s ease;
     background-color: rgba(12,35,68,0);;
 }
-
 .header-text {
     position: absolute;
     text-align: left;
@@ -42,7 +35,6 @@ h5 {
     color: white;
     margin-bottom: 3%;
 }
-
 .myslider {
   left: 50%;
   transform: translateX(-50%);
@@ -50,7 +42,6 @@ h5 {
   margin-left: 0 !important;
   margin-bottom: 10px !important;
 }
-
 @media screen and (max-width: 979px) {
     #container {
         padding-top: 0px !important;
@@ -100,7 +91,6 @@ h5 {
     .box {
         height: 120px;
     }
-    
 }
 
 @media screen and (max-width: 300px) {
@@ -111,10 +101,8 @@ h5 {
     }
     .box {
         height: 70px;
-    }
-    
+    }   
 }
-
 .center-box {
     position: absolute;
     display: block;
@@ -122,16 +110,13 @@ h5 {
     transform: translateY(-50%);
     width: 100%;
 }
-
 .course-name {
     color: white;
     text-align: center;
 }
-
 .span12 {
     margin-bottom: 5%;
 }
-
 .image-region {
     position: relative;
     margin-right: -15px;
@@ -140,11 +125,9 @@ h5 {
     font-size: 400%;
     line-height: 150%;
 }
-
 h1.page-title {
     display: none;
 }
-
 .ranking-number {
     text-align: center;
     font-size: 6em;

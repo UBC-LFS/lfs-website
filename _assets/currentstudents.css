@@ -3,12 +3,10 @@ h2 {
     line-height: 130%;
     margin-bottom: 1%;
 }
-
 h3 {
     line-height: 120%;
     margin-bottom: 5%;
 }
-
 h4 {
     line-height: 120%;
 }
@@ -17,7 +15,6 @@ img {
     max-width: 100% !important;
     vertical-align: middle;
 }
-
 .overlay {
     display: block;
     position: relative;
@@ -25,7 +22,6 @@ img {
     height: 100%;
     width: 100%;
 }
-
 .overlay:hover {
     transition: background-color 0.2s ease;
     background-color: rgba(12,35,68,0);;
@@ -82,9 +78,7 @@ img {
     .box {
         height: 120px;
     }
-    
 }
-
 @media screen and (max-width: 300px) {
     .large-intro {
         font-size: 110%;
@@ -94,22 +88,18 @@ img {
     .box {
         height: 70px;
     }
-    
 }
 .course-name {
     color: white;
     text-align: center;
 }
-
 .span12 {
     margin-bottom: 5%;
 }
-
 .image-region {
     position: relative;
     margin-right: -15px;
 }
-
 h1.page-title {
     display: none;
 }
