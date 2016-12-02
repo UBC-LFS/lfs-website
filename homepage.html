@@ -54,9 +54,9 @@
 </div>
 <div class="row-fluid border-bottom">
     <h2>In the News</h2>
-    <div class="span12" style="margin-left: 0;">
+    <div class="span12 no-margin-left">
         [loop query="posts_per_page=1&amp;category_name=featured-news"] 
-            <a href='' id="news-url">[cf news-url]</a>
+            <a href='' id="news-url" class="news">[cf news-url]</a>
             <div class="span6 news" id ="news-1">
                 <h4 class="news-title">[cf news-title]</h4>
                 [image_with_src]
@@ -65,7 +65,7 @@
         [/loop]
         <div class="span6">
             [loop query="posts_per_page=2&amp;category_name=news"] 
-                <div class="span12 news" style="margin-left: 0;">
+                <div class="span12 news no-margin-left">
                     <div class="span9">
                         <h4 class="news-title">[cf news-title]</h4>
                         <p class="news-blurb">[cf news-blurb]</p>
@@ -81,15 +81,15 @@
         </a>
     </div>
 </div>
-<div class="span12" style="margin-left: 0;">
+<div class="span12 no-margin-left">
      <h2>Upcoming Events</h2>
      [eo_events] <a href="%event_url%">%event_title% on %start{jS M Y}{ g:i:a}%,  %event_thumbnail{medium}%</a>[/eo_events]
-     <div class="span12" style="margin-top:0; margin-left:0;">
+     <div class="span12 no-margin-left no-margin-top">
         <div class="span6">        
             <p><a style="text-decoration:none;" href="http://lfs-ps.sites.olt.ubc.ca/events/">See full calendar</a></p>
         </div>
         <div class="span6">
-            <p class="next" style="float:right; cursor:pointer;">See more events <i class="icon-angle-right"></i></p>
+            <p class="next">See more events <i class="icon-angle-right"></i></p>
         </div>
      </div>
 </div>
@@ -100,7 +100,7 @@
 </div>
 <div class="row-fluid">
     <h2>Ready to Apply?</h2>
-    <div class="span12" style="margin-left:0;">
+    <div class="span12 no-margin-left">
         <div class="span6">
             <a class="btn btn-large apply-button" href="https://account.you.ubc.ca/ubc/apply/apply_now.ezc">
                 <span>ADMISSION REQUIREMENTS <i class="icon-angle-right"></i> </span>

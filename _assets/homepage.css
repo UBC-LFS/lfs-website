@@ -119,6 +119,7 @@ img.featured-profiles {
 }
 .news {
     box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.2), 1px 1px 2px 1px rgba(0, 0, 0, 0.19);
+    text-decoration: none;
 }
 .news:hover {
     opacity: 0.5;
@@ -137,4 +138,8 @@ img.featured-profiles {
 }
 .vertical-align-center {
     vertical-align: middle;
+}
+.next {
+    float:right; 
+    cursor:pointer;
 }
