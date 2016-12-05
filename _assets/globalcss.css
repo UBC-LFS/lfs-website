@@ -116,8 +116,8 @@ img {
     background: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.3));
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
 }
-img.featured {
-    height: auto;
+img.featured-profiles {
+  height: auto;
     max-width: 100%;
     vertical-align: middle;
     border-radius: 50%;
