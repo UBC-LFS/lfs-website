@@ -1,3 +1,4 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <div class="image-region no-padding">
     <div class="image-gradient">
     </div>
@@ -11,3 +12,11 @@
     </div>
 </div>
 <div id="main-content" class="container"></div>
+<script>
+$("div[role='main']").prepend($("#main-content"));
+$("#main-content").prepend($("#content"));
+$("#main-content").prepend($(".breadcrumb"));
+$("#container").prepend($(".image-region"));
+</script>
+<h2>Contact Information</h2>
+<h2>Meet the Team</h2>
