@@ -1,0 +1,21 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://use.fontawesome.com/47b0aee693.js"></script>
+<div class="image-region no-padding">
+    <div class="image-gradient">
+    </div>
+    <img id="banner" src="http://lfs-ps.sites.olt.ubc.ca/files/2016/10/26574827821_97e3478d0e_k_resized.jpg"/>
+    <div class="header-text">
+        <div class="bound container">
+            <div class="message">
+                 <p class="large-intro">Global Resource Systems (BSc)</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main-content" class="container"></div>
+<script>
+$("div[role='main']").prepend($("#main-content"));
+$("#main-content").prepend($("#content"));
+$("#main-content").prepend($(".breadcrumb"));
+$("#container").prepend($(".image-region"));
+</script>
