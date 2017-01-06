@@ -1,4 +1,6 @@
 jQuery(document).ready(function ($) {
+    var profiles = document.getElementById("profiles");
+    var numofrows = profiles.getElementsByClassName("span4");
     $( ".span4" ).each(function(index) {
          $( this ).addClass("index-" + Math.floor(index/3));
     });
@@ -8,6 +10,8 @@ jQuery(document).ready(function ($) {
         if (i%3===0) {
             $('.index-' + Math.floor(i/3)).wrapAll(span12);
         }
+        text = "profile" + i.toString();
+        numofrows[i].setAttribute("id",text);
     }
     $("img").attr("id", "featured");
 });
