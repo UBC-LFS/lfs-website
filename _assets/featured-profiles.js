@@ -11,7 +11,7 @@ jQuery(document).ready(function ($) {
             $('.index-' + Math.floor(i/3)).wrapAll(span12);
         }
         text = "profile" + i.toString();
-        numofrows[i].setAttribute("id",text);
+        $(numofrows[i]).attr("id",text);
     }
     $("img").attr("id", "featured");
 });
