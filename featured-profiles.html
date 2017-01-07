@@ -1,18 +1,15 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <h2>Meet our students, alumni, and faculty</h2>
+<div id="profiles">
 [loop query="posts_per_page=30&amp;category_name=featured-profile" pagination="true"] 
 <div class="span4">
+<div class="clones">
 [link_with_content]
 [image_with_src img_class="featured-profiles"]
 <h2 class="featured">[cf featured-name]</h2>
 <h3 class="featured">[cf featured-program]</h3>
 <p> [cf featured-blurb] <p>
 </div>
+</div>
 [/loop]
-
-<!--<script>
-    var url = $('#profile-url').text();
-    $('#profile-url').empty();
-    $('#profile-url').attr('href', url);
-    $('#profile-1').wrapAll($('#profile-url'));
-</script>-->
+</div>
