@@ -75,5 +75,15 @@ jQuery(document).ready(function ($) {
             }
         ]
     });
-    
+    var numOfNewsDisplay = 2;
+    var i = 0;
+    var news_src;
+    var test = document.getElementById("nonfeatured-news").getElementsByClassName("news");
+    var news_name;
+    for (i=0; i<numOfNewsDisplay; i++){
+      news_name = "news_" + i.toString();
+      $(test[i]).attr("id", news_name);
+      news_src = $("#" + news_name + " > .not_used").text();
+      $("#" + news_name + " > a.post_link").attr("href", news_src);
+    }
 });
