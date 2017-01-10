@@ -20,7 +20,7 @@ $("#main-content").prepend($("#content"));
 $("#main-content").prepend($(".breadcrumb"));
 $("#container").prepend($(".image-region"));
 </script>
-<div class="row-fluid border-bottom">
+<div class="row-fluid border-bottom" id="trigger-animation">
     <h3 style="margin-bottom: 3%">Founded in 1914, the UBC Faculty of Land and Food Systems has worked for over a century to address global issues surrounding
         health and sustainable land and food systems. Today, our world faces unprecedented challenges of climate change,
         population growth, food and nutrition insecurity, and water shortages, challenges that our researchers and students
@@ -32,12 +32,12 @@ $("#container").prepend($(".image-region"));
     <p>The Faculty of Land and Food Systems is ranked as one of the top ... </p>
     <div class="span12 no-margin-left" >
         <div class="span6">
-            <div class="ranking-number">25th</div>
+            <div class="ranking-number" id="ranking-world">100</div>
             <div class="ranking-title">World</div>
             <div class="source"><a class="no-text-decoration" href="https://www.timeshighereducation.com/world-university-rankings/2017/subject-ranking/life-sciences#!/page/0/length/25/sort_by/rank_label/sort_order/asc/cols/rank_only">Times Higher Education</a></div>
         </div>
         <div class="span6 no-margin-left">
-            <div class="ranking-number">2nd</div>
+            <div class="ranking-number" id="ranking-canada">100</div>
             <div class="ranking-title">Canada</div>
             <div class="source"><a class="no-text-decoration" href="https://www.timeshighereducation.com/world-university-rankings/2017/subject-ranking/life-sciences#!/page/0/length/25/sort_by/rank_label/sort_order/asc/cols/rank_only">Times Higher Education</a></div>
         </div>
@@ -135,8 +135,8 @@ $("#container").prepend($(".image-region"));
     <h2>First Year at a Glance</h2>
 </div>
 <div class="row-fluid border-bottom">
-    <h2>Contact Info of Advisors</h2>
     <div class="span12 no-margin-left">
+        <h2>Contact Info of Advisors</h2>
         <p>Burning questions about Land and Food Systems? Don't let your questions go unanswered. Contact our advisors to learn more.</p>
         <a class="btn btn-large apply-button" href="https://account.you.ubc.ca/ubc/apply/apply_now.ezc">
             <span>Contact Us <i class="icon-angle-right"></i></span>
@@ -178,21 +178,7 @@ $("#container").prepend($(".image-region"));
     </div>
 </div>
 <div class="row-fluid border-bottom">
-    <h2>Tuition Information</h2>
-    <div class="span12 no-margin-left">
-        <div class="span4">
-            <h4>Tuition</h4>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-        </div>
-        <div class="span4">
-            <h4>Scholarship</h4>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-        </div>
-        <div class="span4">
-            <h4>Financial</h4>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-        </div>
-    </div>
+    <h2>Tuition</h2>
 </div>
 <div class="row-fluid border-bottom">
     <h2>Why UBC Vancouver?</h2>
@@ -217,12 +203,5 @@ $("#container").prepend($(".image-region"));
                 <span>APPLY NOW <i class="icon-angle-right"></i> </span>
             </a>
         </div>
-    </div>
-</div>
-
-<div class="row-fluid">
-    <div class="span12 no-margin-left">
-        <div class="span6"></div>
-        <div class="span6"></div>
     </div>
 </div>
