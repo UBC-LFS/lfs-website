@@ -3,6 +3,7 @@ jQuery(document).ready(function ($) {
     var profile_name;
     var profile_src;
     var clone;
+    var profile_pointer;
     $( ".span4" ).each(function(index) {
          $( this ).addClass("index-" + Math.floor(index/3));
     });
@@ -14,8 +15,10 @@ jQuery(document).ready(function ($) {
         }
         profile_name = "profile_" + i.toString();
         $(numofrows[i]).attr("id", profile_name);
-        profile_src = $("#" + profile_name + " > a:nth-of-type(1)").attr("href");
+        profile_pointer = document.getElementById(profile_name).getElementsByTagName("a");
+        profile_src = $(profile_pointer[0]).attr("href");
         $("#" + profile_name + " > .profile-link").attr("href", profile_src);
+        console.log(profile_pointer);
     }
     $("img").attr("id", "featured");
 });
