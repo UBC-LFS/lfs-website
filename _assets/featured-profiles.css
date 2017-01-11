@@ -1,13 +1,12 @@
-a { 
+#profiles a { 
   text-decoration: none;
   display: none;
 }
 
-a.profile-link {
+#profiles a.profile-link {
   display:inline-block;
 }
-
-#profiles > div > div:hover{
+#profiles > div > div:hover {
   opacity: 0.5;
   filter: alpha(opacity=50); 
 }
