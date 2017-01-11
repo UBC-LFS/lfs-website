@@ -34,13 +34,18 @@
     </div>
 </div>
 <h2>Meet our faculty</h2>
-<div class="span12 featured myslider">
+<div class="span12 featured myslider" id="profile_slider">
      [loop query="posts_per_page=7&amp;category_name=featured-profile"] 
-    <div style="width: 280px;">      
-        [image_with_src img_class="featured-profiles"]
-        <h2 class="featured">[cf featured-name]</h2>
-        <h3 class="featured">[cf featured-program]</h3>
-        <p> [cf featured-blurb] <p>
+    <div style="width: 280px;">
+        [link_with_content]
+        <a href="#" class="profile_link">
+            <div>
+            [image_with_src img_class="featured-profiles"]
+            <h2 class="featured">[cf featured-name]</h2>
+            <h3 class="featured">[cf featured-program]</h3>
+            [cf featured-blurb]
+            </div>
+        </a>
     </div>
     [/loop]
 </div>
@@ -62,16 +67,19 @@
                 <p class="news-blurb">[cf news-blurb]</p>
             </div>   
         [/loop]
-        <div class="span6">
+        <div class="span6" id="nonfeatured-news">
             [loop query="posts_per_page=2&amp;category_name=news"] 
                 <div class="span12 news no-margin-left">
-                    <div class="span9">
-                        <h4 class="news-title">[cf news-title]</h4>
-                        <p class="news-blurb">[cf news-blurb]</p>
-                    </div>
-                    <div class="span3 center-image">
-                        [image_with_src img_class="vertical-align-center"]
-                    </div>
+                    <a href="#" class="not_used">[cf news-url]</a>
+                    <a href="#" class="post_link">
+                        <div class="span9">
+                            <h4 class="news-title">[cf news-title]</h4>
+                            <p class="news-blurb">[cf news-blurb]</p>
+                        </div>
+                        <div class="span3 center-image">
+                            [image_with_src img_class="vertical-align-center"]
+                        </div>
+                    </a>
                 </div>
             [/loop]
         </div>

@@ -133,3 +133,26 @@ h3 {
     float:right; 
     cursor:pointer;
 }
+a.not_used,
+div.news > br,
+#nonfeatured-news > div.news > p,
+.post_link > p
+{
+ display: none !important; 
+}
+.post_link > .span9
+{
+    margin: 0px;
+}
+#profile_slider > .slick-list > .slick-track > .slick-slide a
+{
+    text-decoration: none;
+}
+#profile_slider > .slick-list > .slick-track > .slick-slide > a
+{
+    display: none;
+}
+#profile_slider > .slick-list > .slick-track > .slick-slide > a.profile_link
+{
+    display: inline-block;
+}
