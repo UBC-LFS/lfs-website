@@ -6,3 +6,8 @@ a {
 a.profile-link {
   display:inline-block;
 }
+
+#profiles > div > div:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50); 
+}
