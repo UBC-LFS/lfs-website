@@ -144,3 +144,15 @@ div.news > br,
 {
     margin: 0px;
 }
+#profile_slider > .slick-list > .slick-track > .slick-slide a
+{
+    text-decoration: none;
+}
+#profile_slider > .slick-list > .slick-track > .slick-slide > a
+{
+    display: none;
+}
+#profile_slider > .slick-list > .slick-track > .slick-slide > a.profile_link
+{
+    display: inline-block;
+}
