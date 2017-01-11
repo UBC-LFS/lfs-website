@@ -2,6 +2,7 @@ jQuery(document).ready(function ($) {
     $('.featured').slick({
         infinite: true,
         slidesToShow: 4,
+      slidesToScroll: 1,
         arrows: false,
         responsive: [
             {
@@ -10,7 +11,8 @@ jQuery(document).ready(function ($) {
                     arrows: false,
                     centerMode: true,
                     centerPadding: '40px',
-                    slidesToShow: 3
+                    slidesToShow: 3,
+      		 slidesToScroll: 1
                 }
             },
             {
@@ -83,7 +85,7 @@ jQuery(document).ready(function ($) {
     for (i=0; i<numOfNewsDisplay; i++){
       news_name = "news_" + i.toString();
       $(test[i]).attr("id", news_name);
-      news_src = $("#" + news_name + " > .not_used").text();
-      $("#" + news_name + " > a.post_link").attr("href", news_src);
+      news_src = $("#nonfeatured-news > " + "#" + news_name + " > .not_used").text();
+      $("#nonfeatured-news > " + "#" + news_name + " > a.post_link").attr("href", news_src);
     }
 });
