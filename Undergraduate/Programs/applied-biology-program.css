@@ -34,6 +34,19 @@
 h1.page-title {
     display: none;
 }
+.sticky-nav {
+    width:350px;
+    max-width:350px;
+}
+@media screen and (max-width: 1375px) {
+    .sticky-nav {
+        width: initial;
+        max-width: initial;
+    }
+    .page-toc {
+        padding: 1.2em 1em;
+    }
+}
 @media screen and (max-width: 979px) {
     #container {
         padding-top: 0px !important;
@@ -60,6 +73,7 @@ h1.page-title {
     .box {
         height: 150px;
     }
+    
 }
 @media screen and (max-width: 767px) {
     .large-intro {
@@ -76,6 +90,7 @@ h1.page-title {
    .accordion-group > .accordion-heading {
         font-size:150%; 
   }
+  
 }
 @media screen and (max-width: 480px) {
     .large-intro {
