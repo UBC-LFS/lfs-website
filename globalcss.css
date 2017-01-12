@@ -53,24 +53,18 @@ h4 {
     font-weight: 400;
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
 }
-
 h5 {
     font-weight: 400;
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
 }
-
 p {
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+    font-size: 120%;
+    line-height: 1.5;
 }
 .large-intro {
     font-size: 400%;
     line-height: 150%;
-    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
-}
-.intro {
-    font-size: 130%;
-    line-height: 160%;
-    margin-bottom: 30px;
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
 }
 .header-text {
@@ -82,28 +76,78 @@ p {
     margin-bottom: 3%;
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
 }
+.image-region {
+    position: relative;
+    margin-right: -15px;
+}
+@media screen and (max-width: 1200px) {
+    .large-intro {
+        font-size: 300%;
+    }
+}
+@media screen and (max-width: 979px) {
+    #container {
+        padding-top: 0px !important;
+    }
+    .image-region {
+    	margin-left: -20px;
+    	margin-right: -20px !important;
+    }
+    .header-text {
+        position: absolute;
+        text-align: left;
+        width: 100%;
+        bottom: 0;
+        color: white;
+        margin-bottom: 3%;
+        font-size: 80%;
+        line-height: 50%;
+    }
+    .large-intro {
+        padding-left: 20px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .large-intro {
+        font-size: 200%;
+    }
+   .span12 {
+        margin-bottom: 0;
+    }
+    .explore-more {
+        margin-right: 15px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .large-intro {
+        font-size: 150%;
+        padding-left: 20px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .large-intro {
+        font-size: 110%;
+        padding-left: 15px;
+    }
+}
 .full-width-container {
     margin-left: 0px !important;
 }
-
 #container {
     padding-top: 0px !important;
 }
 .border-bottom {
     border-bottom: 1px solid #b2c6d3;
 }
-
 .btn {
   font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;  
 }
-
 img {
     height: auto;
     max-width: 100% !important;
     vertical-align: middle;
     width: 100%;
 }
-
 .image-gradient {
     position: absolute;
     top: 0;
@@ -111,10 +155,10 @@ img {
     height: 100%;
     width: 100%;
     background: none;
-    background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.3));
-    background: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.3));
-    background: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.3));
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+    background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+    background: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+    background: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
 }
 img.featured-profiles {
   height: auto;
@@ -192,4 +236,52 @@ div.intro {
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
+}
+.page-section {
+  padding-top: 4rem; 
+}
+.section-header {
+  font-size: 25px;
+}
+.sidebar-list {
+  margin: 0;
+  list-style: none;
+}
+.sidebar-list > li{
+  margin-top: 1rem;
+  font-size: 16px;
+}
+.back-to-top-link {
+  margin-top: 1.8rem;
+  margin-bottom: 0.4rem;
+  display: inline-block;
+}
+.back-to-top {
+  color: #222;
+}
+.page-toc {
+  padding: 1.4rem 3rem;
+  background: #f9f9f9;
+}
+.page-toc > h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 1.4rem;
+}
+#training {
+    background-image: url(http://lfs-ps.sites.olt.ubc.ca/files/2016/10/21352299053_f298e90871_z.jpg);
+}
+.overlay {
+    display: block;
+    position: relative;
+    background-color: rgba(12, 35, 68, .8);
+    height: 100%;
+    width: 100%;
+}
+.overlay:hover {
+    transition: background-color 0.2s ease;
+    background-color: rgba(12, 35, 68, 1);
+}
+.span12 {
+    margin-bottom: 5%;
 }

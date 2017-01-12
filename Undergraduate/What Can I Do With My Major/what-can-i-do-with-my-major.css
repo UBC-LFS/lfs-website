@@ -1,0 +1,128 @@
+.center-box {
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+.header-text {
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    margin-bottom: 3%;
+}
+.image-region {
+    position: relative;
+   margin-right: -15px;
+}
+
+@media screen and (max-width: 767px) {
+   .accordion-group > .accordion-heading {
+        font-size:160%; 
+  }
+}
+
+@media screen and (max-width: 530px) {
+    .accordion-group > .accordion-heading {
+        font-size: 140%;
+    }
+    .accordion-toggle > .accordion-arrow {
+    	margin-right: 0px;
+    	margin-top: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .box {
+        height: 120px;
+    }
+    .accordion-group > .accordion-heading {
+        font-size: 130%; 
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .ubc7-arrow {
+    	height: 0px;
+    	width: 0px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .box {
+        height: 70px;
+    }
+    .accordion-group > .accordion-heading {
+        font-size:120%; 
+    }
+}
+.box-name {
+    color: white;
+    text-align: center;
+}
+.box {
+    background-size: cover;
+    height: 250px;
+}
+
+#applied-animal-biology	{
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2016/11/20089902805_7c5e1729d1_o.jpg");
+}
+
+#applied-plant-and-soil-sciences {
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2016/11/20089902805_7c5e1729d1_o.jpg");
+}
+
+#food-and-the-environment {
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2016/11/20089902805_7c5e1729d1_o.jpg");
+}
+
+#dietetics {
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2016/11/20089902805_7c5e1729d1_o.jpg");
+}
+
+#food-and-nutritional-sciences {
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2016/11/20089902805_7c5e1729d1_o.jpg");
+}
+
+#food-market-analysis {
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2016/11/20089902805_7c5e1729d1_o.jpg");
+}
+
+#food-nutrition-and-health {
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2016/11/20089902805_7c5e1729d1_o.jpg");
+}
+
+#food-science {
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2016/11/20089902805_7c5e1729d1_o.jpg");
+}
+
+#international-nutrition {
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2016/11/20089902805_7c5e1729d1_o.jpg");
+}
+
+#nutritional-sciences {
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2016/11/20089902805_7c5e1729d1_o.jpg");
+}
+
+#fnh-and-education {
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2016/11/20089902805_7c5e1729d1_o.jpg");
+}
+
+#global-resources-systems {
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2016/11/20089902805_7c5e1729d1_o.jpg");
+}
+
+.accordion-arrow {
+  float: right;
+  margin-right: 10px;
+  margin-top: 14px;
+}
+
+.accordion-heading {
+  font-size: 200%;
+  line-height: 40px;
+  background-color: #f9f9f9;
+}
