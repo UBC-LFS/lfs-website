@@ -156,3 +156,31 @@ div.news > br,
 {
     display: inline-block;
 }
+#event_prev
+{
+    position:absolute;
+    display: block;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    width: 50px;
+    height: 100%;
+}
+#event_next
+{
+    position:absolute;
+    display: block;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+    width: 50px;
+    height: 100%;
+}
+.slick-slider > .slick-list
+{
+    padding: 0px 50px;
+}
+.event_button
+{
+    background-color: lightgrey;
+}

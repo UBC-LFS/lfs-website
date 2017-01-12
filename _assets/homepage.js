@@ -103,4 +103,8 @@ jQuery(document).ready(function ($) {
         profile_src = $(profile_selector_src).attr("href");
         $("#" + profile_name + " > .profile_link").attr("href", profile_src);
     }
+    var prev_button = "<div id='event_prev' class='event_button prev'>Prev</div>";
+    var next_button = "<div id='event_next' class='event_button next'>Next</div>";
+    $("ul.slick-slider").append(prev_button);
+    $("ul.slick-slider").append(next_button);
 });
