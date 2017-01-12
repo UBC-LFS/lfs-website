@@ -1,17 +1,29 @@
 jQuery(document).ready(function ($) {
     $('.featured').slick({
         infinite: true,
-        slidesToShow: 4,
-      slidesToScroll: 1,
-      swipeToSlide:true,
+        centerMode: true,
+        centerPadding: '110px',
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        swipeToSlide:true,
         arrows: false,
         responsive: [
+            {
+                breakpoint: 1750,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '80px',
+                    slidesToShow: 4,
+      		 slidesToScroll: 1
+                }
+            },
             {
                 breakpoint: 1024,
                 settings: {
                     arrows: false,
                     centerMode: true,
-                    centerPadding: '40px',
+                    centerPadding: '60px',
                     slidesToShow: 3,
       		 slidesToScroll: 1
                 }
@@ -21,7 +33,7 @@ jQuery(document).ready(function ($) {
                 settings: {
                     arrows: false,
                     centerMode: true,
-                    centerPadding: '40px',
+                    centerPadding: '60px',
                     slidesToShow: 2
                 }
             },
@@ -30,7 +42,7 @@ jQuery(document).ready(function ($) {
                 settings: {
                     arrows: false,
                     centerMode: true,
-                    centerPadding: '40px',
+                    centerPadding: '50px',
                     slidesToShow: 1
                 }
             }
