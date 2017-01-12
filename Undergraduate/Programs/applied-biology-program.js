@@ -16,4 +16,17 @@ jQuery(document).ready(function ($) {
             loop: true,
         });
     });
+    var navbar_position = $(".sticky-nav").offset().top;
+    $(window).on('scroll', function() {
+        var y_scroll_pos = window.pageYOffset;
+        var cur_scroll_pos = navbar_position;
+        if (y_scroll_pos + 10 > cur_scroll_pos) {
+            $(".sticky-nav").css("position", "fixed");
+            $(".sticky-nav").css("top", "0");
+        }
+        else {
+            $(".sticky-nav").css("position", "");
+            $(".sticky-nav").css("top", "");
+        }
+    })
 });

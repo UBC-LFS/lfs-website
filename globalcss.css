@@ -61,6 +61,8 @@ h5 {
 
 p {
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+    font-size: 120%;
+    line-height: 1.5;
 }
 .large-intro {
     font-size: 400%;
@@ -111,10 +113,10 @@ img {
     height: 100%;
     width: 100%;
     background: none;
-    background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.3));
-    background: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.3));
-    background: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.3));
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+    background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+    background: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+    background: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
 }
 img.featured-profiles {
   height: auto;
@@ -193,3 +195,35 @@ div.intro {
     transform: translateY(-50%);
     width: 100%;
 }
+.page-section {
+  padding-top: 4rem; 
+}
+.section-header {
+  font-size: 25px;
+}
+.sidebar-list {
+  margin: 0;
+  list-style: none;
+}
+.sidebar-list > li{
+  margin-top: 1rem;
+  font-size: 16px;
+}
+.back-to-top-link {
+  margin-top: 1.8rem;
+  margin-bottom: 0.4rem;
+  display: inline-block;
+}
+.back-to-top {
+  color: #222;
+}
+.page-toc {
+  padding: 1.4rem 3rem;
+  background: #f9f9f9;
+}
+.page-toc > h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 1.4rem;
+}
+  
