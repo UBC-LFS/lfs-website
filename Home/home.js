@@ -5,7 +5,6 @@ jQuery(document).ready(function ($) {
         centerMode: true,
         centerPadding: '110px',
         slidesToShow: 5,
-        slidesToScroll: 1,
         swipeToSlide:true,
         arrows: false,
         responsive: [
@@ -15,8 +14,7 @@ jQuery(document).ready(function ($) {
                     arrows: false,
                     centerMode: true,
                     centerPadding: '80px',
-                    slidesToShow: 4,
-      		 slidesToScroll: 1
+                    slidesToShow: 4
                 }
             },
             {
@@ -25,8 +23,7 @@ jQuery(document).ready(function ($) {
                     arrows: false,
                     centerMode: true,
                     centerPadding: '60px',
-                    slidesToShow: 3,
-      		 slidesToScroll: 1
+                    slidesToShow: 3
                 }
             },
             {
@@ -116,8 +113,4 @@ jQuery(document).ready(function ($) {
         profile_src = $(profile_selector_src).attr("href");
         $("#" + profile_name + " > .profile_link").attr("href", profile_src);
     }
-    var prev_button = "<div id='event_prev' class='event_button prev'>Prev</div>";
-    var next_button = "<div id='event_next' class='event_button next'>Next</div>";
-    $("ul.slick-slider").append(prev_button);
-    $("ul.slick-slider").append(next_button);
 });
