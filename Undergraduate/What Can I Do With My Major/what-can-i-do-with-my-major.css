@@ -1,0 +1,238 @@
+h1 {
+    font-size: 350%;
+    font-weight: 400;
+    line-height: 130%;
+    margin-bottom: 5%;
+}
+
+h2 {
+    font-size: 250%;
+    font-weight: 400;
+    line-height: 130%;
+    margin-bottom: 1%;
+}
+
+h3 {
+    font-size: 180%;
+    line-height: 180%;
+    font-weight: 400;
+    margin-bottom: 5%;
+}
+
+img {
+    height: auto;
+    max-width: 100% !important;
+    vertical-align: middle;
+}
+
+.full-width-container {
+    margin-left: 0px !important;
+}
+
+#container {
+    padding-top: 0px !important;
+}
+
+.overlay {
+    display: block;
+    position: relative;
+    background-color: rgba(12, 35, 68, .8);
+    height: 100%;
+    width: 100%;
+}
+.overlay:hover {
+    transition: background-color 0.2s ease;
+    background-color: rgba(12, 35, 68, 1);
+}
+.center-box {
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.span12 {
+    margin-bottom: 30px;
+}
+
+.flexslider {
+    display: none;
+}
+
+.header-text {
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    margin-bottom: 3%;
+}
+
+.large-intro {
+    font-size: 400%;
+    line-height: 150%;
+   
+}
+
+.image-region {
+    position: relative;
+   margin-right: -15px;
+}
+
+@media screen and (max-width: 979px) {
+    #container {
+        padding-top: 0px !important;
+    }
+    .image-region {
+    	margin-left: -20px;
+    	margin-right: -20px;
+    }
+    .header-text {
+        position: absolute;
+        text-align: left;
+        width: 100%;
+        bottom: 0;
+        color: white;
+        margin-bottom: 3%;
+        font-size: 80%;
+        line-height: 50%;
+    }
+    .large-intro {
+        font-size: 300%;
+        line-height: 75%;
+        padding-left: 80px;
+    }
+    .box {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .large-intro {
+        font-size: 200%;
+        line-height: 75%;
+        padding-left: 40px;
+    }
+   .span12 {
+        margin-bottom: 0;
+    }
+   .accordion-group > .accordion-heading {
+        font-size:160%; 
+  }
+}
+
+@media screen and (max-width: 530px) {
+    .accordion-group > .accordion-heading {
+        font-size: 140%;
+    }
+    .accordion-toggle > .accordion-arrow {
+    	margin-right: 0px;
+    	margin-top: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .large-intro {
+        font-size: 150%;
+        line-height: 75%;
+        padding-left: 20px;
+    }
+    .box {
+        height: 120px;
+    }
+    .accordion-group > .accordion-heading {
+        font-size: 130%; 
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .ubc7-arrow {
+    	height: 0px;
+    	width: 0px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .large-intro {
+        font-size: 110%;
+        line-height: 50%;
+        padding-left: 15px;
+    }
+    .box {
+        height: 70px;
+    }
+    .accordion-group > .accordion-heading {
+        font-size:120%; 
+    }
+}
+
+.box-name {
+    color: white;
+    text-align: center;
+}
+
+.box {
+    background-size: cover;
+    height: 250px;
+}
+
+#applied-animal-biology	{
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2016/11/20089902805_7c5e1729d1_o.jpg");
+}
+
+#applied-plant-and-soil-sciences {
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2016/11/20089902805_7c5e1729d1_o.jpg");
+}
+
+#food-and-the-environment {
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2016/11/20089902805_7c5e1729d1_o.jpg");
+}
+
+#dietetics {
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2016/11/20089902805_7c5e1729d1_o.jpg");
+}
+
+#food-and-nutritional-sciences {
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2016/11/20089902805_7c5e1729d1_o.jpg");
+}
+
+#food-market-analysis {
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2016/11/20089902805_7c5e1729d1_o.jpg");
+}
+
+#food-nutrition-and-health {
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2016/11/20089902805_7c5e1729d1_o.jpg");
+}
+
+#food-science {
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2016/11/20089902805_7c5e1729d1_o.jpg");
+}
+
+#international-nutrition {
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2016/11/20089902805_7c5e1729d1_o.jpg");
+}
+
+#nutritional-sciences {
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2016/11/20089902805_7c5e1729d1_o.jpg");
+}
+
+#fnh-and-education {
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2016/11/20089902805_7c5e1729d1_o.jpg");
+}
+
+#global-resources-systems {
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2016/11/20089902805_7c5e1729d1_o.jpg");
+}
+
+.accordion-arrow {
+  float: right;
+  margin-right: 10px;
+  margin-top: 14px;
+}
+
+.accordion-heading {
+  font-size: 200%;
+  line-height: 40px;
+  background-color: #f9f9f9;
+}
