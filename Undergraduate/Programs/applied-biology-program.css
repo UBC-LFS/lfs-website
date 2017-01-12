@@ -29,7 +29,8 @@
 }
 .box {
     background-size: cover;
-    height: 250px;
+    height: 180px;
+    padding: 0;
 }
 h1.page-title {
     display: none;
