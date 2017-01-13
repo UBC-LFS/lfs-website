@@ -1,4 +1,3 @@
-
 jQuery(document).ready(function ($) {
     $('.featured').slick({
         infinite: true,
