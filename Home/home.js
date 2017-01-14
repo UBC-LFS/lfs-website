@@ -1,18 +1,15 @@
 jQuery(document).ready(function ($) {
     $('.featured').slick({
         infinite: true,
-        centerMode: true,
-        centerPadding: '110px',
         slidesToShow: 5,
-        swipeToSlide:true,
+        slidesToScroll:1,
         arrows: false,
+        autoplay: false,
         responsive: [
             {
                 breakpoint: 1750,
                 settings: {
                     arrows: false,
-                    centerMode: true,
-                    centerPadding: '80px',
                     slidesToShow: 4
                 }
             },
@@ -20,8 +17,6 @@ jQuery(document).ready(function ($) {
                 breakpoint: 1024,
                 settings: {
                     arrows: false,
-                    centerMode: true,
-                    centerPadding: '60px',
                     slidesToShow: 3
                 }
             },
@@ -29,8 +24,6 @@ jQuery(document).ready(function ($) {
                 breakpoint: 768,
                 settings: {
                     arrows: false,
-                    centerMode: true,
-                    centerPadding: '60px',
                     slidesToShow: 2
                 }
             },
@@ -38,8 +31,6 @@ jQuery(document).ready(function ($) {
             breakpoint: 480,
                 settings: {
                     arrows: false,
-                    centerMode: true,
-                    centerPadding: '50px',
                     slidesToShow: 1
                 }
             }
