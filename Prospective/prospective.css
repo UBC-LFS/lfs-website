@@ -26,3 +26,10 @@ h1.page-title {
     margin-left: 0;
     margin-bottom: 0;
 }
+#staff-profile  div.featured-person > a {
+    display:none;
+}
+#staff-profile  div.featured-person > a.prospective-profile-link {
+    display:inline-block;
+    text-decoration: none;
+}

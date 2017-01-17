@@ -23,6 +23,18 @@ jQuery(document).ready(function ($) {
             animated = true;
         }
     });
+
+    var profile_count = $("#staff-profile > div.span12 > .featured-person").length;
+    var index;
+    var profile_src;
+    var profile_id;
+    var profile_target;
+    for (index=0; index<profile_count; index++)
+    {
+        profile_target = document.getElementById("staff-profile").getElementsByClassName("span12")[0].getElementsByClassName("featured-person")[index].getElementsByTagName("a");
+        profile_src = $(profile_target[0]).attr("href");
+        $(profile_target[1]).attr("href", profile_src);
+    }
 });
 
 /*
