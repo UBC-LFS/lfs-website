@@ -13,7 +13,7 @@ jQuery(document).ready(function ($) {
     //animated scrolling
     var ranking_pos = $('#trigger-animation').offset().top;
     var animated = false;
-    var top_height_to_counter = $("#ranking-world").offset().top + $("#ranking-world").height()*3/4;
+    var top_height_to_counter = $("#ranking-world").offset().top;
     var test1 = $("#ranking-world").offset().top;
     var test2 = $(window).height();
     var test3 = $("#ranking-world").height()*3/4;
@@ -24,8 +24,9 @@ jQuery(document).ready(function ($) {
     console.log(window.pageYOffset + $(window).height());
     function count_down_detect() 
     {
-        var y_scroll_pos = window.pageYOffset + $(window).height();
-        if (y_scroll_pos > top_height_to_counter && !animated) 
+        var y_scroll_pos = window.pageYOffset + $(window).height() - $("#ranking-world").height()*2/4;
+        var y_scroll_pos2 = window.pageYOffset - $("#ranking-world").height()*2/4;
+        if (y_scroll_pos > top_height_to_counter &&  y_scroll_pos2 < top_height_to_counter && !animated) 
         {
             var rankingWorld = new CountUp('ranking-world', 100, 25);
             var rankingCanada = new CountUp('ranking-canada', 100, 2, 0, 3);
