@@ -34,4 +34,15 @@ jQuery(document).ready(function ($) {
             }
         })
     }
+
+    var profile_count = $("#undergrad-profile > div.featured-undergrad").length;
+    var index;
+    var profile_src;
+    var profile_target;
+    for (index=0; index<profile_count; index++)
+    {
+        profile_target = document.getElementById("undergrad-profile").getElementsByClassName("featured-undergrad")[index].getElementsByTagName("a");
+        profile_src = $(profile_target[0]).attr("href");
+        $(profile_target[1]).attr("href", profile_src);
+    }
 });

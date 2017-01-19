@@ -62,3 +62,14 @@ h1.page-title {
     50% { opacity:0; }
     100% { opacity:1; }
 }
+#undergrad-profile > div.featured-undergrad > a {
+    display: none;
+}
+#undergrad-profile > div.featured-undergrad > a.undergrad-profile-link {
+    display:inline-block;
+    text-decoration: none;
+}
+#undergrad-profile > div.featured-undergrad > a.undergrad-profile-link:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}

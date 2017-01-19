@@ -113,6 +113,11 @@ div.news > br,
 {
     display: inline-block;
 }
+#profile_slider > .slick-list > .slick-track > .slick-slide > a.profile_link:hover
+{
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
 #event_prev
 {
     position:absolute;

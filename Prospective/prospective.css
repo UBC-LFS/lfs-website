@@ -33,3 +33,7 @@ h1.page-title {
     display:inline-block;
     text-decoration: none;
 }
+#staff-profile  div.featured-person > a.prospective-profile-link:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}

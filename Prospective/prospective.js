@@ -10,22 +10,15 @@ jQuery(document).ready(function ($) {
         }
     }
   
+
     //animated scrolling
     var ranking_pos = $('#trigger-animation').offset().top;
     var animated = false;
     var top_height_to_counter = $("#ranking-world").offset().top;
-    var test1 = $("#ranking-world").offset().top;
-    var test2 = $(window).height();
-    var test3 = $("#ranking-world").height()*3/4;
-    console.log(top_height_to_counter);
-    console.log(test1);
-    console.log(test2);
-    console.log($("#ranking-world").height()/2);
-    console.log(window.pageYOffset + $(window).height());
     function count_down_detect() 
     {
-        var y_scroll_pos = window.pageYOffset + $(window).height() - $("#ranking-world").height()*2/4;
-        var y_scroll_pos2 = window.pageYOffset - $("#ranking-world").height()*2/4;
+        var y_scroll_pos = window.pageYOffset + $(window).height() - $("#ranking-world").height()*2/3;
+        var y_scroll_pos2 = window.pageYOffset - $("#ranking-world").height()*2/5;
         if (y_scroll_pos > top_height_to_counter &&  y_scroll_pos2 < top_height_to_counter && !animated) 
         {
             var rankingWorld = new CountUp('ranking-world', 100, 25);
@@ -37,17 +30,7 @@ jQuery(document).ready(function ($) {
     }
     count_down_detect();
     $(window).on('scroll',count_down_detect);
-    
-    // $(window).on('scroll', function () {
-    //     var y_scroll_pos = window.pageYOffset;
-    //     if (y_scroll_pos+200 > ranking_pos && !animated) {
-    //         var rankingWorld = new CountUp('ranking-world', 100, 25);
-    //         var rankingCanada = new CountUp('ranking-canada', 100, 2, 0, 3);
-    //         $('#ranking-world').scroll(rankingWorld.start());
-    //         $('#ranking-canada').scroll(rankingCanada.start());
-    //         animated = true;
-    //     }
-    // });
+
 
     var profile_count = $("#staff-profile > div.span12 > .featured-person").length;
     var index;
