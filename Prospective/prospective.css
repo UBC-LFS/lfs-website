@@ -37,3 +37,6 @@ h1.page-title {
     opacity: 0.5;
     filter: alpha(opacity=50);
 }
+.nav {
+    border-bottom: none;
+}

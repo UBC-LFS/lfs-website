@@ -73,17 +73,47 @@ $("#container").prepend($(".image-region"));
 </div>
 <div class="row-fluid border-bottom" id="staff-profile">
     <h2>Meet our students, faculty and staff</h2>
-    [loop query="posts_per_page=3&amp;category_name=featured-profile"] 
-        <div class="span4 featured-person" style="margin-top: 3%">
-            [link_with_content]
-            <a href="" class="prospective-profile-link">
-                [image_with_src img_class="featured-profiles"]
-                <h2 class="featured">[cf featured-name]</h2>
-                <h3 class="featured">[cf featured-program]</h3>
-                <p> [cf featured-blurb] <p>
-            </a>
-        </div>
-    [/loop]
+    [tabs]
+        [tab title="Faculty"]
+            [loop query="posts_per_page=3&amp;category_name=featured-profile"] 
+                <div class="span4 featured-person" style="margin-top: 3%">
+                    [link_with_content]
+                    <a href="" class="prospective-profile-link">
+                        [image_with_src img_class="featured-profiles"]
+                        <h2 class="featured">[cf featured-name]</h2>
+                        <h3 class="featured">[cf featured-program]</h3>
+                        <p> [cf featured-blurb] <p>
+                    </a>
+                </div>
+            [/loop]
+        [/tab]
+        [tab title="Students"]
+            [loop query="posts_per_page=3&amp;category_name=featured-undergrad"] 
+                <div class="span4 featured-person" style="margin-top: 3%">
+                    [link_with_content]
+                    <a href="" class="prospective-profile-link">
+                        [image_with_src img_class="featured-profiles"]
+                        <h2 class="featured">[cf featured-name]</h2>
+                        <h3 class="featured">[cf featured-program]</h3>
+                        <p> [cf featured-blurb] <p>
+                    </a>
+                </div>
+            [/loop]
+        [/tab]
+        [tab title="Alumni"]
+            [loop query="posts_per_page=3&amp;category_name=featured-alumni"] 
+                <div class="span4 featured-person" style="margin-top: 3%">
+                    [link_with_content]
+                    <a href="" class="prospective-profile-link">
+                        [image_with_src img_class="featured-profiles"]
+                        <h2 class="featured">[cf featured-name]</h2>
+                        <h3 class="featured">[cf featured-program]</h3>
+                        <p> [cf featured-blurb] <p>
+                    </a>
+                </div>
+            [/loop]
+        [/tab]
+    [/tabs]
     <div class="span12">
         <a class="btn explore-more" href="http://lfs-ps.sites.olt.ubc.ca/featured-profiles/">
             <span>EXPLORE MORE PROFILES <i class="icon-angle-right"></i></span>
