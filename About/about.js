@@ -10,8 +10,6 @@ jQuery(document).ready(function ($) {
 var y_scroll_pos = window.pageYOffset + $(window).height() - $(counter_target[0]).height()*4/7;
 var y_scroll_pos2 = window.pageYOffset - $(counter_target[1]).height()*2/7;
 var test1 = $(counter_target).height();
-console.log(test1);
-console.log(y_scroll_pos);
         if (y_scroll_pos > count_trigger && y_scroll_pos2 < count_trigger2 && !animated) {
             var undergraduate_students = new CountUp('undergraduate-students', 0, 1400, 0, 3);
             var graduate_students = new CountUp('graduate-students', 0, 150, 0, 3);
