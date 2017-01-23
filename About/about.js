@@ -4,7 +4,6 @@ jQuery(document).ready(function ($) {
     var counter_target = document.getElementById("count").getElementsByClassName("span12");
     var count_trigger = $(counter_target[0]).offset().top;
     var count_trigger2 = $(counter_target[1]).offset().top;
-    console.log(count_trigger);
     function count_detect()
     {
 var y_scroll_pos = window.pageYOffset + $(window).height() - $(counter_target[0]).height()*4/7;
