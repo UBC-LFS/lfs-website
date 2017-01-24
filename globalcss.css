@@ -140,6 +140,7 @@ p {
 }
 .border-bottom {
     border-bottom: 1px solid #b2c6d3;
+    padding-bottom: 30px;
 }
 .btn {
   font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;  
