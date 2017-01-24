@@ -79,6 +79,7 @@ p {
 .image-region {
     position: relative;
     margin-right: -15px;
+    margin-left: -15px;
 }
 @media screen and (max-width: 1200px) {
     .large-intro {
@@ -90,7 +91,7 @@ p {
         padding-top: 0px !important;
     }
     .image-region {
-    	margin-left: -20px;
+        margin-left: -20px;
     	margin-right: -20px !important;
     }
     .header-text {
@@ -105,6 +106,9 @@ p {
     }
     .large-intro {
         padding-left: 20px;
+    }
+    .full-width-container {
+    margin-left: 0px !important;
     }
 }
 @media screen and (max-width: 767px) {
@@ -130,9 +134,7 @@ p {
         padding-left: 15px;
     }
 }
-.full-width-container {
-    margin-left: 0px !important;
-}
+
 #container {
     padding-top: 0px !important;
 }
@@ -253,7 +255,7 @@ div.intro {
 }
 .back-to-top-link {
   margin-top: 1.8rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.6rem;
   display: inline-block;
 }
 .back-to-top {
