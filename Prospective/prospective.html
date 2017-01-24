@@ -8,17 +8,17 @@
     <div class="header-text">
         <div class="bound container">
             <div class="message">
-                 <p class="large-intro">Prospective Students</p>
+                <p class="large-intro">Prospective Students</p>
             </div>
         </div>
     </div>
 </div>
 <div id="main-content" class="container"></div>
 <script>
-$("div[role='main']").prepend($("#main-content"));
-$("#main-content").prepend($("#content"));
-$("#main-content").prepend($(".breadcrumb"));
-$("#container").prepend($(".image-region"));
+    $("div[role='main']").prepend($("#main-content"));
+    $("#main-content").prepend($("#content"));
+    $("#main-content").prepend($(".breadcrumb"));
+    $("#container").prepend($(".image-region"));
 </script>
 <div class="row-fluid">
     <div class="span4">
@@ -33,15 +33,15 @@ $("#container").prepend($(".image-region"));
 </div>
 <div class="row-fluid border-bottom" id="trigger-animation">
     <h3 style="margin-bottom: 3%">Founded in 1914, the UBC Faculty of Land and Food Systems has worked for over a century to address global issues surrounding
-        health and sustainable land and food systems. Today, our world faces unprecedented challenges of climate change,
-        population growth, food and nutrition insecurity, and water shortages, challenges that our researchers and students
-        are hard at work to solve. As one of the top 25 Life Sciences Schools in the world, the Faculty is uniquely positioned
-        to educate and empower the next generation of problem solvers.</h3>
+health and sustainable land and food systems. Today, our world faces unprecedented challenges of climate change, population
+growth, food and nutrition insecurity, and water shortages, challenges that our researchers and students are hard at work
+to solve. As one of the top 25 Life Sciences Schools in the world, the Faculty is uniquely positioned to educate and empower
+the next generation of problem solvers.</h3>
 </div>
 <div class="row-fluid border-bottom">
     <h2>Among the world's best</h2>
     <p>The Faculty of Land and Food Systems is ranked as one of the top ... </p>
-    <div class="span12 no-margin-left" >
+    <div class="span12 no-margin-left">
         <div class="span6">
             <div class="ranking-number" id="ranking-world">100</div>
             <div class="ranking-title">World</div>
@@ -59,22 +59,22 @@ $("#container").prepend($(".image-region"));
     <div class="span12">
         <div class="span2">
             <img style="width: auto; height: auto;" src="http://lfs-ps.sites.olt.ubc.ca/files/2016/11/13562115125_d4c47495af_z-266x400.jpg" alt="dean">
-        </div>
-        <div class="span10">
-            <h3 class="no-margin-top">Dr. Rickey Yada, Dean</h3>
-            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eum reprehenderit dolorem dicta repudiandae quasi cupiditate mollitia molestiae, natus, repellat sed quas veniam quam quos ad qui, dignissimos. Ab, sed?</span>
-            <span>Soluta sit iste et, hic, repudiandae incidunt eos dolor dolore vel ullam doloribus molestiae dolorem sunt aliquam sint pariatur aspernatur perspiciatis ea magnam alias nobis esse veniam! Hic error, distinctio.</span>
-            <span>Ab odio accusamus ut laudantium atque qui et, minus quidem officiis neque itaque mollitia vero aspernatur alias excepturi quos modi numquam labore, quisquam suscipit vel. Blanditiis, voluptates, fuga. Magnam, autem!</span>
-            <span>Ab, quo. Id dicta unde totam non similique laborum aspernatur repellat libero minima a, natus hic enim eos, iusto quod iure, voluptate delectus maxime. Facilis est possimus dolores unde? Minus.</span></p>
-        </div>
-    </div>
+</div>
+<div class="span10">
+    <h3 class="no-margin-top">Dr. Rickey Yada, Dean</h3>
+    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eum reprehenderit dolorem dicta repudiandae quasi cupiditate mollitia molestiae, natus, repellat sed quas veniam quam quos ad qui, dignissimos. Ab, sed?</span>
+        <span>Soluta sit iste et, hic, repudiandae incidunt eos dolor dolore vel ullam doloribus molestiae dolorem sunt aliquam sint pariatur aspernatur perspiciatis ea magnam alias nobis esse veniam! Hic error, distinctio.</span>
+        <span>Ab odio accusamus ut laudantium atque qui et, minus quidem officiis neque itaque mollitia vero aspernatur alias excepturi quos modi numquam labore, quisquam suscipit vel. Blanditiis, voluptates, fuga. Magnam, autem!</span>
+        <span>Ab, quo. Id dicta unde totam non similique laborum aspernatur repellat libero minima a, natus hic enim eos, iusto quod iure, voluptate delectus maxime. Facilis est possimus dolores unde? Minus.</span></p>
+</div>
+</div>
 </div>
 <div class="row-fluid border-bottom" id="staff-profile">
     <h2>Meet our students, faculty and staff</h2>
-    [tabs]
-        [tab title="Faculty"]
-            [loop query="posts_per_page=3&amp;category_name=featured-profile"] 
-                <div class="span4 featured-person" style="margin-top: 3%">
+    [tabs] 
+        [tab title="Faculty"] 
+            [loop query="posts_per_page=3&amp;category_name=featured-profile"]
+                <div class="span4 featured-person" style="margin-top: 3%"> 
                     [link_with_content]
                     <a href="" class="prospective-profile-link">
                         [image_with_src img_class="featured-profiles"]
@@ -83,11 +83,11 @@ $("#container").prepend($(".image-region"));
                         <p> [cf featured-blurb] <p>
                     </a>
                 </div>
-            [/loop]
-        [/tab]
-        [tab title="Students"]
-            [loop query="posts_per_page=3&amp;category_name=featured-undergrad"] 
-                <div class="span4 featured-person" style="margin-top: 3%">
+            [/loop] 
+        [/tab] 
+        [tab title="Students"] 
+            [loop query="posts_per_page=3&amp;category_name=featured-undergrad"]
+                <div class="span4 featured-person" style="margin-top: 3%"> 
                     [link_with_content]
                     <a href="" class="prospective-profile-link">
                         [image_with_src img_class="featured-profiles"]
@@ -96,11 +96,11 @@ $("#container").prepend($(".image-region"));
                         <p> [cf featured-blurb] <p>
                     </a>
                 </div>
-            [/loop]
-        [/tab]
-        [tab title="Alumni"]
-            [loop query="posts_per_page=3&amp;category_name=featured-alumni"] 
-                <div class="span4 featured-person" style="margin-top: 3%">
+            [/loop] 
+        [/tab] 
+        [tab title="Alumni"] 
+            [loop query="posts_per_page=3&amp;category_name=featured-alumni"]
+                <div class="span4 featured-person" style="margin-top: 3%"> 
                     [link_with_content]
                     <a href="" class="prospective-profile-link">
                         [image_with_src img_class="featured-profiles"]
@@ -109,24 +109,25 @@ $("#container").prepend($(".image-region"));
                         <p> [cf featured-blurb] <p>
                     </a>
                 </div>
-            [/loop]
-        [/tab]
+            [/loop] 
+        [/tab] 
     [/tabs]
-    <div class="span12">
-        <a class="btn explore-more" href="http://lfs-ps.sites.olt.ubc.ca/featured-profiles/">
-            <span>EXPLORE MORE PROFILES <i class="icon-angle-right"></i></span>
-        </a>
-    </div>
+<div class="span12">
+    <a class="btn explore-more" href="http://lfs-ps.sites.olt.ubc.ca/featured-profiles/">
+        <span>EXPLORE MORE PROFILES <i class="icon-angle-right"></i></span>
+    </a>
+</div>
 </div>
 <div class="row-fluid border-bottom">
     <h2>Outside the Classroom</h2>
-    <p>Explain concept of outside the classroom experiences as being changes to enhance your learning and overall development throughout your undergraduate degree…</p>
+    <p>Explain concept of outside the classroom experiences as being changes to enhance your learning and overall development
+        throughout your undergraduate degree…</p>
     <h2>Student Stories</h2>
     <p>Featured video??</p>
     <div class="span12 no-margin-left">
         <div class="span4">
             <h4>Experiential Learning Opportunities</h4>
-            </div>
+        </div>
         <div class="span4">
             <h4>Give Back</h4>
         </div>
@@ -137,7 +138,7 @@ $("#container").prepend($(".image-region"));
 </div>
 <div class="row-fluid border-bottom">
     <h2>Explore our programs</h2>
-    <div class="span12 no-margin-left" >
+    <div class="span12 no-margin-left">
         <div class="span4">
             <h3>Applied Biology</h3>
             <p>Interested in? </p>
@@ -157,9 +158,13 @@ $("#container").prepend($(".image-region"));
 </div>
 <div class="row-fluid border-bottom">
     <h2>Why UBC Vancouver?</h2>
-    <div class="span12 no-margin-left" >
+    <div class="span12 no-margin-left">
         <img src="http://lfs-ps.sites.olt.ubc.ca/files/2016/11/20089902805_7c5e1729d1_o.jpg">
-        <h3>The University of British Columbia's Vancouver campus is Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit est nulla minus quas, praesentium quod corporis blanditiis dolorum explicabo ipsam voluptas temporibus quae ut eveniet nihil. Ea molestias, impedit voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla cumque tempora odit mollitia veritatis beatae dignissimos, totam quidem excepturi facere at exercitationem officia aut. Neque dolorum temporibus voluptatum, illum dolores.</h3>
+        <h3>The University of British Columbia's Vancouver campus is Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Suscipit est nulla minus quas, praesentium quod corporis blanditiis dolorum explicabo ipsam voluptas temporibus
+            quae ut eveniet nihil. Ea molestias, impedit voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Nulla cumque tempora odit mollitia veritatis beatae dignissimos, totam quidem excepturi facere at exercitationem
+            officia aut. Neque dolorum temporibus voluptatum, illum dolores.</h3>
         <a class="btn explore-more no-margin-right" href="http://you.ubc.ca/ubc-life/vancouver/">
             <span>EXPLORE OUR CAMPUS <i class="icon-angle-right"></i></span>
         </a>
@@ -167,34 +172,46 @@ $("#container").prepend($(".image-region"));
 </div>
 <div class="row-fluid border-bottom">
     <h2>Admissions</h2>
-    <div class="span12 no-margin-left" >
+    <div class="span12 no-margin-left">
         <div class="span6">
             <h3>Admission Requirements</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quae voluptatem ad ut blanditiis reprehenderit, voluptatibus rerum alias dolor, porro quos soluta inventore aliquid nam perferendis similique atque recusandae nemo.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quae voluptatem ad ut blanditiis reprehenderit,
+                voluptatibus rerum alias dolor, porro quos soluta inventore aliquid nam perferendis similique atque recusandae
+                nemo.
+            </p>
             <a class="btn explore-more no-margin-right" href="https://www.ubc.ca/admissions/">
                 <span>ADMISSION REQUIREMENTS <i class="icon-angle-right"></i> </span>
             </a>
         </div>
         <div class="span6">
             <h3>Tuition</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam pariatur, quae at. Mollitia eaque sint aliquid voluptate qui ratione consectetur eligendi, aspernatur. Distinctio repellendus aliquam, omnis, aliquid facilis cumque sit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam pariatur, quae at. Mollitia eaque sint aliquid
+                voluptate qui ratione consectetur eligendi, aspernatur. Distinctio repellendus aliquam, omnis, aliquid facilis
+                cumque sit.</p>
             <a class="btn explore-more no-margin-right" href="http://you.ubc.ca/financial-planning">
                 <span>TUITION <i class="icon-angle-right"></i> </span>
             </a>
         </div>
     </div>
     <div class="span12 no-margin-left">
-        <h3>Contact Student Advising</h3>
-        <p>Burning questions about Land and Food Systems? Don't let your questions go unanswered. Contact our advisors to learn more. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ipsam iusto eligendi incidunt inventore velit quasi, ratione explicabo expedita, iste, consectetur rerum nesciunt doloribus omnis magnam cum dolores. Sed, pariatur.</p>
-        <a class="btn explore-more no-margin-right" href="https://account.you.ubc.ca/ubc/apply/apply_now.ezc">
-            <span>Contact Us <i class="icon-angle-right"></i></span>
-        </a>
-    </div>
-    <div class="span12 no-margin-left">
-        <h3>Apply Now</h3>
-        <p>Ready to apply? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure officiis, eveniet aliquid harum. Totam architecto aliquam necessitatibus placeat vero distinctio neque vitae, natus sapiente corrupti nesciunt. Molestiae accusamus quae in.</p>
-        <a class="btn explore-more no-margin-right" href="https://account.you.ubc.ca/ubc/apply/apply_now.ezc">
-            <span>APPLY NOW <i class="icon-angle-right"></i> </span>
-        </a>
+        <div class="span6">
+            <h3>Contact Student Advising</h3>
+            <p>Burning questions about Land and Food Systems? Don't let your questions go unanswered. Contact our advisors to
+                learn more. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ipsam iusto eligendi incidunt
+                inventore velit quasi, ratione explicabo expedita, iste, consectetur rerum nesciunt doloribus omnis magnam
+                cum dolores. Sed, pariatur.</p>
+            <a class="btn explore-more no-margin-right" href="https://account.you.ubc.ca/ubc/apply/apply_now.ezc">
+                <span>Contact Us <i class="icon-angle-right"></i></span>
+            </a>
+        </div>
+        <div class="span6">
+            <h3>Apply Now</h3>
+            <p>Ready to apply? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure officiis, eveniet aliquid harum.
+                Totam architecto aliquam necessitatibus placeat vero distinctio neque vitae, natus sapiente corrupti nesciunt.
+                Molestiae accusamus quae in.</p>
+            <a class="btn explore-more no-margin-right" href="https://account.you.ubc.ca/ubc/apply/apply_now.ezc">
+                <span>APPLY NOW <i class="icon-angle-right"></i> </span>
+            </a>
+        </div>
     </div>
 </div>
