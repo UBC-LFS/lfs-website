@@ -1,3 +1,34 @@
+.large-intro {
+    font-size: 350%;
+}
+@media screen and (max-width: 1200px) {
+    .large-intro {
+        font-size: 300%;
+    }
+}
+@media screen and (max-width: 979px) {
+    .large-intro {
+        padding-left: 20px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .large-intro {
+        font-size: 180%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .large-intro {
+        font-size: 110%;
+        padding-left: 20px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .large-intro {
+        font-size: 90%;
+        padding-left: 15px;
+    }
+}
+
 h5 {
     font-size: 130%;
     margin-top: 0;
