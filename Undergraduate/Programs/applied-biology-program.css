@@ -39,6 +39,12 @@ h1.page-title {
     .box {
         margin-bottom: 20px;
     }
+    #apply-sidebar > p {
+        font-size: 100%;
+    }
+    #apply-sidebar > h4 {
+        font-size: 17px;
+    }
 }
 /*978 - 979 --> width 245*/
 @media screen and (min-width: 767px) and (max-width: 978px) {
