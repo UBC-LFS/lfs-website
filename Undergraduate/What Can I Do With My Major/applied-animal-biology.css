@@ -1,7 +1,7 @@
-.page-toc {
+/*.page-toc {
   width: 250px;
   /*margin-left: 60px;*/
-}
+/*}*/
 
 .back-to-top-link > .back-to-top:after {
   content:' \1F869';
@@ -80,4 +80,19 @@
     #nav-relative {
         display: none;
     }
+}
+#nav-fixed {
+    width: 270px;
+}
+#nav-fixed a {
+  text-decoration: none;
+}
+#nav-fixed a:hover {
+  text-decoration: underline;
+}
+#nav-fixed > .sidebar-list > li {
+    font-size: 14px;
+}
+#nav-fixed > .back-to-top-link {
+    margin-bottom: 0px;
 }

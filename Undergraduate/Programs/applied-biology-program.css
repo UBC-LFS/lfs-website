@@ -19,7 +19,7 @@
 h1.page-title {
     display: none;
 }
-.sticky-nav {
+/*.sticky-nav {
     width:350px;
     max-width:350px;
 }
@@ -31,7 +31,7 @@ h1.page-title {
     .page-toc {
         padding: 1.2em 1em;
     }
-}
+}*/
 @media screen and (max-width: 767px) {
    .accordion-group > .accordion-heading {
         font-size:150%; 
@@ -39,7 +39,22 @@ h1.page-title {
     .box {
         margin-bottom: 20px;
     }
-  
+    #apply-sidebar {
+        width: inherit;
+    }
+}
+@media screen and (max-width: 1199px) {
+    #apply-sidebar {
+        width: 245px;
+    }
+    #apply-sidebar > p {
+        font-size: 104%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #apply-sidebar {
+        width: 325px;
+    }
 }
 .typed-cursor{
     opacity: 1;
@@ -72,4 +87,14 @@ h1.page-title {
 #undergrad-profile > div.featured-undergrad > a.undergrad-profile-link:hover {
     opacity: 0.5;
     filter: alpha(opacity=50);
+}
+#apply-sidebar {
+    margin-left: 0px;
+    max-width:350px;
+    /*width: 350px;*/
+    padding: 1.3em;
+}
+#apply-sidebar > h4 {
+    margin-top: 0px;
+    position: relative;
 }
