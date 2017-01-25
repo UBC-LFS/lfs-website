@@ -18,3 +18,14 @@ h1.page-title {
     color: #002145;
     background-image: none;
 }
+#peers-profile  div.featured-person > a {
+    display:none;
+}
+#peers-profile  div.featured-person > a.peers-profile-link {
+    display:inline-block;
+    text-decoration: none;
+}
+#peers-profile  div.featured-person > a.peers-profile-link:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
