@@ -57,15 +57,18 @@ $("#container").prepend($(".image-region"));
         </div>
     </div>
 </div>
-<div class="row-fluid border-bottom">
+<div class="row-fluid border-bottom" id="alumni-profile">
     <h2>Meet Our Alumni</h2>
     <div class="span12">
         [loop query="posts_per_page=3&amp;category_name=featured-alumni"] 
             <div class="span4 featured-person" style="margin-top: 3%">
-                [image_with_src img_class="featured-profiles"]
-                <h2 class="featured">[cf featured-name]</h2>
-                <h3 class="featured">[cf featured-program]</h3>
-                <p> [cf featured-blurb] <p>
+                [link_with_content]
+                <a href="" class="alumni-profile-link">
+                    [image_with_src img_class="featured-profiles"]
+                    <h2 class="featured">[cf featured-name]</h2>
+                    <h3 class="featured">[cf featured-program]</h3>
+                    <p> [cf featured-blurb] <p>
+                </a>
             </div>
         [/loop]
     </div>
