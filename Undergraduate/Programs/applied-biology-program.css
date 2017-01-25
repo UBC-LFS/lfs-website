@@ -39,21 +39,39 @@ h1.page-title {
     .box {
         margin-bottom: 20px;
     }
+}
+/*978 - 979 --> width 245*/
+@media screen and (min-width: 767px) and (max-width: 978px) {
     #apply-sidebar {
-        width: inherit;
+        width: 205px;
+    }
+    #apply-sidebar > p {
+        font-size: 100%;
+    }
+    #apply-sidebar > h4 {
+        font-size: 18px;
     }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 979px) and (max-width: 1200px) {
     #apply-sidebar {
         width: 245px;
     }
     #apply-sidebar > p {
-        font-size: 104%;
+        font-size: 100%;
+    }
+    #apply-sidebar > h4 {
+        font-size: 18px;
     }
 }
 @media screen and (min-width: 1200px) {
     #apply-sidebar {
         width: 325px;
+    }
+    #apply-sidebar > p {
+        font-size: 120%;
+    }
+    #apply-sidebar > h4 {
+        font-size: 20px;
     }
 }
 .typed-cursor{
@@ -90,11 +108,11 @@ h1.page-title {
 }
 #apply-sidebar {
     margin-left: 0px;
-    max-width:350px;
-    /*width: 350px;*/
     padding: 1.3em;
 }
 #apply-sidebar > h4 {
     margin-top: 0px;
-    position: relative;
+}
+#apply-sidebar > div {
+    text-align: center;
 }
