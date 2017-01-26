@@ -31,15 +31,25 @@ jQuery(document).ready(function ($) {
     count_down_detect();
     $(window).on('scroll',count_down_detect);
 
-    var profile_count = $("#Faculty-0 .featured-person").length;
+    //var profile_count = $("#Faculty-0 .featured-person").length;
+    var profile_count;
+    var tab_count = $('#staff-profile .tab-content > div').length;
     var index;
+    var index2;
     var profile_src;
     var profile_target;
-    for (index=0; index<profile_count; index++)
+    for (index2=0;index2<tab_count;index2++)
     {
-        profile_target = document.getElementById("Faculty-0").getElementsByClassName("featured-person")[index].getElementsByTagName("a");
-        profile_src = $(profile_target[0]).attr("href");
-        $(profile_target[1]).attr("href", profile_src);
+        profile_count = $('#staff-profile .tab-content > div.tab-pane:nth-of-type(' + (index2+1).toString() + ') div.featured-person').length;
+        for (index=0; index<profile_count; index++)
+        {
+            //profile_target = document.getElementById("Faculty-0").getElementsByClassName("featured-person")[index].getElementsByTagName("a");
+            //profile_src = $(profile_target[0]).attr("href");
+            profile_src = $('#staff-profile .tab-content > div.tab-pane:nth-of-type(' + (index2+1).toString() + ') div.featured-person:nth-of-type(' + (index+1).toString() + ') > a:nth-of-type(1)').attr("href");
+            //$(profile_target[1]).attr("href", profile_src);
+            $('#staff-profile .tab-content > div.tab-pane:nth-of-type(' + (index2+1).toString() + ') div.featured-person:nth-of-type(' + (index+1).toString() + ') > a:nth-of-type(2)').attr('href', profile_src);
+            console.log(profile_src);
+        }
     }
 });
 
