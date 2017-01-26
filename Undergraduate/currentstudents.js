@@ -10,7 +10,7 @@ jQuery(document).ready(function ($) {
         }
     }
 
-    var profile_count = $("#peers-profile > div.span12 > .featured-person").length;
+    var profile_count = $("#peers-profile .featured-person").length;
     var index;
     var profile_src;
     var profile_target;
