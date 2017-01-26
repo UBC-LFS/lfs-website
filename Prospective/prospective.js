@@ -10,7 +10,6 @@ jQuery(document).ready(function ($) {
         }
     }
   
-    var ranking_pos = $('#trigger-animation').offset().top;
     var animated = false;
     var top_height_to_counter = $("#ranking-world").offset().top;
     var test1 = $("#ranking-world").offset().top;
@@ -32,13 +31,13 @@ jQuery(document).ready(function ($) {
     count_down_detect();
     $(window).on('scroll',count_down_detect);
 
-    var profile_count = $("#staff-profile > div.span12 > .featured-person").length;
+    var profile_count = $("#Faculty-0 .featured-person").length;
     var index;
     var profile_src;
     var profile_target;
     for (index=0; index<profile_count; index++)
     {
-        profile_target = document.getElementById("staff-profile").getElementsByClassName("span12")[0].getElementsByClassName("featured-person")[index].getElementsByTagName("a");
+        profile_target = document.getElementById("Faculty-0").getElementsByClassName("featured-person")[index].getElementsByTagName("a");
         profile_src = $(profile_target[0]).attr("href");
         $(profile_target[1]).attr("href", profile_src);
     }
