@@ -5,7 +5,7 @@ jQuery(document).ready(function ($) {
         slidesToScroll:1,
         arrows: true,
         autoplay: false,
-        swipe: false,
+        swipe: true,
         prevArrow: $('.profile-prev'),
         nextArrow: $('.profile-next'),
         responsive: [

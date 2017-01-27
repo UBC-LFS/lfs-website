@@ -25,15 +25,9 @@ h3 {
   margin-left: 0 !important;
   margin-bottom: 10px !important;
 }
-
-@media screen and (max-width: 1200px) {
-    .large-intro {
-        font-size: 300%;
-    }
-}
-@media screen and (max-width: 767px) {
-    .next {
-        display: none;
+@media screen and (max-width: 300px) {
+    .box {
+        height: 70px;
     }
 }
 @media screen and (max-width: 480px) {
@@ -41,11 +35,21 @@ h3 {
         height: 120px;
     }
 }
-@media screen and (max-width: 300px) {
-    .box {
-        height: 70px;
+@media screen and (max-width: 768px) {
+    .next {
+        display: none;
     }
-    
+    .profile-control {
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .large-intro {
+        font-size: 300%;
+    }
+    div.entry-content > button.profile-control {
+        display: block;
+    }
 }
 .course-name {
     color: white;
@@ -157,7 +161,6 @@ div.entry-content > button.profile-control
     height: 100px;
     position: absolute;
     background-color: white;
-    display: block;
 }
 div.entry-content > button.profile-control > p
 {
