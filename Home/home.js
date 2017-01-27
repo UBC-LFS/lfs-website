@@ -108,16 +108,20 @@ jQuery(document).ready(function ($) {
     }
 
     var slide_profile_height;
+    var test3;
     function slick_profile_control()
     {
-        slide_profile_height = $('div#profile_slider').height();
+        slide_profile_height = $('#profile_slider').height();
         console.log(slide_profile_height);
+
         $('.profile-control').css('height', slide_profile_height + 'px');
+        test3 = $('#profile_slider_prev').height();
+        console.log(test3);
         $('#profile_slider_prev').css('left','0px');
         $('#profile_slider_next').css('right','0px');
     }
     
     slick_profile_control();
-    //$(window).on('resize', slick_profile_control);
+    $(window).on('resize', slick_profile_control);
     $('#profile_slider').on('resize', slick_profile_control);
 });
