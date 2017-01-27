@@ -34,18 +34,7 @@ jQuery(document).ready(function ($) {
             scrollTop: $("body").offset().top
         }, 800);
     });
-
-    // var main_image_width = $("#banner-image").width();
-    // var main_image_left_offset = $("#banner-image").offset().left;
-    // var main_image_bot_margin = $("#banner-image").outerHeight(true) - $("#banner-image").height();
-    // var sidebar_width = $("#nav-fixed").outerWidth();
-    // var sidebar_height = $("#nav-fixed").outerHeight();
-    // var sidebar_position_left = $("#banner-image").offset().left + $("#banner-image").width() - $("#nav-fixed").outerWidth();
-    // var sidebar_position_top = $("#banner-image").offset().top + $("#banner-image").outerHeight(true);
-    // var sidebar_position_top2 = $("#ubc7-unit-footer").offset().top - main_image_bot_margin - sidebar_height;
-    // var scroll_position1 = $("#banner-image").offset().top + $("#banner-image").outerHeight();
-    // var scroll_position2 = $("#ubc7-footer").offset().top - sidebar_height - main_image_bot_margin;
-
+    
     var main_image_width;
     var main_image_left_offset;
     var main_image_bot_margin;
