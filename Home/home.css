@@ -147,3 +147,30 @@ div.news > br,
 {
     position: relative;
 }
+div.entry-content > button.profile-control
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    background-color: white;
+    display: block;
+}
+div.entry-content > button.profile-control > p
+{
+    font-size: 125px;
+    color: #A8A8A8;
+}
+div.entry-content > button.profile-control:focus,
+#profile_slider .slick-slide > a:focus
+{
+    outline: 0;
+    border: 0;
+}
+#profile_slider > .slick-list.draggable
+{
+    padding: 0px 50px;
+}

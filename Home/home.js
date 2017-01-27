@@ -3,20 +3,23 @@ jQuery(document).ready(function ($) {
         infinite: true,
         slidesToShow: 5,
         slidesToScroll:1,
-        arrows: false,
+        arrows: true,
         autoplay: false,
+        swipe: false,
+        prevArrow: $('.profile-prev'),
+        nextArrow: $('.profile-next'),
         responsive: [
             {
                 breakpoint: 1750,
                 settings: {
-                    arrows: false,
+                    arrows: true,
                     slidesToShow: 4
                 }
             },
             {
                 breakpoint: 1024,
                 settings: {
-                    arrows: false,
+                    arrows: true,
                     slidesToShow: 3
                 }
             },
@@ -103,4 +106,18 @@ jQuery(document).ready(function ($) {
         profile_src = $(profile_selector_src).attr("href");
         $("#" + profile_name + " > .profile_link").attr("href", profile_src);
     }
+
+    var slide_profile_height;
+    function slick_profile_control()
+    {
+        slide_profile_height = $('div#profile_slider').height();
+        console.log(slide_profile_height);
+        $('.profile-control').css('height', slide_profile_height + 'px');
+        $('#profile_slider_prev').css('left','0px');
+        $('#profile_slider_next').css('right','0px');
+    }
+    
+    slick_profile_control();
+    //$(window).on('resize', slick_profile_control);
+    $('#profile_slider').on('resize', slick_profile_control);
 });
