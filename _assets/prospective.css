@@ -47,3 +47,21 @@ iframe {
     display: block;
     margin: auto;
 }
+#featured-faculty-toggle {
+    background-color: #1f385f;
+    color: white;
+}
+#featured-undergrad-toggle {
+    
+}
+#featured-alumni-toggle {
+    
+}
+#featured-faculty {
+}
+#featured-undergrad {
+    display: none;
+}
+#featured-alumni {
+    display: none;
+}

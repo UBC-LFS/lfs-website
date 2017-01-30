@@ -51,6 +51,10 @@ jQuery(document).ready(function ($) {
             console.log(profile_src);
         }
     }
+
+    function showFaculty() {
+        console.log("showFaculty function triggered");
+    }
 });
 
 /*
