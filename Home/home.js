@@ -112,16 +112,20 @@ jQuery(document).ready(function ($) {
     function slick_profile_control()
     {
         slide_profile_height = $('#profile_slider').height();
-        console.log(slide_profile_height);
-
-        $('.profile-control').css('height', slide_profile_height + 'px');
+        $('#profile_slider_prev').css('height', slide_profile_height + 'px');
+        $('#profile_slider_next').css('height', slide_profile_height + 'px');
         test3 = $('#profile_slider_prev').height();
+        console.log(slide_profile_height);
         console.log(test3);
         $('#profile_slider_prev').css('left','0px');
         $('#profile_slider_next').css('right','0px');
     }
+
+    function slick_profile_control_timeout()
+    {
+        setTimeout(slick_profile_control, 100);
+    }
     
-    slick_profile_control();
-    $(window).on('resize', slick_profile_control);
-    $('#profile_slider').on('resize', slick_profile_control);
+    slick_profile_control_timeout();
+    $(window).on('resize', slick_profile_control_timeout);
 });
