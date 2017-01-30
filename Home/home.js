@@ -121,9 +121,17 @@ jQuery(document).ready(function ($) {
         $('#profile_slider_next').css('right','0px');
     }
 
+    var featured_news_height;
+    function news_height_resize ()
+    {
+        featured_news_height = $('#news-1').height();
+        $('#nonfeatured-news').css('height',featured_news_height.toString() + 'px');
+    }
+
     function slick_profile_control_timeout()
     {
         setTimeout(slick_profile_control, 100);
+        news_height_resize();
     }
     
     slick_profile_control_timeout();
