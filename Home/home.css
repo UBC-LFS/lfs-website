@@ -277,3 +277,40 @@ html, body {
 #graduate-students	{
   background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2017/01/21350516794_072adaf75c_k-1.jpg");
 }
+.box {
+    background-size: cover;
+    height: 250px;
+}
+.center-box {
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+.box-name {
+    color: white;
+    text-align: center;
+}
+#nonfeatured-news {
+    max-height: 460px;
+    overflow-y: scroll;
+}
+#nonfeatured-news::-webkit-scrollbar {
+    width:5px;
+}
+#nonfeatured-news::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 4px rgba(0,0,0,0);
+    border-radius: 4px;
+}
+#nonfeatured-news::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    /*background: rgba(0,0,0,0);*/
+    background: #2f5d7c;
+    box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
+}
+/*#nonfeatured-news:hover::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: #2f5d7c;
+    box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
+}*/
