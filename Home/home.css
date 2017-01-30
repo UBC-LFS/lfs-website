@@ -25,6 +25,14 @@ h3 {
   margin-left: 0 !important;
   margin-bottom: 10px !important;
 }
+.box-name {
+    color: white;
+    text-align: center;
+}
+.box {
+    background-size: cover;
+    height: 250px;
+}
 @media screen and (max-width: 300px) {
     .box {
         height: 70px;
@@ -255,4 +263,14 @@ div.news > br,
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    padding: 0px 50px;
+}
+#prospective-students	{
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2017/01/21351453703_139d3a8334_k-1.jpg");
+}
+#current-students	{
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2017/01/21786334679_b7d212dac8_k-1.jpg");
+}
+#graduate-students	{
+  background-image: url("http://lfs-ps.sites.olt.ubc.ca/files/2017/01/21350516794_072adaf75c_k-1.jpg");
 }
