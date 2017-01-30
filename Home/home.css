@@ -293,6 +293,5 @@ html, body {
     text-align: center;
 }
 #nonfeatured-news {
-    max-height: 460px;
     overflow-y: scroll;
 }
