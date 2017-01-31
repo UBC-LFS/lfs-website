@@ -183,7 +183,11 @@ div.news > br,
     -ms-user-select: none;
     user-select: none;
 }
-#profile_slider_prev .arrow-animation
+/*#profile_slider_prev .arrow-animation
+{
+    margin: 0px 0px 0px 10px;
+}*/
+/*#profile_slider_prev .arrow-animation
 {
     margin-left: 10px;
     animation: removeShiftLeft 0.4s;
@@ -202,7 +206,7 @@ div.news > br,
 @keyframes removeShiftLeft {
     from {margin-left:  0px;}
     to {margin-left: 10px;}
-}
+}*/
 #profile_slider_next .arrow-animation
 {
     margin-left: 0px;
