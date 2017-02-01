@@ -165,13 +165,12 @@ div.news > br,
     width: 60px;
     position: absolute;
     background-color: white;
-    cursor: pointer;
 }
 #profile_slider .slick-list.draggable
 {
     padding: 0px 60px;
 }
-.profile-control .arrow-animation
+/*.profile-control .arrow-animation
 {
     display: table;
     height: inherit;
@@ -182,7 +181,126 @@ div.news > br,
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}*/
+.profile-control p.profile-arrow
+{
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 125px;
+    color: #A8A8A8;
+    /*animation: changeGrey 0.4s;
+    animation-timing-function: ease-out;*/
+    height: 125px; 
+    display: block;
+    line-height: 1;
+    margin: 0px;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 50px;
 }
+.profile-control > p
+{
+    color: #A8A8A8;
+    animation: changeGrey 0.4s;
+    animation-timing-function: ease-out;
+}
+.profile-control > p:hover
+{
+    color: #0680a6;
+    animation: changeBlue 0.4s;
+    animation-timing-function: ease-out;
+}
+@keyframes changeBlue {
+    from {color: #A8A8A8;}
+    to {color: #0680a6;}
+}
+@keyframes changeGrey {
+    from {color: #0680a6;}
+    to {color: #A8A8A8;}
+}
+#profile_slider_prev p.profile-arrow
+{
+    padding-left: 10px;
+    padding-right: 0px;
+    animation: removeShiftLeft 0.4s;
+    animation-timing-function: ease-out;
+}
+#profile_slider_prev p.profile-arrow:hover
+{
+    padding-left: 0px;
+    padding-right: 10px;
+    animation: shiftLeft 0.4s;
+    animation-timing-function: ease-out;
+}
+@keyframes shiftLeft {
+    from {padding-left: 10px;
+    padding-right: 0px;}
+    to{padding-left: 0px;
+    padding-right: 10px;}
+}
+@keyframes removeShiftLeft {
+    from {padding-left: 0px;
+    padding-right: 10px;}
+    to {padding-left: 10px;
+    padding-right: 0px;}
+}
+#profile_slider_next p.profile-arrow
+{
+    padding-left: 0px;
+    padding-right: 10px;
+    animation: removeShiftRight 0.4s;
+    animation-timing-function: ease-out;
+}
+#profile_slider_next p.profile-arrow:hover
+{
+    padding-left: 10px;
+    padding-right: 0px;
+    animation: shiftRight 0.4s;
+    animation-timing-function: ease-out;
+}
+@keyframes shiftRight {
+    from {padding-left: 0px;
+    padding-right: 10px;}
+    to{padding-left: 10px;
+    padding-right: 0px;}
+}
+@keyframes removeShiftRight {
+    from {padding-left: 10px;
+    padding-right: 0px;}
+    to {padding-left: 0px;
+    padding-right: 10px;}
+}
+/*.profile-control .profile-prev p
+{
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 125px;
+    color: #A8A8A8;
+    animation: changeGrey 0.4s;
+    animation-timing-function: ease-out;
+    height: 125px;
+    display: block;
+}
+.profile-control .profile-prev
+{
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 75px;
+}*/
 /*#profile_slider_prev .arrow-animation
 {
     margin: 0px 0px 0px 10px;
@@ -207,7 +325,7 @@ div.news > br,
     from {margin-left:  0px;}
     to {margin-left: 10px;}
 }*/
-#profile_slider_next .arrow-animation
+/*#profile_slider_next .arrow-animation
 {
     margin-left: 0px;
     animation: removeShiftRight 0.4s;
@@ -226,8 +344,8 @@ div.news > br,
 @keyframes removeShiftRight {
     from {margin-left:  10px;}
     to {margin-left: 0px;}
-}
-.profile-control .arrow-animation p
+}*/
+/*.profile-control .arrow-animation p
 {
     font-size: 125px;
     color: #A8A8A8;
@@ -235,8 +353,8 @@ div.news > br,
     vertical-align: middle;
     animation: changeGrey 0.4s;
     animation-timing-function: ease-out;
-}
-.profile-control:hover .arrow-animation p
+}*/
+/*.profile-control:hover .arrow-animation p
 {
     color: #0680a6;
     animation: changeBlue 0.4s;
@@ -249,12 +367,12 @@ div.news > br,
 @keyframes changeGrey {
     from {color: #0680a6;}
     to {color: #A8A8A8;}
-}
-.profile-control:active .arrow-animation p
+}*/
+/*.profile-control:active .arrow-animation p
 {
     color: #2f5d7c;
-}
-.profile-control:focus,
+}*/
+.profile-arrow:focus,
 #profile_slider .slick-slide a:focus
 {
     outline: 0;
