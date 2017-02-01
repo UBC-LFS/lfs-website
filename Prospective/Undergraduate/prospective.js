@@ -33,22 +33,31 @@ jQuery(document).ready(function ($) {
 
     //var profile_count = $("#Faculty-0 .featured-person").length;
     var profile_count;
-    var tab_count = $('#staff-profile .tab-content > div').length;
+    var tab_count = $('#staff-profile > div.featured-group').length;
     var index;
-    var index2;
+    var indexj;
     var profile_src;
     var profile_target;
-    for (index2=0;index2<tab_count;index2++)
+    console.log("tab count:" + tab_count);
+    //profile_count = $('#staff-profile div.featured:nth-of-type(1) div.featured-person').length;
+    //console.log(profile_count);
+    for (indexj=0;indexj<tab_count;indexj++)
     {
-        profile_count = $('#staff-profile .tab-content > div.tab-pane:nth-of-type(' + (index2+1).toString() + ') div.featured-person').length;
+        profile_count = document.getElementById('staff-profile').getElementsByClassName('featured-group')[indexj].getElementsByClassName('featured-person').length;
+        console.log(profile_count);
+        //profile_count = $('#staff-profile .tab-content > div.tab-pane:nth-of-type(' + (indexj+1).toString() + ') div.featured-person').length;
+        //console.log(indexj);
+        // profile_count = $('#staff-profile > div.featured:nth-of-type(' + (indexj+1).toString() + ') .featured-person').length;
+        // console.log(profile_count);
         for (index=0; index<profile_count; index++)
         {
-            //profile_target = document.getElementById("Faculty-0").getElementsByClassName("featured-person")[index].getElementsByTagName("a");
-            //profile_src = $(profile_target[0]).attr("href");
-            profile_src = $('#staff-profile .tab-content > div.tab-pane:nth-of-type(' + (index2+1).toString() + ') div.featured-person:nth-of-type(' + (index+1).toString() + ') > a:nth-of-type(1)').attr("href");
-            //$(profile_target[1]).attr("href", profile_src);
-            $('#staff-profile .tab-content > div.tab-pane:nth-of-type(' + (index2+1).toString() + ') div.featured-person:nth-of-type(' + (index+1).toString() + ') > a:nth-of-type(2)').attr('href', profile_src);
+            profile_src = document.getElementById('staff-profile').getElementsByClassName('featured-group')[indexj].getElementsByClassName('featured-person')[index].getElementsByTagName('a')[0].href;
             console.log(profile_src);
+            document.getElementById('staff-profile').getElementsByClassName('featured-group')[indexj].getElementsByClassName('featured-person')[index].getElementsByTagName('a')[1].setAttribute('href',profile_src);
+            
+            // profile_src = $('#staff-profile > div.featured:nth-of-type(' + (indexj+1).toString() + ') .featured-person:nth-of-type(' + (index+1).toString() + ') > a:nth-of-type(1)').attr('href');
+            // $('#staff-profile > .featured:nth-of-type(' + (indexj+1).toString() + ') .featured-person:nth-of-type(' + (index+1).toString() + ') > a:nth-of-type(2)').attr('href', profile_src);
+            //console.log(profile_src);
         }
     }
 
