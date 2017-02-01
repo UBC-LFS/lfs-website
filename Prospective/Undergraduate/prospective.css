@@ -1,0 +1,42 @@
+.ranking-number {
+    text-align: center;
+    font-size: 6em;
+    line-height: 1.2em;
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+    color: #002145;
+}
+.ranking-title {
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+    color: #002145;
+}
+.source {
+    text-align: center;
+    font-size: 0.7em;
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+    color: #002145;
+}
+h1.page-title {
+    display: none;
+}
+#span12-0 {
+    margin-left: 0;
+    margin-bottom: 0;
+}
+#staff-profile  div.featured-person > a {
+    display:none;
+}
+#staff-profile  div.featured-person > a.prospective-profile-link {
+    display:inline-block;
+    text-decoration: none;
+}
+#staff-profile  div.featured-person > a.prospective-profile-link:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.nav {
+    border-bottom: none;
+}
