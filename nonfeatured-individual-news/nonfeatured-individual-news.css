@@ -4,20 +4,20 @@
 div.recent-news {
     min-height: 125px;
 }
-a {
+#recent-news-bar a {
   display:none;
 }
-a.recent-news-link {
+#recent-news-bar a.recent-news-link {
   display:block;
   text-decoration: none;
   height: inherit;
 }
-hr {
+#recent-news-bar hr {
     margin: 0px;
 }
-p {
+#recent-news-bar p {
     display: none;
 }
-p.news-paragraph {
+#recent-news-bar p.news-paragraph {
     display: block;
 }
