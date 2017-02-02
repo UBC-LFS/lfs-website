@@ -115,8 +115,6 @@ jQuery(document).ready(function ($) {
         $('#profile_slider_prev').css('height', slide_profile_height + 'px');
         $('#profile_slider_next').css('height', slide_profile_height + 'px');
         test3 = $('#profile_slider_prev').height();
-        console.log(slide_profile_height);
-        console.log(test3);
         $('#profile_slider_prev').css('left','0px');
         $('#profile_slider_next').css('right','0px');
     }
