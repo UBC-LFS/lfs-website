@@ -1,0 +1,23 @@
+#recent-news-bar {
+ overflow-y: scroll;
+}
+div.recent-news {
+    min-height: 125px;
+}
+a {
+  display:none;
+}
+a.recent-news-link {
+  display:block;
+  text-decoration: none;
+  height: inherit;
+}
+hr {
+    margin: 0px;
+}
+p {
+    display: none;
+}
+p.news-paragraph {
+    display: block;
+}
