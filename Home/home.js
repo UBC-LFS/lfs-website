@@ -128,6 +128,13 @@ jQuery(document).ready(function ($) {
 
     slick_profile_control();
     news_height_resize();
-    $(window).on('resize', slick_profile_control);
-    $(window).on('resize', news_height_resize);
+
+    function function_timeout()
+    {
+        setTimeout(slick_profile_control, 100);
+        setTimeout(news_height_resize, 100);
+    }
+
+    $(window).on('resize', function_timeout);
+    
 });
