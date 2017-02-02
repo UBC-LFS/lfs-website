@@ -56,11 +56,14 @@ jQuery(document).ready(function ($) {
     var scroll_position1;
     var scroll_position2;
     var test1;
+    var test2;
+    var test3;
+    var test4;
+    var window_offset;
 
     function check_window_size()
     {
         var window_size = $(window).width();
-        var temp_content_width;
         if (window_size > 766){
             return true;
         }
@@ -71,36 +74,34 @@ jQuery(document).ready(function ($) {
 
     function sidebar_resize()
     {
-        if (check_window_size())
-        {
-            // body_text_content_offset_top = $("#body-text-content").offset().top;
-            body_text_content_offset_left = $("#body-text-content").offset().left;
-            sidebar_width = $("#apply-sidebar").outerWidth();
-            sidebar_test = $("#test_width").outerWidth();
-            apply_sidebar_position_top = $("#body-text-content").offset().top;
-            apply_sidebar_position_top_gap = $("#body-text-content").offset().top - $("#main-content").offset().top;
-            apply_sidebar_position_bot = $("#ubc7-footer").offset().top - apply_sidebar_position_top_gap - $("#apply-sidebar").outerHeight();
-            scroll_position1 = $("#body-text-content").offset().top - apply_sidebar_position_top_gap;
-            scroll_position2 = $("#ubc7-footer").offset().top - $("#apply-sidebar").outerHeight() - apply_sidebar_position_top_gap - apply_sidebar_position_top_gap;
-            apply_sidebar_position_left = $(window).width() - $("#body-text-content").offset().left - $("#apply-sidebar").outerWidth();
-            test1 = $(window).width() - $("#apply-sidebar").offset().left - $("#apply-sidebar").outerWidth();
-            //console.log(sidebar_width);
-            //console.log(sidebar_test);
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        body_text_content_offset_left = $("#body-text-content").offset().left;
+        sidebar_width = $("#apply-sidebar").outerWidth();
+        sidebar_test = $("#test_width").outerWidth();
+        apply_sidebar_position_top = $("#body-text-content").offset().top;
+        apply_sidebar_position_top_gap = $("#body-text-content").offset().top - $("#main-content").offset().top;
+        apply_sidebar_position_bot = $("#ubc7-footer").offset().top - apply_sidebar_position_top_gap - $("#apply-sidebar").outerHeight();
+        scroll_position1 = $("#body-text-content").offset().top - apply_sidebar_position_top_gap;
+        scroll_position2 = $("#ubc7-footer").offset().top - $("#apply-sidebar").outerHeight() - apply_sidebar_position_top_gap - apply_sidebar_position_top_gap;
+        apply_sidebar_position_left = $(window).width() - $("#body-text-content").offset().left - $("#apply-sidebar").outerWidth();
+        test1 = $(window).width() - $("#apply-sidebar").offset().left - $("#apply-sidebar").outerWidth();
     }
 
     function sidebar_position()
     {
-        sidebar_resize();
+        var temp_size;
+        var apply_sidebar_padding;
+        var windowtosizebar_margin;
+        var window_size = $(window).width();
         var y_scroll_pos = window.pageYOffset;
-        // console.log(y_scroll_pos);
-        if (sidebar_resize())
+        if (window_size > 766)
         {
+            sidebar_resize();
+            test2 = $("#ubc7-footer").offset().top;
+            test3 = $("#apply-sidebar").outerHeight();
+            console.log(test2 + " ubc footer");
+            console.log(test3 + " sidebar height");
+            console.log(apply_sidebar_position_top_gap + " pos top gap");
+            console.log(scroll_position2 + " footer top");
             if (y_scroll_pos <= scroll_position1)
             {
                 $("#apply-sidebar").css("position", "absolute");
@@ -123,13 +124,17 @@ jQuery(document).ready(function ($) {
         else
         {
             $("#apply-sidebar").css("position", "static");
+            windowtosizebar_margin = $(window).width() - $(".row-fluid #body-text-content").width();
+            apply_sidebar_padding = $("#apply-sidebar").outerWidth() - $("#apply-sidebar").width();
+            temp_size = $("div.entry-content > div.row-fluid").width() - apply_sidebar_padding;
+            $("#apply-sidebar").attr("style", "width: " + temp_size + ";");
+            console.log("true");
         }
-        console.log(body_text_content_offset_left);
-        console.log(test1);
-    };
+    }
     sidebar_position();
 
   $(window).on('scroll', sidebar_position);
   $(window).on('resize', sidebar_position);
-  $('#apply-sidebar').on('resize', sidebar_position);
+  //$('#apply-sidebar').on('resize', sidebar_position);
+  
 });
