@@ -115,8 +115,6 @@ jQuery(document).ready(function ($) {
         $('#profile_slider_prev').css('height', slide_profile_height + 'px');
         $('#profile_slider_next').css('height', slide_profile_height + 'px');
         test3 = $('#profile_slider_prev').height();
-        console.log(slide_profile_height);
-        console.log(test3);
         $('#profile_slider_prev').css('left','0px');
         $('#profile_slider_next').css('right','0px');
     }
@@ -130,6 +128,13 @@ jQuery(document).ready(function ($) {
 
     slick_profile_control();
     news_height_resize();
-    $(window).on('resize', slick_profile_control);
-    $(window).on('resize', news_height_resize);
+
+    function function_timeout()
+    {
+        setTimeout(slick_profile_control, 100);
+        setTimeout(news_height_resize, 100);
+    }
+
+    $(window).on('resize', function_timeout);
+    
 });
