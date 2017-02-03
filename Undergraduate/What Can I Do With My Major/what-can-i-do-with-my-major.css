@@ -126,3 +126,7 @@
   line-height: 40px;
   background-color: #f9f9f9;
 }
+
+.accordion-group a:hover {
+  background-color: rgba(12, 35, 68, 1);
+}
