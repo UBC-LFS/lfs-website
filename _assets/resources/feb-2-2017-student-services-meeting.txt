@@ -10,12 +10,13 @@ Undergraduate
 - meet your peers mixture of staff/students/faculty
 
 What Can I Do With My Major 
-- 
+- remove accordions
 
 What Can I Do With My Major / Major 
 - 
 
 Program 
+- 
 
 Program / Major
 - Move Welcome to UBC's Vancouver Campus to Prospective Student Vencouver Campus
@@ -41,4 +42,3 @@ Student Services
 - FAQ Page
 - Welcoming and friendly face
 - campus map
--
