@@ -20,4 +20,46 @@ jQuery(document).ready(function ($) {
         profile_src = $(profile_target[0]).attr("href");
         $(profile_target[1]).attr("href", profile_src);
     }
+
+    var profile_random_arr = [];
+    var profile_random_arr_count = 0;
+    var i;
+    var j;
+    var k;
+    var profile_index;
+    var no_repeat;
+    var profile_select;
+    for (i=0;i<3;i++)
+    {
+        no_repeat = true;
+        profile_index = Math.floor(Math.random() * profile_count) + 1;
+        if (profile_random_arr_count > 0)
+        {
+            for (j=0;j<profile_random_arr_count;j++)
+            {
+                if (profile_index === profile_random_arr[j])
+                {
+                    no_repeat = false;
+                    break;
+                }
+            }
+        }
+        if (no_repeat === true)
+        {
+            profile_random_arr.push(profile_index);
+            profile_random_arr_count++;
+            console.log(profile_random_arr[profile_random_arr_count - 1]);
+        }
+        else
+        {
+            i--;
+        }
+    }
+    
+    console.log(profile_count);
+
+    for(k=0;k<3;k++)
+    {
+        //profile_select = document.getElementById('peers-profile').get
+    }
 });
