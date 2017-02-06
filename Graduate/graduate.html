@@ -76,11 +76,17 @@ $("#container").prepend($(".image-region"));
 <div class="row-fluid">
     <div class="span12">
         <div class="span8">
-            <h2>Calendar of Doctoral Defenses</h2>
+            <h3>Calendar of Doctoral Defenses</h3>
             [eo_fullcalendar event_category="grad-doctoral-defense"]
         </div>
         <div class="span4">
-            <h2>Recent Doctoral Defenses</h2>
+            <h3>Recent Doctoral Dissertations</h3>
+            <ul>
+                [loop query="posts_per_page=2&amp;category_name=dissertation"]
+                    <li>[link_with_content]</li>
+                [/loop]
+            </ul>
+            
         </div>
     </div>
 </div>
