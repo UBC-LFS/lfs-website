@@ -50,4 +50,5 @@ jQuery(document).ready(function ($) {
         $('#peers-profile .featured-person').eq(profile_random_arr[k]).wrap(span4_tag).css('display','block');
     }
     $('#peers-profile .span4.display_block').eq(0).css('margin-left','0px');
+    $('#peers-profile > div.span12').css('margin-left','0px');
 });
