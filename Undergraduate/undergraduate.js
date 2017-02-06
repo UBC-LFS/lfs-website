@@ -1,15 +1,4 @@
 jQuery(document).ready(function ($) {
-    $( ".featured-person" ).each(function(index) {
-         $( this ).addClass("index-" + Math.floor(index/3));
-    });
-    var numberOfProfiles = $('.featured-person').length;
-    var span12 = '<div class="span12" style="margin-left: 0;"></div>';
-    for (i=0; i<=numberOfProfiles; i++) {
-        if (i%3===0) {
-            $('.index-' + Math.floor(i/3)).wrapAll(span12);
-        }
-    }
-
     var profile_count = $("#peers-profile .featured-person").length;
     var index;
     var profile_src;
@@ -32,7 +21,7 @@ jQuery(document).ready(function ($) {
     for (i=0;i<3;i++)
     {
         no_repeat = true;
-        profile_index = Math.floor(Math.random() * profile_count) + 1;
+        profile_index = Math.floor(Math.random() * profile_count);
         if (profile_random_arr_count > 0)
         {
             for (j=0;j<profile_random_arr_count;j++)
@@ -48,18 +37,17 @@ jQuery(document).ready(function ($) {
         {
             profile_random_arr.push(profile_index);
             profile_random_arr_count++;
-            console.log(profile_random_arr[profile_random_arr_count - 1]);
         }
         else
         {
             i--;
         }
     }
-    
-    console.log(profile_count);
 
+    var span4_tag = '<div class="span4 display_block"></div>';
     for(k=0;k<3;k++)
     {
-        //profile_select = document.getElementById('peers-profile').get
+        $('#peers-profile .featured-person').eq(profile_random_arr[k]).wrap(span4_tag).css('display','block');
     }
+    $('#peers-profile .span4.display_block').eq(0).css('margin-left','0px');
 });
