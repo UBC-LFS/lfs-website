@@ -51,4 +51,16 @@ jQuery(document).ready(function ($) {
     }
     $('#peers-profile .span4.display_block').eq(0).css('margin-left','0px');
     $('#peers-profile > div.span12').css('margin-left','0px');
+
+    var data_dismiss_value;
+    var alert_dismiss_count = $('.alert-dismissable > .close').length;
+    var l;
+    for (l=0;l<alert_dismiss_count;l++)
+    {
+        $('.alert-dismissable > .close').click(remove_alert);
+    }
+    function remove_alert() {
+        data_dismiss_value = $(this).attr('data-dismiss');
+        $(this).parents('div.alert-dismissable.' + data_dismiss_value).eq(0).remove(); // removes first parent
+    }
 });
