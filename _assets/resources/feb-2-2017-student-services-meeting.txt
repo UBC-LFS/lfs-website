@@ -6,11 +6,11 @@ Prospective
 - access & diversity? 
 
 Undergraduate
-- links to APBI, FNH, GRS at the top 
-- meet your peers mixture of staff/students/faculty
+- links to APBI, FNH, GRS at the top ✓
+- meet your peers mixture of staff/students/faculty ✓
 
 What Can I Do With My Major 
-- remove accordions
+- remove accordions ✓
 
 What Can I Do With My Major / Major 
 - 
@@ -19,10 +19,10 @@ Program
 - 
 
 Program / Major
-- Move Welcome to UBC's Vancouver Campus to Prospective Student Vencouver Campus
+- Move Welcome to UBC's Vancouver Campus to Prospective Student Vencouver Campus ✓
 
 Build My Career
-- change to LFS ACE Team
+- change to LFS ACE Team 
 - Go Global
 - profiles first, links after (switch order)
 - student testamonials that switch 
