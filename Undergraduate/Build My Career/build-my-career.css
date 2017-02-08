@@ -16,7 +16,7 @@ h1.page-title {
     opacity: 0.5;
     filter: alpha(opacity=50);
 }
-.slick-dots li button {
+#student_testimonial .slick-dots li button {
     font-size: 0;
     line-height: 0;
     display: block;
@@ -29,11 +29,11 @@ h1.page-title {
     outline: none;
     background: transparent;
 }
-.slick-dots li.slick-active button:before {
+#student_testimonial .slick-dots li.slick-active button:before {
     opacity: .75;
     color: black;
 }
-.slick-dots li button:before {
+#student_testimonial .slick-dots li button:before {
     font-family: 'slick';
     font-size: 25px;
     line-height: 20px;
@@ -49,7 +49,7 @@ h1.page-title {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.slick-dots li {
+#student_testimonial .slick-dots li {
     position: relative;
     display: inline-block;  /* removes the dots */
     width: 20px;
