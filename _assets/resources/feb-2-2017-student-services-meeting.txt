@@ -22,13 +22,13 @@ Program / Major
 - Move Welcome to UBC's Vancouver Campus to Prospective Student Vencouver Campus ✓
 
 Build My Career
-- change to LFS ACE Team 
+- change to LFS ACE Team ✓
 - Go Global
-- profiles first, links after (switch order)
-- student testamonials that switch 
+- profiles first, links after (switch order) ✓
+- student testamonials that switch (in progress...)
 - what's your kryptonite?
-- profiles/opportunities/resources
-    -put ACE under resources section
+- profiles/opportunities/resources ✓
+    -put ACE under resources section ✓
 - centre for student involvement and resources
 - connect student experiences in their classroom to career building
 
