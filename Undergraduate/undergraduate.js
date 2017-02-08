@@ -61,6 +61,7 @@ jQuery(document).ready(function ($) {
     }
     function remove_alert() {
         data_dismiss_value = $(this).attr('data-dismiss');
+        //$(this).parents('div.alert-dismissable.' + data_dismiss_value).eq(0).animate({opacity:'0'}, 1000);
         $(this).parents('div.alert-dismissable.' + data_dismiss_value).eq(0).remove(); // removes first parent
     }
 });
