@@ -9,16 +9,6 @@ jQuery(document).ready(function ($) {
         nextArrow: $('.student_testimonial_next')
     })
 
-    var dots_width;
-    var dots_count = $('#student_testimonial > ul.slick-dots > li').length;
-    function student_testimonial_sizing()
-    {
-        dots_width = $('#student_testimonial > ul.slick-dots > li').outerWidth(true) * dots_count;
-        $('#student_testimonial > ul.slick-dots').css('width',dots_width+'px').css('margin','0px auto');
-    }
-
-    student_testimonial_sizing();
-
     var profile_count = $("#alumni-profile .featured-person").length;
     var index;
     var profile_src;

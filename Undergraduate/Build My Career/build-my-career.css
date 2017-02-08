@@ -68,3 +68,9 @@ h1.page-title {
 #student_testimonial {
     padding: 30px;
 }
+#student_testimonial > ul.slick-dots {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+}
