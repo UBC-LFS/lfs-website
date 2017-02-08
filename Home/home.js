@@ -129,6 +129,8 @@ jQuery(document).ready(function ($) {
     slick_profile_control();
     news_height_resize();
 
+    //function 
+
     function function_timeout()
     {
         setTimeout(slick_profile_control, 100);
@@ -137,4 +139,9 @@ jQuery(document).ready(function ($) {
 
     $(window).on('resize', function_timeout);
     
+    
+    var event_width;
+    event_width = $('#upcoming-events div.slick-list li.slick-slide').width();
+    $('#upcoming-events div.slick-list div.slick-track').css('height', event_width+'px');
+
 });
