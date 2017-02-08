@@ -51,7 +51,7 @@ h1.page-title {
 }
 .slick-dots li {
     position: relative;
-    display: inline-block;
+    display: inline-block;  /* removes the dots */
     width: 20px;
     height: 20px;
     margin: 0 5px;
@@ -64,4 +64,7 @@ h1.page-title {
 #student_testimonial .slick-list .slick-slide > h2 {
     float: right;
     margin-right: 200px;
+}
+#student_testimonial {
+    padding: 30px;
 }
