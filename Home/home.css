@@ -304,6 +304,8 @@ html, body {
 #upcoming-events div.slick-list li.slick-slide {
     margin: 0px;
     display: table;
+    outline: 0;
+    border: 0;
 }
 #upcoming-events div.slick-list li.slick-slide div.event-vertical-center-wrap {
     display: table-cell;
