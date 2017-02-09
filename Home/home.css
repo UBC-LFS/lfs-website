@@ -318,11 +318,29 @@ html, body {
     margin: 0px;
     display: table;
 }
-#upcoming-events div.slick-list li.slick-slide > div.event-wrap {
+#upcoming-events div.slick-list li.slick-slide div.event-vertical-center-wrap {
     display: table-cell;
     vertical-align: middle;
     overflow: hidden
 }
-#upcoming-events div.slick-list li.slick-slide img:hover {
+/*#upcoming-events div.slick-list li.slick-slide img:hover {
     transform: scale(1.1);
+}*/
+#upcoming-events div.slick-list li.slick-slide .event-vertical-center-wrap .event-wrap {
+    position: relative;
 }
+#upcoming-events div.slick-list li.slick-slide .event-vertical-center-wrap .event-hover {
+    position: absolute; /* not sure: this element responds to element with position relative, even if element is not direct parent */
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+/*#upcoming-events div.slick-list li.slick-slide .event-vertical-center-wrap .event-hover:hover {
+    background-color: black;
+    opacity: 0.5;
+}*/
+/*#upcoming-events div.slick-list li.slick-slide .event-image img {
+
+}*/

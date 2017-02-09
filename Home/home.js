@@ -143,5 +143,4 @@ jQuery(document).ready(function ($) {
     var event_width;
     event_width = $('#upcoming-events div.slick-list li.slick-slide').width();
     $('#upcoming-events div.slick-list div.slick-track').css('height', event_width+'px');
-
 });
