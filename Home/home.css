@@ -329,6 +329,7 @@ html, body {
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     transition: opacity .4s;
+    text-decoration: none;
 }
 #upcoming-events div.slick-list li.slick-slide .event-vertical-center-wrap .event-wrap:hover > .event-hover {
     opacity: 1;
@@ -343,10 +344,6 @@ html, body {
 #upcoming-events div.slick-list li.slick-slide .event-wrap:hover > .event-image > img {
     transform: scale(1.1);
 }
-/*#upcoming-events .slick-list .slick-slide .event-wrap .event-hover .event-title {
-    height: 50%;
-    position: relative;
-}*/
 #upcoming-events .slick-list .slick-slide .event-wrap .event-hover .event-title,
 #upcoming-events .slick-list .slick-slide .event-wrap .event-hover .event-date {
     height: 50%;
@@ -360,8 +357,6 @@ html, body {
     left: 20%;
     position: absolute;
     z-index: 2;
-    /*margin-left: 20%;
-    margin-top: 10%;*/
 }
 #upcoming-events .slick-list .slick-slide .event-wrap .event-hover h2,
 #upcoming-events .slick-list .slick-slide .event-wrap .event-hover h3 {
