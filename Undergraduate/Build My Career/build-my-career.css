@@ -58,13 +58,13 @@ h1.page-title {
     padding: 0;
     cursor: pointer;
 }
-#student_testimonial .slick-list .slick-slide > p {
+/*#student_testimonial .slick-list .slick-slide > p {
     margin: 0 200px;
 }
 #student_testimonial .slick-list .slick-slide > h2 {
     float: right;
     margin-right: 200px;
-}
+}*/
 #student_testimonial {
     padding: 30px;
 }
@@ -77,4 +77,48 @@ h1.page-title {
 #student_testimonial .slick-slide {
     outline: 0;
     border: 0;
+}
+@media screen and (max-width: 480px) {
+    #student_testimonial {
+        padding: 15px;
+    }
+    #student_testimonial .slick-list .slick-slide > p {
+        margin: 0px;
+        font-size: 103%;
+        text-align: justify;
+    }
+    #student_testimonial .slick-list .slick-slide > h2 {
+        font-size: 25px;
+        float: right;
+        margin-right: 0px;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    #student_testimonial .slick-list .slick-slide > p {
+        margin: 0px;
+        font-size: 120%;
+    }
+    #student_testimonial .slick-list .slick-slide > h2 {
+        float: right;
+        margin-right: 0px;
+        font-size: 30px;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+    #student_testimonial .slick-list .slick-slide > p {
+        margin: 0 50px;
+    }
+    #student_testimonial .slick-list .slick-slide > h2 {
+        float: right;
+        margin-right: 50px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #student_testimonial .slick-list .slick-slide > p {
+        margin: 0 200px;
+    }
+    #student_testimonial .slick-list .slick-slide > h2 {
+        float: right;
+        margin-right: 200px;
+    }
 }
