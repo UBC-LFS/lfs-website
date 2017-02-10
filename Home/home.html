@@ -25,7 +25,7 @@
       The UBC Faculty of Land and Food Systems uses student-centered learning to educate new generations of scientists equipped to solve the most fundamental issues faced by society — those focused around human health, a sustainable food supply and the responsible use of finite land and water resources. To that end, Faculty initiatives foster and support: research excellence, innovative active learning environments, strong community connections, and global and local collaborations.
     </h3>
 </div>
-<div class="row-fluid border-bottom">
+<div class="row-fluid border-bottom" id="join-us">
     <h2>Join us</h2>
     <div class="span12">
         <div class="span4 box" id="prospective-students"> <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/prospective-students/"> <span class="center-box"> <h3 class="box-name">Prospective Students</h3> </span> </a> </div>
@@ -93,7 +93,22 @@
 </div>
 <div class="span12 no-margin-left" id="upcoming-events">
      <h2>Upcoming Events</h2>
-     [eo_events]<div class="event-vertical-center-wrap"><div class="event-wrap"><div class="event-image">%event_thumbnail{medium}%</div><div class="event-hover"><h2>Event 1</h2><div></div><h3>Feb 2, 2017 7:00pm</h3></div></div></div>[/eo_events]
+     [eo_events]
+        <div class="event-vertical-center-wrap">
+            <div class="event-wrap">
+                <div class="event-image">%event_thumbnail{medium}%</div>
+                <a href="%event_url%" class="event-hover">
+                    <div class="event-title">
+                        <h2>%event_title%</h2>
+                    </div>
+                    <div class="horizontal-break"></div>
+                    <div class="event-date">
+                        <h3>%start{jS M Y}% at %start{g:i:a}%</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    [/eo_events]
      <div class="span12 no-margin-left no-margin-top">
         <div class="span6">        
             <p><a style="text-decoration:none;" href="http://lfs-ps.sites.olt.ubc.ca/events/">See full calendar</a></p>

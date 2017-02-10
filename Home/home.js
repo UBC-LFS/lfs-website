@@ -132,6 +132,8 @@ jQuery(document).ready(function ($) {
         $('#upcoming-events div.slick-list div.slick-track').css('height', event_width+'px');
     }
 
+    $('.profile-control p.profile-arrow').css('display','block');
+
     slick_profile_control();
     news_height_resize();
     set_slick_slide_width();

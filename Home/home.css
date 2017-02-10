@@ -25,6 +25,9 @@ h3 {
   margin-left: 0 !important;
   margin-bottom: 10px !important;
 }
+#join-us .span12 {
+    margin-left: 0px;
+}
 @media screen and (max-width: 300px) {
     .box {
         height: 70px;
@@ -173,7 +176,7 @@ div.news > br,
 .profile-control p.profile-arrow
 {
     position: absolute;
-    display: block;
+    display: none;
     top: 50%;
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -340,17 +343,36 @@ html, body {
 #upcoming-events div.slick-list li.slick-slide .event-wrap:hover > .event-image > img {
     transform: scale(1.1);
 }
-#upcoming-events .slick-list .slick-slide .event-wrap .event-hover h2,
-#upcoming-events .slick-list .slick-slide .event-wrap .event-hover h3 {
-    color: white;
-    text-align: center;
-    margin-top: 20%;
+/*#upcoming-events .slick-list .slick-slide .event-wrap .event-hover .event-title {
+    height: 50%;
+    position: relative;
+}*/
+#upcoming-events .slick-list .slick-slide .event-wrap .event-hover .event-title,
+#upcoming-events .slick-list .slick-slide .event-wrap .event-hover .event-date {
+    height: 50%;
+    position: relative;
 }
-#upcoming-events .slick-list .slick-slide .event-wrap .event-hover div {
+#upcoming-events .slick-list .slick-slide .event-wrap .event-hover .horizontal-break {
     height: 1px;
     width: 60%;
     background-color: #2f5d7c;
     text-align: center;
-    margin-left: 20%;
-    margin-top: 10%;
+    left: 20%;
+    position: absolute;
+    z-index: 2;
+    /*margin-left: 20%;
+    margin-top: 10%;*/
+}
+#upcoming-events .slick-list .slick-slide .event-wrap .event-hover h2,
+#upcoming-events .slick-list .slick-slide .event-wrap .event-hover h3 {
+    color: white;
+    text-align: center;
+    margin: 0px;
+    position: relative;
+}
+#upcoming-events .slick-list .slick-slide .event-wrap .event-hover h2 {
+    top: 50%;
+}
+#upcoming-events .slick-list .slick-slide .event-wrap .event-hover h3 {
+    top: 30%;
 }
