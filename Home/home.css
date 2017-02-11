@@ -1,3 +1,54 @@
+.weather-alert {
+    margin: 0px;
+    border: 1px solid #3894bc;
+    background-color: white;
+    display: table;
+}
+.weather-alert .exclamation p {
+    font-size: 190%;
+    line-height: 1;
+    border: 1px solid;
+    border-radius: 50%;
+    text-align: center
+}
+.weather-alert p {
+    margin: 0px;
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+}
+.weather-alert .content-text p {
+    font-size: 95%;
+}
+/*.weather-alert {
+    margin: 0px;
+    border: 1px solid #3894bc;
+    background-color: white;
+    display: table;
+}
+.weather-alert .weather-center {
+    display: table-cell;
+}
+.weather-alert btn.close {
+    background-color: white;
+    color: #3894bc;
+    outline: 0;
+    border: 0;
+}
+.weather-alert p {
+    margin: 0px;
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+}
+.weather-alert .content-text p {
+    font-size: 95%;
+}
+.weather-alert .exclamation p {
+    font-size: 190%;
+    line-height: 1;
+    border: 1px solid;
+    border-radius: 50%;
+    text-align: center
+}
+.weather-alert > div {
+}*/
 h3 {
     font-size: 150%;
     line-height: 180%;

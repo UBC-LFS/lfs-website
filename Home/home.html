@@ -1,6 +1,35 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<!--<div class = "alert alert-dismissable weather-alert">
+    <div class="weather-center">
+        <button type = "button" class = "close" data-dismiss = "alert" aria-hidden = "true">
+            &times;
+        </button>
+        <div class="exclamation">
+            <div>
+                <p>!</p>
+            </div>
+        </div>
+        <div class="content-text">
+            <p><b>WEATHER ADVISORY:</b> All sites of UBC's Vancouver campus are close</p>
+            <p>Updated: Dec 20, 2013 6:15AM PST<p>
+        </div>
+    </div>
+</div>-->
+<div class = "weather-alert">
+    <table>
+        <tr>
+            <td class="exclamation">
+                <p>!</p>
+            </td>
+            <td class="content-text">
+                <p><b>WEATHER ADVISORY:</b> All sites of UBC's Vancouver campus are close</p>
+                <p>Updated: Dec 20, 2013 6:15AM PST<p>
+            </td>
+        </tr>
+    </table>
+</div>
 <div class="image-region no-padding">
     <div class="image-gradient">
     </div>
@@ -19,6 +48,7 @@
     $("div[role='main']").prepend($("#main-content"));
     $("#main-content").prepend($("#content"));
     $("#container").prepend($(".image-region"));
+    $("#container").prepend($(".weather-alert"));
 </script>
 <div class="row-fluid border-bottom">
     <h3>
