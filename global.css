@@ -57,7 +57,7 @@ h5 {
     font-weight: 400;
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
 }
-p {
+p, td {
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
     font-size: 120%;
     line-height: 1.5;
@@ -92,7 +92,7 @@ p {
     }
     .image-region {
         margin-left: -20px;
-    	margin-right: -20px !important;
+        margin-right: -20px !important;
     }
     .header-text {
         position: absolute;
