@@ -1,22 +1,49 @@
+.weather-alert-outer {
+    overflow: hidden;
+}
 .weather-alert {
     margin: 0px;
     border: 1px solid #3894bc;
     background-color: white;
-    display: table;
+    position: relative;
+    display: none;
+    margin: 10px 0px;
+}
+.weather-alert > table {
+    margin: 12px;
+    margin-right: 15px;
 }
 .weather-alert .exclamation p {
     font-size: 190%;
     line-height: 1;
     border: 1px solid;
     border-radius: 50%;
-    text-align: center
+    text-align: center;
+    color: #3894bc;
+    margin-right: 8px;
 }
 .weather-alert p {
     margin: 0px;
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+    color: #1f385f;
 }
 .weather-alert .content-text p {
     font-size: 95%;
+}
+.weather-alert button {
+    position: absolute;
+    top: 0px;
+    right: 2px;
+    color: #3894bc;
+    outline: 0px;
+    border: 0px;
+}
+.weather-alert button:focus{
+    color: #3894bc;
+}
+.weather-alert button:hover,
+.weather-alert button:active {
+    color: #1f385f;
 }
 /*.weather-alert {
     margin: 0px;
