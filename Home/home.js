@@ -125,23 +125,21 @@ jQuery(document).ready(function ($) {
     }
 
     var featured_news_height;
-    function news_height_resize ()
-    {
-        featured_news_height = $('#news-1').height();
-        $('#nonfeatured-news').css('height',featured_news_height.toString() + 'px');
-    }
-
     var event_width;
     var exclamation_height;
     var page_content_width;
-    var weather_alert_left;
+    var weather_alert_outer_left;
     function set_width() {
+        featured_news_height = $('#news-1').height();
+        $('#nonfeatured-news').css('height',featured_news_height.toString() + 'px');
         event_width = $('#upcoming-events div.slick-list li.slick-slide').width();
         $('#upcoming-events div.slick-list div.slick-track').css('height', event_width+'px');
         page_content_width = $('#main-content').width() - 2;
+        $('.weather-alert-outer').css('width', (page_content_width + 2)+'px');
         $('.weather-alert').css('width', page_content_width+'px');
-        weather_alert_left = ($('#main-content').outerWidth(true) - $('#main-content').width())/2;
-        $('.weather-alert').css('left',weather_alert_left+'px');
+        weather_alert_outer_left = ($('#main-content').outerWidth(true) - $('#main-content').width())/2;
+        console.log(weather_alert_outer_left);
+        $('.weather-alert-outer').css('left',weather_alert_outer_left+'px');
         exclamation_height = $('.weather-alert .exclamation p').height();
         $('.weather-alert .exclamation p').css('width',exclamation_height+'px');
     }
@@ -153,13 +151,11 @@ jQuery(document).ready(function ($) {
     });
 
     slick_profile_control();
-    news_height_resize();
     set_width();
     
     function function_timeout()
     {
         setTimeout(slick_profile_control, 100);
-        setTimeout(news_height_resize, 100);
         setTimeout(set_width, 100);
     }
     
