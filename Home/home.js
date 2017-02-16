@@ -1,9 +1,4 @@
 jQuery(document).ready(function ($) {
-    function element_display() {
-        $('.weather-alert').css('display', 'block');
-        $('.profile-control p.profile-arrow').css('display','block');
-    }
-    element_display(); //element_display must be first, cause some of the function below targets element_display
     $('.featured').slick({
         infinite: true,
         slidesToShow: 5,
@@ -112,16 +107,22 @@ jQuery(document).ready(function ($) {
         $("#" + profile_name + " > .profile_link").attr("href", profile_src);
     }
 
+    function element_display() {
+        $('.weather-alert').css('display', 'block');
+        $('.profile-control p.profile-arrow').css('display','block');
+    }
+    element_display(); //element_display must be first, cause some of the function below targets element_display
+
     var slide_profile_height;
-    var test3;
+    var window_size;
     function slick_profile_control()
     {
         slide_profile_height = $('#profile_slider').height();
         $('#profile_slider_prev').css('height', slide_profile_height + 'px');
         $('#profile_slider_next').css('height', slide_profile_height + 'px');
-        test3 = $('#profile_slider_prev').height();
         $('#profile_slider_prev').css('left','0px');
         $('#profile_slider_next').css('right','0px');
+        $('.profile-control p.profile-arrow').css('display','block');
     }
 
     var featured_news_height;
@@ -158,6 +159,5 @@ jQuery(document).ready(function ($) {
         setTimeout(slick_profile_control, 100);
         setTimeout(set_width, 100);
     }
-    
     $(window).on('resize', function_timeout);
 });
