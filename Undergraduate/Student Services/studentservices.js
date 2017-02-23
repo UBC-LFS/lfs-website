@@ -140,51 +140,44 @@ return((r[1].length===0)?r[0]:null);};};$D.parseExact=function(s,fx){return $D.g
 
 var CheckOpenClosed = function () {
   var marchdate = String(Date.march().second().sunday());
-  var novemberdate = String(Date.november().first().sunday()); 
-  var marchday = Number(marchdate.slice(8,10));
-  var novemberday = Number(novemberdate.slice(8,10));
-      
-  var d = new Date();
-  var dayofmonth = d.getUTCDate();
-  var hours = d.getUTCHours();
-  var minutes = d.getUTCMinutes();
-  var month = d.getUTCMonth();
-  var dayofweek = d.getUTCDay();
-  
-  
-  if (((month > 2) && (month < 10))||((month == 2) && (dayofmonth >= marchday))||((month == 10) && (dayofmonth < novemberday))){
-    if ((hours >= 15) && (hours <= 22) && (dayofweek != 0) && (dayofweek != 6)) {
-      if ((hours == 15) && (minutes < 30)) {
-        y = "<span style=\"color:#fc4b1c\">Sorry We're Closed.</span>";
-      } else if ((dayofweek == 4) && (((hours == 21) && (minutes >= 30)) || (hours >= 22))) {
-        y = "<span style=\"color:#fc4b1c\">Sorry We're Closed.</span>";
-      }
-      else {
-        y = "<span style=\"color:#07ed11\">We're Open!</span>";
-      }
+    var novemberdate = String(Date.november().first().sunday()); 
+    var marchday = Number(marchdate.slice(8,10));
+    var novemberday = Number(novemberdate.slice(8,10));
+        
+    var d = new Date();
+    var dayofmonth = d.getUTCDate();
+    var hours = d.getUTCHours();
+    var minutes = d.getUTCMinutes();
+    var month = d.getUTCMonth();
+    var dayofweek = d.getUTCDay();
+
+    var isDaylightSaving = function() {
+        return ((month > 2) && (month < 10)) || ((month == 2) && (dayofmonth >= marchday)) || ((month == 10) && (dayofmonth < novemberday));
+    }
+
+    var isWorkingHoursAndNotWeekend = function() {
+        return (hours >= 16) && (hours <= 23) && (dayofweek != 0) && (dayofweek != 6);
+    }
+
+    var isThursday = function() {
+        return (dayofweek == 4) && (((hours == 22) && (minutes >= 30)) || (hours >= 23));
+    }
+
+    isDaylightSaving() ? hours-- : hours;
+
+    if (isWorkingHoursAndNotWeekend()) {
+        if ((hours == 16) && (minutes < 30)) {
+            y = "<span style=\"color:#fc4b1c\">Sorry We're Closed.</span>";
+        } else if (isThursday()) {
+            y = "<span style=\"color:#fc4b1c\">Sorry We're Closed.</span>";
+        } else {
+            y = "<span style=\"color:#07ed11\">We're Open!</span>";
+        }
     } else {
         y = "<span style=\"color:#fc4b1c\">Sorry We're Closed.</span>";
     }
-  } else { 
-    if ((hours >= 16) && (hours <= 23) && (dayofweek != 0) && (dayofweek != 6)) {
-      if ((hours == 16) && (minutes < 30)) {
-        y = "<span style=\"color:#fc4b1c\">Sorry We're Closed.</span>";
-      } else if ((dayofweek == 4) && (((hours == 22) && (minutes >= 30)) || (hours >= 23))) {
-        y = "<span style=\"color:#fc4b1c\">Sorry We're Closed.</span>";
-      }
-      else {
-        y = "<span style=\"color:#07ed11\">We're Open!</span>";
-      }
-    } else {
-        y = "<span style=\"color:#fc4b1c\">Sorry We're Closed.</span>";
-    }
-  }
   document.getElementById("open-close").innerHTML = y;
-  
-  
 }
-    
+
 CheckOpenClosed();
-
-
 });
