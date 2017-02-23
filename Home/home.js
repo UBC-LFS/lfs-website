@@ -81,7 +81,8 @@ jQuery(document).ready(function ($) {
             }
         ]
     });
-    var numOfNewsDisplay = 2;
+    var numOfNewsDisplay = $('#nonfeatured-news > .news').length;
+    console.log(numOfNewsDisplay);
     var i = 0;
     var news_src;
     var news_selector = document.getElementById("nonfeatured-news").getElementsByClassName("news");
