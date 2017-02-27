@@ -25,7 +25,7 @@ span.open-circle-dean {
     margin-bottom: 4px;
     border-radius: 15px;
     display: inline-block;
-    background: red;
+    background: white;
 }
 span.open-circle-undergrad-ss {
     width: 10px;
@@ -45,7 +45,7 @@ span.open-circle-grad {
     margin-bottom: 4px;
     border-radius: 15px;
     display: inline-block;
-    background: red;
+    background: white;
 }
 span.open-circle-finance {
     width: 10px;
@@ -55,5 +55,5 @@ span.open-circle-finance {
     margin-bottom: 4px;
     border-radius: 15px;
     display: inline-block;
-    background: red;
+    background: white;
 }

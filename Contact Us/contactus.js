@@ -142,67 +142,102 @@ return((r[1].length===0)?r[0]:null);};$D.getParseFunction=function(fx){var fn=$D
 return((r[1].length===0)?r[0]:null);};};$D.parseExact=function(s,fx){return $D.getParseFunction(fx)(s);};}());
 
 var CheckOpenClosed = function () {
-  var marchdate = String(Date.march().second().sunday());
-  var novemberdate = String(Date.november().first().sunday()); 
-  var marchday = Number(marchdate.slice(8,10));
-  var novemberday = Number(novemberdate.slice(8,10));
+    var marchdate = String(Date.march().second().sunday());
+    var novemberdate = String(Date.november().first().sunday()); 
+    var marchday = Number(marchdate.slice(8,10));
+    var novemberday = Number(novemberdate.slice(8,10));
       
-  var d = new Date();
-  var dayofmonth = d.getUTCDate();
-  var hours = d.getUTCHours();
-  var minutes = d.getUTCMinutes();
-  var month = d.getUTCMonth();
-  var dayofweek = d.getUTCDay();
+    var d = new Date();
+    var dayofmonth = d.getUTCDate();
+    var hours = d.getUTCHours();
+    var minutes = d.getUTCMinutes();
+    var month = d.getUTCMonth();
+    var dayofweek = d.getUTCDay();
   
   
-var isDaylightSaving = function() {
-    return ((month > 2) && (month < 10)) || ((month == 2) && (dayofmonth >= marchday)) || ((month == 10) && (dayofmonth < novemberday));
-}
+    var isDaylightSaving = function() {
+        return ((month > 2) && (month < 10)) || ((month == 2) && (dayofmonth >= marchday)) || ((month == 10) && (dayofmonth < novemberday));
+    }
 
-var isStudentServicesWorkingHoursAndNotWeekend = function() {
-    return (hours >= 16) && (hours <= 23) && (dayofweek != 0) && (dayofweek != 6);
-}
+    var isDeansOfficeWorkingHoursAndNotSunday = function() {
+        return (dayofweek != 0) && ((hours >= 17) && (hours <= 23) || (hours == 0));
+    }
 
-var isStudentServicesThursday = function() {
-    return (dayofweek == 4) && (((hours == 22) && (minutes >= 30)) || (hours >= 23));
-}
+    var isUTCMondayOrSaturday = function() {
+        return ((dayofweek == 1) && (hours == 0)) || ((dayofweek == 6) && ((hours >= 17) && (hours <= 23)));
+    }
 
-isDaylightSaving() ? hours-- : hours;
+    var isDeansOfficeLunchBreak = function () {
+        return (hours == 20) && (minutes >= 30)
+    }
 
- if (isStudentServicesWorkingHoursAndNotWeekend()) {
-     if ((hours == 16) && (minutes < 30)) {
+    var isDeansOfficeClosingTime = function () {
+        return (hours == 0) && (minutes < 30)
+    }
+    
+    var isStudentServicesWorkingHoursAndNotWeekend = function() {
+        return (hours >= 16) && (hours <= 23) && (dayofweek != 0) && (dayofweek != 6);
+    }
+
+    var isStudentServicesOpeningTime = function() {
+        return (hours == 16) && (minutes < 30);
+    }    
+
+    var isStudentServicesThursday = function() {
+        return (dayofweek == 4) && (((hours == 22) && (minutes >= 30)) || (hours >= 23));
+    }
+    
+    var isGraduateProgramsOpeningTime = function() {
+        return (hours == 16) && (minutes < 30);
+    }
+
+    var isFinanceWorkingHoursAndNotWeekend = function() {
+        return (hours >= 17) && (hours <= 23) && (dayofweek != 0) && (dayofweek != 6);
+    }
+
+   isDaylightSaving() ? hours-- : hours;
+
+    if (isDeansOfficeWorkingHoursAndNotSunday()) {
+        if (isUTCMondayOrSaturday()) {
+            $('.open-circle-dean').css("background-color","#de1309");
+        } else if (isDeansOfficeLunchBreak() || isDeansOfficeClosingTime()){
+            $('.open-circle-dean').css("background-color","#de1309");
+        } else {
+     	    $('.open-circle-dean').css("background-color","#02d738");            
+        }
+    } else {
+            $('.open-circle-dean').css("background-color","#de1309");        
+    }
+
+    if (isStudentServicesWorkingHoursAndNotWeekend()) {
+        if (isStudentServicesOpeningTime()) {
+            $('.open-circle-undergrad-ss').css("background-color","#de1309");
+    } else if (isStudentServicesThursday()) {
+            $('.open-circle-undergrad-ss').css("background-color","#de1309");
+        } else {
+     	    $('.open-circle-undergrad-ss').css("background-color","#02d738");
+        }
+    } else {
         $('.open-circle-undergrad-ss').css("background-color","#de1309");
     }
-     else if (isStudentServicesThursday()) {
-        $('.open-circle-undergrad-ss').css("background-color","#de1309");
-     } 
-     else {
-     	$('.open-circle-undergrad-ss').css("background-color","#02d738");
-     }
- }
- else {
-     $('.open-circle-undergrad-ss').css("background-color","#de1309");
- }
+
+    if (isStudentServicesWorkingHoursAndNotWeekend()) {
+        if (isGraduateProgramsOpeningTime()){
+            $('.open-circle-grad').css("background-color","#de1309");
+        } else {
+     	    $('.open-circle-grad').css("background-color","#02d738");            
+        }
+    } else {
+        $('.open-circle-grad').css("background-color","#de1309");
+    }
+
+    if (isFinanceWorkingHoursAndNotWeekend()) {
+        $('.open-circle-finance').css("background-color","#02d738");
+    } else {
+        $('.open-circle-finance').css("background-color","#de1309");
+    }
 }
     
-
-// if (isStudentServicesWorkingHoursAndNotWeekend()) {
-//   console.log("check2");
-//     if ((hours == 16) && (minutes < 30)) {
-//         document.getElementsByClassName("open-circle-undergrad-ss").style.background = "#de1309";
-//     }
-//     else if (isStudentServicesThursday()) {
-//         document.getElementsByClassName("open-circle-undergrad-ss").style.background = "#de1309";
-//     } 
-//     else {
-//     	document.getElementsByClassName("open-circle-undergrad-ss").style.background = "#de1309";
-//     }
-// }
-// else {
-//     document.getElementsByClassName("open-circle-undergrad-ss").style.background = "#de1309";
-// }
-
 CheckOpenClosed();
-
 
 });
