@@ -172,7 +172,7 @@ var CheckOpenClosed = function () {
     }
 
     var isDeansOfficeClosingTime = function () {
-        return (hours == 0) && (minutes < 30)
+        return (hours == 0) && (minutes >= 30)
     }
     
     var isStudentServicesWorkingHoursAndNotWeekend = function() {
