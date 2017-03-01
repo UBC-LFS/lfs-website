@@ -57,7 +57,7 @@ jQuery(document).ready(function ($) {
                 settings: {
                     arrows: false,
                     centerMode: true,
-                    centerPadding: '40px',
+                    centerPadding: '0px',
                     slidesToShow: 3
                 }
             },
@@ -66,7 +66,7 @@ jQuery(document).ready(function ($) {
                 settings: {
                     arrows: false,
                     centerMode: true,
-                    centerPadding: '40px',
+                    centerPadding: '0px',
                     slidesToShow: 2
                 }
             },
@@ -75,7 +75,7 @@ jQuery(document).ready(function ($) {
                 settings: {
                     arrows: false,
                     centerMode: true,
-                    centerPadding: '40px',
+                    centerPadding: '0px',
                     slidesToShow: 1
                 }
             }
