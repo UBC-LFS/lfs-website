@@ -110,23 +110,30 @@
     </a>
 </div>
 <div class="span12 no-margin-left" id="upcoming-events">
-     <h2>Upcoming Events</h2>
-     [eo_events]
-        <div class="event-vertical-center-wrap">
-            <div class="event-wrap">
-                <div class="event-image">%event_thumbnail{medium}%</div>
-                <a href="%event_url%" class="event-hover">
-                    <div class="event-title">
-                        <h2>%event_title%</h2>
-                    </div>
-                    <div class="horizontal-break"></div>
-                    <div class="event-date">
-                        <h3>%start{jS M Y}% at %start{g:i:a}%</h3>
-                    </div>
-                </a>
-            </div>
+    <h2>Upcoming Events</h2>
+    <div id="event-slider">
+        <div class="event-double-arrow">
+            <div class="event-prev"></div>
+            <div class="event-next"></div>
+            <p>&#8596;</p>
         </div>
-    [/eo_events]
+        [eo_events]
+            <div class="event-vertical-center-wrap">
+                <div class="event-wrap">
+                    <div class="event-image">%event_thumbnail{medium}%</div>
+                    <a href="%event_url%" class="event-hover">
+                        <div class="event-title">
+                            <h2>%event_title%</h2>
+                        </div>
+                        <div class="horizontal-break"></div>
+                        <div class="event-date">
+                            <h3>%start{jS M Y}% at %start{g:i:a}%</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        [/eo_events]
+    </div>
      <div class="span12 no-margin-left no-margin-top">
         <div class="span6">        
             <p><a style="text-decoration:none;" href="http://lfs-ps.sites.olt.ubc.ca/events/">See full calendar</a></p>

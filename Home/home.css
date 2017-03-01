@@ -226,10 +226,6 @@ div.news > br,
     width: 50px;
     height: inherit;
 }
-#event-slider .slick-slider > .slick-list
-{
-    padding: 0px 50px;
-}
 .event_button
 {
     background-color: lightgrey;
@@ -445,8 +441,47 @@ html, body {
     position: relative;
 }
 #upcoming-events .slick-list .slick-slide .event-wrap .event-hover h2 {
-    top: 50%;
+    top: 60%;
 }
 #upcoming-events .slick-list .slick-slide .event-wrap .event-hover h3 {
-    top: 30%;
+    top: 20%;
+}
+#event-slider {
+    position: relative;
+}
+#event-slider .event-double-arrow {
+    position: absolute;
+    height: 18%;
+    z-index: 1;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #A8A8A8;
+    right: 10px;
+    bottom: 10px;
+    opacity: 0.4;
+}
+#event-slider:hover .event-double-arrow {
+    opacity: 0.7;
+}
+#event-slider .event-double-arrow:hover {
+    opacity: 0.85;
+}
+#event-slider .event-double-arrow p {
+    margin: 0px;
+    font-size: 350%;
+    line-height: 60px;
+}
+#event-slider .event-prev {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+#event-slider .event-next {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+}
+#event-slider .event-double-arrow {
+    cursor: pointer;
 }
