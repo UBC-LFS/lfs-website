@@ -47,3 +47,26 @@ Experiential learning opportunties wording is difficult, maybe "outside the clas
 -  content is fantastic
 
 potentially move get advice and support to student services
+
+research and job opportunities
+
+Program Prototype
+- run three and stop for animated text
+- remove sticky apply now box on the right
+
+Major Prototype
+- why applied biology and program overview separate? combine
+- there's no admission requirements
+- no picture required below the what you need to know
+- remove deadlines and fees
+- reinforce that this is a major within program within faculty x within ubc vancouver, link to prospective students section of website
+- little apply to ubc 
+- remove vancouver campus section
+
+Build My Career
+- opportunties are a menu, list all of them, be redundant 
+- statement with commitment for faculty to prepare for life after graduation
+- Academic, Outside the Classroom within UBC, Outside the UBC, buttons on top and anchors
+    - trifecta, connection between the three buttons (three pillars of career building)
+
+Student comment/testimonials in faculty profile page
