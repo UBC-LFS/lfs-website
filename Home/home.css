@@ -46,37 +46,6 @@
 .weather-alert button:active {
     color: #1f385f;
 }
-/*.weather-alert {
-    margin: 0px;
-    border: 1px solid #3894bc;
-    background-color: white;
-    display: table;
-}
-.weather-alert .weather-center {
-    display: table-cell;
-}
-.weather-alert btn.close {
-    background-color: white;
-    color: #3894bc;
-    outline: 0;
-    border: 0;
-}
-.weather-alert p {
-    margin: 0px;
-    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
-}
-.weather-alert .content-text p {
-    font-size: 95%;
-}
-.weather-alert .exclamation p {
-    font-size: 190%;
-    line-height: 1;
-    border: 1px solid;
-    border-radius: 50%;
-    text-align: center
-}
-.weather-alert > div {
-}*/
 h3 {
     font-size: 150%;
     line-height: 180%;
@@ -106,37 +75,6 @@ h3 {
 }
 #join-us .span12 {
     margin-left: 0px;
-}
-@media screen and (max-width: 300px) {
-    .box {
-        height: 70px;
-    }
-}
-@media screen and (max-width: 480px) {
-    .box {
-        height: 120px;
-    }
-}
-@media screen and (max-width: 768px) {
-    .next {
-        display: none;
-    }
-    .profile-control {
-        display: none;
-    }
-}
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-    .large-intro {
-        font-size: 300%;
-    }
-    div.entry-content .profile-control {
-        display: block;
-    }
-}
-@media screen and (min-width: 1201px) {
-    div.entry-content .profile-control {
-        display: block;
-    }
 }
 .course-name {
     color: white;
@@ -451,7 +389,7 @@ html, body {
 }
 #event-slider .event-double-arrow {
     position: absolute;
-    height: 18%;
+    /*height: 18%;*/
     z-index: 1;
     text-align: center;
     border-radius: 50%;
@@ -466,11 +404,6 @@ html, body {
 #event-slider .event-double-arrow:hover {
     opacity: 0.85;
 }
-#event-slider .event-double-arrow p {
-    margin: 0px;
-    font-size: 350%;
-    line-height: 60px;
-}
 #event-slider .event-prev {
     width: 50%;
     height: 100%;
@@ -484,4 +417,63 @@ html, body {
 }
 #event-slider .event-double-arrow {
     cursor: pointer;
+}
+#event-slider .event-double-arrow p {
+    margin: 0px;
+    color: #2f5d7c;
+}
+@media screen and (max-width: 300px) {
+    .box {
+        height: 70px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .box {
+        height: 120px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .next {
+        display: none;
+    }
+    .profile-control {
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    .large-intro {
+        font-size: 300%;
+    }
+    div.entry-content .profile-control {
+        display: block;
+    }
+    /*#event-slider .event-double-arrow {
+        display: none;
+    }*/
+}
+@media screen and (max-width: 979px) {
+#event-slider .event-double-arrow {
+        display: none;
+    }
+}
+@media screen and (min-width: 979px) {
+    #event-slider .event-double-arrow {
+        height: 56px;
+    }
+    #event-slider .event-double-arrow p {
+        line-height: 45px;
+        font-size: 40px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    div.entry-content .profile-control {
+        display: block;
+    }
+    #event-slider .event-double-arrow {
+        height: 70px;
+    }
+    #event-slider .event-double-arrow p {
+        line-height: 60px;
+        font-size: 50px;
+    }
 }
