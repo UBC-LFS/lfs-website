@@ -16,5 +16,8 @@ Don't understand the action plan.... remove it?
 
 Prospective students 
 Admission requirements top corner is good!
-Ranking is good, any patents, community partners, businesses, top companies
+Ranking is good, any patents, community partners, businesses, top companies, job prospective 
+Intro hook for prospective: requirements, potential jobs, and first year at a glance (kind of courses you'd be taking)
+3 is very attactive for profiles 
 
+Buttons will be anchors, so click on the admission requirements will scroll, first year at a glance will anchor down
