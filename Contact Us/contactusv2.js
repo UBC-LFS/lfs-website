@@ -41,7 +41,7 @@ jQuery(document).ready(function ($) {
     var minute = d.getMinutes();
 
     var isOpen = function(timeObject) {
-        var hoursOpenToday = timeObject[convertDayToString(day)]
+        var hoursOpenToday = timeObject[convertDayToString(day)];
         if (hoursOpenToday === 'Closed') return false;
         var currentTime = hour + minute/60;
         // check if hours is split into two chunks or one
@@ -63,8 +63,13 @@ jQuery(document).ready(function ($) {
 
 
 
-    minute = 0
+
+
+
+
+
     // test cases for Dean's office
+    minute = 0;    
     day = 0; // Sunday
     console.log("this should evaluate to FALSE", isOpen(deanHours));
     day = 6; // Saturday
