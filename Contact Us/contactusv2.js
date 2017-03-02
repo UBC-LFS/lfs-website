@@ -40,6 +40,33 @@ jQuery(document).ready(function ($) {
     var hour = d.getHours();
     var minute = d.getMinutes();
 
+   // Jon added
+
+    var UTChour = d.getUTCHours ();
+    var difference = 8;
+
+    var isPST = function() {
+        // create new variable because I don't want to alter the UTC time
+        var UTChr = UTChour;
+        // check to see if it is currently daylight savings to see whether it should be 8 or 7 hours
+        isDaylightSaving() ? difference-- : difference;
+        
+        /* if the current UTC time is less than 8 then add 24 to the number so that we can make the comparison with user's computer time
+           can't find the difference between eg. 3 and 19 (UTChour and hour) */
+        if (UTChr < difference) {
+            UTChr += 24;
+        }
+        /* if the user is in the PST time zone, then we can run the function(s) that will display the circle beside the correct day, 
+        otherwise just display circle beside the Office Hour header */
+        if ((UTChr - hour) === difference){
+            isOpen();
+        } else {
+            CheckOpenClosed();
+        }
+    }
+
+    // end of code that Jon added
+
     var isOpen = function(timeObject) {
         var hoursOpenToday = timeObject[convertDayToString(day)];
         if (hoursOpenToday === 'Closed') return false;
