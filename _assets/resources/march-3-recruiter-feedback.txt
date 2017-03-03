@@ -4,3 +4,8 @@ Homepage
 - (make title bigger)
 - make three pillars of LFS more explict on Homepage
     -  global impact of LFS 
+
+
+About
+- hidden history, indigenous content
+- research project, research dollars, something international, add rankings, reputation of faculty, cut staff, class sizes, number of courses offered
