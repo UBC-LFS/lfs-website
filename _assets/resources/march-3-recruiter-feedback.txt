@@ -23,6 +23,7 @@ Prospective
 Students
 - Buttons at the top: Outcome piece?
 - link to graduate studies in outcomes
+- current research opportunities for students that profs will post about
 
 Program page
 - indigenous-specifc content
@@ -39,3 +40,4 @@ Research
 - current: how do I get involved in research
 - prospective: when do I get involved? what does it look like? 
 - show off student research
+- available database for research for Students
