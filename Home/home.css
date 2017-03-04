@@ -1,18 +1,39 @@
+.website-alert {
+    position: relative;
+}
+.website-alert button {
+    position: absolute;
+    top: 0px;
+    right: 2px;
+    color: #3894bc;
+    outline: 0px;
+    border: 0px;
+    line-height: 15px
+}
+button br {
+    display: none;
+}
+.website-individual-alert {
+    border: 1px solid #3894bc;
+    padding: 10px 20px;
+    display: none;
+}
+.website-alert {
+    margin-bottom: 5px;
+}
 .weather-alert-outer {
     overflow: hidden;
     position: relative;
 }
 .weather-alert {
-    margin: 0px;
     border: 1px solid #3894bc;
     background-color: white;
     position: relative;
     display: none;
-    margin: 10px 0px;
+    margin: 5px 0px;
 }
 .weather-alert > table {
-    margin: 12px;
-    margin-right: 15px;
+    margin: 5px;
 }
 .weather-alert .exclamation p {
     font-size: 190%;
@@ -21,7 +42,7 @@
     border-radius: 50%;
     text-align: center;
     color: #3894bc;
-    margin-right: 8px;
+    margin-right: 5px;
 }
 .weather-alert p {
     margin: 0px;
@@ -29,15 +50,16 @@
     color: #1f385f;
 }
 .weather-alert .content-text p {
-    font-size: 95%;
+    font-size: 90%;
 }
 .weather-alert button {
     position: absolute;
     top: 0px;
-    right: 2px;
+    right: 1px;
     color: #3894bc;
     outline: 0px;
     border: 0px;
+    line-height: 15px;
 }
 .weather-alert button:focus{
     color: #3894bc;

@@ -9,15 +9,31 @@
                     <p>!</p>
                 </td>
                 <td class="content-text">
-                    <p><b>WEATHER ADVISORY:</b> UBC's Vancouver campus is closed</p>
-                    <p>Updated: Dec 20, 2013 6:15AM PST<p>
+                    [loop query="category_name=website-alerts"]
+                        <p><b>WEATHER ADVISORY:</b> [cf alert-weather] </p>
+                        <p>Updated: Dec 20, 2013 6:15AM PST<p>
+                    [/loop]
                 </td>
             </tr>
         </table>
         <button type = "button" class = "close" data-dismiss = "alert" aria-hidden = "true">
-        &times;
-    </button>
+            &times;
+        </button>
     </div>
+</div>
+<div class="website-alert">
+    [loop query="category_name=website-alerts"]
+    <div class="website-individual-alert-outer">
+        <div class="website-individual-alert">
+            <p>
+                [cf alert-home1]
+            </p>
+            <button type = "button" class = "close" data-dismiss = "alert" aria-hidden = "true">
+                &times;
+            </button>
+        </div>
+    </div>
+    [/loop]
 </div>
 <div class="image-region no-padding">
     <div class="image-gradient">
@@ -37,6 +53,7 @@
     $("div[role='main']").prepend($("#main-content"));
     $("#main-content").prepend($("#content"));
     $("#container").prepend($(".image-region"));
+    $("#container").prepend($(".website-alert"));
     $("#container").prepend($(".weather-alert-outer"));
 </script>
 <div class="row-fluid border-bottom">

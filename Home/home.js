@@ -110,6 +110,7 @@ jQuery(document).ready(function ($) {
 
     function element_display() {
         $('.weather-alert').css('display', 'block');
+        $('.website-individual-alert').css('display', 'block');
         $('.profile-control p.profile-arrow').css('display','block');
     }
     element_display(); //element_display must be first, cause some of the function below targets element_display
@@ -138,11 +139,14 @@ jQuery(document).ready(function ($) {
         event_width = $('#upcoming-events div.slick-list li.slick-slide').width();
         $('#upcoming-events div.slick-list div.slick-track').css('height', event_width+'px');
         page_content_width = $('#main-content').width() - 2;
-        $('.weather-alert-outer').css('width', (page_content_width + 2)+'px');
-        $('.weather-alert').css('width', page_content_width+'px');
+        $('.weather-alert-outer').css('width', page_content_width+'px');
+        // $('.weather-alert').css('width', page_content_width+'px');
+        // $('.website-alert').css('width', page_content_width+'px');
         weather_alert_outer_left = ($('#main-content').outerWidth(true) - $('#main-content').width())/2;
         console.log(weather_alert_outer_left);
         $('.weather-alert-outer').css('left',weather_alert_outer_left+'px');
+        $('.website-alert').css('width', page_content_width+'px');
+        $('.website-alert').css('left',weather_alert_outer_left+'px');
         exclamation_height = $('.weather-alert .exclamation p').height();
         $('.weather-alert .exclamation p').css('width',exclamation_height+'px');
         event_arrow_width = $('#event-slider .event-double-arrow').height();
@@ -154,6 +158,8 @@ jQuery(document).ready(function ($) {
             $('.weather-alert-outer').remove();
         });
     });
+
+    
 
     slick_profile_control();
     set_width();
