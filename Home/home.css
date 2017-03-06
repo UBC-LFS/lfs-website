@@ -1,4 +1,17 @@
-.website-alert {
+/*alert does not display until we check alerts exists*/
+.website-alerts {
+    display: none;
+}
+.alert {
+    display: none;
+}
+.website-alerts br {
+    display: none;
+}
+.home-alert {
+    display: none;
+}
+/*.website-alert {
     position: relative;
 }
 .website-alert button {
@@ -67,7 +80,7 @@ button br {
 .weather-alert button:hover,
 .weather-alert button:active {
     color: #1f385f;
-}
+}*/
 h3 {
     font-size: 150%;
     line-height: 180%;
@@ -478,12 +491,12 @@ html, body {
         display: none;
     }
 }
-@media screen and (min-width: 979px) {
+@media screen and (min-width: 979px) and (max-width: 1200px) {
     #event-slider .event-double-arrow {
         height: 56px;
     }
     #event-slider .event-double-arrow p {
-        line-height: 45px;
+        line-height: 48px;
         font-size: 40px;
     }
 }

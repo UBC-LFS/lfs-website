@@ -153,16 +153,48 @@ jQuery(document).ready(function ($) {
         $('#event-slider .event-double-arrow').css('width', event_arrow_width+'px');
     }
 
-    $('.weather-alert button.close').click(function(){
-        $('.weather-alert-outer').animate({height: "0px"}, function() {
-            $('.weather-alert-outer').remove();
+    $('.close').click(function(){
+        var test5 = $(this);
+        console.log(test5);
+        var getDataDismiss = $(this).attr("data-dismiss");
+        $('.' + getDataDismiss).animate({height: "0px"}, function() {
+            $('.' + getDataDismiss).remove();
         });
+
+        // $('.weather-alert-outer').animate({height: "0px"}, function() {
+        //     $('.weather-alert-outer').remove();
+        // });
     });
 
-    
+    // function alert_display()
+    // {
+    //     var weather_alert_exist = $('.website-alerts .weather-alert span.weather').text().length;
+    //     if (weather_alert_exist>0)
+    //     {
+    //         $('.website-alerts .alert.weather-alert').css('display', 'block');
+    //         $('.website-alerts').css('display', 'block');
+    //     }
+
+    //     var website_alert_count = 0;
+    //     var j;
+    //     var website_alert = $('p.home-alert');
+    //     var website_alert_text;
+    //     for (j=0; j<3; j++)
+    //     {
+    //         website_alert_text = $.trim(website_alert.eq(j).text()).length;
+    //         console.log(website_alert_text > 0);
+
+    //         if (website_alert_text) {
+    //             website_alert_count++;
+    //         }
+    //     }
+        
+    //     console.log("weather", weather_alert_exist>0);
+    // }
 
     slick_profile_control();
     set_width();
+    // alert_display();
     
     function function_timeout()
     {
