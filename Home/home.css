@@ -11,6 +11,55 @@
 .home-alert {
     display: none;
 }
+.website-alerts-container
+{
+    display:none;
+}
+.website-alert-texts
+{
+    display: none;
+}
+.website-alerts-container
+{
+    position: relative;
+}
+.website-alerts-container .exclamation p {
+    font-size: 190%;
+    line-height: 1;
+    border: 1px solid;
+    border-radius: 50%;
+    text-align: center;
+    color: #3894bc;
+    margin-right: 5px;
+}
+.website-alert {
+    position: relative;
+}
+.website-alert button {
+    position: absolute;
+    top: 0px;
+    right: 2px;
+    color: #3894bc;
+    outline: 0px;
+    border: 0px;
+    line-height: 5px;
+    height: 12px;
+}
+button br {
+    display: none;
+}
+.website-alert-content {
+    border: 1px solid #3894bc;
+    padding: 10px 20px;
+}
+.website-alerts-container p {
+    margin: 0px;
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+    color: #1f385f;
+}
+.website-alert {
+    padding-bottom: 5px;
+}
 /*.website-alert {
     position: relative;
 }
