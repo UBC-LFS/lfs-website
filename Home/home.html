@@ -29,8 +29,7 @@
     [loop query="category_name=website-alerts"]
     <div class="website-alert page-alert">
         <div class="website-alert-content">
-            <p class="alert-check home">
-            </p>
+            <p class="alert-check website-content-text"></p>
             <button type = "button" class = "close" data-dismiss = "website-individual-alert-outer" aria-hidden = "true">
                 &times;
             </button>
@@ -103,7 +102,7 @@
     $("div[role='main']").prepend($("#main-content"));
     $("#main-content").prepend($("#content"));
     $("#container").prepend($(".image-region"));
-    $("#container").prepend($(".website-alerts"));
+    $("#container").prepend($(".website-alerts-container"));
     // $("#container").prepend($(".weather-alert-outer"));
 </script>
 <div class="row-fluid border-bottom">
