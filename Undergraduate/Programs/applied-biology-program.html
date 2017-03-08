@@ -23,55 +23,53 @@ $("#container").prepend($(".image-region"));
 </script>
 <div class="row-fluid">
     <div class="span12" >
-        <div class="span8" id="body-text-content">
-            <div class="row-fluid">
-                <h2>About the Applied Biology Program</h2>
-                <p>Students in the Applied Biology Program explore the real-world application of the life sciences to the management of land, animals and food production. The program emphasizes critical thinking, practical involvement, and a systems approach that integrates technical knowledge with sustainability and ethics. The Program equips graduates with the skills and knowledge to become leaders in sustainable food production and the responsible use of land, water and animals.</p>
-            </div>
-            <div class="row-fluid">
-                <h2>Majors Offered</h2>
-                <div class="span12 no-margin-left">
-                    <div class="span4 box" id="training">
-                        <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/current-students/applied-biology/applied-animal-biology/"> <span class="center-box"> <h3 class="box-name">Applied Animal Biology</h3> </span> </a>
-                    </div>
-                    <div class="span4 box" id="training">
-                        <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/current-students/applied-biology/applied-plant-and-soil-sciences/"> <span class="center-box"> <h3 class="box-name">Applied Plant and Soil Sciences</h3> </span> </a>
-                    </div>
-                    <div class="span4 box" id="training">
-                        <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/current-students/applied-biology/food-and-the-environment/"> <span class="center-box"> <h3 class="box-name">Food and the Environment</h3> </span> </a>
-                    </div>
+        <div class="row-fluid">
+            <h2>About the Applied Biology Program</h2>
+            <p>Students in the Applied Biology Program explore the real-world application of the life sciences to the management of land, animals and food production. The program emphasizes critical thinking, practical involvement, and a systems approach that integrates technical knowledge with sustainability and ethics. The Program equips graduates with the skills and knowledge to become leaders in sustainable food production and the responsible use of land, water and animals.</p>
+        </div>
+        <div class="row-fluid">
+            <h2>Majors Offered</h2>
+            <div class="span12 no-margin-left">
+                <div class="span4 box" id="training">
+                    <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/current-students/applied-biology/applied-animal-biology/"> <span class="center-box"> <h3 class="box-name">Applied Animal Biology</h3> </span> </a>
+                </div>
+                <div class="span4 box" id="training">
+                    <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/current-students/applied-biology/applied-plant-and-soil-sciences/"> <span class="center-box"> <h3 class="box-name">Applied Plant and Soil Sciences</h3> </span> </a>
+                </div>
+                <div class="span4 box" id="training">
+                    <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/current-students/applied-biology/food-and-the-environment/"> <span class="center-box"> <h3 class="box-name">Food and the Environment</h3> </span> </a>
                 </div>
             </div>
-            <div class="row-fluid">
-                <h2>Program Minors</h2>
-                <h3>Commerce Minor</h3>
-                <p>Students wanting a foundation in business management are encouraged to consider this minor.</p>
-                <h3>Science Minor</h3>
-                <p>Students wishing to augment their studies may pursue a minor in science.</p>
-            </div>
-            <div class="row-fluid">
-                <h2>Career Options</h2>
-                <h3>With an undergraduate degree</h3>
-                <h3>With additional study</h3>
-            </div>
-            <div class="row-fluid" id="undergrad-profile">
-                <h2>Featured Students</h2>
-                [loop query="post_per_page=2&amp;category_name=featured-undergrad"]
-                    <div class="span5 featured-undergrad" style="margin-top: 3%">
-                        [link_with_content]
-                        <a href="" class="undergrad-profile-link">
-                            [image_with_src img_class="featured-profiles"]
-                            <h2 class="featured">[cf featured-name]</h2>
-                            <h3 class="featured">[cf featured-program]</h3>
-                            <p> [cf featured-blurb] <p>
-                        </a>
-                    </div>
-                [/loop]
-            </div>
+        </div>
+        <div class="row-fluid">
+            <h2>Program Minors</h2>
+            <h3>Commerce Minor</h3>
+            <p>Students wanting a foundation in business management are encouraged to consider this minor.</p>
+            <h3>Science Minor</h3>
+            <p>Students wishing to augment their studies may pursue a minor in science.</p>
+        </div>
+        <div class="row-fluid">
+            <h2>Career Options</h2>
+            <h3>With an undergraduate degree</h3>
+            <h3>With additional study</h3>
+        </div>
+        <div class="row-fluid" id="undergrad-profile">
+            <h2>Featured Students</h2>
+            [loop query="post_per_page=3&amp;category_name=featured-undergrad"]
+                <div class="span4 featured-undergrad" style="margin-top: 3%">
+                    [link_with_content]
+                    <a href="" class="undergrad-profile-link">
+                        [image_with_src img_class="featured-profiles"]
+                        <h2 class="featured">[cf featured-name]</h2>
+                        <h3 class="featured">[cf featured-program]</h3>
+                        <p> [cf featured-blurb] <p>
+                    </a>
+                </div>
+            [/loop]
         </div>
     </div>
 </div>
-<div class="page-toc" id="apply-sidebar" >
+<!--<div class="page-toc" id="apply-sidebar" >
     <h4 style="text-align: center; font-weight: 600;">Join the Applied Biology Program</h4>
     <p>Study with world-renowned experts in one of the top ranked Life Sciences faculties in the world. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dolorum quibusdam eius modi iure magnam maiores reprehenderit fuga similique, iste, expedita, eos beatae explicabo laudantium rerum, enim id illum voluptate.</p>
     <div style="width: 50%; margin: 0 auto; margin-bottom: 15px;">
@@ -79,5 +77,5 @@ $("#container").prepend($(".image-region"));
             <span>APPLY NOW <i class="icon-angle-right"></i> </span>
         </a>
     </div>
-</div>
+</div>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
