@@ -445,6 +445,9 @@ html, body {
     .profile-control {
         display: none;
     }
+    .large-intro {
+        font-size: 230%;
+    }
 }
 @media screen and (min-width: 768px) {
     .large-intro {
@@ -481,5 +484,8 @@ html, body {
     #event-slider .event-double-arrow p {
         line-height: 60px;
         font-size: 50px;
+    }
+    .large-intro {
+        font-size: 450%;
     }
 }
