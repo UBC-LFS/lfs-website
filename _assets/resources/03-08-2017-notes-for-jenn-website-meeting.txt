@@ -9,7 +9,7 @@ Home:
 About:
 - What is LFS? 
 - Add indigenous ties to our Faculty in the history section of our About page
-- Add research projects, esearch dollars, something international, rankings, reputation of faculty, cut staff, class sizes, number of courses offered
+- Add research projects, research dollars, something international, rankings, reputation of faculty, cut staff out, class sizes, number of courses offered
 
 Prospective:
 - What is LFS? What is the experience like?
@@ -35,3 +35,5 @@ Research:
 
 Featured Profiles:
 - add gallery in faculty profile, and current courses taught
+
+Lorm
