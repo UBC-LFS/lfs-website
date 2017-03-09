@@ -46,44 +46,6 @@
 [/loop]
 </div>
 
-<!--<div class="website-alerts">
-    <div class = "alert weather-alert">
-        <div class="weather-alert-border">
-            <table>
-                <tr>
-                    <td class="exclamation">
-                        <p>!</p>
-                    </td>
-                    <td class="content-text">
-                        [loop query="category_name=website-alerts"]
-                            <p>
-                                <span><b>WEATHER ADVISORY:</b></span>
-                                <span class="alert-check weather" data-alert-type = "weather-alert">[cf alert-weather]</span>
-                            </p>
-                            <p>Updated: Dec 20, 2013 6:15AM PST<p>
-                        [/loop]
-                    </td>
-                </tr>
-            </table>
-            <button type = "button" class = "close" data-dismiss = "alert" aria-hidden = "true">
-                &times;
-            </button>
-        </div>
-    </div>
-    [loop query="category_name=website-alerts"]
-    <div class="alert website-individual-alert">
-        <div class="website-individual-alert-border">
-            <p class="alert-check home">
-                [cf alert-home1]
-            </p>
-            <button type = "button" class = "close" data-dismiss = "website-individual-alert-outer" aria-hidden = "true">
-                &times;
-            </button>
-        </div>
-    </div>
-    [/loop]
-</div>-->
-
 <div class="image-region no-padding">
     <div class="image-gradient">
     </div>
@@ -103,7 +65,6 @@
     $("#main-content").prepend($("#content"));
     $("#container").prepend($(".image-region"));
     $("#container").prepend($(".website-alerts-container"));
-    // $("#container").prepend($(".weather-alert-outer"));
 </script>
 <div class="row-fluid border-bottom">
     <h3>
