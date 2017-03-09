@@ -345,14 +345,15 @@ html, body {
     left: 0px;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
     opacity: 0;
     transition: opacity .4s;
     text-decoration: none;
-}
-#upcoming-events div.slick-list li.slick-slide .event-vertical-center-wrap .event-wrap:hover > .event-hover {
     opacity: 1;
 }
+/*#upcoming-events div.slick-list li.slick-slide .event-vertical-center-wrap .event-wrap:hover > .event-hover {
+    opacity: 1;
+}*/
 #upcoming-events div.slick-list li.slick-slide .event-wrap > .event-image {
     overflow: hidden;
 }
