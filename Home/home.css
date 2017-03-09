@@ -1,27 +1,20 @@
 /*alert does not display until we check alerts exists*/
-.website-alerts {
-    display: none;
-}
 .alert {
     display: none;
 }
-.website-alerts br {
-    display: none;
-}
-.home-alert {
-    display: none;
+.website-alert p,
+.website-alert td
+{
+    font-size: 100%;
 }
 .website-alerts-container
 {
     display:none;
+    position: relative;
 }
 .website-alert-texts
 {
     display: none;
-}
-.website-alerts-container
-{
-    position: relative;
 }
 .website-alerts-container .exclamation p {
     font-size: 190%;
@@ -33,103 +26,32 @@
     margin-right: 5px;
 }
 .website-alert {
-    position: relative;
+    overflow: hidden;
 }
 .website-alert button {
     position: absolute;
-    top: 0px;
-    right: 2px;
+    top: 2px;
+    right: 3px;
     color: #3894bc;
     outline: 0px;
     border: 0px;
     line-height: 5px;
     height: 12px;
 }
-button br {
+.website-alert br {
     display: none;
 }
 .website-alert-content {
     border: 1px solid #3894bc;
-    padding: 10px 20px;
+    padding: 8px 17px;
+    margin-top: 5px;
+    position: relative;
 }
 .website-alerts-container p {
     margin: 0px;
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
     color: #1f385f;
 }
-.website-alert {
-    padding-bottom: 5px;
-}
-/*.website-alert {
-    position: relative;
-}
-.website-alert button {
-    position: absolute;
-    top: 0px;
-    right: 2px;
-    color: #3894bc;
-    outline: 0px;
-    border: 0px;
-    line-height: 15px
-}
-button br {
-    display: none;
-}
-.website-individual-alert {
-    border: 1px solid #3894bc;
-    padding: 10px 20px;
-    display: none;
-}
-.website-alert {
-    margin-bottom: 5px;
-}
-.weather-alert-outer {
-    overflow: hidden;
-    position: relative;
-}
-.weather-alert {
-    border: 1px solid #3894bc;
-    background-color: white;
-    position: relative;
-    display: none;
-    margin: 5px 0px;
-}
-.weather-alert > table {
-    margin: 5px;
-}
-.weather-alert .exclamation p {
-    font-size: 190%;
-    line-height: 1;
-    border: 1px solid;
-    border-radius: 50%;
-    text-align: center;
-    color: #3894bc;
-    margin-right: 5px;
-}
-.weather-alert p {
-    margin: 0px;
-    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
-    color: #1f385f;
-}
-.weather-alert .content-text p {
-    font-size: 90%;
-}
-.weather-alert button {
-    position: absolute;
-    top: 0px;
-    right: 1px;
-    color: #3894bc;
-    outline: 0px;
-    border: 0px;
-    line-height: 15px;
-}
-.weather-alert button:focus{
-    color: #3894bc;
-}
-.weather-alert button:hover,
-.weather-alert button:active {
-    color: #1f385f;
-}*/
 h3 {
     font-size: 150%;
     line-height: 180%;
