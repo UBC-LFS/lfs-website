@@ -308,6 +308,7 @@ html, body {
 .box {
     background-size: cover;
     height: 250px;
+    margin-bottom: 20px;
 }
 .center-box {
     position: absolute;
@@ -319,6 +320,7 @@ html, body {
 .box-name {
     color: white;
     text-align: center;
+    font-size: 200%;
 }
 #nonfeatured-news {
     overflow-y: scroll;
