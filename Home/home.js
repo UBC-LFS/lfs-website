@@ -166,6 +166,10 @@ jQuery(document).ready(function ($) {
         var alert_text;
         var weather_alert_check;
         var web_alert_display_check = false;
+        var i;
+        var test1;
+        var test2;
+        var test3;
         for (k=0; k<web_alert_p_count; k++)
         {
             web_alert_text = $('p.alert-text');
@@ -193,10 +197,19 @@ jQuery(document).ready(function ($) {
             {
                 $('.website-alerts-container .page-alert').eq(0).clone().appendTo('.website-alerts-container');
             }
-            for (k=0; k<web_alert_count; k++)
+            i = 0;
+            for (k=0; k<$('p.alert-text').length; k++)
             {
-                alert_text = $('p.alert-text').eq(k).text();
-                $('.website-alerts-container .page-alert .website-content-text').eq(k).text(alert_text);
+                if ($.trim($('p.alert-text').eq(k).text()).length > 0)
+                {
+                    alert_text = $('p.alert-text').eq(k).text();
+                    $('.website-alerts-container .page-alert .website-content-text').eq(i).text(alert_text);
+                    i++
+                }
+                if (i >= web_alert_count)
+                {
+                    break;
+                }
             }
         }
         else
