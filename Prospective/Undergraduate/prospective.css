@@ -40,3 +40,9 @@ h1.page-title {
 .nav {
     border-bottom: none;
 }
+#featured-undergrad {
+    display: none;
+}
+#featured-alumni {
+    display: none;
+}
