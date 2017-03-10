@@ -221,6 +221,9 @@ h3.featured {
     font-size: 1em;
     margin-top: 1%;
 }
+h3.box-name {
+    margin: auto;
+}
 .explore-more {
     float: right;
     background-color: transparent;
