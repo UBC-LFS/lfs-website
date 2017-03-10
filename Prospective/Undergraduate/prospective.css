@@ -46,3 +46,8 @@ h1.page-title {
 #featured-alumni {
     display: none;
 }
+.btn {
+    background-color: transparent;
+    color: #002145;
+    background-image: none;
+}
