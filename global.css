@@ -101,6 +101,12 @@ p, td {
     transform: translate(0%, -50%);
     text-align: center;
 }
+#ubc7-unit-navigation #menu-top-nav li.apply-button {
+    background-color: #eb513a;
+}
+#ubc7-unit-navigation #menu-top-nav li.apply-button a {
+    color: white;
+}
 @media screen and (max-width: 1200px) {
     .large-intro {
         font-size: 300%;
@@ -150,9 +156,20 @@ p, td {
         right: 65px;
     }
 }
+@media screen and (min-width: 571px) {
+    #ubc7-unit-navigation #menu-top-nav li.apply-button {
+        display: none;
+    }
+    #ubc7-unit .container .apply-now-button {
+        display: block;
+    }
+}
 @media screen and (max-width: 570px) {
     #ubc7-unit .container .apply-now-button {
         display: none;
+    }
+    #ubc7-unit-navigation #menu-top-nav li.apply-button {
+        display: block;
     }
 }
 @media screen and (max-width: 480px) {
