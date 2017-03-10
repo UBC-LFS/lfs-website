@@ -443,12 +443,21 @@ html, body {
 }
 @media screen and (max-width: 766px) {
     #nonfeatured-news {
-        overflow-y: hidden;
+        overflow-y: none;
+    }
+    #nonfeatured-news .news {
+        display: none;
+    }
+    #nonfeatured-news .news:first-child {
+        display: block;
     }
 }
 @media screen and (min-width: 767px) {
     #nonfeatured-news {
         overflow-y: scroll;
+    }
+    #nonfeatured-news .news {
+        display: block;
     }
 }
 @media screen and (max-width: 768px) {

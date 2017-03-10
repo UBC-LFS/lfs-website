@@ -145,7 +145,6 @@ jQuery(document).ready(function ($) {
             featured_news_height = $('#news-1').height();
             $('#nonfeatured-news').css('height',featured_news_height.toString() + 'px');
         }
-
         event_width = $('#upcoming-events div.slick-list li.slick-slide').width();
         $('#upcoming-events div.slick-list div.slick-track').css('height', event_width+'px');
 
