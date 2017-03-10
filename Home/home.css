@@ -322,9 +322,9 @@ html, body {
     text-align: center;
     font-size: 200%;
 }
-#nonfeatured-news {
+/*#nonfeatured-news {
     overflow-y: scroll;
-}
+}*/
 #upcoming-events div.slick-list li.slick-slide {
     margin: 0px;
     display: table;
@@ -439,6 +439,25 @@ html, body {
 @media screen and (max-width: 480px) {
     .box {
         height: 120px;
+    }
+}
+@media screen and (max-width: 766px) {
+    #nonfeatured-news {
+        overflow-y: none;
+    }
+    #nonfeatured-news .news {
+        display: none;
+    }
+    #nonfeatured-news .news:first-child {
+        display: block;
+    }
+}
+@media screen and (min-width: 767px) {
+    #nonfeatured-news {
+        overflow-y: scroll;
+    }
+    #nonfeatured-news .news {
+        display: block;
     }
 }
 @media screen and (max-width: 768px) {
