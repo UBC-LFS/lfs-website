@@ -244,12 +244,11 @@ jQuery(document).ready(function ($) {
 
     slick_profile_control();
     set_width();
-    // alert_display();
-    
-    function function_timeout()
+
+    function timeOutFncCall()
     {
-        setTimeout(slick_profile_control, 100);
-        setTimeout(set_width, 100);
+        slick_profile_control();
+        set_width();
     }
 
     $('#event-slider .event-prev').on("mouseenter", function(){
@@ -261,6 +260,8 @@ jQuery(document).ready(function ($) {
     $('#event-slider .event-double-arrow').on("mouseleave", function() {
         $('#event-slider .event-double-arrow p').text('\u2194');
     })
-    $(window).on('resize', function_timeout);
-    
+
+    $(window).on('resize',function () {
+        setTimeout(timeOutFncCall, 100);
+    });
 });
