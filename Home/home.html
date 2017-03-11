@@ -61,10 +61,21 @@
 </div>
 <div id="main-content" class="container"></div>
 <script>
-    $("div[role='main']").prepend($("#main-content"));
-    $("#main-content").prepend($("#content"));
-    $("#container").prepend($(".image-region"));
-    $("#container").prepend($(".website-alerts-container"));
+    var getDivMainRole = document.querySelector('div[role="main"]');
+    var getMainContent = document.getElementById('main-content');
+    var getContent = document.getElementById('content');
+    var getContainer = document.getElementById('container');
+    var getImageRegion = document.getElementsByClassName('image-region')[0];
+    var getWebsiteAlerts = document.getElementsByClassName('website-alerts-container')[0];
+    getDivMainRole.insertBefore(getMainContent, getDivMainRole.childNodes[0]);
+    getMainContent.insertBefore(getContent, getMainContent.childNodes[0]);
+    getContainer.insertBefore(getImageRegion, getContainer.childNodes[0]);
+    getContainer.insertBefore(getWebsiteAlerts, getContainer.childNodes[0]);
+
+    // $("div[role='main']").prepend($("#main-content"));
+    // $("#main-content").prepend($("#content"));
+    // $("#container").prepend($(".image-region"));
+    // $("#container").prepend($(".website-alerts-container"));
 </script>
 <div class="row-fluid border-bottom">
     <h3>
