@@ -155,7 +155,7 @@ var CheckOpenClosed = function () {
     var dayofweek = d.getUTCDay();
   
   
-    var isDaylightSaving = function() {
+    var isDaylightSaving = function() {      
         return ((month > 2) && (month < 10)) || ((month == 2) && (dayofmonth >= marchday)) || ((month == 10) && (dayofmonth < novemberday));
     }
 
@@ -195,7 +195,7 @@ var CheckOpenClosed = function () {
         return (hours >= 17) && (hours <= 23) && (dayofweek != 0) && (dayofweek != 6);
     }
 
-   isDaylightSaving() ? hours-- : hours;
+   isDaylightSaving() ? hours++ : hours;
 
     if (isDeansOfficeWorkingHoursAndNotSunday()) {
         if (isUTCMondayOrSaturday()) {
@@ -231,7 +231,7 @@ var CheckOpenClosed = function () {
         $('.open-circle-grad').css("background-color","#de1309");
     }
 
-    if (isFinanceWorkingHoursAndNotWeekend()) {
+    if (isFinanceWorkingHoursAndNotWeekend()) {   
         $('.open-circle-finance').css("background-color","#02d738");
     } else {
         $('.open-circle-finance').css("background-color","#de1309");
