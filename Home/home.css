@@ -341,17 +341,59 @@ html, body {
     overflow: hidden;
     height: 100%;
 }
+
 #upcoming-events div.slick-list li.slick-slide .event-vertical-center-wrap .event-wrap .event-hover {
-    position: absolute; /* not sure: this element responds to element with position relative, even if element is not direct parent */
-    top: 0px;
+    /* not sure: this element responds to element with position relative, even if element is not direct parent */
+    position: absolute;
+    top: 90%;
     left: 0px;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    height: 10%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.35);
     opacity: 0;
     transition: opacity .4s;
     text-decoration: none;
     opacity: 1;
+    animation: hideEventDetails 0.3s;
+    animation-timing-function: ease-out;
+}
+#upcoming-events div.slick-list li.slick-slide .event-vertical-center-wrap .event-wrap:hover .event-hover {
+    height: 100%;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.45);
+    animation: showEventDetails 0.3s;
+    animation-timing-function: ease-out;
+}
+@keyframes hideEventDetails {
+    from {
+        height: 100%;
+        top: 0%;
+        background-color: rgba(0, 0, 0, 0.45);
+    }
+    to {
+        height: 10%;
+        top: 90%;
+        background-color: rgba(0, 0, 0, 0.35);
+    }
+}
+@keyframes showEventDetails {
+    from {
+        height: 10%;
+        top: 90%;
+        background-color: rgba(0, 0, 0, 0.35);
+    }
+    to {
+        height: 100%;
+        top: 0%;
+        background-color: rgba(0, 0, 0, 0.45);
+    }
+}
+#upcoming-events a.event-link {
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 100%;
 }
 /*#upcoming-events div.slick-list li.slick-slide .event-vertical-center-wrap .event-wrap:hover > .event-hover {
     opacity: 1;
@@ -366,7 +408,56 @@ html, body {
 #upcoming-events div.slick-list li.slick-slide .event-wrap:hover > .event-image > img {
     transform: scale(1.1);
 }
-#upcoming-events .slick-list .slick-slide .event-wrap .event-hover .event-title,
+#upcoming-events .slick-list .slick-slide .event-wrap .event-hover h2,
+#upcoming-events .slick-list .slick-slide .event-wrap .event-hover h3 {
+    color: white;
+    text-align: center;
+    margin: 0px;
+    position: relative;
+}
+#upcoming-events .event-hover{
+    overflow: hidden;
+    height: 10%;
+}
+#upcoming-events .event-wrap .event-hover .event-date,
+#upcoming-events .event-wrap .event-hover .event-description
+{
+    display: none;
+    opacity: 0;
+    animation: hideDetails 0.6s;
+    animation-timing-function: ease-out;
+}
+#upcoming-events .event-wrap:hover .event-hover .event-date,
+#upcoming-events .event-wrap:hover .event-hover .event-description
+{
+    display: block;
+    opacity: 1;
+    animation: showDetails 0.6s;
+    animation-timing-function: ease-out;
+}
+@keyframes hideDetails {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes showDetails {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/*#upcoming-events .slick-list .slick-slide .event-wrap .event-hover .event-title,
 #upcoming-events .slick-list .slick-slide .event-wrap .event-hover .event-date {
     height: 50%;
     position: relative;
@@ -395,10 +486,9 @@ html, body {
 }
 #event-slider {
     position: relative;
-}
-#event-slider .event-double-arrow {
+}*/
+/*#event-slider .event-double-arrow {
     position: absolute;
-    /*height: 18%;*/
     z-index: 1;
     text-align: center;
     border-radius: 50%;
@@ -430,7 +520,7 @@ html, body {
 #event-slider .event-double-arrow p {
     margin: 0px;
     color: #2f5d7c;
-}
+}*/
 @media screen and (max-width: 300px) {
     .box {
         height: 70px;
