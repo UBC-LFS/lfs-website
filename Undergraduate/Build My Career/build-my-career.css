@@ -78,6 +78,11 @@ h1.page-title {
     outline: 0;
     border: 0;
 }
+.btn {
+    background-color: transparent;
+    color: #002145;
+    background-image: none;
+}
 @media screen and (max-width: 480px) {
     #student_testimonial {
         padding: 15px;
