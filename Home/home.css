@@ -601,3 +601,29 @@ html, body {
         font-size: 450%;
     }
 }
+#upcoming-events .calendarArrow {
+    position: relative;
+    height: 40px;
+}
+#upcoming-events .eventArrowsWrap {
+    position: absolute;
+    right: 0px;
+}
+#upcoming-events .eventArrow {
+    display: inline-block;
+    cursor: pointer;
+}
+#upcoming-events .eventArrow p {
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 350%;
+    line-height: 30px;
+    margin-bottom: 0px;
+    color: #A8A8A8;
+}
+#upcoming-events .eventArrow p:hover {
+    color: #0680a6;
+}
+#upcoming-events .eventArrow p:active {
+    color: #2f5d7c;
+}
