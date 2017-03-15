@@ -355,14 +355,14 @@ html, body {
     transition: opacity .4s;
     text-decoration: none;
     opacity: 1;
-    animation: hideEventDetails 0.3s;
+    animation: hideEventDetails 0.25s;
     animation-timing-function: ease-out;
 }
 #upcoming-events div.slick-list li.slick-slide .event-vertical-center-wrap .event-wrap:hover .event-hover {
     height: 100%;
     top: 0%;
     background-color: rgba(0, 0, 0, 0.45);
-    animation: showEventDetails 0.3s;
+    animation: showEventDetails 0.25s;
     animation-timing-function: ease-out;
 }
 @keyframes hideEventDetails {
@@ -424,7 +424,7 @@ html, body {
 {
     display: none;
     opacity: 0;
-    animation: hideDetails 0.6s;
+    animation: hideDetails 0.5s;
     animation-timing-function: ease-out;
 }
 #upcoming-events .event-wrap:hover .event-hover .event-date,
@@ -432,14 +432,14 @@ html, body {
 {
     display: block;
     opacity: 1;
-    animation: showDetails 0.6s;
+    animation: showDetails 0.5s;
     animation-timing-function: ease-out;
 }
 @keyframes hideDetails {
     0% {
         opacity: 1;
     }
-    50% {
+    40% {
         opacity: 1;
     }
     100% {
@@ -450,7 +450,7 @@ html, body {
     0% {
         opacity: 0;
     }
-    50% {
+    40% {
         opacity: 0;
     }
     100% {
