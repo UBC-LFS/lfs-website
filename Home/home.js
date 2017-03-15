@@ -62,7 +62,8 @@ jQuery(document).ready(function ($) {
                 }
             },
             {
-                breakpoint: 768,
+                // breakpoint: 768,
+                breakpoint: 769,
                 settings: {
                     arrows: false,
                     centerMode: true,
@@ -71,7 +72,8 @@ jQuery(document).ready(function ($) {
                 }
             },
             {
-            breakpoint: 480,
+            // breakpoint: 480,
+                breakpoint: 481,
                 settings: {
                     arrows: false,
                     centerMode: true,

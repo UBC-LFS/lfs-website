@@ -408,12 +408,30 @@ html, body {
 #upcoming-events div.slick-list li.slick-slide .event-wrap:hover > .event-image > img {
     transform: scale(1.1);
 }
-#upcoming-events .slick-list .slick-slide .event-wrap .event-hover h2,
-#upcoming-events .slick-list .slick-slide .event-wrap .event-hover h3 {
+#upcoming-events .slick-list .slick-slide .event-wrap .event-hover p {
     color: white;
     text-align: center;
     margin: 0px;
     position: relative;
+}
+#upcoming-events .event-wrap .event-title {
+    height: 100%;
+}
+#upcoming-events .event-wrap:hover .event-title {
+    height: auto;
+}
+#upcoming-events .event-wrap .event-title p {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    line-height: 24px;
+    font-size: 30px
+}
+#upcoming-events .event-wrap:hover .event-title p {
+    position: relative;
+    top: 0%;
+    transform: translate(0%, 0%);
 }
 #upcoming-events .event-hover{
     overflow: hidden;
