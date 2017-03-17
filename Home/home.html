@@ -161,19 +161,28 @@
                     <div class="event-image">%event_thumbnail{medium}%</div>
                     <a href="%event_url%" class="event-link">
                         <div class="event-hover">
-                            <div class="event-title">
-                                <p>%event_title%</p>
-                            </div>
-                            <!--<div class="horizontal-break"></div>-->
-                            <div class="event-date">
-                                <p>%start{jS M Y}% at %start{g:i:a}%</p>
-                            </div>
-                            <div class="event-description">
-                                <p>%event_content%
-                                </p>
+                            <div class="event-text-wrap">
+                                <div class="event-title">
+                                    <p>%event_title%</p>
+                                </div>
+                                <!--<div class="horizontal-break"></div>-->
+                                <div class="event-date">
+                                    <p>%start{jS M Y}% at %start{g:i:a}%</p>
+                                </div>
+                                <div class="event-description">
+                                    <p>%event_content%
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </a>
+                    <div class="event-view-position">
+                        <div class="event-view-button">
+                            <a href="%event_url%">
+                                View
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         [/eo_events]

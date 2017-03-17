@@ -135,6 +135,7 @@ jQuery(document).ready(function ($) {
     var website_alert_container_left;
     var weather_alert_outer_left;
     var event_arrow_width;
+    var event_wrap_height;
     function set_width() {
         var single_news_height;
         if ($(window).width() < 767)
@@ -161,6 +162,9 @@ jQuery(document).ready(function ($) {
 
         event_arrow_width = $('#event-slider .event-double-arrow').height();
         $('#event-slider .event-double-arrow').css('width', event_arrow_width+'px');
+
+        event_wrap_height = ($('#upcoming-events .event-wrap').height())*0.1;
+        $('#upcoming-events .event-title').css('height', event_wrap_height+'px');
     }
 
     function alert_append()
@@ -269,6 +273,11 @@ jQuery(document).ready(function ($) {
     $('#event-slider .event-double-arrow').on("mouseleave", function() {
         $('#event-slider .event-double-arrow p').text('\u2194');
     })
+
+    $("#upcoming-events .event-wrap a.event-link").on("touchstart", function(event) {
+        event.stopPropagation();
+        event.preventDefault();
+    });
 
     $(window).on('resize',function () {
         setTimeout(timeOutFncCall, 100);
