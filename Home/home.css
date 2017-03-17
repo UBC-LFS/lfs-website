@@ -389,6 +389,24 @@ html, body {
         background-color: rgba(0, 0, 0, 0.45);
     }
 }
+#upcoming-events .test1 {
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    /*opacity: 0;*/
+    /*background-color: rgba(0, 0, 0, 0.35);*/
+    z-index: 10;
+}
+#upcoming-events .test1 .testHover {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+#upcoming-events .test1:hover .testHover {
+    opacity: 0.5;
+}
 #upcoming-events a.event-link {
     position: absolute;
     top: 0%;
@@ -505,15 +523,43 @@ html, body {
     text-align: center;
     background-color: #2f5d7c;
     opacity: 0;
+    animation: hideEventButton 0.25s;
+    animation-timing-function: ease-out;
 }
 #upcoming-events .event-wrap:hover .event-view-position .event-view-button {
     opacity: 1;
+    animation: showEventButton 0.5s;
+    animation-timing-function: ease-out;
+}
+@keyframes hideEventButton {
+    0% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes showEventButton {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 #upcoming-events .event-wrap .event-view-position .event-view-button a {
     color: white;
     text-decoration: none;
     font-size: 160%;
     vertical-align: middle;
+    outline: 0;
+    border: 0;
 }
 @media screen and (max-width: 300px) {
     .box {

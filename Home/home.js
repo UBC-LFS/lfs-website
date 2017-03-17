@@ -274,10 +274,19 @@ jQuery(document).ready(function ($) {
         $('#event-slider .event-double-arrow p').text('\u2194');
     })
 
-    $("#upcoming-events .event-wrap a.event-link").on("touchstart", function(event) {
-        event.stopPropagation();
+    // $("div.test1").on("touchstart", function(event) {
+    //     // event.preventDefault();
+    //     event.stopPropagation();
+    // });
+    $("a.event-link").on("touchstart", function(event) {
+        console.log("test");
         event.preventDefault();
+        // event.stopPropagation();
     });
+    // $("div.test1").on("touchstart", function(event) {
+    //     // event.preventDefault();
+    //     event.stopPropagation();
+    // });
 
     $(window).on('resize',function () {
         setTimeout(timeOutFncCall, 100);
