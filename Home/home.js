@@ -255,15 +255,6 @@ jQuery(document).ready(function ($) {
         });
     });
 
-    slick_profile_control();
-    set_width();
-
-    function timeOutFncCall()
-    {
-        slick_profile_control();
-        set_width();
-    }
-
     var event_link_remove = false;
     var event_link_copy;
     $('#upcoming-events .event-wrap').on('click touchstart', function(event){
@@ -282,6 +273,15 @@ jQuery(document).ready(function ($) {
             event_link_remove = false;
         }
     });
+
+    slick_profile_control();
+    set_width();
+
+    function timeOutFncCall()
+    {
+        slick_profile_control();
+        set_width();
+    }
 
     $(window).on('resize',function () {
         setTimeout(timeOutFncCall, 100);
