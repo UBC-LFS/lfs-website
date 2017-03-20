@@ -322,9 +322,6 @@ html, body {
     text-align: center;
     font-size: 200%;
 }
-/*#nonfeatured-news {
-    overflow-y: scroll;
-}*/
 #upcoming-events div.slick-list li.slick-slide {
     margin: 0px;
     display: table;
@@ -389,30 +386,13 @@ html, body {
         background-color: rgba(0, 0, 0, 0.45);
     }
 }
-#upcoming-events .test1 {
-    position: absolute;
-    top: 0%;
-    height: 100%;
-    width: 100%;
-    /*opacity: 0;*/
-    /*background-color: rgba(0, 0, 0, 0.35);*/
-    z-index: 10;
-}
-#upcoming-events .test1 .testHover {
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.35);
-}
-#upcoming-events .test1:hover .testHover {
-    opacity: 0.5;
-}
-#upcoming-events a.event-link {
+#upcoming-events .event-wrap a.event-link {
     position: absolute;
     top: 0%;
     height: 100%;
     width: 100%;
     text-decoration: none;
+    cursor: pointer;
 }
 #upcoming-events div.slick-list li.slick-slide .event-wrap > .event-image {
     overflow: hidden;
@@ -430,6 +410,10 @@ html, body {
     margin: 0px;
     position: relative;
 }
+#upcoming-events .event-wrap .event-hover .event-text-wrap {
+    max-height: 85%;
+}
+
 #upcoming-events .event-wrap .event-title {
     position: relative;
     top: 0%;
@@ -553,7 +537,7 @@ html, body {
         opacity: 1;
     }
 }
-#upcoming-events .event-wrap .event-view-position .event-view-button a {
+#upcoming-events .event-wrap .event-view-position .event-view-button a.event-button-link {
     color: white;
     text-decoration: none;
     font-size: 160%;
@@ -561,6 +545,7 @@ html, body {
     outline: 0;
     border: 0;
 }
+
 @media screen and (max-width: 300px) {
     .box {
         height: 70px;
@@ -608,35 +593,25 @@ html, body {
     div.entry-content .profile-control {
         display: block;
     }
-    /*#event-slider .event-double-arrow {
-        display: none;
-    }*/
 }
-@media screen and (max-width: 979px) {
-/*#event-slider .event-double-arrow {
+/*@media screen and (max-width: 979px) {
+#event-slider .event-double-arrow {
         display: none;
-    }*/
+    }
 }
 @media screen and (min-width: 979px) and (max-width: 1200px) {
-    /*#event-slider .event-double-arrow {
+    #event-slider .event-double-arrow {
         height: 56px;
     }
     #event-slider .event-double-arrow p {
         line-height: 48px;
         font-size: 40px;
-    }*/
-}
+    }
+}*/
 @media screen and (min-width: 1200px) {
     div.entry-content .profile-control {
         display: block;
     }
-    /*#event-slider .event-double-arrow {
-        height: 70px;
-    }
-    #event-slider .event-double-arrow p {
-        line-height: 60px;
-        font-size: 50px;
-    }*/
     .large-intro {
         font-size: 450%;
     }
