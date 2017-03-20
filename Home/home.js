@@ -270,14 +270,14 @@ jQuery(document).ready(function ($) {
         event_link_copy = $(this).children('a.event-link-copy').attr('href');
         if (event.type == 'touchstart')
         {
-            $('#upcoming-events .event-wrap a.event-link').removeAttr('href');
+            $(this).children('a.event-link').removeAttr('href');
             event_link_remove = true;
         }
         if (event.type == 'click')
         {
             if (event_link_remove == false)
             {
-                $('#upcoming-events .event-wrap a.event-link').attr('href', event_link_copy);
+                $(this).children('a.event-link').attr('href', event_link_copy);
             }
             event_link_remove = false;
         }
