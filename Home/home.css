@@ -55,10 +55,12 @@
 #container .image-region {
     overflow: hidden
 }
-#banner {
-    background: url("http://lfs-ps.sites.olt.ubc.ca/files/2017/01/20089902805_7c5e1729d1_s.jpg");
+/*#banner {
+    background: url("http://lfs-ps.sites.olt.ubc.ca/files/2017/03/20089902805_7c5e1729d1_t1.jpg");
     background-size: cover;
-}
+    background-repeat: no-repeat;
+    height: 100%;
+}*/
 h3 {
     font-size: 150%;
     line-height: 180%;
@@ -99,6 +101,16 @@ h3 {
 .image-region {
     position: relative;
     margin-right: -15px;
+    padding-top: 40%;
+    height: 0px;
+}
+.image-region #banner {
+    position: absolute;
+    /*background: url("http://lfs-ps.sites.olt.ubc.ca/files/2017/03/20089902805_7c5e1729d1_t1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;*/
+    top: 0px;
 }
 .slick-initialized {
     margin-left:0;
@@ -181,10 +193,10 @@ div.news > br,
 {
     background-color: lightgrey;
 }
-#event-slider > div
+/*#event-slider > div
 {
     position: relative;
-}
+}*/
 .profile-control
 {
     margin: 0;
@@ -431,7 +443,7 @@ html, body {
     top: 50%;
     transform: translate(0%, -50%);
     line-height: 24px;
-    font-size: 30px
+    font-size: 30px;
 }
 #upcoming-events .event-hover{
     overflow: hidden;
@@ -478,7 +490,7 @@ html, body {
     position: relative;
     height: 40px;
 }
-#upcoming-events .eventArrowsWrap {
+/*#upcoming-events .eventArrowsWrap {
     position: absolute;
     right: 0px;
 }
@@ -499,7 +511,7 @@ html, body {
 }
 #upcoming-events .eventArrow p:active {
     color: #2f5d7c;
-}
+}*/
 #upcoming-events .event-wrap .event-view-position {
     position: absolute;
     height: 15%;
@@ -553,7 +565,45 @@ html, body {
     outline: 0;
     border: 0;
 }
-
+/* event arrow */
+#upcoming-events .slick-list {
+    padding: 0px 30px;
+}
+#event-slider {
+    position: relative;
+}
+#event-slider .eventArrow {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 30px;
+    background-color: white;
+}
+#event-slider .event-prev-wrap {
+    left: 0px;
+}
+#event-slider .event-next-wrap {
+    right: 0px;
+}
+#event-slider .eventArrow p {
+    font-size: 85px;
+    margin: 0px;
+    width: 30px;
+    height: 50px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #A8A8A8;
+    overflow: hidden;
+}
+#event-slider .eventArrow p:hover {
+    color: #0680a6;
+}
+#event-slider .eventArrow p:active {
+    color: #2f5d7c;
+}
 @media screen and (max-width: 300px) {
     .box {
         height: 70px;
