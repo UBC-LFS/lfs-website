@@ -567,7 +567,7 @@ html, body {
 }
 /* event arrow */
 #upcoming-events .slick-list {
-    padding: 0px 30px;
+    padding: 0px 34px;
 }
 #event-slider {
     position: relative;
@@ -576,7 +576,7 @@ html, body {
     position: absolute;
     top: 0px;
     height: 100%;
-    width: 30px;
+    width: 34px;
     background-color: white;
 }
 #event-slider .event-prev-wrap {
@@ -595,15 +595,100 @@ html, body {
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    color: #A8A8A8;
+    /*color: #A8A8A8;*/
     overflow: hidden;
+    /*padding-left: 0px;*/
+    /*animation: removeeventarrowshiftright 0.4s;
+    animation-timing-function: ease-out;*/
+    /*animation: removeeventarrowshiftleft 0.4s;
+    animation-timing-function: ease-out;*/
 }
-#event-slider .eventArrow p:hover {
-    color: #0680a6;
-}
-#event-slider .eventArrow p:active {
+/* event prev button hover */
+#event-slider .eventArrow p.event-prev:active {
     color: #2f5d7c;
 }
+#event-slider .eventArrow p.event-prev {
+    padding-left: 4px;
+    padding-right: 0px;
+    color: #A8A8A8;
+    animation: removeeventarrowshiftleft 0.4s;
+    animation-timing-function: ease-out;
+}
+#event-slider .eventArrow p.event-prev:hover {
+    padding-left: 0px;
+    padding-right: 4px;
+    color: #0680a6;
+    animation: eventarrowshiftleft 0.4s;
+    animation-timing-function: ease-out;
+}
+@keyframes eventarrowshiftleft {
+    from {
+        padding-left: 4px;
+        padding-right: 0px;
+        color: #A8A8A8;
+    }
+    to {
+        padding-left: 0px;
+        padding-right: 4px;
+        color: #0680a6;
+    }
+}
+@keyframes removeeventarrowshiftleft {
+    from {
+        padding-left: 0px;
+        padding-right: 4px;
+        color: #0680a6;
+    }
+    to {
+        padding-left: 4px;
+        padding-right: 0px;
+        color: #A8A8A8;
+    }
+}
+/* event next button hover */
+#event-slider .eventArrow p.event-next:active {
+    color: #2f5d7c;
+}
+#event-slider .eventArrow p.event-next {
+    padding-left: 0px;
+    padding-right: 4px;
+    color: #A8A8A8;
+    animation: removeeventarrowshiftright 0.4s;
+    animation-timing-function: ease-out;
+}
+#event-slider .eventArrow p.event-next:hover {
+    padding-left: 4px;
+    padding-right: 0px;
+    color: #0680a6;
+    animation: eventarrowshiftright 0.4s;
+    animation-timing-function: ease-out;
+}
+@keyframes eventarrowshiftright {
+    from {
+        padding-left: 0px;
+        padding-right: 4px;
+        color: #A8A8A8;
+    }
+    to {
+        padding-left: 4px;
+        padding-right: 0px;
+        color: #0680a6;
+    }
+}
+@keyframes removeeventarrowshiftright {
+    from {
+        padding-left: 4px;
+        padding-right: 0px;
+        color: #0680a6;
+    }
+    to {
+        padding-left: 0px;
+        padding-right: 4px;
+        color: #A8A8A8;
+    }
+}
+
+
 @media screen and (max-width: 300px) {
     .box {
         height: 70px;
