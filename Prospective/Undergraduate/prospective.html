@@ -1,4 +1,23 @@
 <script src="https://use.fontawesome.com/47b0aee693.js"></script>
+<div class="website-alerts-container">
+    [loop query="category_name=website-alerts"]
+    <div class="website-alert page-alert">
+        <div class="website-alert-content">
+            <p class="alert-check website-content-text"></p>
+            <button type = "button" class = "close" data-dismiss = "website-individual-alert-outer" aria-hidden = "true">
+                &times;
+            </button>
+        </div>
+    </div>
+    [/loop]
+</div>
+<div class="website-alert-texts">
+[loop query="category_name=website-alerts"]
+    <p class="alert-text">[cf alert-home-1]</p>
+    <p class="alert-text">[cf alert-home-2]</p>
+    <p class="alert-text">[cf alert-home-3]</p>
+[/loop]
+</div>
 <div class="image-region no-padding">
     <div class="image-gradient">
     </div>
