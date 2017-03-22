@@ -55,10 +55,12 @@
 #container .image-region {
     overflow: hidden
 }
-#banner {
-    background: url("http://lfs-ps.sites.olt.ubc.ca/files/2017/01/20089902805_7c5e1729d1_s.jpg");
+/*#banner {
+    background: url("http://lfs-ps.sites.olt.ubc.ca/files/2017/03/20089902805_7c5e1729d1_t1.jpg");
     background-size: cover;
-}
+    background-repeat: no-repeat;
+    height: 100%;
+}*/
 h3 {
     font-size: 150%;
     line-height: 180%;
@@ -104,6 +106,10 @@ h3 {
 }
 .image-region #banner {
     position: absolute;
+    /*background: url("http://lfs-ps.sites.olt.ubc.ca/files/2017/03/20089902805_7c5e1729d1_t1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;*/
     top: 0px;
 }
 .slick-initialized {
