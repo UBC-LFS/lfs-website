@@ -562,9 +562,6 @@ html, body {
     overflow: hidden;
 }
 /* event prev button hover */
-#event-slider .eventArrow p.event-prev:active {
-    color: #2f5d7c;
-}
 #event-slider .eventArrow p.event-prev {
     padding-left: 4px;
     padding-right: 0px;
@@ -578,6 +575,10 @@ html, body {
     color: #0680a6;
     animation: eventarrowshiftleft 0.4s;
     animation-timing-function: ease-out;
+}
+/* active effect should be after hover? */
+#event-slider .eventArrow p.event-prev:active {
+    color: #2f5d7c;
 }
 @keyframes eventarrowshiftleft {
     from {
@@ -604,9 +605,6 @@ html, body {
     }
 }
 /* event next button hover */
-#event-slider .eventArrow p.event-next:active {
-    color: #2f5d7c;
-}
 #event-slider .eventArrow p.event-next {
     padding-left: 0px;
     padding-right: 4px;
@@ -620,6 +618,9 @@ html, body {
     color: #0680a6;
     animation: eventarrowshiftright 0.4s;
     animation-timing-function: ease-out;
+}
+#event-slider .eventArrow p.event-next:active {
+    color: #2f5d7c;
 }
 @keyframes eventarrowshiftright {
     from {
