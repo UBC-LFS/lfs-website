@@ -99,6 +99,12 @@ h3 {
 .image-region {
     position: relative;
     margin-right: -15px;
+    padding-top: 40%;
+    height: 0px;
+}
+.image-region #banner {
+    position: absolute;
+    top: 0px;
 }
 .slick-initialized {
     margin-left:0;
@@ -181,10 +187,10 @@ div.news > br,
 {
     background-color: lightgrey;
 }
-#event-slider > div
+/*#event-slider > div
 {
     position: relative;
-}
+}*/
 .profile-control
 {
     margin: 0;
@@ -478,7 +484,7 @@ html, body {
     position: relative;
     height: 40px;
 }
-#upcoming-events .eventArrowsWrap {
+/*#upcoming-events .eventArrowsWrap {
     position: absolute;
     right: 0px;
 }
@@ -499,7 +505,7 @@ html, body {
 }
 #upcoming-events .eventArrow p:active {
     color: #2f5d7c;
-}
+}*/
 #upcoming-events .event-wrap .event-view-position {
     position: absolute;
     height: 15%;
@@ -553,7 +559,34 @@ html, body {
     outline: 0;
     border: 0;
 }
-
+/* event arrow */
+#event-slider {
+    position: relative;
+}
+#event-slider .eventArrow {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+}
+#event-slider .event-prev-wrap {
+    left: 0px;
+}
+#event-slider .event-next-wrap {
+    right: 0px;
+}
+#event-slider .eventArrow p {
+    font-size: 85px;
+    margin: 0px;
+    width: 30px;
+    height: 50px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
 @media screen and (max-width: 300px) {
     .box {
         height: 70px;
