@@ -1,26 +1,25 @@
 jQuery(document).ready(function ($) {
-    $( ".featured-person" ).each(function(index) {
-         $( this ).addClass("index-" + Math.floor(index/3));
+    $(".featured-person").each(function (index) {
+        $(this).addClass("index-" + Math.floor(index / 3));
     });
     var numberOfProfiles = $('.featured-person').length;
     var span12 = '<div class="span12" style="margin-left: 0;"></div>';
-    for (i=0; i<=numberOfProfiles; i++) {
-        if (i%3===0) {
-            $('.index-' + Math.floor(i/3)).wrapAll(span12);
+    for (i = 0; i <= numberOfProfiles; i++) {
+        if (i % 3 === 0) {
+            $('.index-' + Math.floor(i / 3)).wrapAll(span12);
         }
     }
-  
+
     var animated = false;
     var top_height_to_counter = $("#ranking-world").offset().top;
     var test1 = $("#ranking-world").offset().top;
     var test2 = $(window).height();
-    var test3 = $("#ranking-world").height()*3/4;
-    function count_down_detect() 
-    {
-        var y_scroll_pos = window.pageYOffset + $(window).height() - $("#ranking-world").height()*2/3;
-        var y_scroll_pos2 = window.pageYOffset - $("#ranking-world").height()*2/5;
-        if (y_scroll_pos > top_height_to_counter &&  y_scroll_pos2 < top_height_to_counter && !animated) 
-        {
+    var test3 = $("#ranking-world").height() * 3 / 4;
+
+    function count_down_detect() {
+        var y_scroll_pos = window.pageYOffset + $(window).height() - $("#ranking-world").height() * 2 / 3;
+        var y_scroll_pos2 = window.pageYOffset - $("#ranking-world").height() * 2 / 5;
+        if (y_scroll_pos > top_height_to_counter && y_scroll_pos2 < top_height_to_counter && !animated) {
             var rankingWorld = new CountUp('ranking-world', 100, 25);
             var rankingCanada = new CountUp('ranking-canada', 100, 2, 0, 3);
             $('#ranking-world').scroll(rankingWorld.start());
@@ -29,7 +28,7 @@ jQuery(document).ready(function ($) {
         }
     }
     count_down_detect();
-    $(window).on('scroll',count_down_detect);
+    $(window).on('scroll', count_down_detect);
 
     var profile_count;
     var tab_count = $('#staff-profile > div.featured-group').length;
@@ -37,20 +36,36 @@ jQuery(document).ready(function ($) {
     var indexj;
     var profile_src;
     var profile_target;
-    for (indexj=0;indexj<tab_count;indexj++)
-    {
+    for (indexj = 0; indexj < tab_count; indexj++) {
         profile_count = document.getElementById('staff-profile').getElementsByClassName('featured-group')[indexj].getElementsByClassName('featured-person').length;
-        for (index=0; index<profile_count; index++)
-        {
+        for (index = 0; index < profile_count; index++) {
             profile_src = document.getElementById('staff-profile').getElementsByClassName('featured-group')[indexj].getElementsByClassName('featured-person')[index].getElementsByTagName('a')[0].href;
-            document.getElementById('staff-profile').getElementsByClassName('featured-group')[indexj].getElementsByClassName('featured-person')[index].getElementsByTagName('a')[1].setAttribute('href',profile_src);
+            document.getElementById('staff-profile').getElementsByClassName('featured-group')[indexj].getElementsByClassName('featured-person')[index].getElementsByTagName('a')[1].setAttribute('href', profile_src);
         }
     }
 
     function showFaculty() {
         console.log("showFaculty function triggered");
     }
+
+    // animate scroll to ids
+    $("#admissions-button").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#admissions").offset().top
+        }, 1000);
+    });
+    $("#degree-button").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#degree-at-a-glance").offset().top
+        }, 1000);
+    });
+    $("#outcomes-button").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#outcomes").offset().top
+        }, 1000);
+    });
 });
+
 
 /*
 
@@ -66,42 +81,44 @@ jQuery(document).ready(function ($) {
 // duration = duration of animation in seconds, default 2
 // options = optional object of options (see below)
 
-var CountUp = function(target, startVal, endVal, decimals, duration, options) {
+var CountUp = function (target, startVal, endVal, decimals, duration, options) {
 
     // make sure requestAnimationFrame and cancelAnimationFrame are defined
     // polyfill for browsers without native support
     // by Opera engineer Erik Möller
     var lastTime = 0;
     var vendors = ['webkit', 'moz', 'ms', 'o'];
-    for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
-        window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+    for (var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+        window.requestAnimationFrame = window[vendors[x] + 'RequestAnimationFrame'];
         window.cancelAnimationFrame =
-          window[vendors[x]+'CancelAnimationFrame'] || window[vendors[x]+'CancelRequestAnimationFrame'];
+            window[vendors[x] + 'CancelAnimationFrame'] || window[vendors[x] + 'CancelRequestAnimationFrame'];
     }
     if (!window.requestAnimationFrame) {
-        window.requestAnimationFrame = function(callback, element) {
+        window.requestAnimationFrame = function (callback, element) {
             var currTime = new Date().getTime();
             var timeToCall = Math.max(0, 16 - (currTime - lastTime));
-            var id = window.setTimeout(function() { callback(currTime + timeToCall); },
-              timeToCall);
+            var id = window.setTimeout(function () {
+                    callback(currTime + timeToCall);
+                },
+                timeToCall);
             lastTime = currTime + timeToCall;
             return id;
         };
     }
     if (!window.cancelAnimationFrame) {
-        window.cancelAnimationFrame = function(id) {
+        window.cancelAnimationFrame = function (id) {
             clearTimeout(id);
         };
     }
 
     var self = this;
 
-     // default options
+    // default options
     self.options = {
-        useEasing : true, // toggle easing
-        useGrouping : true, // 1,000,000 vs 1000000
-        separator : ',', // character to use as a separator
-        decimal : '.', // character to use as a decimal
+        useEasing: true, // toggle easing
+        useGrouping: true, // 1,000,000 vs 1000000
+        separator: ',', // character to use as a separator
+        decimal: '.', // character to use as a decimal
         easingFn: null, // optional custom easing closure function, default is Robert Penner's easeOutExpo
         formattingFn: null // optional custom formatting function, default is self.formatNumber below
     };
@@ -111,7 +128,9 @@ var CountUp = function(target, startVal, endVal, decimals, duration, options) {
             self.options[key] = options[key];
         }
     }
-    if (self.options.separator === '') { self.options.useGrouping = false; }
+    if (self.options.separator === '') {
+        self.options.useGrouping = false;
+    }
     if (!self.options.prefix) self.options.prefix = '';
     if (!self.options.suffix) self.options.suffix = '';
 
@@ -124,7 +143,7 @@ var CountUp = function(target, startVal, endVal, decimals, duration, options) {
     self.dec = Math.pow(10, self.decimals);
     self.duration = Number(duration) * 1000 || 2000;
 
-    self.formatNumber = function(nStr) {
+    self.formatNumber = function (nStr) {
         nStr = nStr.toFixed(self.decimals);
         nStr += '';
         var x, x1, x2, rgx;
@@ -140,33 +159,35 @@ var CountUp = function(target, startVal, endVal, decimals, duration, options) {
         return self.options.prefix + x1 + x2 + self.options.suffix;
     };
     // Robert Penner's easeOutExpo
-    self.easeOutExpo = function(t, b, c, d) {
+    self.easeOutExpo = function (t, b, c, d) {
         return c * (-Math.pow(2, -10 * t / d) + 1) * 1024 / 1023 + b;
     };
 
     self.easingFn = self.options.easingFn ? self.options.easingFn : self.easeOutExpo;
     self.formattingFn = self.options.formattingFn ? self.options.formattingFn : self.formatNumber;
 
-    self.version = function () { return '1.7.1'; };
+    self.version = function () {
+        return '1.7.1';
+    };
 
     // Print value to target
-    self.printValue = function(value) {
+    self.printValue = function (value) {
         var result = self.formattingFn(value);
 
         if (self.d.tagName === 'INPUT') {
             this.d.value = result;
-        }
-        else if (self.d.tagName === 'text' || self.d.tagName === 'tspan') {
+        } else if (self.d.tagName === 'text' || self.d.tagName === 'tspan') {
             this.d.textContent = result;
-        }
-        else {
+        } else {
             this.d.innerHTML = result;
         }
     };
 
-    self.count = function(timestamp) {
+    self.count = function (timestamp) {
 
-        if (!self.startTime) { self.startTime = timestamp; }
+        if (!self.startTime) {
+            self.startTime = timestamp;
+        }
 
         self.timestamp = timestamp;
         var progress = timestamp - self.startTime;
@@ -195,7 +216,7 @@ var CountUp = function(target, startVal, endVal, decimals, duration, options) {
         }
 
         // decimal
-        self.frameVal = Math.round(self.frameVal*self.dec)/self.dec;
+        self.frameVal = Math.round(self.frameVal * self.dec) / self.dec;
 
         // format and print value
         self.printValue(self.frameVal);
@@ -204,17 +225,19 @@ var CountUp = function(target, startVal, endVal, decimals, duration, options) {
         if (progress < self.duration) {
             self.rAF = requestAnimationFrame(self.count);
         } else {
-            if (self.callback) { self.callback(); }
+            if (self.callback) {
+                self.callback();
+            }
         }
     };
     // start your animation
-    self.start = function(callback) {
+    self.start = function (callback) {
         self.callback = callback;
         self.rAF = requestAnimationFrame(self.count);
         return false;
     };
     // toggles pause/resume animation
-    self.pauseResume = function() {
+    self.pauseResume = function () {
         if (!self.paused) {
             self.paused = true;
             cancelAnimationFrame(self.rAF);
@@ -227,7 +250,7 @@ var CountUp = function(target, startVal, endVal, decimals, duration, options) {
         }
     };
     // reset to startVal so animation can be run again
-    self.reset = function() {
+    self.reset = function () {
         self.paused = false;
         delete self.startTime;
         self.startVal = startVal;
