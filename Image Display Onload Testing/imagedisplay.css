@@ -1,0 +1,9 @@
+#imageLoad {
+    background-image: url('http://lfs-sbcollab.sites.olt.ubc.ca/files/2017/03/5767665-nature-4k-wallpaper_t1.jpg');
+    background-repeat:no-repeat;
+    background-size: contain;
+    height: 658px;
+    width: 1170px;
+    /*min-height: 650px;
+    min-width: 1150px;*/
+}
