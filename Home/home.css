@@ -443,7 +443,7 @@ html, body {
     top: 50%;
     transform: translate(0%, -50%);
     line-height: 24px;
-    font-size: 30px
+    font-size: 30px;
 }
 #upcoming-events .event-hover{
     overflow: hidden;
@@ -566,6 +566,9 @@ html, body {
     border: 0;
 }
 /* event arrow */
+#upcoming-events .slick-list {
+    padding: 0px 30px;
+}
 #event-slider {
     position: relative;
 }
@@ -574,7 +577,7 @@ html, body {
     top: 0px;
     height: 100%;
     width: 30px;
-    cursor: pointer;
+    background-color: white;
 }
 #event-slider .event-prev-wrap {
     left: 0px;
@@ -592,6 +595,14 @@ html, body {
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+    color: #A8A8A8;
+    overflow: hidden;
+}
+#event-slider .eventArrow p:hover {
+    color: #0680a6;
+}
+#event-slider .eventArrow p:active {
+    color: #2f5d7c;
 }
 @media screen and (max-width: 300px) {
     .box {
