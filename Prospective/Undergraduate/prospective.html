@@ -22,21 +22,21 @@
 </script>
 <div class="row-fluid">
     <div class="span4">
-        <a class="btn btn-large btn-block" href="http://lfs-ps.sites.olt.ubc.ca/undergraduate-admission-requirements/">Admission Requirements</a>
+        <a class="btn btn-large btn-block" href="#admissions">Admissions</a>
     </div>
     <div class="span4">
-        <a class="btn btn-large btn-block" href="http://lfs-ps.sites.olt.ubc.ca/student-services/">Student Services</a>
+        <a class="btn btn-large btn-block" href="#degree-at-a-glance">Degree at a Glance</a>
     </div>
     <div class="span4">
-        <a class="btn btn-large btn-block" href="http://courses.landfood.ubc.ca/">Programs</a>
+        <a class="btn btn-large btn-block" href="#outcomes">Outcomes</a>
     </div>
 </div>
 <div class="row-fluid border-bottom" id="trigger-animation intro">
     <h3 style="margin-bottom: 3%">Founded in 1914, the UBC Faculty of Land and Food Systems has worked for over a century to address global issues surrounding
-health and sustainable land and food systems. Today, our world faces unprecedented challenges of climate change, population
-growth, food and nutrition insecurity, and water shortages, challenges that our researchers and students are hard at work
-to solve. As one of the top 25 Life Sciences Schools in the world, the Faculty is uniquely positioned to educate and empower
-the next generation of problem solvers.</h3>
+        health and sustainable land and food systems. Today, our world faces unprecedented challenges of climate change,
+        population growth, food and nutrition insecurity, and water shortages, challenges that our researchers and students
+        are hard at work to solve. As one of the top 25 Life Sciences Schools in the world, the Faculty is uniquely positioned
+        to educate and empower the next generation of problem solvers.</h3>
 </div>
 <div class="row-fluid border-bottom" id="world-best">
     <h2>Among the world's best</h2>
@@ -58,19 +58,20 @@ the next generation of problem solvers.</h3>
     <h2>Welcome from the Dean</h2>
     <div class="span12">
         <div class="span2">
-            <img style="width: auto; height: auto;" src="http://lfs-ps.sites.olt.ubc.ca/files/2016/11/13562115125_d4c47495af_z-266x400.jpg" alt="dean">
-</div>
-<div class="span10">
-    <h3 class="no-margin-top">Dr. Rickey Yada, Dean</h3>
-    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eum reprehenderit dolorem dicta repudiandae quasi cupiditate mollitia molestiae, natus, repellat sed quas veniam quam quos ad qui, dignissimos. Ab, sed?</span>
-        <span>Soluta sit iste et, hic, repudiandae incidunt eos dolor dolore vel ullam doloribus molestiae dolorem sunt aliquam sint pariatur aspernatur perspiciatis ea magnam alias nobis esse veniam! Hic error, distinctio.</span>
-        <span>Ab odio accusamus ut laudantium atque qui et, minus quidem officiis neque itaque mollitia vero aspernatur alias excepturi quos modi numquam labore, quisquam suscipit vel. Blanditiis, voluptates, fuga. Magnam, autem!</span>
-        <span>Ab, quo. Id dicta unde totam non similique laborum aspernatur repellat libero minima a, natus hic enim eos, iusto quod iure, voluptate delectus maxime. Facilis est possimus dolores unde? Minus.</span></p>
-</div>
-</div>
+            <img style="width: auto; height: auto;" src="http://lfs-ps.sites.olt.ubc.ca/files/2016/11/13562115125_d4c47495af_z-266x400.jpg"
+                alt="dean">
+        </div>
+        <div class="span10">
+            <h3 class="no-margin-top">Dr. Rickey Yada, Dean</h3>
+            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eum reprehenderit dolorem dicta repudiandae quasi cupiditate mollitia molestiae, natus, repellat sed quas veniam quam quos ad qui, dignissimos. Ab, sed?</span>
+                <span>Soluta sit iste et, hic, repudiandae incidunt eos dolor dolore vel ullam doloribus molestiae dolorem sunt aliquam sint pariatur aspernatur perspiciatis ea magnam alias nobis esse veniam! Hic error, distinctio.</span>
+                <span>Ab odio accusamus ut laudantium atque qui et, minus quidem officiis neque itaque mollitia vero aspernatur alias excepturi quos modi numquam labore, quisquam suscipit vel. Blanditiis, voluptates, fuga. Magnam, autem!</span>
+                <span>Ab, quo. Id dicta unde totam non similique laborum aspernatur repellat libero minima a, natus hic enim eos, iusto quod iure, voluptate delectus maxime. Facilis est possimus dolores unde? Minus.</span></p>
+        </div>
+    </div>
 </div>
 <div class="row-fluid border-bottom" id="staff-profile">
-    <h2>Meet our students, faculty and staff</h2>
+    <h2>Our Community</h2>
     <div class="row-fluid">
         <div class="span4" onclick="showCategory('faculty')">
             <div class="btn btn-large btn-block" id="featured-faculty-toggle">Faculty</div>
@@ -79,15 +80,15 @@ the next generation of problem solvers.</h3>
             <div class="btn btn-large btn-block" id="featured-undergrad-toggle">Students</div>
         </div>
         <div class="span4" onClick="showCategory('alumni')">
-            <div class="btn btn-large btn-block" id="featured-alumni-toggle">Alumni</div> 
+            <div class="btn btn-large btn-block" id="featured-alumni-toggle">Alumni</div>
         </div>
     </div>
     <script>
         function showCategory(input) {
             if (input === "faculty") {
                 $('#featured-faculty-toggle').css({
-                     'background-color': '#1f385f',
-                     'color': 'white'
+                    'background-color': '#1f385f',
+                    'color': 'white'
                 });
                 $('#featured-faculty').css({
                     'display': 'block'
@@ -157,46 +158,54 @@ the next generation of problem solvers.</h3>
     </script>
     <div class="featured-group" id="featured-faculty">
         [loop query="posts_per_page=3&amp;category_name=featured-profile"]
-            <div class="span4 featured-person"> 
-                [link_with_content]
-                <a href="" class="prospective-profile-link">
+        <div class="span4 featured-person">
+            [link_with_content]
+            <a href="" class="prospective-profile-link">
                     [image_with_src img_class="featured-profiles"]
                     <h2 class="featured">[cf featured-name]</h2>
                     <h3 class="featured">[cf featured-program]</h3>
                     <p> [cf featured-blurb] <p>
                 </a>
-            </div>
-        [/loop] 
+        </div>
+        [/loop]
     </div>
     <div class="featured-group" id="featured-undergrad">
         [loop query="posts_per_page=3&amp;category_name=featured-undergrad"]
-            <div class="span4 featured-person"> 
-                [link_with_content]
-                <a href="" class="prospective-profile-link">
+        <div class="span4 featured-person">
+            [link_with_content]
+            <a href="" class="prospective-profile-link">
                     [image_with_src img_class="featured-profiles"]
                     <h2 class="featured">[cf featured-name]</h2>
                     <h3 class="featured">[cf featured-program]</h3>
                     <p> [cf featured-blurb] <p>
                 </a>
-            </div>
-        [/loop] 
+        </div>
+        [/loop]
     </div>
     <div class="featured-group" id="featured-alumni">
         [loop query="posts_per_page=3&amp;category_name=featured-alumni"]
-            <div class="span4 featured-person"> 
-                [link_with_content]
-                <a href="" class="prospective-profile-link">
+        <div class="span4 featured-person">
+            [link_with_content]
+            <a href="" class="prospective-profile-link">
                     [image_with_src img_class="featured-profiles"]
                     <h2 class="featured">[cf featured-name]</h2>
                     <h3 class="featured">[cf featured-program]</h3>
                     <p> [cf featured-blurb] <p>
                 </a>
-            </div>
-        [/loop] 
+        </div>
+        [/loop]
     </div>
     <a class="btn explore-more" href="http://lfs-ps.sites.olt.ubc.ca/featured-profiles/">
-        <span>EXPLORE MORE PROFILES <i class="icon-angle-right"></i></span>
+        <span>READ MORE STORIES <i class="icon-angle-right"></i></span>
     </a>
+</div>
+<div class="row-fluid border-bottom" id="degree-at-a-glance">
+    <h2>Degree at a Glance</h2>
+
+</div>
+<div class="row-fluid border-bottom" id="outcomes">
+    <h2>Outcomes</h2>
+    <p>Learn more about career options by going to <a href="http://lfs-ps.sites.olt.ubc.ca/current-students/build-my-career/">Build by Career</a> and <a href="http://lfs-ps.sites.olt.ubc.ca/current-students/what-can-i-do-with-my-major/">What Can I Do With My Major</a></p>
 </div>
 <div class="row-fluid border-bottom" id="outside-classroom">
     <h2>Outside the Classroom</h2>
@@ -211,14 +220,12 @@ the next generation of problem solvers.</h3>
         </div>
         <div class="span4">
             <h4>Career Options</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis cupiditate iste voluptatum quasi nemo qui perferendis eveniet iusto repudiandae harum mollitia obcaecati, quos dolore consequatur a aspernatur! Ducimus, saepe, animi?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis cupiditate iste voluptatum quasi nemo
+                qui perferendis eveniet iusto repudiandae harum mollitia obcaecati, quos dolore consequatur a aspernatur!
+                Ducimus, saepe, animi?</p>
             <a href="http://lfs-ps.sites.olt.ubc.ca/current-students/build-my-career/">Learn more <i class="icon-angle-right"></i></a>
         </div>
     </div>
-</div>
-<div class="row-fluid border-bottom" id="first-year">
-    <h2>First Year at a Glance</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia aliquid ducimus libero quisquam blanditiis officia vitae, quidem, est necessitatibus repudiandae rem suscipit dignissimos amet, dolor sapiente voluptatum magni ea facere?</p>
 </div>
 <div class="row-fluid border-bottom" id="explore-programs">
     <h2>Explore our Bachelor of Science programs</h2>
