@@ -52,6 +52,13 @@
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
     color: #1f385f;
 }
+#container .image-region {
+    overflow: hidden
+}
+#banner {
+    background: url("http://lfs-ps.sites.olt.ubc.ca/files/2017/01/20089902805_7c5e1729d1_s.jpg");
+    background-size: cover;
+}
 h3 {
     font-size: 150%;
     line-height: 180%;

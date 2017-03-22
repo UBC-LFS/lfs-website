@@ -113,8 +113,9 @@ jQuery(document).ready(function ($) {
         $('.weather-alert').css('display', 'block');
         $('.website-individual-alert').css('display', 'block');
         $('.profile-control p.profile-arrow').css('display','block');
+        $('#upcoming-events .event-wrap .event-view-position').css('display', 'block');
     }
-    element_display(); //element_display must be first, cause some of the function below targets element_display
+    element_display();
 
     var slide_profile_height;
     var window_size;
