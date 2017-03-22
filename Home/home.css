@@ -55,12 +55,6 @@
 #container .image-region {
     overflow: hidden
 }
-/*#banner {
-    background: url("http://lfs-ps.sites.olt.ubc.ca/files/2017/03/20089902805_7c5e1729d1_t1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-}*/
 h3 {
     font-size: 150%;
     line-height: 180%;
@@ -106,10 +100,6 @@ h3 {
 }
 .image-region #banner {
     position: absolute;
-    /*background: url("http://lfs-ps.sites.olt.ubc.ca/files/2017/03/20089902805_7c5e1729d1_t1.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 100%;*/
     top: 0px;
 }
 .slick-initialized {
@@ -193,10 +183,6 @@ div.news > br,
 {
     background-color: lightgrey;
 }
-/*#event-slider > div
-{
-    position: relative;
-}*/
 .profile-control
 {
     margin: 0;
@@ -490,28 +476,6 @@ html, body {
     position: relative;
     height: 40px;
 }
-/*#upcoming-events .eventArrowsWrap {
-    position: absolute;
-    right: 0px;
-}
-#upcoming-events .eventArrow {
-    display: inline-block;
-    cursor: pointer;
-}
-#upcoming-events .eventArrow p {
-    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
-    font-weight: bolder;
-    font-size: 350%;
-    line-height: 30px;
-    margin-bottom: 0px;
-    color: #A8A8A8;
-}
-#upcoming-events .eventArrow p:hover {
-    color: #0680a6;
-}
-#upcoming-events .eventArrow p:active {
-    color: #2f5d7c;
-}*/
 #upcoming-events .event-wrap .event-view-position {
     position: absolute;
     height: 15%;
@@ -595,13 +559,7 @@ html, body {
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    /*color: #A8A8A8;*/
     overflow: hidden;
-    /*padding-left: 0px;*/
-    /*animation: removeeventarrowshiftright 0.4s;
-    animation-timing-function: ease-out;*/
-    /*animation: removeeventarrowshiftleft 0.4s;
-    animation-timing-function: ease-out;*/
 }
 /* event prev button hover */
 #event-slider .eventArrow p.event-prev:active {
