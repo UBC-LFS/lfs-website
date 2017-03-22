@@ -64,4 +64,10 @@ jQuery(document).ready(function ($) {
         //$(this).parents('div.alert-dismissable.' + data_dismiss_value).eq(0).animate({opacity:'0'}, 1000);
         $(this).parents('div.alert-dismissable.' + data_dismiss_value).eq(0).remove(); // removes first parent
     }
+
+    $("#degree-button").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#degree-requirements").offset().top
+        }, 1000);
+    });
 });
