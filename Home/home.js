@@ -255,23 +255,25 @@ jQuery(document).ready(function ($) {
         });
     });
 
-    $('#upcoming-events .event-wrap').on('click touchstart', function(event){
+    (function() {
         var event_link_remove = false;
-        var event_link_copy = $(this).children('a.event-link-copy').attr('href');
-        if (event.type === 'touchstart')
-        {
-            $(this).children('a.event-link').removeAttr('href');
-            event_link_remove = true;
-        }
-        if (event.type === 'click')
-        {
-            if (event_link_remove === false)
+        $('#upcoming-events .event-wrap').on('click touchstart', function(event){
+            var event_link_copy = $(this).children('a.event-link-copy').attr('href');
+            if (event.type === 'touchstart')
             {
-                $(this).children('a.event-link').attr('href', event_link_copy);
+                $(this).children('a.event-link').removeAttr('href');
+                event_link_remove = true;
             }
-            event_link_remove = false;
-        }
-    });
+            if (event.type === 'click')
+            {
+                if (event_link_remove === false)
+                {
+                    $(this).children('a.event-link').attr('href', event_link_copy);
+                }
+                event_link_remove = false;
+            }
+        });
+    })();
 
     slick_profile_control();
     set_width();
