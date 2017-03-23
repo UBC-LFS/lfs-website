@@ -70,4 +70,14 @@ jQuery(document).ready(function ($) {
             scrollTop: $("#degree-requirements").offset().top
         }, 1000);
     });
+    $("#career-button").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#career-development").offset().top
+        }, 1000);
+    });
+    $("#find-button").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#find-resources").offset().top
+        }, 1000);
+    });
 });
