@@ -84,15 +84,6 @@ jQuery(document).ready(function ($) {
         ]
     });
 
-    // (function loadBanner()
-    // {
-    //     var imag = document.createElement('img');
-    //     imag.src = 'http://lfs-ps.sites.olt.ubc.ca/files/2017/03/20089902805_7c5e1729d1_o_r1.jpg';
-    //     imag.onload = function() {
-    //         document.getElementById('banner').src = imag.src;
-    //     };
-    // })();
-
     var numOfNewsDisplay = $('#nonfeatured-news > .news').length;
     var i = 0;
     var news_src;
