@@ -62,7 +62,6 @@ jQuery(document).ready(function ($) {
                 }
             },
             {
-                // breakpoint: 768,
                 breakpoint: 769,
                 settings: {
                     arrows: false,
@@ -72,7 +71,6 @@ jQuery(document).ready(function ($) {
                 }
             },
             {
-            // breakpoint: 480,
                 breakpoint: 481,
                 settings: {
                     arrows: false,
@@ -84,44 +82,48 @@ jQuery(document).ready(function ($) {
         ]
     });
 
-    var numOfNewsDisplay = $('#nonfeatured-news > .news').length;
-    var i = 0;
-    var news_src;
-    var news_selector = document.getElementById("nonfeatured-news").getElementsByClassName("news");
-    var news_name;
-    for (i=0; i<numOfNewsDisplay; i++){
-      news_name = "news_" + i.toString();
-      $(news_selector[i]).attr("id", news_name);
-      news_src = $("#nonfeatured-news > " + "#" + news_name + " > .not_used").text();
-      $("#nonfeatured-news > " + "#" + news_name + " > a.post_link").attr("href", news_src);
-    }
+    // add links to news
+    (function addLinksToNews() {
+        var numOfNewsDisplay = $('#nonfeatured-news > .news').length;
+        var i = 0;
+        var news_src;
+        var news_selector = document.getElementById("nonfeatured-news").getElementsByClassName("news");
+        var news_name;
+        for (i=0; i<numOfNewsDisplay; i++){
+        news_name = "news_" + i.toString();
+        $(news_selector[i]).attr("id", news_name);
+        news_src = $("#nonfeatured-news > " + "#" + news_name + " > .not_used").text();
+        $("#nonfeatured-news > " + "#" + news_name + " > a.post_link").attr("href", news_src);
+        }
+    })();
     
-    var index = 0;
-    var num_of_profiles = document.getElementById("profile_slider").getElementsByClassName("slick-list")[0].getElementsByClassName("slick-track")[0].children.length;
-    var profile_selector = document.getElementById("profile_slider").getElementsByClassName("slick-list")[0].getElementsByClassName("slick-track")[0].getElementsByClassName("slick-slide");
-    var profile_selector_src;
-    var profile_name;
-    var profile_src;
-    for (index=0; index<num_of_profiles; index++){
-        profile_name = "profile_" + index.toString();
-        $(profile_selector[index]).attr("id", profile_name);
-        profile_selector_src = document.getElementById(profile_name).getElementsByTagName("a")[0];
-        profile_src = $(profile_selector_src).attr("href");
-        $("#" + profile_name + " > .profile_link").attr("href", profile_src);
-    }
+    // add links to profile
+    (function addLinksToProfiles() {
+        var index = 0;
+        var num_of_profiles = document.getElementById("profile_slider").getElementsByClassName("slick-list")[0].getElementsByClassName("slick-track")[0].children.length;
+        var profile_selector = document.getElementById("profile_slider").getElementsByClassName("slick-list")[0].getElementsByClassName("slick-track")[0].getElementsByClassName("slick-slide");
+        var profile_selector_src;
+        var profile_name;
+        var profile_src;
+        for (index=0; index<num_of_profiles; index++){
+            profile_name = "profile_" + index.toString();
+            $(profile_selector[index]).attr("id", profile_name);
+            profile_selector_src = document.getElementById(profile_name).getElementsByTagName("a")[0];
+            profile_src = $(profile_selector_src).attr("href");
+            $("#" + profile_name + " > .profile_link").attr("href", profile_src);
+        }
+    })();
 
-    function element_display() {
+    (function element_display() {
         // $('.weather-alert').css('display', 'block');
         // $('.website-individual-alert').css('display', 'block');
         $('.profile-control p.profile-arrow').css('display','block');
         $('#upcoming-events .event-wrap .event-view-position').css('display', 'block');
-    }
-    element_display();
+    })();
 
-    var slide_profile_height;
-    var window_size;
     function slick_profile_control()
     {
+        var slide_profile_height;
         slide_profile_height = $('#profile_slider').height();
         $('#profile_slider_prev').css('height', slide_profile_height + 'px');
         $('#profile_slider_next').css('height', slide_profile_height + 'px');
@@ -130,15 +132,15 @@ jQuery(document).ready(function ($) {
         $('.profile-control p.profile-arrow').css('display','block');
     }
 
-    var featured_news_height;
-    var event_width;
-    var exclamation_height;
-    var page_content_width;
-    var website_alert_container_left;
-    var event_arrow_width;
-    var event_wrap_height;
     function set_width() {
+        var featured_news_height;
+        var event_width;
         var single_news_height;
+        var exclamation_height;
+        var page_content_width;
+        var website_alert_container_left;
+        var event_arrow_width;
+        var event_wrap_height;
         if ($(window).width() < 767)
         {
             single_news_height = $('#nonfeatured-news .news').outerHeight(true);
@@ -189,6 +191,7 @@ jQuery(document).ready(function ($) {
             }
         }
 
+
         weather_alert_check = $('.website-alerts-container .weather-alert span.alert-check').text().length;
         if (weather_alert_check > 0)
         {
@@ -201,7 +204,8 @@ jQuery(document).ready(function ($) {
 
         if (web_alert_count > 0)
         {
-            web_alert_display_check = true;
+            //web_alert_display_check = true;
+            // if more than 1 alert, clone page-alert
             for (k=1; k<web_alert_count; k++)
             {
                 $('.website-alerts-container .page-alert').eq(0).clone().appendTo('.website-alerts-container');
@@ -232,7 +236,7 @@ jQuery(document).ready(function ($) {
             $('.website-alerts-container').css('padding-bottom', '5px');
         }
 
-        if (web_alert_display_check == true)
+        if (web_alert_display_check === true)
         {
             $('.website-alerts-container').css('display', 'block');
         }
@@ -251,18 +255,17 @@ jQuery(document).ready(function ($) {
         });
     });
 
-    var event_link_remove = false;
-    var event_link_copy;
     $('#upcoming-events .event-wrap').on('click touchstart', function(event){
-        event_link_copy = $(this).children('a.event-link-copy').attr('href');
-        if (event.type == 'touchstart')
+        var event_link_remove = false;
+        var event_link_copy = $(this).children('a.event-link-copy').attr('href');
+        if (event.type === 'touchstart')
         {
             $(this).children('a.event-link').removeAttr('href');
             event_link_remove = true;
         }
-        if (event.type == 'click')
+        if (event.type === 'click')
         {
-            if (event_link_remove == false)
+            if (event_link_remove === false)
             {
                 $(this).children('a.event-link').attr('href', event_link_copy);
             }
