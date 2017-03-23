@@ -530,7 +530,7 @@ html, body {
     border: 0;
 }
 /* event arrow */
-#upcoming-events .slick-list {
+#upcoming-events #event-slider {
     padding: 0px 34px;
 }
 #event-slider {

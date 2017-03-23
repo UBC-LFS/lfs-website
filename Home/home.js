@@ -120,8 +120,8 @@ jQuery(document).ready(function ($) {
     }
 
     function element_display() {
-        $('.weather-alert').css('display', 'block');
-        $('.website-individual-alert').css('display', 'block');
+        // $('.weather-alert').css('display', 'block');
+        // $('.website-individual-alert').css('display', 'block');
         $('.profile-control p.profile-arrow').css('display','block');
         $('#upcoming-events .event-wrap .event-view-position').css('display', 'block');
     }
@@ -144,7 +144,6 @@ jQuery(document).ready(function ($) {
     var exclamation_height;
     var page_content_width;
     var website_alert_container_left;
-    var weather_alert_outer_left;
     var event_arrow_width;
     var event_wrap_height;
     function set_width() {
@@ -185,15 +184,10 @@ jQuery(document).ready(function ($) {
         var web_alert_text;
         var web_alert_text_count;
         var k;
-        var alert_name;
-        var alert_clone;
         var alert_text;
         var weather_alert_check;
         var web_alert_display_check = false;
         var i;
-        var test1;
-        var test2;
-        var test3;
         for (k=0; k<web_alert_p_count; k++)
         {
             web_alert_text = $('p.alert-text');
