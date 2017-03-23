@@ -12,9 +12,6 @@ jQuery(document).ready(function ($) {
 
     var animated = false;
     var top_height_to_counter = $("#ranking-world").offset().top;
-    var test1 = $("#ranking-world").offset().top;
-    var test2 = $(window).height();
-    var test3 = $("#ranking-world").height() * 3 / 4;
 
     function count_down_detect() {
         var y_scroll_pos = window.pageYOffset + $(window).height() - $("#ranking-world").height() * 2 / 3;
@@ -134,7 +131,6 @@ jQuery(document).ready(function ($) {
             $('.website-alerts-container').css('display', 'block');
         }
     })();
-    // alert_append();
     
     $('.close').click(function(){
         $(this).parents('.website-alert').animate({height: "0px"}, function() {
