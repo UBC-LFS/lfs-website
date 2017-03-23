@@ -199,10 +199,8 @@
      </div>
 </div>
 <script>
-var i;
-var eventLength = document.getElementsByClassName('eo-events-shortcode').length;
-for (i=0;i<eventLength;i++)
-{
-    document.getElementsByClassName('eo-events-shortcode')[i].className += ' events';
-}
+var eoEvents = document.getElementsByClassName('eo-events-shortcode');
+[].forEach.call(eoEvents, function(x) {
+    x.className += ' events';
+})
 </script>
