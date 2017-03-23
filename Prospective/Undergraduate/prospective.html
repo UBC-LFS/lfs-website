@@ -39,10 +39,11 @@
     var getContainer = document.getElementById('container');
     var getImageRegion = document.getElementsByClassName('image-region')[0];
     var getWebsiteAlerts = document.getElementsByClassName('website-alerts-container')[0];
+    var getBreadcrumb = document.getElementsByClassName('breadcrumb')[0];
     getDivMainRole.insertBefore(getMainContent, getDivMainRole.childNodes[0]);
     getMainContent.insertBefore(getContent, getMainContent.childNodes[0]);
     getContainer.insertBefore(getImageRegion, getContainer.childNodes[0]);
-    getContainer.insertBefore(getWebsiteAlerts, getContainer.childNodes[0]);
+    getContainer.insertBefore(getWebsiteAlerts, getBreadcrumb);
 </script>
 <div class="row-fluid">
     <div class="span4">
