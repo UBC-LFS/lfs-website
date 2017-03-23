@@ -1,4 +1,3 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
@@ -49,7 +48,7 @@
 <div class="image-region no-padding">
     <div class="image-gradient">
     </div>
-    <img id="banner" src="http://lfs-ps.sites.olt.ubc.ca/files/2017/03/20089902805_7c5e1729d1_t1_r1.jpg" alt="Homepage Banner">
+    <img id="banner" src="http://lfs-ps.sites.olt.ubc.ca/files/2017/03/homepage_blurred.jpg" alt="Homepage Banner">
     <div class="header-text">
         <div class="bound container">
             <div class="message">
@@ -70,6 +69,14 @@
     getMainContent.insertBefore(getContent, getMainContent.childNodes[0]);
     getContainer.insertBefore(getImageRegion, getContainer.childNodes[0]);
     getContainer.insertBefore(getWebsiteAlerts, getContainer.childNodes[0]);
+    (function loadBanner()
+    {
+        var imag = document.createElement('img');
+        imag.src = 'http://lfs-ps.sites.olt.ubc.ca/files/2017/03/20089902805_7c5e1729d1_o_r1.jpg';
+        imag.onload = function() {
+            document.getElementById('banner').src = imag.src;
+        };
+    })();
 </script>
 <div class="row-fluid border-bottom">
     <h3>
@@ -189,5 +196,5 @@
      </div>
 </div>
 <script>
- $('.eo-events-shortcode').addClass('events');
+ document.getElementsByClassName('eo-events-shortcode').className += ' events'
 </script>
