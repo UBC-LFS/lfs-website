@@ -1,8 +1,7 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <div class="image-region no-padding">
     <div class="image-gradient">
     </div>
-    <img id="banner" src="http://lfs-ps.sites.olt.ubc.ca/files/2016/11/20089902805_7c5e1729d1_o.jpg" alt="Prospective Students Banner"
+    <img id="banner" src="http://lfs-ps.sites.olt.ubc.ca/files/2017/03/homepage_blurred.jpg" alt="Prospective Students Banner"
     />
     <div class="header-text">
         <div class="bound container">
@@ -15,10 +14,24 @@
 </div>
 <div id="main-content" class="container"></div>   
 <script>
-    $("div[role='main']").prepend($("#main-content"));
-    $("#main-content").prepend($("#content"));
-    $("#container").prepend($(".image-region"));
-</script>
+        var getDivMainRole = document.querySelector('div[role="main"]');
+        var getMainContent = document.getElementById('main-content');
+        var getContent = document.getElementById('content');
+        var getContainer = document.getElementById('container');
+        var getImageRegion = document.getElementsByClassName('image-region')[0];
+        var getBreadcrumb = document.getElementsByClassName('breadcrumb')[0];
+        getDivMainRole.insertBefore(getMainContent, getDivMainRole.childNodes[0]);
+        getMainContent.insertBefore(getContent, getMainContent.childNodes[0]);
+        getContainer.insertBefore(getImageRegion, getContainer.childNodes[0]);
+        (function loadBanner()
+        {
+            var image = document.createElement('img');
+            image.src = 'http://lfs-ps.sites.olt.ubc.ca/files/2017/03/20089902805_7c5e1729d1_o_r1.jpg';
+            image.onload = function() {
+                document.getElementById('banner').src = image.src;
+            };
+        })();
+    </script>
 <div class="row-fluid border-bottom">
     <h2 id="trigger-animation">Vision</h2>
     <h3>
