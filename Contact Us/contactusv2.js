@@ -77,11 +77,7 @@ jQuery(document).ready(function ($) {
             var afternoon = hoursOpenToday[1];
             if ((currentTime > morning[0] && currentTime < morning[1]) || (currentTime > afternoon[0] && (currentTime < afternoon[1]))) return true;
         } 
-        else {
-            if (currentTime > hoursOpenToday[0] && currentTime < hoursOpenToday[1]) {
-                return true;
-            }
-        } 
+        else if (currentTime > hoursOpenToday[0] && currentTime < hoursOpenToday[1]) return true;
         return false;
     }
 
