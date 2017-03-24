@@ -53,10 +53,6 @@ h4 {
     font-weight: 400;
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
 }
-h5 {
-    font-weight: 400;
-    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
-}
 p, td {
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
     font-size: 120%;
@@ -155,6 +151,15 @@ p, td {
     }
     #ubc7-unit .container .apply-now-button {
         right: 65px;
+    }
+    h3 {
+        font-size: 100%;
+    }
+    h2 {
+        font-size: 200%
+    }
+    p {
+        font-size: 100%;
     }
 }
 @media screen and (min-width: 571px) {
