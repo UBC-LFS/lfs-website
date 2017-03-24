@@ -54,18 +54,14 @@ h1.page-title {
 .alert {
     display: none;
 }
-.website-alert p,
-.website-alert td
-{
+.website-alert p .website-alert td {
     font-size: 100%;
 }
-.website-alerts-container
-{
+.website-alerts-container{
     display:none;
     position: relative;
 }
-.website-alert-texts
-{
+.website-alert-texts {
     display: none;
 }
 .website-alerts-container .exclamation p {
