@@ -151,7 +151,7 @@ jQuery(document).ready(function ($) {
         });
     });
 
-    (function setup()
+    function alert_position()
     {
         var page_content_width;
         var website_alert_container_left;
@@ -160,7 +160,17 @@ jQuery(document).ready(function ($) {
 
         website_alert_container_left = ($('#main-content').outerWidth(true) - $('#main-content').width())/2;
         $('.website-alerts-container').css('left',website_alert_container_left+'px');
-    })();
+    }
+    alert_position();
+
+    function timeOutFncCall()
+    {
+        alert_position();
+    }
+
+    $(window).on('resize',function () {
+        setTimeout(timeOutFncCall, 100);
+    });
 });
 
 
