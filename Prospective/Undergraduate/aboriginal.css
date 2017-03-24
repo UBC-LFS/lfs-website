@@ -1,3 +1,13 @@
 h1.page-title {
     display: none;
 }
+.image-region {
+    position: relative;
+    margin-right: -15px;
+    padding-top: 40%;
+    height: 0px;
+}
+.image-region #banner {
+    position: absolute;
+    top: 0px;
+}

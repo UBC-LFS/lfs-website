@@ -1,6 +1,5 @@
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-
 <div class="website-alerts-container">
     <div class="website-alert weather-alert">
         <div class="website-alert-content">
@@ -74,10 +73,10 @@
     getContainer.insertBefore(getWebsiteAlerts, getContainer.childNodes[0]);
     (function loadBanner()
     {
-        var imag = document.createElement('img');
-        imag.src = 'http://lfs-ps.sites.olt.ubc.ca/files/2017/03/20089902805_7c5e1729d1_o_r1.jpg';
-        imag.onload = function() {
-            document.getElementById('banner').src = imag.src;
+        var image = document.createElement('img');
+        image.src = 'http://lfs-ps.sites.olt.ubc.ca/files/2017/03/20089902805_7c5e1729d1_o_r1.jpg';
+        image.onload = function() {
+            document.getElementById('banner').src = image.src;
         };
     })();
 </script>

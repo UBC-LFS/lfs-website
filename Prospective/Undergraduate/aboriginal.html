@@ -1,7 +1,7 @@
     <div class="image-region no-padding">
         <div class="image-gradient">
         </div>
-        <img id="banner" src="http://lfs-ps.sites.olt.ubc.ca/files/2016/10/26574827821_97e3478d0e_k_resized.jpg" alt="Prospective Students Banner"
+        <img id="banner" src="http://lfs-ps.sites.olt.ubc.ca/files/2017/03/30061924456_0d54a357f5_blur.jpg" alt="Prospective Students Banner"
         />
         <div class="header-text">
             <div class="bound container">
@@ -18,12 +18,18 @@
         var getContent = document.getElementById('content');
         var getContainer = document.getElementById('container');
         var getImageRegion = document.getElementsByClassName('image-region')[0];
-        var getWebsiteAlerts = document.getElementsByClassName('website-alerts-container')[0];
         var getBreadcrumb = document.getElementsByClassName('breadcrumb')[0];
         getDivMainRole.insertBefore(getMainContent, getDivMainRole.childNodes[0]);
         getMainContent.insertBefore(getContent, getMainContent.childNodes[0]);
         getContainer.insertBefore(getImageRegion, getContainer.childNodes[0]);
-        getContainer.insertBefore(getWebsiteAlerts, getBreadcrumb);
+        (function loadBanner()
+        {
+            var image = document.createElement('img');
+            image.src = 'http://lfs-ps.sites.olt.ubc.ca/files/2017/03/30061924456_0d54a357f5_1920.jpg';
+            image.onload = function() {
+                document.getElementById('banner').src = image.src;
+            };
+        })();
     </script>
     <div class="row-fluid border-bottom">
         <h3 style="margin-bottom: 3%">The Faculty of Land and Food Systems is Honored to exist on the traditional, ancestral, and unceded territory of the hən̓q̓əmin̓əm̓ speaking Musqueam people. In this acknowledgement we as a Faculty recognize the need to build strong community relationships with Indigenous people and to provide unique opportunities for Aboriginal students on campus. </h3>
