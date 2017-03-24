@@ -77,6 +77,13 @@ p, td {
     position: relative;
     margin-right: -15px;
     margin-left: -15px;
+    padding-top: 41%;
+    height: 0px;
+    overflow: hidden;
+}
+.image-region #banner {
+    position: absolute;
+    top: 0px;
 }
 #ubc7-unit .container {
     position: relative;
