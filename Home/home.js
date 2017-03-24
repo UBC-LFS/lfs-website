@@ -172,74 +172,92 @@ jQuery(document).ready(function ($) {
 
     function alert_append()
     {
-        var web_alert_p_count = $('p.alert-text').length;
-        var web_alert_count = 0;
-        var web_alert_text;
-        var web_alert_text_count;
-        var k;
-        var alert_text;
-        var weather_alert_check;
-        var web_alert_display_check = false;
-        var i;
-        for (k=0; k<web_alert_p_count; k++)
-        {
-            web_alert_text = $('p.alert-text');
-            web_alert_text_count = $.trim(web_alert_text.eq(k).text()).length;
-            if (web_alert_text_count > 0)
+        var web_alert_display_check = false;    //checks if webpage has alerts
+        var page_alert_count = 0;
+
+        function weather_alert_checker() {
+            var weather_alert_text_length = $('.website-alerts-container .weather-alert span.alert-check').text().length;
+            if (weather_alert_text_length > 0)
             {
-                web_alert_count++;
+                web_alert_display_check = true;
+            }
+            else
+            {
+                $('.website-alerts-container .weather-alert').remove();
             }
         }
+        weather_alert_checker();
+        
+        function page_alert_counter() {
+            var page_alert_p_count = $('p.alert-text').length;
+            var page_alert_text = $('p.alert-text');
+            var page_alert_text_count = 0;
+            var page_alert_num = 0;
 
-
-        weather_alert_check = $('.website-alerts-container .weather-alert span.alert-check').text().length;
-        if (weather_alert_check > 0)
-        {
-            web_alert_display_check = true;
-        }
-        else
-        {
-            $('.website-alerts-container .weather-alert').remove();
-        }
-
-        if (web_alert_count > 0)
-        {
-            //web_alert_display_check = true;
-            // if more than 1 alert, clone page-alert
-            for (k=1; k<web_alert_count; k++)
+            for (k=0; k<page_alert_p_count; k++)
             {
-                $('.website-alerts-container .page-alert').eq(0).clone().appendTo('.website-alerts-container');
-            }
-            i = 0;
-            for (k=0; k<$('p.alert-text').length; k++)
-            {
-                if ($.trim($('p.alert-text').eq(k).text()).length > 0)
+                page_alert_text_count = $.trim(page_alert_text.eq(k).text()).length;
+                if (page_alert_text_count > 0)
                 {
-                    alert_text = $('p.alert-text').eq(k).text();
-                    $('.website-alerts-container .page-alert .website-content-text').eq(i).text(alert_text);
-                    i++
-                }
-                if (i >= web_alert_count)
-                {
-                    break;
+                    page_alert_num++;
                 }
             }
+            return page_alert_num;
         }
-        else
-        {
-            $('.website-alerts-container .page-alert').remove();
-        }
-        $('.website-alert-texts').remove();
+        page_alert_count = page_alert_counter();
 
-        if ($('.website-alert').length > 0)
-        {
-            $('.website-alerts-container').css('padding-bottom', '5px');
-        }
+        function page_alert_checker() {
+            var alert_text = '';
+            var i = 0;  // counter used for cloning additional page-alerts if page has more than 1 alert
+            var j = 0;  // counter used to count for the page-alert boxes
+            var k = 0;  // counter used to count through p.alert-text tags
 
-        if (web_alert_display_check === true)
-        {
-            $('.website-alerts-container').css('display', 'block');
+            if (page_alert_count > 0)
+            {
+                web_alert_display_check = true;
+
+                // if there is more than 1 page-alert, clone the additional page alerts
+                for (i=1; i<page_alert_count; i++)
+                {
+                    $('.website-alerts-container .page-alert').eq(0).clone().appendTo('.website-alerts-container');
+                }
+
+                // appends text to page-alert box
+                // this block of code prevents bugs that could occur if user deletes alert-1 and starts at alert-2
+                for (k=0; k<$('p.alert-text').length; k++)
+                {
+                    if ($.trim($('p.alert-text').eq(k).text()).length > 0)
+                    {
+                        alert_text = $('p.alert-text').eq(k).text();
+                        $('.website-alerts-container .page-alert .website-content-text').eq(j).text(alert_text);
+                        j++
+                    }
+                    if (j >= page_alert_count)
+                    {
+                        break;
+                    }
+                }
+            }
+
+            else
+            {
+                $('.website-alerts-container .page-alert').remove();
+            }
+            $('.website-alert-texts').remove();
         }
+        page_alert_checker();
+
+        function website_alert_styling() {
+            if ($('.website-alert').length > 0)
+            {
+                $('.website-alerts-container').css('padding-bottom', '5px');
+            }
+            if (web_alert_display_check === true)
+            {
+                $('.website-alerts-container').css('display', 'block');
+            }
+        }
+        website_alert_styling();
     }
     alert_append();
     
