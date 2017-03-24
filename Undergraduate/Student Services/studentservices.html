@@ -1,6 +1,5 @@
-<script src="https://use.fontawesome.com/47b0aee693.js"></script>
+<script src="https://use.fontawesome.com/47b0aee693.js" async></script>
 <div class="image-region no-padding">
-    <div class="image-gradient"></div>
     <img id="banner" src="http://lfs-ps.sites.olt.ubc.ca/files/2016/11/21946803736_bfeded4e2c_o.jpg" alt="Student Services Banner"
     />
     <div class="header-text">
@@ -19,17 +18,24 @@
     <p id="num"></p>
 </div>
 <script>
-    var getDivMainRole = document.querySelector('div[role="main"]');
-    var getMainContent = document.getElementById('main-content');
-    var getContent = document.getElementById('content');
-    var getContainer = document.getElementById('container');
-    var getImageRegion = document.getElementsByClassName('image-region')[0];
-    var getWebsiteAlerts = document.getElementsByClassName('website-alerts-container')[0];
-    getDivMainRole.insertBefore(getMainContent, getDivMainRole.childNodes[0]);
-    getMainContent.insertBefore(getContent, getMainContent.childNodes[0]);
-    getContainer.insertBefore(getImageRegion, getContainer.childNodes[0]);
-    getContainer.insertBefore(getWebsiteAlerts, getContainer.childNodes[0]);
-</script>
+        var getDivMainRole = document.querySelector('div[role="main"]');
+        var getMainContent = document.getElementById('main-content');
+        var getContent = document.getElementById('content');
+        var getContainer = document.getElementById('container');
+        var getImageRegion = document.getElementsByClassName('image-region')[0];
+        var getBreadcrumb = document.getElementsByClassName('breadcrumb')[0];
+        getDivMainRole.insertBefore(getMainContent, getDivMainRole.childNodes[0]);
+        getMainContent.insertBefore(getContent, getMainContent.childNodes[0]);
+        getContainer.insertBefore(getImageRegion, getContainer.childNodes[0]);
+        (function loadBanner()
+        {
+            var image = document.createElement('img');
+            image.src = 'http://lfs-ps.sites.olt.ubc.ca/files/2016/11/21946803736_bfeded4e2c_o.jpg';
+            image.onload = function() {
+                document.getElementById('banner').src = image.src;
+            };
+        })();
+ </script>
 <div class="row-fluid margin-bottom border-bottom">
     <h1>Get advice and support</h1>
     <div class="span12 no-margin-left">
