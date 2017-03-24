@@ -1,11 +1,6 @@
 p {
     font-size: 100%;
 }
-@media screen and (max-width: 767px) {
-    .btn {
-        margin-bottom: 10px;
-    }
-}
 .course-name {
     color: white;
     text-align: center;
