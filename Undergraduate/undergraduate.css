@@ -32,3 +32,52 @@ h1.page-title {
 #peers-profile .featured-person {
     display: none;
 }
+.alert {
+    display: none;
+}
+.website-alert p .website-alert td {
+    font-size: 100%;
+}
+.website-alerts-container{
+    display:none;
+    position: relative;
+}
+.website-alert-texts {
+    display: none;
+}
+.website-alerts-container .exclamation p {
+    font-size: 190%;
+    line-height: 1;
+    border: 1px solid;
+    border-radius: 50%;
+    text-align: center;
+    color: #3894bc;
+    margin-right: 5px;
+}
+.website-alert {
+    overflow: hidden;
+}
+.website-alert button {
+    position: absolute;
+    top: 2px;
+    right: 3px;
+    color: #3894bc;
+    outline: 0px;
+    border: 0px;
+    line-height: 5px;
+    height: 12px;
+}
+.website-alert br {
+    display: none;
+}
+.website-alert-content {
+    border: 1px solid #3894bc;
+    padding: 8px 17px;
+    margin-top: 5px;
+    position: relative;
+}
+.website-alerts-container p {
+    margin: 0px;
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+    color: #1f385f;
+}
