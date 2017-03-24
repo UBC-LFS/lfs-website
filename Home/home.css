@@ -52,9 +52,9 @@
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
     color: #1f385f;
 }
-#container .image-region {
-    overflow: hidden
-}
+/*#container .image-region {
+    overflow: hidden;
+}*/
 .banner {
   background: #3ba648;
   text-align: center;
@@ -87,7 +87,7 @@
 .span12 {
     margin-bottom: 5%;
 }
-.image-region {
+/*.image-region {
     position: relative;
     margin-right: -15px;
     padding-top: 40%;
@@ -96,7 +96,7 @@
 .image-region #banner {
     position: absolute;
     top: 0px;
-}
+}*/
 .slick-initialized {
     margin-left:0;
 }
