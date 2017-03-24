@@ -62,7 +62,7 @@ jQuery(document).ready(function ($) {
         }, 1000);
     });
 
-    (function alert_append()
+    function alert_append()
     {
         var web_alert_display_check = false;    //checks if webpage has alerts
         var page_alert_count = 0;
@@ -137,7 +137,8 @@ jQuery(document).ready(function ($) {
             }
         }
         website_alert_styling();
-    })();
+    }
+    alert_append();
     
     $('.close').click(function(){
         $(this).parents('.website-alert').animate({height: "0px"}, function() {
