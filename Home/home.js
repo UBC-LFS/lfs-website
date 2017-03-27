@@ -83,7 +83,7 @@ jQuery(document).ready(function ($) {
     });
 
     // add links to news
-    (function addLinksToNews() {
+    function addLinksToNews() {
         var numOfNewsDisplay = $('#nonfeatured-news > .news').length;
         var i = 0;
         var news_src;
@@ -95,10 +95,11 @@ jQuery(document).ready(function ($) {
         news_src = $("#nonfeatured-news > " + "#" + news_name + " > .not_used").text();
         $("#nonfeatured-news > " + "#" + news_name + " > a.post_link").attr("href", news_src);
         }
-    })();
+    }
+    addLinksToNews();
     
     // add links to profile
-    (function addLinksToProfiles() {
+    function addLinksToProfiles() {
         var index = 0;
         var num_of_profiles = document.getElementById("profile_slider").getElementsByClassName("slick-list")[0].getElementsByClassName("slick-track")[0].children.length;
         var profile_selector = document.getElementById("profile_slider").getElementsByClassName("slick-list")[0].getElementsByClassName("slick-track")[0].getElementsByClassName("slick-slide");
@@ -112,14 +113,16 @@ jQuery(document).ready(function ($) {
             profile_src = $(profile_selector_src).attr("href");
             $("#" + profile_name + " > .profile_link").attr("href", profile_src);
         }
-    })();
+    }
+    addLinksToNews();
 
-    (function element_display() {
+    function element_display() {
         // $('.weather-alert').css('display', 'block');
         // $('.website-individual-alert').css('display', 'block');
         $('.profile-control p.profile-arrow').css('display','block');
         $('#upcoming-events .event-wrap .event-view-position').css('display', 'block');
-    })();
+    }
+    element_display();
 
     function slick_profile_control()
     {
@@ -273,7 +276,7 @@ jQuery(document).ready(function ($) {
         });
     });
 
-    (function() {
+    function eventsTouchEvents() {
         var event_link_remove = false;
         $('#upcoming-events .event-wrap').on('click touchstart', function(event){
             var event_link_copy = $(this).children('a.event-link-copy').attr('href');
@@ -291,7 +294,8 @@ jQuery(document).ready(function ($) {
                 event_link_remove = false;
             }
         });
-    })();
+    }
+    eventsTouchEvents();
 
     slick_profile_control();
     set_width();
