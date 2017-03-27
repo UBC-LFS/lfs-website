@@ -22,4 +22,4 @@ Why study applied animal biology should be the first thing, not in a sidenav
 
 explore more profiles -> read more stories
 
-add details into alt tags for 
+add details into title attributes for all <a> tags
