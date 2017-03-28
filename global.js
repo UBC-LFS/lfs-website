@@ -5,3 +5,5 @@ jQuery(document).ready(function ($) {
     }
     appendApplyToUBCGlobally();
 });
+
+// need to write code that will append the survey to every single page
