@@ -1,4 +1,51 @@
 jQuery(document).ready(function ($) {
+    // Slick Slider
+    $('.prospective-profile-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        swipe:true,
+        arrows: true,
+        prevArrow: $('.slider-prev'),
+        nextArrow: $('.slider-next'),
+        responsive: [
+            {
+                breakpoint: 1024,
+                setting: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '0px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 769,
+                setting: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '0px',
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 481,
+                setting: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '0px',
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
+    // function setupSlickSlider() {
+    //     var profileSliderHeight = $('.prospective-profile-slider').eq(0).height();
+    //     console.log(profileSliderHeight);
+    // }
+    // setupSlickSlider();
+    
     $(".featured-person").each(function (index) {
         $(this).addClass("index-" + Math.floor(index / 3));
     });

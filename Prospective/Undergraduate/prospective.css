@@ -26,7 +26,49 @@ h1.page-title {
     margin-left: 0;
     margin-bottom: 0;
 }
-#staff-profile  div.featured-person > a {
+.span12.profile-slick-slider {
+    margin: 0px;
+}
+.profile-slick-slider a {
+    display: none;
+    text-decoration: none;
+}
+.profile-slick-slider a.profile-link {
+    display: block;
+}
+.profile-slick-slider a.profile-link:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.profile-slick-slider .slick-slide {
+    margin: 0 10px;
+}
+.profile-slick-slider div.slick-slide,
+.profile-slick-slider a.profile-link {
+    outline: 0px;
+}
+#staff-profile.withSideArrow {
+    position: relative;
+}
+#staff-profile.withSideArrow .profile-slick-slider .slick-list {
+    padding: 36px;
+}
+#staff-profile .slider-arrow-wrap {
+    position: absolute;
+    /*Javascript display block and height*/
+    display: block;
+    height: 100%;
+    /*display: none;*/
+    width: 37px;
+    background: white;
+}
+#staff-profile.withSideArrow .slider-prev-wrap {
+    left: -1px;
+}
+#staff-profile.withSideArrow .slider-next-wrap {
+    right: -1px;
+}
+/*#staff-profile  div.featured-person > a {
     display:none;
 }
 #staff-profile  div.featured-person > a.prospective-profile-link {
@@ -36,7 +78,7 @@ h1.page-title {
 #staff-profile  div.featured-person > a.prospective-profile-link:hover {
     opacity: 0.5;
     filter: alpha(opacity=50);
-}
+}*/
 .nav {
     border-bottom: none;
 }
