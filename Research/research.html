@@ -23,14 +23,24 @@
     getContainer.insertBefore(getImageRegion, getContainer.childNodes[0]);
     getContainer.insertBefore(getWebsiteAlerts, getContainer.childNodes[0]);
 </script>
+<div class="row-fluid">
+    <div class="span4">
+        <button class="btn btn-large btn-block" id="student-research-button" title="Scroll to the student research section">Student Research</button>
+    </div>
+    <div class="span4">
+        <button class="btn btn-large btn-block" id="research-group-button" title="Scroll to the Research Centres and Groups">Research Centres &amp; Groups</a>
+    </div>
+    <div class="span4">
+        <button class="btn btn-large btn-block" id="research-chairs-button" title="Scroll to the Research Chairs">Research Chairs</a>
+    </div>
+</div>
 <div class="row-fluid border-bottom">
     <h3 style="margin-bottom: 3%">In the Faculty of Land and Food Systems, our  researchers are addressing critical global issues around human health, a sustainable food supply, and land and water resources. Our researchers have attracted millions of dollars in research funding from sources including Genome Canada, the Canadian Institutes of Health Research (CIHR), the Michael Smith Scholar, the Canadian Foundation for Innovation (CFI), the Natural Sciences and Engineering Research Council (NSERC), and the Social Sciences and Humanities Research Council of Canada (SSHRC).</h3>
 </div>
-<div class="row-fluid border-bottom">
-    <h1>Featured Student Research</h1>
+<div class="row-fluid border-bottom" id="student-research">
+    <h1>Student Research</h1>
 </div>
-
-<div class="row-fluid">
+<div class="row-fluid" id="research-centres">
     <h1>Research Centres &amp; Groups</h1>
     <h2>Applied Biology</h2>
     <div class="span12">
@@ -88,7 +98,7 @@
         </div>
      </div>
 </div>
-<div class="row-fluid margin-bottom border-bottom">
+<div class="row-fluid border-bottom" id="research-chairs">
     <h1>Research Chairs</h1>
     <h2>Endowed Chairs</h2>
     <h2>Canada Research Chairs</h2>
