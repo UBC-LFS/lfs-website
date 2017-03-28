@@ -40,12 +40,15 @@ jQuery(document).ready(function ($) {
         ]
     });
 
-    // function setupSlickSlider() {
-    //     var profileSliderHeight = $('.prospective-profile-slider').eq(0).height();
-    //     console.log(profileSliderHeight);
-    // }
-    // setupSlickSlider();
-    
+    function setupSlickSlider() {
+        // Setting up links
+        [].forEach.call($(".slider-wrap .slick-slide"), function(item,index,array){
+            var slickSliderLink = $(item).children("a").eq(0).attr("href");
+            $(item).children("a").eq(1).attr("href", slickSliderLink);
+        })
+    }
+    setupSlickSlider();
+
     $(".featured-person").each(function (index) {
         $(this).addClass("index-" + Math.floor(index / 3));
     });
