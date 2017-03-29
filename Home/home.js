@@ -169,8 +169,8 @@ jQuery(document).ready(function ($) {
         event_arrow_width = $('#event-slider .event-double-arrow').height();
         $('#event-slider .event-double-arrow').css('width', event_arrow_width+'px');
 
-        event_wrap_height = ($('#upcoming-events .event-wrap').height())*0.1;
-        $('#upcoming-events .event-title').css('height', event_wrap_height+'px');
+        // event_wrap_height = ($('#upcoming-events .event-wrap').height())*0.1;
+        // $('#upcoming-events .event-title').css('height', event_wrap_height+'px');
     }
 
     function alert_append()
