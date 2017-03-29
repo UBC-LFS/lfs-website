@@ -1,5 +1,5 @@
 jQuery(document).ready(function ($) {
-    $('.prospective-profile-slider').slick({
+    $('.undergraduate-profile-slider').slick({
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
