@@ -111,96 +111,6 @@ p, td {
 #ubc7-unit-navigation #menu-top-nav li.apply-button a {
     color: white;
 }
-@media screen and (max-width: 1200px) {
-    .large-intro {
-        font-size: 300%;
-    }
-}
-@media screen and (max-width: 979px) {
-    #container {
-        padding-top: 0px !important;
-    }
-    .image-region {
-        margin-left: -20px;
-        margin-right: -20px !important;
-    }
-    .header-text {
-        position: absolute;
-        text-align: left;
-        width: 100%;
-        bottom: 0;
-        color: white;
-        margin-bottom: 3%;
-        font-size: 80%;
-        line-height: 50%;
-    }
-    .large-intro {
-        padding-left: 20px;
-    }
-    .full-width-container {
-    margin-left: 0px !important;
-    }
-}
-@media screen and (max-width: 978px) {
-    #ubc7-unit .container .apply-now-button {
-        right: 30px;
-    }
-}
-@media screen and (max-width: 767px) {
-    .large-intro {
-        font-size: 200%;
-    }
-   .span12 {
-        margin-bottom: 0;
-    }
-    .explore-more {
-        margin-right: 15px;
-    }
-    #ubc7-unit .container .apply-now-button {
-        right: 65px;
-    }
-    h3 {
-        font-size: 100%;
-    }
-    h2 {
-        font-size: 200%
-    }
-    p {
-        font-size: 100%;
-    }
-    .btn {
-        margin-bottom: 10px;
-    }
-}
-@media screen and (min-width: 571px) {
-    #ubc7-unit-navigation #menu-top-nav li.apply-button {
-        display: none;
-    }
-    #ubc7-unit .container .apply-now-button {
-        display: block;
-    }
-}
-@media screen and (max-width: 570px) {
-    #ubc7-unit .container .apply-now-button {
-        display: none;
-    }
-    #ubc7-unit-navigation #menu-top-nav li.apply-button {
-        display: block;
-    }
-}
-@media screen and (max-width: 480px) {
-    .large-intro {
-        font-size: 150%;
-        padding-left: 20px;
-    }
-}
-@media screen and (max-width: 300px) {
-    .large-intro {
-        font-size: 110%;
-        padding-left: 15px;
-    }
-}
-
 #container {
     padding-top: 0px !important;
 }
@@ -347,4 +257,430 @@ div.intro {
 }
 .navigation-links {
     display: none;
+}
+
+/*slick slider*/
+.span12.profile-slick-slider {
+    margin: 0px;
+}
+.profile-slick-slider a {
+    display: none;
+    text-decoration: none;
+}
+.profile-slick-slider a.profile-link {
+    display: block;
+}
+.profile-slick-slider a.profile-link:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.profile-slick-slider .slick-slide {
+    margin: 0 7px;
+}
+.profile-slick-slider div.slick-slide,
+.profile-slick-slider a.profile-link {
+    outline: 0px;
+}
+.slider-wrap .profile-wrapper {
+    cursor: pointer;
+}
+.slider-wrap .profile-name {
+    text-align: center;
+    font-size: 1.4em;
+}
+.slider-wrap .profile-program {
+
+    color: #0680a6;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 1%;
+}
+
+/*slider arrow*/
+.slider-wrap {
+    position: relative;
+    /* sometimes container height does is set to zero even though child has height, overflow: hidden fixes this problem */
+    overflow: hidden;
+}
+.slider-wrap .slick-list {
+    padding: 0px;
+}
+.slider-wrap.withSideArrow .slick-list {
+    padding: 32px;
+}
+.slider-wrap .slider-arrow-wrap {
+    position: absolute;
+    height: 100%;
+    background-color: white;
+    display: none;
+}
+.slider-wrap.withSideArrow .slider-arrow-wrap {
+    display: block;
+    width: 34px;
+}
+.slider-wrap.withSideArrow .slider-prev-wrap {
+    left: -1px;
+}
+.slider-wrap.withSideArrow .slider-next-wrap {
+    right: -1px;
+}
+.slider-wrap .slider-arrow-wrap p {
+    position: absolute;
+    top: 50%;
+    margin: 0px;
+    -ms-transform: translate(0%, -50%); /* IE 9 */
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translate(0%, -50%); /* Safari */
+    transform: translate(0%, -50%);
+    font-size: 85px;
+    width: 30px;
+    height: 50px;
+    line-height: 35px;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.slider-wrap .slider-arrow-wrap p.slider-prev {
+    padding-left: 4px;
+    padding-right: 0px;
+    color: #A8A8A8;
+    -o-animation: removeArrowShiftLeft 0.4s;
+    -moz-animation: removeArrowShiftLeft 0.4s;
+    -webkit-animation: removeArrowShiftLeft 0.4s;
+    animation: removeArrowShiftLeft 0.4s;
+    -o-animation-timing-function: ease-out;
+    -moz-animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+.slider-wrap .slider-arrow-wrap p.slider-prev:hover {
+    padding-left: 0px;
+    padding-right: 4px;
+    color: #0680a6;
+    -o-animation: arrowShiftLeft 0.4s;
+    -moz-animation: arrowShiftLeft 0.4s;
+    -webkit-animation: arrowShiftLeft 0.4s;
+    animation: arrowShiftLeft 0.4s;
+    -o-animation-timing-function: ease-out;
+    -moz-animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+.slider-wrap .slider-arrow-wrap p.slider-prev:active {
+    color: #2f5d7c;
+}
+@-webkit-keyframes arrowShiftLeft {
+    from {
+        padding-left: 4px;
+        padding-right: 0px;
+        color: #A8A8A8;
+    }
+    to {
+        padding-left: 0px;
+        padding-right: 4px;
+        color: #0680a6;
+    }
+}
+@-moz-keyframes arrowShiftLeft {
+    from {
+        padding-left: 4px;
+        padding-right: 0px;
+        color: #A8A8A8;
+    }
+    to {
+        padding-left: 0px;
+        padding-right: 4px;
+        color: #0680a6;
+    }
+}
+@-o-keyframes arrowShiftLeft {
+    from {
+        padding-left: 4px;
+        padding-right: 0px;
+        color: #A8A8A8;
+    }
+    to {
+        padding-left: 0px;
+        padding-right: 4px;
+        color: #0680a6;
+    }
+}
+@keyframes arrowShiftLeft {
+    from {
+        padding-left: 4px;
+        padding-right: 0px;
+        color: #A8A8A8;
+    }
+    to {
+        padding-left: 0px;
+        padding-right: 4px;
+        color: #0680a6;
+    }
+}
+@-webkit-keyframes removeArrowShiftLeft {
+    from {
+        padding-left: 0px;
+        padding-right: 4px;
+        color: #0680a6;
+    }
+    to {
+        padding-left: 4px;
+        padding-right: 0px;
+        color: #A8A8A8;
+    }
+}
+@-moz-keyframes removeArrowShiftLeft {
+    from {
+        padding-left: 0px;
+        padding-right: 4px;
+        color: #0680a6;
+    }
+    to {
+        padding-left: 4px;
+        padding-right: 0px;
+        color: #A8A8A8;
+    }
+}
+@-o-keyframes removeArrowShiftLeft {
+    from {
+        padding-left: 0px;
+        padding-right: 4px;
+        color: #0680a6;
+    }
+    to {
+        padding-left: 4px;
+        padding-right: 0px;
+        color: #A8A8A8;
+    }
+}
+@keyframes removeArrowShiftLeft {
+    from {
+        padding-left: 0px;
+        padding-right: 4px;
+        color: #0680a6;
+    }
+    to {
+        padding-left: 4px;
+        padding-right: 0px;
+        color: #A8A8A8;
+    }
+}
+.slider-wrap .slider-arrow-wrap p.slider-next {
+    padding-left: 0px;
+    padding-right: 4px;
+    color: #A8A8A8;
+    -o-animation: removeArrowShiftRight 0.4s;
+    -moz-animation: removeArrowShiftRight 0.4s;
+    -webkit-animation: removeArrowShiftRight 0.4s;
+    animation: removeArrowShiftRight 0.4s;
+    -webkit-animation-timing-function: ease-out;
+    -moz-animation-timing-function: ease-out;
+    -o-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+.slider-wrap .slider-arrow-wrap p.slider-next:hover {
+    padding-left: 4px;
+    padding-right: 0px;
+    color: #0680a6;
+    -o-animation: arrowShiftRight 0.4s;
+    -moz-animation: arrowShiftRight 0.4s;
+    -webkit-animation: arrowShiftRight 0.4s;
+    animation: arrowShiftRight 0.4s;
+    -webkit-animation-timing-function: ease-out;
+    -moz-animation-timing-function: ease-out;
+    -o-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+.slider-wrap .slider-arrow-wrap p.slider-next:active {
+    color: #2f5d7c;
+}
+@-webkit-keyframes arrowShiftRight {
+    from {
+        padding-left: 0px;
+        padding-right: 4px;
+        color: #A8A8A8;
+    }
+    to {
+        padding-left: 4px;
+        padding-right: 0px;
+        color: #0680a6;
+    }
+}
+@-moz-keyframes arrowShiftRight {
+    from {
+        padding-left: 0px;
+        padding-right: 4px;
+        color: #A8A8A8;
+    }
+    to {
+        padding-left: 4px;
+        padding-right: 0px;
+        color: #0680a6;
+    }
+}
+@-o-keyframes arrowShiftRight {
+    from {
+        padding-left: 0px;
+        padding-right: 4px;
+        color: #A8A8A8;
+    }
+    to {
+        padding-left: 4px;
+        padding-right: 0px;
+        color: #0680a6;
+    }
+}
+@keyframes arrowShiftRight {
+    from {
+        padding-left: 0px;
+        padding-right: 4px;
+        color: #A8A8A8;
+    }
+    to {
+        padding-left: 4px;
+        padding-right: 0px;
+        color: #0680a6;
+    }
+}
+@-webkit-keyframes removeArrowShiftRight {
+    from {
+        padding-left: 4px;
+        padding-right: 0px;
+        color: #0680a6;
+    }
+    to {
+        padding-left: 0px;
+        padding-right: 4px;
+        color: #A8A8A8;
+    }
+}
+@-moz-keyframes removeArrowShiftRight {
+    from {
+        padding-left: 4px;
+        padding-right: 0px;
+        color: #0680a6;
+    }
+    to {
+        padding-left: 0px;
+        padding-right: 4px;
+        color: #A8A8A8;
+    }
+}
+@-o-keyframes removeArrowShiftRight {
+    from {
+        padding-left: 4px;
+        padding-right: 0px;
+        color: #0680a6;
+    }
+    to {
+        padding-left: 0px;
+        padding-right: 4px;
+        color: #A8A8A8;
+    }
+}
+@keyframes removeArrowShiftRight {
+    from {
+        padding-left: 4px;
+        padding-right: 0px;
+        color: #0680a6;
+    }
+    to {
+        padding-left: 0px;
+        padding-right: 4px;
+        color: #A8A8A8;
+    }
+}
+/* Slick Slider End */
+
+@media screen and (max-width: 1200px) {
+    .large-intro {
+        font-size: 300%;
+    }
+}
+@media screen and (max-width: 979px) {
+    #container {
+        padding-top: 0px !important;
+    }
+    .image-region {
+        margin-left: -20px;
+        margin-right: -20px !important;
+    }
+    .header-text {
+        position: absolute;
+        text-align: left;
+        width: 100%;
+        bottom: 0;
+        color: white;
+        margin-bottom: 3%;
+        font-size: 80%;
+        line-height: 50%;
+    }
+    .large-intro {
+        padding-left: 20px;
+    }
+    .full-width-container {
+    margin-left: 0px !important;
+    }
+}
+@media screen and (max-width: 978px) {
+    #ubc7-unit .container .apply-now-button {
+        right: 30px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .large-intro {
+        font-size: 200%;
+    }
+   .span12 {
+        margin-bottom: 0;
+    }
+    .explore-more {
+        margin-right: 15px;
+    }
+    #ubc7-unit .container .apply-now-button {
+        right: 65px;
+    }
+    h3 {
+        font-size: 100%;
+    }
+    h2 {
+        font-size: 200%
+    }
+    p {
+        font-size: 100%;
+    }
+    .btn {
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width: 571px) {
+    #ubc7-unit-navigation #menu-top-nav li.apply-button {
+        display: none;
+    }
+    #ubc7-unit .container .apply-now-button {
+        display: block;
+    }
+}
+@media screen and (max-width: 570px) {
+    #ubc7-unit .container .apply-now-button {
+        display: none;
+    }
+    #ubc7-unit-navigation #menu-top-nav li.apply-button {
+        display: block;
+    }
+}
+@media screen and (max-width: 480px) {
+    .large-intro {
+        font-size: 150%;
+        padding-left: 20px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .large-intro {
+        font-size: 110%;
+        padding-left: 15px;
+    }
 }
