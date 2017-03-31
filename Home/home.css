@@ -544,7 +544,7 @@ html, body {
     left: 0px;
 }
 #event-slider .event-next-wrap {
-    right: 0px;
+    right: 2px;
 }
 #event-slider .eventArrow p {
     font-size: 85px;
