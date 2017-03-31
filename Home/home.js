@@ -120,7 +120,7 @@ jQuery(document).ready(function ($) {
         // $('.weather-alert').css('display', 'block');
         // $('.website-individual-alert').css('display', 'block');
         $('.profile-control p.profile-arrow').css('display','block');
-        $('#upcoming-events .event-wrap .event-view-position').css('display', 'block');
+        // $('#upcoming-events .event-wrap .event-view-position').css('display', 'block');
     }
     element_display();
 
