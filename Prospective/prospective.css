@@ -51,6 +51,17 @@ h1.page-title {
 .slider-wrap .profile-wrapper {
     cursor: pointer;
 }
+.slider-wrap .profile-name {
+    text-align: center;
+    font-size: 1.4em;
+}
+.slider-wrap .profile-program {
+
+    color: #0680a6;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 1%;
+}
 
 /*slider arrow*/
 .slider-wrap {
