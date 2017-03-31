@@ -103,28 +103,30 @@
         </div>
     </div>
 </div>
-<div class="row-fluid border-bottom withSideArrow" id="staff-profile">
+<div class="row-fluid border-bottom" id="staff-profile">
     <h2>Our Community</h2>
 
-    <div class="span12 profile-slick-slider prospective-profile-slider" id="prospective-profile">
-        [loop query="posts_per_page=7&amp;category_name=featured-profile"]
-            <div class="profile-wrapper">
-                [link_with_content]
-                <a href="" class="profile-link">
-                    <div class="profile-link-wrapper">
-                        [image_with_src img_class="featured-profiles"]
-                        <h2 class="profile-name">[cf featured-name]</h2>
-                        <h3 class="profile-program">[cf featured-program]</h3>
-                    </div>
-                </a>
-            </div>
-        [/loop]
-    </div>
-    <div class="slider-arrow-wrap slider-prev-wrap">
-        <p class="slider-prev">&lsaquo;</p>
-    </div>
-    <div class="slider-arrow-wrap slider-next-wrap">
-        <p class="slider-next">&rsaquo;</p>
+    <div class="slider-wrap withSideArrow">
+        <div class="span12 profile-slick-slider prospective-profile-slider">
+            [loop query="posts_per_page=7&amp;category_name=featured-profile"]
+                <div class="profile-wrapper">
+                    [link_with_content]
+                    <a class="profile-link">
+                        <div class="profile-link-wrapper">
+                            [image_with_src img_class="featured-profiles"]
+                            <h2 class="profile-name">[cf featured-name]</h2>
+                            <h3 class="profile-program">[cf featured-program]</h3>
+                        </div>
+                    </a>
+                </div>
+            [/loop]
+        </div>
+        <div class="slider-arrow-wrap slider-prev-wrap">
+            <p class="slider-prev">&lsaquo;</p>
+        </div>
+        <div class="slider-arrow-wrap slider-next-wrap">
+            <p class="slider-next">&rsaquo;</p>
+        </div>
     </div>
 
 
