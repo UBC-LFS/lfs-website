@@ -43,6 +43,13 @@ jQuery(document).ready(function ($) {
     $('#news-url').empty();
     $('#news-url').attr('href', url);
     $('#news-1').wrapAll($('#news-url'));
+
+    $('.thumbnail-nav-container-box').slick({
+        slidesToShow: 4,
+        focusOnSelect: true,
+        vertical: true
+    });
+
     $('.events').slick({
         slide: 'li',
         infinite: true,
@@ -114,13 +121,10 @@ jQuery(document).ready(function ($) {
             $("#" + profile_name + " > .profile_link").attr("href", profile_src);
         }
     }
-    addLinksToNews();
+    addLinksToProfiles();
 
     function element_display() {
-        // $('.weather-alert').css('display', 'block');
-        // $('.website-individual-alert').css('display', 'block');
         $('.profile-control p.profile-arrow').css('display','block');
-        // $('#upcoming-events .event-wrap .event-view-position').css('display', 'block');
     }
     element_display();
 
@@ -276,6 +280,8 @@ jQuery(document).ready(function ($) {
         });
     });
 
+
+    // If user touched click the screen, it prevents the click on the screen. Instead, it will display the hover effect and a view button link, which they can then click on to go to link
     function eventsTouchEvents() {
         var event_link_remove = false;
         $('#upcoming-events .event-wrap').on('click touchstart', function(event){
@@ -297,6 +303,15 @@ jQuery(document).ready(function ($) {
     }
     eventsTouchEvents();
 
+    var selectThumbnail = function() {
+        $("#home-news .thumbnail-nav-container-box").on("click", function() {
+            var slider_active_position = $("#home-news .thumbnail-nav-container-box .slick-current").position().top;
+            $("#home-news .thumbnail-nav-selector").animate({top: slider_active_position+'px'},500);
+            console.log(slider_active_position);
+        });
+    };
+    selectThumbnail();
+
     slick_profile_control();
     set_width();
 
@@ -309,4 +324,6 @@ jQuery(document).ready(function ($) {
     $(window).on('resize',function () {
         setTimeout(timeOutFncCall, 100);
     });
+
+    
 });
