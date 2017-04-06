@@ -151,12 +151,37 @@
 <div class="row-fluid border-bottom">
     <h2>News Test</h2>
     <div id="home-news">
+        <div class="news-slider-container">
+            <div class="news-slider">
+                [loop query="posts_per_page=4&amp;category_name=news"]
+                    <div class="news-content-container">
+                        <div class="news-content">
+                            <h4 class="news-title">[cf news-title]</h4>
+                            [image_with_src]
+                            <p class="news-blurb">[cf news-blurb]</p>
+                        </div>
+                    </div>
+                [/loop]
+                <!--<div class="news-content-container"><div class="news-content" style="background: blue"></div></div>
+                <div class="news-content-container"><div class="news-content" style="background: purple"></div></div>
+                <div class="news-content-container"><div class="news-content" style="background: red"></div></div>
+                <div class="news-content-container"><div class="news-content"  style="background: orange"></div></div>-->
+            </div>
+        </div>
         <div class="thumbnail-navigation">
             <div class="thumbnail-nav-container-box">
-                <div class="thumbnail-nav-box"><div></div></div>
-                <div class="thumbnail-nav-box"><div></div></div>
-                <div class="thumbnail-nav-box"><div></div></div>
-                <div class="thumbnail-nav-box"><div></div></div>
+                [loop query="posts_per_page=4&amp;category_name=news"]
+                    <div class="thumbnail-nav-box">
+                        <div class="thumbnail-nav-box-content">
+                            <!--[image_with_src img_class="vertical-align-center"]-->
+                            [image_with_src]
+                        </div>
+                    </div>
+                [/loop]
+                <!--<div class="thumbnail-nav-box"><div class="thumbnail-nav-box-content"></div></div>
+                <div class="thumbnail-nav-box"><div class="thumbnail-nav-box-content"></div></div>
+                <div class="thumbnail-nav-box"><div class="thumbnail-nav-box-content"></div></div>
+                <div class="thumbnail-nav-box"><div class="thumbnail-nav-box-content"></div></div>-->
             </div>
             <div class="thumbnail-nav-selector">
                 <div class="thumbnail-nav-selector-box"></div>

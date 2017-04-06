@@ -44,10 +44,20 @@ jQuery(document).ready(function ($) {
     $('#news-url').attr('href', url);
     $('#news-1').wrapAll($('#news-url'));
 
+    $('.news-slider').slick({
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        swipe: true,
+        fade: true,
+        asNavFor: '.thumbnail-nav-container-box'
+    });
+
     $('.thumbnail-nav-container-box').slick({
         slidesToShow: 4,
         focusOnSelect: true,
-        vertical: true
+        vertical: true,
+        asNavFor: '.news-slider'
     });
 
     $('.events').slick({
