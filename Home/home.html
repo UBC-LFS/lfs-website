@@ -153,7 +153,7 @@
     <div id="home-news">
         <div class="news-slider-container">
             <div class="news-slider">
-                [loop query="posts_per_page=4&amp;category_name=news"]
+                [loop query="posts_per_page=6&amp;category_name=news"]
                     <div class="news-content-container">
                         <div class="news-content">
                             <h4 class="news-title">[cf news-title]</h4>
@@ -170,11 +170,12 @@
         </div>
         <div class="thumbnail-navigation">
             <div class="thumbnail-nav-container-box">
-                [loop query="posts_per_page=4&amp;category_name=news"]
+                [loop query="posts_per_page=6&amp;category_name=news"]
                     <div class="thumbnail-nav-box">
                         <div class="thumbnail-nav-box-content">
                             <!--[image_with_src img_class="vertical-align-center"]-->
                             [image_with_src]
+                            <p class="thumbnail-title-short">[cf news-title-short]</p>
                         </div>
                     </div>
                 [/loop]

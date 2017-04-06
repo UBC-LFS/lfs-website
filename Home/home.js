@@ -54,7 +54,7 @@ jQuery(document).ready(function ($) {
     });
 
     $('.thumbnail-nav-container-box').slick({
-        slidesToShow: 4,
+        slidesToShow: 6,
         focusOnSelect: true,
         vertical: true,
         asNavFor: '.news-slider'
@@ -149,6 +149,17 @@ jQuery(document).ready(function ($) {
         $('.profile-control p.profile-arrow').css('display','block');
     }
 
+    var thumbnailAnimation = function() {
+        var slider_active_position = $("#home-news .thumbnail-nav-container-box .slick-current").position().top;
+        var slider_active_height = $("#home-news .thumbnail-nav-container-box .slick-current .thumbnail-nav-box-content").height();
+        $("#home-news .thumbnail-nav-selector").animate({
+            top: slider_active_position+"px"
+        },500);
+        $("#home-news .thumbnail-nav-selector .thumbnail-nav-selector-box").animate({
+            paddingTop: slider_active_height-2+"px"
+        },500);
+    }
+    
     function set_width() {
         var featured_news_height;
         var event_width;
@@ -183,6 +194,7 @@ jQuery(document).ready(function ($) {
         event_arrow_width = $('#event-slider .event-double-arrow').height();
         $('#event-slider .event-double-arrow').css('width', event_arrow_width+'px');
 
+        thumbnailAnimation();
         // event_wrap_height = ($('#upcoming-events .event-wrap').height())*0.1;
         // $('#upcoming-events .event-title').css('height', event_wrap_height+'px');
     }
@@ -313,14 +325,12 @@ jQuery(document).ready(function ($) {
     }
     eventsTouchEvents();
 
+
     var selectThumbnail = function() {
-        $("#home-news .thumbnail-nav-container-box").on("click", function() {
-            var slider_active_position = $("#home-news .thumbnail-nav-container-box .slick-current").position().top;
-            $("#home-news .thumbnail-nav-selector").animate({top: slider_active_position+'px'},500);
-            console.log(slider_active_position);
-        });
+        $("#home-news .thumbnail-nav-container-box").on("click", thumbnailAnimation);
     };
     selectThumbnail();
+
 
     slick_profile_control();
     set_width();
