@@ -46,8 +46,10 @@ jQuery(document).ready(function ($) {
 
     $('.news-slider').slick({
         arrows: false,
+        draggable: false,
+        swipe: false,
         slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToScroll: 0,
         swipe: true,
         fade: true,
         asNavFor: '.thumbnail-nav-container-box'
@@ -151,7 +153,9 @@ jQuery(document).ready(function ($) {
 
     var thumbnailAnimation = function() {
         var slider_active_position = $("#home-news .thumbnail-nav-container-box .slick-current").position().top;
+        console.log(slider_active_position);
         var slider_active_height = $("#home-news .thumbnail-nav-container-box .slick-current .thumbnail-nav-box-content").height();
+        console.log(slider_active_height);
         $("#home-news .thumbnail-nav-selector").animate({
             top: slider_active_position+"px"
         },500);
@@ -341,8 +345,10 @@ jQuery(document).ready(function ($) {
         set_width();
     }
 
-    $(window).on('resize',function () {
-        setTimeout(timeOutFncCall, 100);
+    var resizeTimer;
+    $(window).on('resize',function (e) {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(timeOutFncCall, 250);
     });
 
     
