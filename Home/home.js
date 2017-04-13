@@ -45,20 +45,28 @@ jQuery(document).ready(function ($) {
     $('#news-1').wrapAll($('#news-url'));
 
     $('.news-slider').slick({
-        arrows: false,
+        arrows: true,
+        prevArrow: $('.news-prev'),
+        nextArrow: $('.news-next'),
+        slidesToShow: 1,
+        slidesToScroll: 1,
         draggable: false,
         swipe: false,
-        slidesToShow: 1,
-        slidesToScroll: 0,
-        swipe: true,
         fade: true,
-        asNavFor: '.thumbnail-nav-container-box'
+        asNavFor: '.thumbnail-nav-dots'
     });
 
     $('.thumbnail-nav-container-box').slick({
         slidesToShow: 6,
         focusOnSelect: true,
         vertical: true,
+        asNavFor: '.news-slider'
+    });
+
+    $('.thumbnail-nav-dots').slick({
+        arrows: false,
+        slidesToShow: 6,
+        focusOnSelect: true,
         asNavFor: '.news-slider'
     });
 
@@ -100,22 +108,6 @@ jQuery(document).ready(function ($) {
             }
         ]
     });
-
-    // add links to news
-    // function addLinksToNews() {
-    //     var numOfNewsDisplay = $('#nonfeatured-news > .news').length;
-    //     var i = 0;
-    //     var news_src;
-    //     var news_selector = document.getElementById("nonfeatured-news").getElementsByClassName("news");
-    //     var news_name;
-    //     for (i=0; i<numOfNewsDisplay; i++){
-    //     news_name = "news_" + i.toString();
-    //     $(news_selector[i]).attr("id", news_name);
-    //     news_src = $("#nonfeatured-news > " + "#" + news_name + " > .not_used").text();
-    //     $("#nonfeatured-news > " + "#" + news_name + " > a.post_link").attr("href", news_src);
-    //     }
-    // }
-    // addLinksToNews();
     
     // add links to profile
     function addLinksToProfiles() {
@@ -173,16 +165,7 @@ jQuery(document).ready(function ($) {
         var website_alert_container_left;
         var event_arrow_width;
         var event_wrap_height;
-        // if ($(window).width() < 767)
-        // {
-        //     single_news_height = $('#nonfeatured-news .news').outerHeight(true);
-        //     $('#nonfeatured-news').css("height", single_news_height);
-        // }
-        // else
-        // {
-        //     featured_news_height = $('#news-1').height();
-        //     $('#nonfeatured-news').css('height',featured_news_height.toString() + 'px');
-        // }
+
         event_width = $('#upcoming-events div.slick-list li.slick-slide').width();
         $('#upcoming-events div.slick-list div.slick-track').css('height', event_width+'px');
 
