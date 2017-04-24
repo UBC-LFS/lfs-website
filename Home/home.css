@@ -509,6 +509,9 @@ html, body {
     display: inline-block;
     margin-bottom: 25px;
 }
+#home-news-type-2 .news-container:hover {
+    opacity: 0.5;
+}
 #home-news-type-2 .image-wrapper {
     width: 33%;
     display: inline-block;
