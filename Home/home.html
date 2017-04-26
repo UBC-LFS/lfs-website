@@ -116,65 +116,9 @@
         </a>
     </div>
 </div>
-<div class="row-fluid border-bottom">
-    <h2>In the News</h2>
-    <div id="home-news">
-        <div class="news-slider-container">
-            <div class="news-slider">
-                [loop query="posts_per_page=6&amp;category_name=news"]
-                    <div class="news-content-container">
-                        <div class="news-content">
-                            <h4 class="news-title">[cf news-title]</h4>
-                            [image_with_src]
-                            <p class="news-blurb">[cf news-blurb]</p>
-                        </div>
-                    </div>
-                [/loop]
-            </div>
-            <div class="thumbnail-nav-dots-container">
-                <ul class="thumbnail-nav-dots">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            <div class="news-prev"><p>prev</p></div>
-            <div class="news-next"><p>next</p></div>
-        </div>
-        <div class="thumbnail-navigation">
-            <div class="thumbnail-nav-container-box">
-                [loop query="posts_per_page=6&amp;category_name=news"]
-                    <div class="thumbnail-nav-box">
-                        <div class="thumbnail-nav-box-content">
-                            [image_with_src]
-                            <p class="thumbnail-title-short">[cf news-title-short]</p>
-                        </div>
-                    </div>
-                [/loop]
-            </div>
-            <div class="thumbnail-nav-selector">
-                <div class="thumbnail-nav-selector-box"></div>
-            </div>
-        </div>
-        <!--<div class="thumbnail-nav-dots-container">
-            <ul class="thumbnail-nav-dots">
-                <li>.</li>
-                <li>.</li>
-                <li>.</li>
-                <li>.</li>
-                <li>.</li>
-                <li>.</li>
-            </ul>
-        </div>-->
-
-    </div>
-</div>
 <div class="row-fluid border-bottom" id="news-section">
     <h2>In the News</h2>
-    <div id="home-news-type-2">
+    <div id="home-news">
         [loop query="posts_per_page=6&amp;category_name=newstype2"]
             <div class="news-container">
                 <div class="image-wrapper">
