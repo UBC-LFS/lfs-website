@@ -362,9 +362,15 @@ html, body {
 #news-section h2 {
     margin-bottom: 20px;
 }
+#news-section .read-more {
+    margin-left: 0px;
+}
 
 
 /* Event Slick Slider */
+#upcoming-events .read-more {
+    margin-left: 0px;
+}
 #upcoming-events div.slick-list li.slick-slide {
     margin: 0px;
     display: table;
