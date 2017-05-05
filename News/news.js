@@ -1,7 +1,6 @@
 jQuery(document).ready(function ($) {
   var non_featured_news_count = $("#non-featured-news-section > div.news").length;
   var index;
-  var nonfeatured_news_src;
   var nonfeatured_news_target;
   for (index=0; index<non_featured_news_count; index++)
   {

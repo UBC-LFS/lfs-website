@@ -1,0 +1,1 @@
+jQuery(document).ready(function(e){var n,t,o=e("#non-featured-news-section > div.news").length;for(n=0;n<o;n++)t=e("#non-featured-news-section > div.news:nth-of-type("+(n+1).toString()+") > a:nth-of-type(1)").attr("href"),e("#non-featured-news-section > div.news:nth-of-type("+(n+1).toString()+") > a.non-featured-news").attr("href",t),console.log(t)});
