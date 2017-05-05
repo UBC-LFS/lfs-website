@@ -28,9 +28,6 @@
     <div class="website-alert page-alert">
         <div class="website-alert-content">
             <p class="alert-check website-content-text"></p>
-            <!--<button type = "button" class = "close" data-dismiss = "website-individual-alert-outer" aria-hidden = "true">
-                &times;
-            </button>-->
             <button type = "button" class = "close" aria-hidden = "true">
                 &times;
             </button>
@@ -92,7 +89,7 @@
     </div>
 </div>
 <h2>Our Community</h2>
-<div class="span12 featured myslider" id="profile_slider">
+<div class="span12 featured myslider" id="profile_slider" style="-webkit-font-smoothing: antialiased;">
      [loop query="posts_per_page=7&amp;category_name=featured-profile"] 
     <div style="width: 280px;">
         [link_with_content]
@@ -101,7 +98,7 @@
             [image_with_src img_class="featured-profiles"]
             <h2 class="featured">[cf featured-name]</h2>
             <h3 class="featured">[cf featured-program]</h3>
-            [cf featured-blurb]
+            <p>[cf featured-blurb]</p>
             </div>
         </a>
     </div>
@@ -188,11 +185,6 @@
             <span>READ MORE EVENTS <i class="icon-angle-right"></i></span>
         </a>
     </div>
-     <!--<div class="span12 no-margin-left no-margin-top calendarArrow">
-        <div class="span6">        
-            <p><a style="text-decoration:none;" href="http://lfs-ps.sites.olt.ubc.ca/events/" title="Visit the page with a full calendar of events">SEE FULL CALENDAR OF EVENTS</a></p>
-        </div>
-     </div>-->
 </div>
 <script>
 [].forEach.call(document.getElementsByClassName('eo-events-shortcode'), function(x) {

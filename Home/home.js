@@ -144,14 +144,11 @@ jQuery(document).ready(function ($) {
     }
     
     function set_width() {
-        var featured_news_height;
         var event_width;
-        var single_news_height;
         var exclamation_height;
         var page_content_width;
         var website_alert_container_left;
         var event_arrow_width;
-        var event_wrap_height;
 
         event_width = $('#upcoming-events div.slick-list li.slick-slide').width();
         $('#upcoming-events div.slick-list div.slick-track').css('height', event_width+'px');
