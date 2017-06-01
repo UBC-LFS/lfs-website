@@ -127,6 +127,17 @@ jQuery(document).ready(function ($) {
     }
     addLinksToProfiles();
 
+    function addLinksToNews(){
+        var news_count = $("#home-news .news-container").length;
+        for (var index = 0; index < news_count; index++)
+        {
+            var news_link = $("#home-news .news-container:nth-of-type(" + (index+1).toString() + ") a:nth-of-type(1)").attr("href");
+            $("#home-news .news-container:nth-of-type(" + (index+1).toString() + ") a.news_title").attr("href", news_link);
+            $("#home-news .news-container:nth-of-type(" + (index+1).toString() + ") div.image-wrapper a").attr("href", news_link);
+        }
+    }
+    addLinksToNews();
+
     function element_display() {
         $('.profile-control p.profile-arrow').css('display','block');
     }

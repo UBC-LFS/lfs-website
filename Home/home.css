@@ -319,6 +319,12 @@ html, body {
     display: inline-block;
     margin-bottom: 25px;
 }
+#home-news .news-container a {
+    display: none;
+}
+#home-news .news-container a.display {
+    display: inline-block;
+}
 #home-news .news-container:hover {
     opacity: 0.5;
 }

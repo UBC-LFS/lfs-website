@@ -118,19 +118,20 @@
     <div id="home-news">
         [loop query="posts_per_page=6&amp;category_name=newstype2"]
             <div class="news-container">
+                [link_with_content]
                 <div class="image-wrapper">
-                    <a href="">
+                    <a class ="display" href="">
                         [image_with_src]
                     </a>
                 </div>
                 <div class="content-wrapper">
-                    <a class="news_title" href="">
+                    <a class="display news_title" href="">
                         [cf news-title-long]
                     </a>
                     <p class="news_paragraph">
                         [cf news-blurb]
                     </p>
-                    <a class="news_author" href="">
+                    <a class="display news_author" href="">
                         [cf news-author]
                     </a>
                 </div>
