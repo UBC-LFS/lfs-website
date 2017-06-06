@@ -1,0 +1,27 @@
+h1.page-title {
+    display: none;
+}
+.image-region {
+    position: relative;
+    margin-right: -15px;
+    padding-top: 40%;
+    height: 0px;
+}
+.image-region #banner {
+    position: absolute;
+    top: 0px;
+}
+#peers-profile  div.featured-person > a {
+    display:none;
+}
+#peers-profile  div.featured-person > a.peers-profile-link {
+    display:inline-block;
+    text-decoration: none;
+}
+#peers-profile  div.featured-person > a.peers-profile-link:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+#peers-profile .featured-person {
+    display: none;
+}

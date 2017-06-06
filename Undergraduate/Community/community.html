@@ -1,0 +1,88 @@
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js" async></script>
+<script src="https://use.fontawesome.com/47b0aee693.js" async></script>
+<div class="image-region no-padding">
+    <img id="banner" src="http://lfs-ps.sites.olt.ubc.ca/files/2017/03/30061924456_0d54a357f5_blur.jpg" alt="Campus Banner"
+    />
+    <div class="header-text">
+        <div class="bound container">
+            <div class="message">
+                <p class="large-intro">Build Your Experience: Community</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main-content" class="container"></div>
+<script>
+    var getDivMainRole = document.querySelector('div[role="main"]');
+    var getMainContent = document.getElementById('main-content');
+    var getContent = document.getElementById('content');
+    var getContainer = document.getElementById('container');
+    var getImageRegion = document.getElementsByClassName('image-region')[0];
+    var getBreadcrumb = document.getElementsByClassName('breadcrumb')[0];
+    getDivMainRole.insertBefore(getMainContent, getDivMainRole.childNodes[0]);
+    getMainContent.insertBefore(getContent, getMainContent.childNodes[0]);
+    getContainer.insertBefore(getImageRegion, getContainer.childNodes[0]);
+    (function loadBanner()
+    {
+        var image = document.createElement('img');
+        image.src = 'http://lfs-ps.sites.olt.ubc.ca/files/2017/03/30061924456_0d54a357f5_1920.jpg';
+        image.onload = function() {
+            document.getElementById('banner').src = image.src;
+        };
+    })();
+</script>
+<div class="row-fluid border-bottom">
+     <h3>It’s easy to get stuck in the UBC bubble - explore these opportunities to connect with the community beyond the Vancouver campus, network with current industry professionals and gain experiences that will help you apply what you’re learning while developing valuable career skills.</h3>
+</div>
+<div class="row-fluid border-bottom">
+     <h2>Build your network</h2>
+     <div class="span12">
+          <div class="span4">
+               <h3>Tri-Mentoring Program</h3>
+               <p>The LFS Tri-Mentoring program creates networking opportunities and provides three-fold mutual benefits to mentors and students.</p>
+               <a href="http://trimentoring.landfood.ubc.ca/?login">Learn more <i class="icon-angle-right"></i></a>
+          </div>
+          <div class="span4">
+               <h3>Job &amp; Volunteer Board</h3>
+               <p>Find LFS-specific positions on our Job &amp; Volunteer Board!</p>
+               <a href=""></a>
+          </div>
+          <div class="span4">
+               <h3>Co-op</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quod debitis corporis nesciunt facere at fugit, magni voluptatem. Voluptatibus nobis ratione explicabo tempora repudiandae officiis officia, accusantium, quos fuga saepe.</p>
+               <a href="http://www.sciencecoop.ubc.ca/prospective/apply/land"></a>
+          </div>
+     </div>
+</div>
+<div class="row-fluid">
+    <h2>Our Community</h2>
+    <div class="slider-wrap withSideArrow">
+        <div class="span12 profile-slick-slider undergraduate-profile-slider">
+            [loop query="posts_per_page=7&amp;category_name=featured-profile"]
+                <div class="profile-wrapper">
+                    [link_with_content]
+                    <a class="profile-link">
+                        <div class="profile-link-wrapper">
+                            [image_with_src img_class="featured-profiles"]
+                            <h2 class="profile-name">[cf featured-name]</h2>
+                            <h3 class="profile-program">[cf featured-program]</h3>
+                            [cf featured-blurb]
+                        </div>
+                    </a>
+                </div>
+            [/loop]
+        </div>
+        <div class="slider-arrow-wrap slider-prev-wrap">
+            <p class="slider-prev">&lsaquo;</p>
+        </div>
+        <div class="slider-arrow-wrap slider-next-wrap">
+            <p class="slider-next">&rsaquo;</p>
+        </div>
+    </div>
+    <div class="span12">
+        <a class="btn explore-more" href="http://lfs-ps.sites.olt.ubc.ca/featured-profiles/" title="Read more stories of the people in the Faculty of Land and Food Systems">
+            <span>READ MORE STORIES <i class="icon-angle-right"></i></span>
+        </a>
+    </div>
+</div>
