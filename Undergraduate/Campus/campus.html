@@ -1,0 +1,55 @@
+<div class="image-region no-padding">
+    <img id="banner" src="http://lfs-ps.sites.olt.ubc.ca/files/2017/03/homepage_blurred.jpg" alt="Homepage Banner">
+    <div class="header-text">
+        <div class="bound container">
+            <div class="message">
+                <p class="large-intro">The Faculty of Land and Food Systems</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main-content" class="container"></div>
+<script>
+    var getDivMainRole = document.querySelector('div[role="main"]');
+    var getMainContent = document.getElementById('main-content');
+    var getContent = document.getElementById('content');
+    var getContainer = document.getElementById('container');
+    var getImageRegion = document.getElementsByClassName('image-region')[0];
+    var getWebsiteAlerts = document.getElementsByClassName('website-alerts-container')[0];
+    getDivMainRole.insertBefore(getMainContent, getDivMainRole.childNodes[0]);
+    getMainContent.insertBefore(getContent, getMainContent.childNodes[0]);
+    getContainer.insertBefore(getImageRegion, getContainer.childNodes[0]);
+    getContainer.insertBefore(getWebsiteAlerts, getContainer.childNodes[0]);
+    (function loadBanner()
+    {
+        var image = document.createElement('img');
+        image.src = 'http://lfs-ps.sites.olt.ubc.ca/files/2017/03/20089902805_7c5e1729d1_o_r1.jpg';
+        image.onload = function() {
+            document.getElementById('banner').src = image.src;
+        };
+    })();
+</script>
+
+<div class="row-fluid border-bottom">
+    <h3>Volunteering in a student leader position or having a part-time job helps develop skills such as teamwork, public speaking, professional communication, people management, etc., that you otherwise might not be exposed to until much later on in your career. These campus opportunities can help you gain valuable experience while giving back and having fun!</h3>
+</div>
+<div class="row-fluid border-bottom">
+    <h2>Orientation &amp; Transition</h2>
+    <div class="span12">
+        <div class="span4">
+            <h3>Imagine UBC</h3>
+            <p>Imagine UBC is the university-wide welcome programming… Find out what you can expect.</p>
+            <a href="https://students.ubc.ca/new-to-ubc/orientations/imagine-ubc" >Learn more <i class="icon-angle-right"></i></a>
+        </div>
+        <div class="span4">
+            <h3>Jump Start</h3>
+            <p>Jump Start is the university’s extended orientation experience – now open to domestic students in the Faculty of Land &amp; Food Systems!</p>
+            <a href="https://students.ubc.ca/JumpStart/LFS" >Learn more <i class="icon-angle-right"></i></a>
+        </div>
+        <div class="span4">
+            <h3>Apply to be a Leader</h3>
+            <p>Apply to be a leader for UBC Orientations and help welcome your peers to campus.</p>
+            <a href="https://students.ubc.ca/campus-life/involved/orientation-leaders" >Learn more <i class="icon-angle-right"></i></a>
+        </div>
+    </div>
+</div>
