@@ -86,3 +86,52 @@
         </a>
     </div>
 </div>
+<div class="span12 no-margin-left" id="upcoming-events">
+    <h2>Upcoming Events</h2>
+    <div id="event-slider">
+        <!--add in showpastevents=false below to show only upcoming events-->
+        [eo_events ]
+            <div class="event-vertical-center-wrap">
+                <div class="event-wrap">
+                    <div class="event-image">%event_thumbnail{medium}%</div>
+                    <a href="%event_url%" class="event-link-copy"></a>
+                    <a href="%event_url%" class="event-link">
+                        <div class="event-hover">
+                            <div class="event-text-wrap">
+                                <div class="event-title">
+                                    <p>%event_title%</p>
+                                </div>
+                                <div class="event-date">
+                                    <p>%start{jS M Y}% at %start{g:i:a}%</p>
+                                </div>
+                                <div class="event-description">
+                                    <p>%event_content%
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="event-view-position">
+                        <div class="event-view-button">
+                            <a href="%event_url%" class="event-button-link">
+                                View
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        [/eo_events]
+        <div class="event-prev-wrap eventArrow"><p class="event-prev">&lsaquo;</p></div>
+        <div class="event-next-wrap eventArrow"><p class="event-next">&rsaquo;</p></div>
+    </div>
+    <div class="span12 read-more">
+        <a class="btn explore-more" style="margin-right:0;" href="http://lfs-ps.sites.olt.ubc.ca/events/" title="Read more stories of the people in the Faculty of Land and Food Systems">
+            <span>SEE CALENDAR OF EVENTS <i class="icon-angle-right"></i></span>
+        </a>
+    </div>
+</div>
+<script>
+[].forEach.call(document.getElementsByClassName('eo-events-shortcode'), function(x) {
+    x.className += ' events';
+})
+</script>
