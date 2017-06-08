@@ -1,0 +1,1 @@
+.row-fluid.border-bottom>.span12.no-margin-left>.span4*3>h3+p+a
