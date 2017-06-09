@@ -55,8 +55,12 @@ h4 {
 }
 p, td {
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
-    font-size: 120%;
+    font-size: 1.1em;
     line-height: 1.5;
+}
+li, ul {
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+    font-size: 1em;
 }
 .large-intro {
     font-size: 400%;
