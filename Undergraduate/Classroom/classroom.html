@@ -1,4 +1,6 @@
 <script src="https://use.fontawesome.com/47b0aee693.js" async></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js" async></script>
 <div class="image-region no-padding">
     <img id="banner" src="http://lfs-ps.sites.olt.ubc.ca/files/2017/03/30061924456_0d54a357f5_blur.jpg" alt="Classroom Banner"
     />
@@ -35,7 +37,7 @@
 </div>
 <div class="row-fluid border-bottom">
     <h2>Enhance your classroom experience</h2>
-    <div class="span12">
+    <div class="span12 no-margin-left">
         <div class="span4">
             <h3>Go Global</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod accusamus velit molestiae voluptatum distinctio, magni, eaque laborum esse quae iure aperiam quibusdam ad atque quia. Assumenda hic maiores quaerat delectus.</p>
@@ -52,7 +54,7 @@
             <a href="">Learn more <i class="icon-angle-right"></i></a>
         </div>
     </div>
-    <div class="span12">
+    <div class="span12 no-margin-left">
         <div class="span4">
             <h3>APBI Practicum</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi sed molestiae expedita eius cupiditate adipisci reiciendis excepturi, alias. Officiis minima cupiditate quibusdam, voluptatibus dolores, quia architecto! Quasi tempore cum non!</p>
@@ -70,3 +72,83 @@
         </div>
     </div>
 </div>
+<div class="row-fluid border-bottom">
+    <h2>What Can I Do With My Major?</h2>
+    <div class="span12 no-margin-left">
+        <h3>Reinforce idea that you can curate (and are responsible for) your own undergraduate degree experience – both within and outside the classroom.</h3>
+    </div>
+    <div class="span12 no-margin-left">
+        <div class="span4">
+            <h3>Applied Biology</h3>
+            <p></p>
+            <a href=""></a>
+        </div>
+        <div class="span4">
+            <h3>Food, Nutrition, and Health</h3>
+            <p></p>
+            <a href=""></a>
+        </div>
+        <div class="span4">
+            <h3>Global Resource Systems</h3>
+            <p></p>
+            <a href=""></a>
+        </div>
+    </div>
+</div>
+<div class="border-bottom">
+    <div class="row-fluid" style="width:80%;text-align:center;margin:auto;">
+        <i class="fa fa-question-circle-o" aria-hidden="true" style="font-size:5em;margin-top:20px;"></i>
+        <h2>Contact the UBC LFS Student Advising Office</h2>
+        <p style="font-size: 1.2em">Medical issues, personal problems? Confused about applying for a minor, taking a term off, Faculty requirements, or whether you're eligible to graduate?</p>
+        <a href="http://lfs-ps.sites.olt.ubc.ca/student-services/" style="margin:auto; width:200px;" class="btn btn-large btn-block" title="Contact Student Services">Contact Us</a>
+    </div>
+</div>
+<div class="span12 no-margin-left" id="upcoming-events">
+    <h2>Upcoming Events</h2>
+    <div id="event-slider">
+        <!--add in showpastevents=false below to show only upcoming events-->
+        [eo_events ]
+            <div class="event-vertical-center-wrap">
+                <div class="event-wrap">
+                    <div class="event-image">%event_thumbnail{medium}%</div>
+                    <a href="%event_url%" class="event-link-copy"></a>
+                    <a href="%event_url%" class="event-link">
+                        <div class="event-hover">
+                            <div class="event-text-wrap">
+                                <div class="event-title">
+                                    <p>%event_title%</p>
+                                </div>
+                                <div class="event-date">
+                                    <p>%start{jS M Y}% at %start{g:i:a}%</p>
+                                </div>
+                                <div class="event-description">
+                                    <p>%event_content%
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="event-view-position">
+                        <div class="event-view-button">
+                            <a href="%event_url%" class="event-button-link">
+                                View
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        [/eo_events]
+        <div class="event-prev-wrap eventArrow"><p class="event-prev">&lsaquo;</p></div>
+        <div class="event-next-wrap eventArrow"><p class="event-next">&rsaquo;</p></div>
+    </div>
+    <div class="span12 read-more">
+        <a class="btn explore-more" style="margin-right:0;" href="http://lfs-ps.sites.olt.ubc.ca/events/" title="Read more stories of the people in the Faculty of Land and Food Systems">
+            <span>SEE CALENDAR OF EVENTS <i class="icon-angle-right"></i></span>
+        </a>
+    </div>
+</div>
+<script>
+[].forEach.call(document.getElementsByClassName('eo-events-shortcode'), function(x) {
+    x.className += ' events';
+})
+</script>
