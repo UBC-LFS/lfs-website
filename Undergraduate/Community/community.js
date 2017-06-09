@@ -104,4 +104,22 @@ jQuery(document).ready(function ($) {
         })
     }
     setupSlickSlider();
+
+    // var countClick = 0
+    // document.getElementById('collapseButton').onclick = function() {
+    //     if (countClick%2 === 0) {
+    //         document.getElementById('collapseButton').innerHTML = 'Show Less <i class="fa fa-caret-up" aria-hidden="true"></i>'
+    //         countClick++
+    //     } else {
+    //         document.getElementById('collapseButton').innerHTML = 'Show More <i class="fa fa-caret-down" aria-hidden="true"></i>'
+    //         countClick++
+    //     }
+    // }
+    $('#collapseButton').on('hide.bs.collapse', function() {
+        document.getElementById('collapseButton').innerHTML = 'Show More <i class="fa fa-caret-down" aria-hidden="true"></i>'
+    })
+    $('#collapseButton').on('show.bs.collapse', function() {
+        document.getElementById('collapseButton').innerHTML = 'Show Less <i class="fa fa-caret-up" aria-hidden="true"></i>'
+    })
+
 })
