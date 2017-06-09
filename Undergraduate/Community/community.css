@@ -11,6 +11,11 @@ h1.page-title {
     position: absolute;
     top: 0px;
 }
+.btn {
+    background-color: transparent;
+    color: #002145;
+    background-image: none;
+}
 #peers-profile  div.featured-person > a {
     display:none;
 }
