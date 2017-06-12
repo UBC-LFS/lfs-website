@@ -1,43 +1,4 @@
 jQuery(document).ready(function ($) {
-    $('.undergraduate-profile-slider').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: false,
-        swipe:true,
-        arrows: true,
-        prevArrow: $('.slider-prev'),
-        nextArrow: $('.slider-next'),
-        responsive: [
-            {
-                breakpoint: 1024,
-                setting: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '0px',
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 769,
-                setting: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '0px',
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 481,
-                setting: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '0px',
-                    slidesToShow: 1
-                }
-            }
-        ]
-    });
     $('.events').slick({
         slide: 'li',
         infinite: true,
@@ -105,16 +66,6 @@ jQuery(document).ready(function ($) {
     }
     setupSlickSlider();
 
-    // var countClick = 0
-    // document.getElementById('collapseButton').onclick = function() {
-    //     if (countClick%2 === 0) {
-    //         document.getElementById('collapseButton').innerHTML = 'Show Less <i class="fa fa-caret-up" aria-hidden="true"></i>'
-    //         countClick++
-    //     } else {
-    //         document.getElementById('collapseButton').innerHTML = 'Show More <i class="fa fa-caret-down" aria-hidden="true"></i>'
-    //         countClick++
-    //     }
-    // }
     $('#collapseButton').on('hide.bs.collapse', function() {
         document.getElementById('collapseButton').innerHTML = 'Show More <i class="fa fa-caret-down" aria-hidden="true"></i>'
     })
