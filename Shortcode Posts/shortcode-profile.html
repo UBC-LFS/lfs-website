@@ -1,0 +1,154 @@
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js" async></script>
+<style>
+#peers-profile  div.featured-person > a {
+    display:none;
+}
+#peers-profile  div.featured-person > a.peers-profile-link {
+    display:inline-block;
+    text-decoration: none;
+}
+#peers-profile  div.featured-person > a.peers-profile-link:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+#peers-profile .featured-person {
+    display: none;
+}
+#event_prev
+{
+    position:absolute;
+    display: block;
+    z-index: 1;
+    width: 50px;
+    height: inherit;
+    left: 0px;
+}
+#event_next
+{
+    position:absolute;
+    display: block;
+    z-index: 1;
+    width: 50px;
+    height: inherit;
+}
+.event_button
+{
+    background-color: lightgrey;
+}
+.next {
+    float:right; 
+    cursor:pointer;
+}
+a.not_used,
+div.news > br,
+#nonfeatured-news > div.news > p,
+.post_link > p
+{
+ display: none !important; 
+}
+.post_link > .span9
+{
+    margin: 0px;
+}
+#profile_slider > .slick-list > .slick-track > .slick-slide a
+{
+    text-decoration: none;
+}
+#profile_slider > .slick-list > .slick-track > .slick-slide > a
+{
+    display: none;
+}
+#profile_slider > .slick-list > .slick-track > .slick-slide > a.profile_link
+{
+    display: inline-block;
+}
+#profile_slider > .slick-list > .slick-track > .slick-slide > a.profile_link:hover
+{
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+</style>
+
+<div class="row-fluid">
+    <h2>Our Community</h2>
+    <div class="slider-wrap withSideArrow">
+        <div class="span12 profile-slick-slider undergraduate-profile-slider">
+            [loop query="posts_per_page=7&amp;category_name=featured-profile"]
+                <div class="profile-wrapper">
+                    [link_with_content]
+                    <a class="profile-link">
+                        <div class="profile-link-wrapper">
+                            [image_with_src img_class="featured-profiles"]
+                            <h2 class="profile-name">[cf featured-name]</h2>
+                            <h3 class="profile-program">[cf featured-program]</h3>
+                            [cf featured-blurb]
+                        </div>
+                    </a>
+                </div>
+            [/loop]
+        </div>
+        <div class="slider-arrow-wrap slider-prev-wrap">
+            <p class="slider-prev">&lsaquo;</p>
+        </div>
+        <div class="slider-arrow-wrap slider-next-wrap">
+            <p class="slider-next">&rsaquo;</p>
+        </div>
+    </div>
+    <div class="span12">
+        <a class="btn explore-more" href="http://lfs-ps.sites.olt.ubc.ca/featured-profiles/" title="Read more stories of the people in the Faculty of Land and Food Systems">
+            <span>READ MORE STORIES <i class="icon-angle-right"></i></span>
+        </a>
+    </div>
+</div>
+<script>
+jQuery(document).ready(function ($) {
+     $('.undergraduate-profile-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        swipe:true,
+        arrows: true,
+        prevArrow: $('.slider-prev'),
+        nextArrow: $('.slider-next'),
+        responsive: [
+            {
+                breakpoint: 1024,
+                setting: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '0px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 769,
+                setting: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '0px',
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 481,
+                setting: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '0px',
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+    // Setting up links
+    function setupSlickSlider() {
+        [].forEach.call($(".slider-wrap .slick-slide"), function(item,index,array){
+            var slickSliderLink = $(item).children("a").eq(0).attr("href");
+            $(item).children("a").eq(1).attr("href", slickSliderLink);
+        })
+    }
+    setupSlickSlider();
+})
+</script>
