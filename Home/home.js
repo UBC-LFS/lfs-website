@@ -10,6 +10,13 @@ jQuery(document).ready(function ($) {
         nextArrow: $('.profile-next'),
         responsive: [
             {
+                breakpoint: 1920,
+                settings: {
+                    arrows: true,
+                    slidesToShow: 6
+                }
+            },
+            {
                 breakpoint: 1750,
                 settings: {
                     arrows: true,
@@ -132,6 +139,7 @@ jQuery(document).ready(function ($) {
         for (var index = 0; index < news_count; index++)
         {
             var news_link = $("#home-news .news-container:nth-of-type(" + (index+1).toString() + ") a:nth-of-type(1)").attr("href");
+ 
             $("#home-news .news-container:nth-of-type(" + (index+1).toString() + ") a.news_title").attr("href", news_link);
             $("#home-news .news-container:nth-of-type(" + (index+1).toString() + ") div.image-wrapper a").attr("href", news_link);
         }

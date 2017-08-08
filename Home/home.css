@@ -323,7 +323,7 @@ html, body {
     display: none;
 }
 #home-news .news-container a.display {
-    display: inline-block;
+    display: inline-block
 }
 #home-news .news-container:hover {
     opacity: 0.5;
