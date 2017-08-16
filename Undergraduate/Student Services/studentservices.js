@@ -306,7 +306,6 @@ jQuery(document).ready(function ($) {
     $('.open-circle-sunday').css("background","#de1309"); 
   }  
     
-    document.getElementById("open-close").innerHTML = y;
     
     console.log(dayofweek);
     console.log(hours);
