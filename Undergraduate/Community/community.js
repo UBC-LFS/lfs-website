@@ -1,4 +1,43 @@
 jQuery(document).ready(function ($) {
+  $('.undergraduate-profile-slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: false,
+    swipe: true,
+    arrows: true,
+    prevArrow: $('.slider-prev'),
+    nextArrow: $('.slider-next'),
+    responsive: [
+      {
+        breakpoint: 1024,
+        setting: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 769,
+        setting: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 481,
+        setting: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  })
   $('.events').slick({
     slide: 'li',
     infinite: true,
@@ -38,18 +77,18 @@ jQuery(document).ready(function ($) {
     ]
   })
   function eventsTouchEvents () {
-    var event_link_remove = false
+    var removeEventLink = false
     $('#upcoming-events .event-wrap').on('click touchstart', function (event) {
-      var event_link_copy = $(this).children('a.event-link-copy').attr('href')
+      var eventLinkCopy = $(this).children('a.event-link-copy').attr('href')
       if (event.type === 'touchstart') {
         $(this).children('a.event-link').removeAttr('href')
-        event_link_remove = true
+        removeEventLink = true
       }
       if (event.type === 'click') {
-        if (event_link_remove === false) {
-          $(this).children('a.event-link').attr('href', event_link_copy)
+        if (removeEventLink === false) {
+          $(this).children('a.event-link').attr('href', eventLinkCopy)
         }
-        event_link_remove = false
+        removeEventLink = false
       }
     })
   }
