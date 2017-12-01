@@ -172,47 +172,47 @@ jQuery(document).ready(function ($) {
     $('#event-slider .event-double-arrow').css('width', eventArrowWidth + 'px')
   }
 
-  function alert_append () {
-    var web_alert_display_check = false    // checks if webpage has alerts
-    var page_alert_count = 0
+  function appendAlert () {
+    var webAlertDisplayCheck = false    // checks if webpage has alerts
+    var pageAlertCount = 0
 
-    function weather_alert_checker () {
-      var weather_alert_text_length = $('.website-alerts-container .weather-alert span.alert-check').text().length
-      if (weather_alert_text_length > 0) {
-        web_alert_display_check = true
+    function weatherAlertChecker () {
+      var weatherAlertTextLength = $('.website-alerts-container .weather-alert span.alert-check').text().length
+      if (weatherAlertTextLength > 0) {
+        webAlertDisplayCheck = true
       } else {
         $('.website-alerts-container .weather-alert').remove()
       }
     }
-    weather_alert_checker()
+    weatherAlertChecker()
 
-    function page_alert_counter () {
-      var page_alert_p_count = $('p.alert-text').length
-      var page_alert_text = $('p.alert-text')
-      var page_alert_text_count = 0
-      var page_alert_num = 0
+    function pageAlertCounter () {
+      var pageAlertPCount = $('p.alert-text').length
+      var pageAlertText = $('p.alert-text')
+      var pageAlertTextCount = 0
+      var pageAlertNum = 0
 
-      for (k = 0; k < page_alert_p_count; k++) {
-        page_alert_text_count = $.trim(page_alert_text.eq(k).text()).length
-        if (page_alert_text_count > 0) {
-          page_alert_num++
+      for (let k = 0; k < pageAlertPCount; k++) {
+        pageAlertTextCount = $.trim(pageAlertText.eq(k).text()).length
+        if (pageAlertTextCount > 0) {
+          pageAlertNum++
         }
       }
-      return page_alert_num
+      return pageAlertNum
     }
-    page_alert_count = page_alert_counter()
+    pageAlertCount = pageAlertCounter()
 
-    function page_alert_checker () {
-      var alert_text = ''
+    function pageAlertChecker () {
+      var alertText = ''
       var i = 0  // counter used for cloning additional page-alerts if page has more than 1 alert
       var j = 0  // counter used to count for the page-alert boxes
       var k = 0  // counter used to count through p.alert-text tags
 
-      if (page_alert_count > 0) {
-        web_alert_display_check = true
+      if (pageAlertCount > 0) {
+        webAlertDisplayCheck = true
 
                 // if there is more than 1 page-alert, clone the additional page alerts
-        for (i = 1; i < page_alert_count; i++) {
+        for (i = 1; i < pageAlertCount; i++) {
           $('.website-alerts-container .page-alert').eq(0).clone().appendTo('.website-alerts-container')
         }
 
@@ -220,11 +220,11 @@ jQuery(document).ready(function ($) {
                 // this block of code prevents bugs that could occur if user deletes alert-1 and starts at alert-2
         for (k = 0; k < $('p.alert-text').length; k++) {
           if ($.trim($('p.alert-text').eq(k).text()).length > 0) {
-            alert_text = $('p.alert-text').eq(k).text()
-            $('.website-alerts-container .page-alert .website-content-text').eq(j).text(alert_text)
+            alertText = $('p.alert-text').eq(k).text()
+            $('.website-alerts-container .page-alert .website-content-text').eq(j).text(alertText)
             j++
           }
-          if (j >= page_alert_count) {
+          if (j >= pageAlertCount) {
             break
           }
         }
@@ -233,19 +233,19 @@ jQuery(document).ready(function ($) {
       }
       $('.website-alert-texts').remove()
     }
-    page_alert_checker()
+    pageAlertChecker()
 
-    function website_alert_styling () {
+    function websiteAlertStyling () {
       if ($('.website-alert').length > 0) {
         $('.website-alerts-container').css('padding-bottom', '5px')
       }
-      if (web_alert_display_check === true) {
+      if (webAlertDisplayCheck === true) {
         $('.website-alerts-container').css('display', 'block')
       }
     }
-    website_alert_styling()
+    websiteAlertStyling()
   }
-  alert_append()
+  appendAlert()
 
   $('.close').click(function () {
     $(this).parents('.website-alert').animate({ height: '0px' }, function () {
@@ -260,18 +260,18 @@ jQuery(document).ready(function ($) {
 
     // If user touched click the screen, it prevents the click on the screen. Instead, it will display the hover effect and a view button link, which they can then click on to go to link
   function eventsTouchEvents () {
-    var event_link_remove = false
+    var eventLinkRemove = false
     $('#upcoming-events .event-wrap').on('click touchstart', function (event) {
-      var event_link_copy = $(this).children('a.event-link-copy').attr('href')
+      var eventLinkCopy = $(this).children('a.event-link-copy').attr('href')
       if (event.type === 'touchstart') {
         $(this).children('a.event-link').removeAttr('href')
-        event_link_remove = true
+        eventLinkRemove = true
       }
       if (event.type === 'click') {
-        if (event_link_remove === false) {
-          $(this).children('a.event-link').attr('href', event_link_copy)
+        if (eventLinkRemove === false) {
+          $(this).children('a.event-link').attr('href', eventLinkCopy)
         }
-        event_link_remove = false
+        eventLinkRemove = false
       }
     })
   }
