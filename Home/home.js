@@ -160,26 +160,16 @@ jQuery(document).ready(function ($) {
 
   function setWidth () {
     var eventWidth = $('#upcoming-events div.slick-list li.slick-slide').width()
-    var singleNewsHeight
-    var exclamation_height
-    var page_content_width
-    var website_alert_container_left
-    var event_arrow_width
-    var event_wrap_height
+    var exclamationHeight = $('.weather-alert .exclamation p').height()
+    var pageContentWidth = $('#main-content').width()
+    var websiteAlertContainerLeft = ($('#main-content').outerWidth(true) - $('#main-content').width()) / 2
+    var eventArrowWidth = $('#event-slider .event-double-arrow').height()
 
     $('#upcoming-events div.slick-list div.slick-track').css('height', eventWidth + 'px')
-
-    page_content_width = $('#main-content').width()
-    $('.website-alerts-container').css('width', page_content_width + 'px')
-
-    website_alert_container_left = ($('#main-content').outerWidth(true) - $('#main-content').width()) / 2
-    $('.website-alerts-container').css('left', website_alert_container_left + 'px')
-
-    exclamation_height = $('.weather-alert .exclamation p').height()
-    $('.weather-alert .exclamation p').css('width', exclamation_height + 'px')
-
-    event_arrow_width = $('#event-slider .event-double-arrow').height()
-    $('#event-slider .event-double-arrow').css('width', event_arrow_width + 'px')
+    $('.website-alerts-container').css('width', pageContentWidth + 'px')
+    $('.website-alerts-container').css('left', websiteAlertContainerLeft + 'px')
+    $('.weather-alert .exclamation p').css('width', exclamationHeight + 'px')
+    $('#event-slider .event-double-arrow').css('width', eventArrowWidth + 'px')
   }
 
   function alert_append () {
