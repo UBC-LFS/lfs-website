@@ -19,19 +19,20 @@
 h1.page-title {
     display: none;
 }
-/*.sticky-nav {
-    width:350px;
-    max-width:350px;
+#peers-profile  div.featured-person > a {
+    display:none;
 }
-@media screen and (max-width: 1375px) {
-    .sticky-nav {
-        width: initial;
-        max-width: initial;
-    }
-    .page-toc {
-        padding: 1.2em 1em;
-    }
-}*/
+#peers-profile  div.featured-person > a.peers-profile-link {
+    display:inline-block;
+    text-decoration: none;
+}
+#peers-profile  div.featured-person > a.peers-profile-link:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+#peers-profile .featured-person {
+    display: none;
+}
 @media screen and (max-width: 767px) {
    .accordion-group > .accordion-heading {
         font-size:150%; 
