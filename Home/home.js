@@ -1,6 +1,6 @@
 /* global jQuery */
 jQuery(document).ready(function ($) {
-  $('.prospective-profile-slider').slick({
+  $('.homepage-slider').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
