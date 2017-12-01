@@ -1,3 +1,4 @@
+/* global jQuery */
 jQuery(document).ready(function ($) {
   var appendApplyToUBCGlobally = function () {
     $('#ubc7-unit .container').prepend('<a class="apply-now-button" href="https://account.you.ubc.ca/ubc/apply/apply_now.ezc"><span>Apply to UBC</span> </a>')
@@ -5,5 +6,3 @@ jQuery(document).ready(function ($) {
   }
   appendApplyToUBCGlobally()
 })
-
-// need to write code that will append the survey to every single page
