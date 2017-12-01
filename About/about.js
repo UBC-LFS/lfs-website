@@ -1,25 +1,24 @@
+/* global jQuery */
 jQuery(document).ready(function ($) {
-  var ranking_pos = $('#trigger-animation').offset().top
   var animated = false
-  var counter_target = document.getElementById('count').getElementsByClassName('span12')
-  var count_trigger = $(counter_target[0]).offset().top
-  var count_trigger2 = $(counter_target[1]).offset().top
+  var counterTarget = document.getElementById('count').getElementsByClassName('span12')
+  var countTrigger = $(counterTarget[0]).offset().top
+  var countTrigger2 = $(counterTarget[1]).offset().top
 
-  function count_detect () {
-    var y_scroll_pos = window.pageYOffset + $(window).height() - $(counter_target[0]).height() * 4 / 7
-    var y_scroll_pos2 = window.pageYOffset - $(counter_target[1]).height() * 2 / 7
-    var test1 = $(counter_target).height()
-    if (y_scroll_pos > count_trigger && y_scroll_pos2 < count_trigger2 && !animated) {
-      var undergraduate_students = new CountUp('undergraduate-students', 0, 1400, 0, 3).start()
-      var graduate_students = new CountUp('graduate-students', 0, 150, 0, 3).start()
-      var faculty = new CountUp('faculty', 0, 45, 0, 3).start()
-      var staff = new CountUp('staff', 0, 66, 0, 3).start()
-      var alumni = new CountUp('alumni', 0, 6700, 0, 3).start()
+  function countDetect () {
+    var yScrollPos = window.pageYOffset + $(window).height() - $(counterTarget[0]).height() * 4 / 7
+    var yScrollPos2 = window.pageYOffset - $(counterTarget[1]).height() * 2 / 7
+    if (yScrollPos > countTrigger && yScrollPos2 < countTrigger2 && !animated) {
+      new CountUp('undergraduate-students', 0, 1400, 0, 3).start()
+      new CountUp('graduate-students', 0, 150, 0, 3).start()
+      new CountUp('faculty', 0, 45, 0, 3).start()
+      new CountUp('staff', 0, 66, 0, 3).start()
+      new CountUp('alumni', 0, 6700, 0, 3).start()
       animated = true
     }
   }
-  count_detect()
-  $(window).on('scroll', count_detect)
+  countDetect()
+  $(window).on('scroll', countDetect)
 })
 /*
 

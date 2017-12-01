@@ -1,3 +1,4 @@
+/* global jQuery */
 jQuery(document).ready(function ($) {
   $('#admission-button').click(function () {
     $('html, body').animate({
