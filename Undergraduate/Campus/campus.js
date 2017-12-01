@@ -1,5 +1,5 @@
+/* global jQuery */
 jQuery(document).ready(function ($) {
-     // If user touched click the screen, it prevents the click on the screen. Instead, it will display the hover effect and a view button link, which they can then click on to go to link
   $('.events').slick({
     slide: 'li',
     infinite: true,
@@ -40,18 +40,18 @@ jQuery(document).ready(function ($) {
   })
 
   function eventsTouchEvents () {
-    var event_link_remove = false
+    var removeEventLink = false
     $('#upcoming-events .event-wrap').on('click touchstart', function (event) {
-      var event_link_copy = $(this).children('a.event-link-copy').attr('href')
+      var eventLinkCopy = $(this).children('a.event-link-copy').attr('href')
       if (event.type === 'touchstart') {
         $(this).children('a.event-link').removeAttr('href')
-        event_link_remove = true
+        removeEventLink = true
       }
       if (event.type === 'click') {
-        if (event_link_remove === false) {
-          $(this).children('a.event-link').attr('href', event_link_copy)
+        if (removeEventLink === false) {
+          $(this).children('a.event-link').attr('href', eventLinkCopy)
         }
-        event_link_remove = false
+        removeEventLink = false
       }
     })
   }

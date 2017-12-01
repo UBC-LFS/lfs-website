@@ -1,73 +1,20 @@
 h1.page-title {
     display: none;
 }
-.image-region {
-    position: relative;
-    margin-right: -15px;
-    padding-top: 40%;
-    height: 0px;
-}
-.image-region #banner {
-    position: absolute;
-    top: 0px;
-}
 .btn {
     background-color: transparent;
     color: #002145;
     background-image: none;
 }
-#event_prev
-{
-    position:absolute;
-    display: block;
-    z-index: 1;
-    width: 50px;
-    height: inherit;
-    left: 0px;
-}
-#event_next
-{
-    position:absolute;
-    display: block;
-    z-index: 1;
-    width: 50px;
-    height: inherit;
-}
-.event_button
-{
+.event_button {
     background-color: lightgrey;
 }
 .next {
     float:right; 
     cursor:pointer;
 }
-a.not_used,
-div.news > br,
-#nonfeatured-news > div.news > p,
-.post_link > p
-{
- display: none !important; 
-}
-.post_link > .span9
-{
+.post_link > .span9 {
     margin: 0px;
-}
-#profile_slider > .slick-list > .slick-track > .slick-slide a
-{
-    text-decoration: none;
-}
-#profile_slider > .slick-list > .slick-track > .slick-slide > a
-{
-    display: none;
-}
-#profile_slider > .slick-list > .slick-track > .slick-slide > a.profile_link
-{
-    display: inline-block;
-}
-#profile_slider > .slick-list > .slick-track > .slick-slide > a.profile_link:hover
-{
-    opacity: 0.5;
-    filter: alpha(opacity=50);
 }
 #upcoming-events .read-more {
     margin-left: 0px;
@@ -88,7 +35,6 @@ div.news > br,
     overflow: hidden;
     height: 100%;
 }
-
 #upcoming-events div.slick-list li.slick-slide .event-vertical-center-wrap .event-wrap .event-hover {
     /* not sure: this element responds to element with position relative, even if element is not direct parent */
     position: absolute;
@@ -425,14 +371,6 @@ div.news > br,
     .box {
         height: 120px;
     }
-    #home-news .news-container:nth-of-type(4) {
-        display: none;
-    }
-}
-@media screen and (min-width: 480px) {
-    #home-news .news-container:nth-of-type(4) {
-        display: inline-block;
-    }
 }
 @media screen and (max-width: 768px) {
     .profile-control {
@@ -441,17 +379,10 @@ div.news > br,
     .large-intro {
         font-size: 230%;
     }
-    #home-news .news-container {
-        display: inline-block;
-        width: 100%;
-    }
 }
 @media screen and (min-width: 768px) {
     .large-intro {
         font-size: 300%;
-    }
-    #home-news .news-container {
-        width: 50%;
     }
 }
 @media screen and (min-width: 1200px) {
