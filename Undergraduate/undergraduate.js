@@ -1,3 +1,4 @@
+/* global jQuery */
 jQuery(document).ready(function ($) {
   $('.undergraduate-profile-slider').slick({
     infinite: true,
@@ -48,16 +49,12 @@ jQuery(document).ready(function ($) {
   }
   setupSlickSlider()
 
-  var data_dismiss_value
-  var alert_dismiss_count = $('.alert-dismissable > .close').length
-  var l
-  for (l = 0; l < alert_dismiss_count; l++) {
-    $('.alert-dismissable > .close').click(remove_alert)
+  for (let l = 0; l < $('.alert-dismissable > .close').length; l++) {
+    $('.alert-dismissable > .close').click(removeAlert)
   }
-  function remove_alert () {
-    data_dismiss_value = $(this).attr('data-dismiss')
-        // $(this).parents('div.alert-dismissable.' + data_dismiss_value).eq(0).animate({opacity:'0'}, 1000);
-    $(this).parents('div.alert-dismissable.' + data_dismiss_value).eq(0).remove() // removes first parent
+  function removeAlert () {
+    let dataDismissValue = $(this).attr('data-dismiss')
+    $(this).parents('div.alert-dismissable.' + dataDismissValue).eq(0).remove() // removes first parent
   }
 
   $('#degree-button').click(function () {
@@ -76,49 +73,44 @@ jQuery(document).ready(function ($) {
     }, 1000)
   })
 
-  function alert_append () {
-    var web_alert_display_check = false    // checks if webpage has alerts
-    var page_alert_count = 0
+  function alertAppend () {
+    var webAlertDisplayCheck = false    // checks if webpage has alerts
+    var pageAlertCount = 0
 
-    function page_alert_counter () {
-      var page_alert_p_count = $('p.alert-text').length
-      var page_alert_text = $('p.alert-text')
-      var page_alert_text_count = 0
-      var page_alert_num = 0
+    function pageAlertCounter () {
+      var pageAlertPCount = $('p.alert-text').length
+      var pageAlertText = $('p.alert-text')
+      var pageAlertTextCount = 0
+      var pageAlertNum = 0
 
-      for (k = 0; k < page_alert_p_count; k++) {
-        page_alert_text_count = $.trim(page_alert_text.eq(k).text()).length
-        if (page_alert_text_count > 0) {
-          page_alert_num++
+      for (let k = 0; k < pageAlertPCount; k++) {
+        pageAlertTextCount = $.trim(pageAlertText.eq(k).text()).length
+        if (pageAlertTextCount > 0) {
+          pageAlertNum++
         }
       }
-      return page_alert_num
+      return pageAlertNum
     }
-    page_alert_count = page_alert_counter()
+    pageAlertCount = pageAlertCounter()
 
-    function page_alert_checker () {
-      var alert_text = ''
-      var i = 0  // counter used for cloning additional page-alerts if page has more than 1 alert
+    function pageAlertChecker () {
       var j = 0  // counter used to count for the page-alert boxes
-      var k = 0  // counter used to count through p.alert-text tags
 
-      if (page_alert_count > 0) {
-        web_alert_display_check = true
-
-                // if there is more than 1 page-alert, clone the additional page alerts
-        for (i = 1; i < page_alert_count; i++) {
+      if (pageAlertCount > 0) {
+        webAlertDisplayCheck = true
+        // if there is more than 1 page-alert, clone the additional page alerts
+        for (let i = 1; i < pageAlertCount; i++) {
           $('.website-alerts-container .page-alert').eq(0).clone().appendTo('.website-alerts-container')
         }
-
-                // appends text to page-alert box
-                // this block of code prevents bugs that could occur if user deletes alert-1 and starts at alert-2
-        for (k = 0; k < $('p.alert-text').length; k++) {
+        // appends text to page-alert box
+        // this block of code prevents bugs that could occur if user deletes alert-1 and starts at alert-2
+        for (let k = 0; k < $('p.alert-text').length; k++) {
           if ($.trim($('p.alert-text').eq(k).text()).length > 0) {
-            alert_text = $('p.alert-text').eq(k).text()
-            $('.website-alerts-container .page-alert .website-content-text').eq(j).text(alert_text)
+            let alertText = $('p.alert-text').eq(k).text()
+            $('.website-alerts-container .page-alert .website-content-text').eq(j).text(alertText)
             j++
           }
-          if (j >= page_alert_count) {
+          if (j >= pageAlertCount) {
             break
           }
         }
@@ -127,19 +119,19 @@ jQuery(document).ready(function ($) {
       }
       $('.website-alert-texts').remove()
     }
-    page_alert_checker()
+    pageAlertChecker()
 
-    function website_alert_styling () {
+    function websiteAlertStyling () {
       if ($('.website-alert').length > 0) {
         $('.website-alerts-container').css('padding-bottom', '5px')
       }
-      if (web_alert_display_check === true) {
+      if (webAlertDisplayCheck === true) {
         $('.website-alerts-container').css('display', 'block')
       }
     }
-    website_alert_styling()
+    websiteAlertStyling()
   }
-  alert_append()
+  alertAppend()
 
   $('.close').click(function () {
     $(this).parents('.website-alert').animate({height: '0px'}, function () {
@@ -152,19 +144,17 @@ jQuery(document).ready(function ($) {
     })
   })
 
-  function alert_position () {
-    var page_content_width
-    var website_alert_container_left
-    page_content_width = $('#main-content').width()
-    $('.website-alerts-container').css('width', page_content_width + 'px')
+  function alertPosition () {
+    var pageContentWidth = $('#main-content').width()
+    var websiteAlertContainerLeft = ($('#main-content').outerWidth(true) - $('#main-content').width()) / 2
 
-    website_alert_container_left = ($('#main-content').outerWidth(true) - $('#main-content').width()) / 2
-    $('.website-alerts-container').css('left', website_alert_container_left + 'px')
+    $('.website-alerts-container').css('width', pageContentWidth + 'px')
+    $('.website-alerts-container').css('left', websiteAlertContainerLeft + 'px')
   }
-  alert_position()
+  alertPosition()
 
   function timeOutFncCall () {
-    alert_position()
+    alertPosition()
   }
 
   $(window).on('resize', function () {
