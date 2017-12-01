@@ -1,3 +1,4 @@
+/* global jQuery */
 jQuery(document).ready(function ($) {
   $('#student-research-button').click(function () {
     $('html, body').animate({
