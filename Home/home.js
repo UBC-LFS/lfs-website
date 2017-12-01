@@ -1,47 +1,39 @@
 /* global jQuery */
 jQuery(document).ready(function ($) {
-  $('.featured').slick({
+  $('.prospective-profile-slider').slick({
     infinite: true,
-    slidesToShow: 5,
+    slidesToShow: 3,
     slidesToScroll: 1,
-    arrows: true,
     autoplay: false,
     swipe: true,
-    prevArrow: $('.profile-prev'),
-    nextArrow: $('.profile-next'),
+    arrows: true,
+    prevArrow: $('.slider-prev'),
+    nextArrow: $('.slider-next'),
     responsive: [
       {
-        breakpoint: 1920,
-        settings: {
-          arrows: true,
-          slidesToShow: 6
-        }
-      },
-      {
-        breakpoint: 1750,
-        settings: {
-          arrows: true,
-          slidesToShow: 4
-        }
-      },
-      {
         breakpoint: 1024,
-        settings: {
-          arrows: true,
+        setting: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '0px',
           slidesToShow: 3
         }
       },
       {
-        breakpoint: 768,
-        settings: {
+        breakpoint: 769,
+        setting: {
           arrows: false,
+          centerMode: true,
+          centerPadding: '0px',
           slidesToShow: 2
         }
       },
       {
-        breakpoint: 480,
-        settings: {
+        breakpoint: 481,
+        setting: {
           arrows: false,
+          centerMode: true,
+          centerPadding: '0px',
           slidesToShow: 1
         }
       }
@@ -119,19 +111,14 @@ jQuery(document).ready(function ($) {
   })
 
   // add links to profile
-  function addLinksToProfiles () {
-    var index = 0
-    var numberOfProfiles = document.getElementById('profile_slider').getElementsByClassName('slick-list')[0].getElementsByClassName('slick-track')[0].children.length
-    var profileSelector = document.getElementById('profile_slider').getElementsByClassName('slick-list')[0].getElementsByClassName('slick-track')[0].getElementsByClassName('slick-slide')
-    for (index = 0; index < numberOfProfiles; index++) {
-      var profileName = 'profile_' + index.toString()
-      $(profileSelector[index]).attr('id', profileName)
-      var profileSelectorSource = document.getElementById(profileName).getElementsByTagName('a')[0]
-      var profileSource = $(profileSelectorSource).attr('href')
-      $('#' + profileName + ' > .profile_link').attr('href', profileSource)
-    }
+  function setupSlickSlider () {
+    // Setting up links
+    [].forEach.call($('.slider-wrap .slick-slide'), function (item, index, array) {
+      var slickSliderLink = $(item).children('a').eq(0).attr('href')
+      $(item).children('a').eq(1).attr('href', slickSliderLink)
+    })
   }
-  addLinksToProfiles()
+  setupSlickSlider()
 
   function addLinksToNews () {
     var newsCount = $('#home-news .news-container').length
@@ -211,13 +198,13 @@ jQuery(document).ready(function ($) {
       if (pageAlertCount > 0) {
         webAlertDisplayCheck = true
 
-                // if there is more than 1 page-alert, clone the additional page alerts
+        // if there is more than 1 page-alert, clone the additional page alerts
         for (i = 1; i < pageAlertCount; i++) {
           $('.website-alerts-container .page-alert').eq(0).clone().appendTo('.website-alerts-container')
         }
 
-                // appends text to page-alert box
-                // this block of code prevents bugs that could occur if user deletes alert-1 and starts at alert-2
+        // appends text to page-alert box
+        // this block of code prevents bugs that could occur if user deletes alert-1 and starts at alert-2
         for (k = 0; k < $('p.alert-text').length; k++) {
           if ($.trim($('p.alert-text').eq(k).text()).length > 0) {
             alertText = $('p.alert-text').eq(k).text()
@@ -258,7 +245,7 @@ jQuery(document).ready(function ($) {
     })
   })
 
-    // If user touched click the screen, it prevents the click on the screen. Instead, it will display the hover effect and a view button link, which they can then click on to go to link
+  // If user touched click the screen, it prevents the click on the screen. Instead, it will display the hover effect and a view button link, which they can then click on to go to link
   function eventsTouchEvents () {
     var eventLinkRemove = false
     $('#upcoming-events .event-wrap').on('click touchstart', function (event) {

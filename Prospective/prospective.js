@@ -1,5 +1,5 @@
+/* global jQuery */
 jQuery(document).ready(function ($) {
-    // Slick Slider
   $('.prospective-profile-slider').slick({
     infinite: true,
     slidesToShow: 3,
@@ -54,19 +54,19 @@ jQuery(document).ready(function ($) {
   })
   var numberOfProfiles = $('.featured-person').length
   var span12 = '<div class="span12" style="margin-left: 0;"></div>'
-  for (i = 0; i <= numberOfProfiles; i++) {
+  for (let i = 0; i <= numberOfProfiles; i++) {
     if (i % 3 === 0) {
       $('.index-' + Math.floor(i / 3)).wrapAll(span12)
     }
   }
 
   var animated = false
-  var top_height_to_counter = $('#ranking-world').offset().top
+  var topHeightToCounter = $('#ranking-world').offset().top
 
-  function count_down_detect () {
-    var y_scroll_pos = window.pageYOffset + $(window).height() - $('#ranking-world').height() * 2 / 3
-    var y_scroll_pos2 = window.pageYOffset - $('#ranking-world').height() * 2 / 5
-    if (y_scroll_pos > top_height_to_counter && y_scroll_pos2 < top_height_to_counter && !animated) {
+  function countDownDetect () {
+    var yScrollPosition = window.pageYOffset + $(window).height() - $('#ranking-world').height() * 2 / 3
+    var yScrollPosition2 = window.pageYOffset - $('#ranking-world').height() * 2 / 5
+    if (yScrollPosition > topHeightToCounter && yScrollPosition2 < topHeightToCounter && !animated) {
       var rankingWorld = new CountUp('ranking-world', 100, 25)
       var rankingCanada = new CountUp('ranking-canada', 100, 2, 0, 3)
       $('#ranking-world').scroll(rankingWorld.start())
@@ -74,28 +74,18 @@ jQuery(document).ready(function ($) {
       animated = true
     }
   }
-  count_down_detect()
-  $(window).on('scroll', count_down_detect)
+  countDownDetect()
+  $(window).on('scroll', countDownDetect)
 
-  var profile_count
-  var tab_count = $('#staff-profile > div.featured-group').length
-  var index
-  var indexj
-  var profile_src
-  var profile_target
-  for (indexj = 0; indexj < tab_count; indexj++) {
-    profile_count = document.getElementById('staff-profile').getElementsByClassName('featured-group')[indexj].getElementsByClassName('featured-person').length
-    for (index = 0; index < profile_count; index++) {
-      profile_src = document.getElementById('staff-profile').getElementsByClassName('featured-group')[indexj].getElementsByClassName('featured-person')[index].getElementsByTagName('a')[0].href
-      document.getElementById('staff-profile').getElementsByClassName('featured-group')[indexj].getElementsByClassName('featured-person')[index].getElementsByTagName('a')[1].setAttribute('href', profile_src)
+  for (let indexj = 0; indexj < $('#staff-profile > div.featured-group').length; indexj++) {
+    var profileCount = document.getElementById('staff-profile').getElementsByClassName('featured-group')[indexj].getElementsByClassName('featured-person').length
+    for (let index = 0; index < profileCount; index++) {
+      var profileSource = document.getElementById('staff-profile').getElementsByClassName('featured-group')[indexj].getElementsByClassName('featured-person')[index].getElementsByTagName('a')[0].href
+      document.getElementById('staff-profile').getElementsByClassName('featured-group')[indexj].getElementsByClassName('featured-person')[index].getElementsByTagName('a')[1].setAttribute('href', profileSource)
     }
   }
 
-  function showFaculty () {
-    console.log('showFaculty function triggered')
-  }
-
-    // animate scroll to ids
+  // animate scroll to ids
   $('#admissions-button').click(function () {
     $('html, body').animate({
       scrollTop: $('#admissions').offset().top
@@ -112,37 +102,37 @@ jQuery(document).ready(function ($) {
     }, 1000)
   })
 
-  function alert_append () {
-    var web_alert_display_check = false    // checks if webpage has alerts
-    var page_alert_count = 0
+  function alertAppend () {
+    var webAlertDisplayCheck = false    // checks if webpage has alerts
+    var pageAlertCount = 0
 
-    function page_alert_counter () {
-      var page_alert_p_count = $('p.alert-text').length
-      var page_alert_text = $('p.alert-text')
-      var page_alert_text_count = 0
-      var page_alert_num = 0
+    function pageAlertCounter () {
+      var pageAlertPCount = $('p.alert-text').length
+      var pageAlertText = $('p.alert-text')
+      var pageAlertTextCount = 0
+      var pageAlertNum = 0
 
-      for (k = 0; k < page_alert_p_count; k++) {
-        page_alert_text_count = $.trim(page_alert_text.eq(k).text()).length
-        if (page_alert_text_count > 0) {
-          page_alert_num++
+      for (let k = 0; k < pageAlertPCount; k++) {
+        pageAlertTextCount = $.trim(pageAlertText.eq(k).text()).length
+        if (pageAlertTextCount > 0) {
+          pageAlertNum++
         }
       }
-      return page_alert_num
+      return pageAlertNum
     }
-    page_alert_count = page_alert_counter()
+    pageAlertCount = pageAlertCounter()
 
-    function page_alert_checker () {
-      var alert_text = ''
+    function pageAlertChecker () {
+      var alertText = ''
       var i = 0  // counter used for cloning additional page-alerts if page has more than 1 alert
       var j = 0  // counter used to count for the page-alert boxes
       var k = 0  // counter used to count through p.alert-text tags
 
-      if (page_alert_count > 0) {
-        web_alert_display_check = true
+      if (pageAlertCount > 0) {
+        webAlertDisplayCheck = true
 
                 // if there is more than 1 page-alert, clone the additional page alerts
-        for (i = 1; i < page_alert_count; i++) {
+        for (i = 1; i < pageAlertCount; i++) {
           $('.website-alerts-container .page-alert').eq(0).clone().appendTo('.website-alerts-container')
         }
 
@@ -150,11 +140,11 @@ jQuery(document).ready(function ($) {
                 // this block of code prevents bugs that could occur if user deletes alert-1 and starts at alert-2
         for (k = 0; k < $('p.alert-text').length; k++) {
           if ($.trim($('p.alert-text').eq(k).text()).length > 0) {
-            alert_text = $('p.alert-text').eq(k).text()
-            $('.website-alerts-container .page-alert .website-content-text').eq(j).text(alert_text)
+            alertText = $('p.alert-text').eq(k).text()
+            $('.website-alerts-container .page-alert .website-content-text').eq(j).text(alertText)
             j++
           }
-          if (j >= page_alert_count) {
+          if (j >= pageAlertCount) {
             break
           }
         }
@@ -163,19 +153,19 @@ jQuery(document).ready(function ($) {
       }
       $('.website-alert-texts').remove()
     }
-    page_alert_checker()
+    pageAlertChecker()
 
-    function website_alert_styling () {
+    function websiteAlertStyling () {
       if ($('.website-alert').length > 0) {
         $('.website-alerts-container').css('padding-bottom', '5px')
       }
-      if (web_alert_display_check === true) {
+      if (webAlertDisplayCheck === true) {
         $('.website-alerts-container').css('display', 'block')
       }
     }
-    website_alert_styling()
+    websiteAlertStyling()
   }
-  alert_append()
+  alertAppend()
 
   $('.close').click(function () {
     $(this).parents('.website-alert').animate({height: '0px'}, function () {
@@ -188,19 +178,17 @@ jQuery(document).ready(function ($) {
     })
   })
 
-  function alert_position () {
-    var page_content_width
-    var website_alert_container_left
-    page_content_width = $('#main-content').width()
-    $('.website-alerts-container').css('width', page_content_width + 'px')
+  function alertPosition () {
+    var pageContentWidth = $('#main-content').width()
+    var websiteAlertContainerLeft = ($('#main-content').outerWidth(true) - $('#main-content').width()) / 2
 
-    website_alert_container_left = ($('#main-content').outerWidth(true) - $('#main-content').width()) / 2
-    $('.website-alerts-container').css('left', website_alert_container_left + 'px')
+    $('.website-alerts-container').css('width', pageContentWidth + 'px')
+    $('.website-alerts-container').css('left', websiteAlertContainerLeft + 'px')
   }
-  alert_position()
+  alertPosition()
 
   function timeOutFncCall () {
-    alert_position()
+    alertPosition()
   }
 
   $(window).on('resize', function () {
