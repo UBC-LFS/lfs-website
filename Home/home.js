@@ -190,24 +190,19 @@ jQuery(document).ready(function ($) {
     pageAlertCount = pageAlertCounter()
 
     function pageAlertChecker () {
-      var alertText = ''
-      var i = 0  // counter used for cloning additional page-alerts if page has more than 1 alert
       var j = 0  // counter used to count for the page-alert boxes
-      var k = 0  // counter used to count through p.alert-text tags
 
       if (pageAlertCount > 0) {
         webAlertDisplayCheck = true
-
         // if there is more than 1 page-alert, clone the additional page alerts
-        for (i = 1; i < pageAlertCount; i++) {
+        for (let i = 1; i < pageAlertCount; i++) {
           $('.website-alerts-container .page-alert').eq(0).clone().appendTo('.website-alerts-container')
         }
-
         // appends text to page-alert box
         // this block of code prevents bugs that could occur if user deletes alert-1 and starts at alert-2
-        for (k = 0; k < $('p.alert-text').length; k++) {
+        for (let k = 0; k < $('p.alert-text').length; k++) {
           if ($.trim($('p.alert-text').eq(k).text()).length > 0) {
-            alertText = $('p.alert-text').eq(k).text()
+            let alertText = $('p.alert-text').eq(k).text()
             $('.website-alerts-container .page-alert .website-content-text').eq(j).text(alertText)
             j++
           }
