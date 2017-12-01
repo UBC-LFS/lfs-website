@@ -1,16 +1,16 @@
 jQuery(document).ready(function ($) {
-    $(function () {
-        $(".interests").typed({
-            strings: [ "^750 the health, protection and well-being of animals?",
-                "^750 biodiversity?",
-                "^750 sustainable food production systems?",
-            ],
-            typeSpeed: 20,
-            backDelay: 1500,
-            backSpeed: -20,
-            loop: false,
-        });
-    });
+  $(function () {
+    $('.interests').typed({
+      strings: [ '^750 the health, protection and well-being of animals?',
+        '^750 biodiversity?',
+        '^750 sustainable food production systems?'
+      ],
+      typeSpeed: 20,
+      backDelay: 1500,
+      backSpeed: -20,
+      loop: false
+    })
+  })
     // function isMobile() {
     //     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     // }
@@ -30,17 +30,15 @@ jQuery(document).ready(function ($) {
     //     })
     // }
 
-    var profile_count = $("#undergrad-profile > div.featured-undergrad").length;
-    var index;
-    var profile_src;
-    var profile_target;
-    for (index=0; index<profile_count; index++)
-    {
-        profile_target = document.getElementById("undergrad-profile").getElementsByClassName("featured-undergrad")[index].getElementsByTagName("a");
-        profile_src = $(profile_target[0]).attr("href");
-        $(profile_target[1]).attr("href", profile_src);
-    }
-
+  var profile_count = $('#undergrad-profile > div.featured-undergrad').length
+  var index
+  var profile_src
+  var profile_target
+  for (index = 0; index < profile_count; index++) {
+    profile_target = document.getElementById('undergrad-profile').getElementsByClassName('featured-undergrad')[index].getElementsByTagName('a')
+    profile_src = $(profile_target[0]).attr('href')
+    $(profile_target[1]).attr('href', profile_src)
+  }
 
 //     // var body_text_content_offset_top;
 //     var body_text_content_offset_left;
@@ -131,5 +129,4 @@ jQuery(document).ready(function ($) {
 //   $(window).on('scroll', sidebar_position);
 //   $(window).on('resize', sidebar_position);
 //   //$('#apply-sidebar').on('resize', sidebar_position);
-  
-});
+})

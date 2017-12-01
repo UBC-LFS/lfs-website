@@ -1,7 +1,7 @@
-// commented out when student services said they wanted the accordions gone. 
+// commented out when student services said they wanted the accordions gone.
 
-// jQuery(document).ready(function ($) { 
-//   var arrow = '<div class="ubc7-arrow down-arrow accordion-arrow"></div>'        
+// jQuery(document).ready(function ($) {
+//   var arrow = '<div class="ubc7-arrow down-arrow accordion-arrow"></div>'
 //   $(".accordion-toggle").append(arrow);
 //   var arrow_right = '<div class="ubc7-arrow right-arrow accordion-arrow"></div>'
 //   var accordion = document.getElementsByClassName("accordion-toggle")[2];
