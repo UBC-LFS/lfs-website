@@ -3,17 +3,14 @@
     display: none;
 }
 .website-alert p,
-.website-alert td
-{
+.website-alert td {
     font-size: 100%;
 }
-.website-alerts-container
-{
+.website-alerts-container {
     display:none;
     position: relative;
 }
-.website-alert-texts
-{
+.website-alert-texts {
     display: none;
 }
 .website-alerts-container .exclamation p {
@@ -122,33 +119,26 @@
 a.not_used,
 div.news > br,
 #nonfeatured-news > div.news > p,
-.post_link > p
-{
+.post_link > p {
  display: none !important; 
 }
-.post_link > .span9
-{
+.post_link > .span9 {
     margin: 0px;
 }
-#profile_slider > .slick-list > .slick-track > .slick-slide a
-{
+#profile_slider > .slick-list > .slick-track > .slick-slide a {
     text-decoration: none;
 }
-#profile_slider > .slick-list > .slick-track > .slick-slide > a
-{
+#profile_slider > .slick-list > .slick-track > .slick-slide > a {
     display: none;
 }
-#profile_slider > .slick-list > .slick-track > .slick-slide > a.profile_link
-{
+#profile_slider > .slick-list > .slick-track > .slick-slide > a.profile_link {
     display: inline-block;
 }
-#profile_slider > .slick-list > .slick-track > .slick-slide > a.profile_link:hover
-{
+#profile_slider > .slick-list > .slick-track > .slick-slide > a.profile_link:hover { 
     opacity: 0.5;
     filter: alpha(opacity=50);
 }
-#event_prev
-{
+#event_prev {
     position:absolute;
     display: block;
     z-index: 1;
@@ -156,20 +146,17 @@ div.news > br,
     height: inherit;
     left: 0px;
 }
-#event_next
-{
+#event_next {
     position:absolute;
     display: block;
     z-index: 1;
     width: 50px;
     height: inherit;
 }
-.event_button
-{
+.event_button {
     background-color: lightgrey;
 }
-.profile-control
-{
+.profile-control { 
     margin: 0;
     padding: 0;
     border: none;
@@ -178,12 +165,10 @@ div.news > br,
     position: absolute;
     background-color: white;
 }
-#profile_slider .slick-list.draggable
-{
+#profile_slider .slick-list.draggable {
     padding: 0px 55px;
 }
-.profile-control p.profile-arrow
-{
+.profile-control p.profile-arrow {
     position: absolute;
     display: none;
     top: 50%;
@@ -204,30 +189,25 @@ div.news > br,
     -ms-user-select: none;
     user-select: none;
 }
-#profile_slider_prev p.profile-arrow
-{
+#profile_slider_prev p.profile-arrow {
     padding-left: 5px;
     padding-right: 0px;
     animation: removeShiftLeft 0.4s;
     animation-timing-function: ease-out;
 }
-#profile_slider_prev p.profile-arrow:hover
-{
+#profile_slider_prev p.profile-arrow:hover {
     padding-left: 0px;
     padding-right: 5px;
     animation: shiftLeft 0.4s;
     animation-timing-function: ease-out;
 }
-.profile-control > .profile-arrow
-{
+.profile-control > .profile-arrow {
     color: #A8A8A8;
 }
-.profile-control > .profile-arrow:hover
-{
+.profile-control > .profile-arrow:hover {
     color: #0680a6;
 }
-.profile-control > .profile-arrow:active
-{
+.profile-control > .profile-arrow:active {
     color: #2f5d7c;
 }
 @keyframes shiftLeft {
@@ -246,15 +226,13 @@ div.news > br,
     padding-right: 0px;
     color: #A8A8A8;}
 }
-#profile_slider_next p.profile-arrow
-{
+#profile_slider_next p.profile-arrow {
     padding-left: 0px;
     padding-right: 5px;
     animation: removeShiftRight 0.4s;
     animation-timing-function: ease-out;
 }
-#profile_slider_next p.profile-arrow:hover
-{
+#profile_slider_next p.profile-arrow:hover {
     padding-left: 5px;
     padding-right: 0px;
     animation: shiftRight 0.4s;
@@ -277,8 +255,7 @@ div.news > br,
     color: #A8A8A8;}
 }
 .profile-arrow:focus,
-#profile_slider .slick-slide a:focus
-{
+#profile_slider .slick-slide a:focus {
     outline: 0;
     border: 0;
 }

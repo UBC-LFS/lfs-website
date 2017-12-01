@@ -47,6 +47,7 @@ jQuery(document).ready(function ($) {
       }
     ]
   })
+
   var url = $('#news-url').text()
   $('#news-url').empty()
   $('#news-url').attr('href', url)
@@ -117,16 +118,15 @@ jQuery(document).ready(function ($) {
     ]
   })
 
-    // add links to profile
+  // add links to profile
   function addLinksToProfiles () {
     var index = 0
     var numberOfProfiles = document.getElementById('profile_slider').getElementsByClassName('slick-list')[0].getElementsByClassName('slick-track')[0].children.length
     var profileSelector = document.getElementById('profile_slider').getElementsByClassName('slick-list')[0].getElementsByClassName('slick-track')[0].getElementsByClassName('slick-slide')
-    var profileSelectorSource
     for (index = 0; index < numberOfProfiles; index++) {
       var profileName = 'profile_' + index.toString()
       $(profileSelector[index]).attr('id', profileName)
-      profileSelectorSource = document.getElementById(profileName).getElementsByTagName('a')[0]
+      var profileSelectorSource = document.getElementById(profileName).getElementsByTagName('a')[0]
       var profileSource = $(profileSelectorSource).attr('href')
       $('#' + profileName + ' > .profile_link').attr('href', profileSource)
     }
