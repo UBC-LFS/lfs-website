@@ -1,3 +1,4 @@
+/* global jQuery */
 jQuery(document).ready(function ($) {
   $('#link-1').click(function () {
     $('html, body').animate({
@@ -35,8 +36,8 @@ jQuery(document).ready(function ($) {
     }, 800)
   })
 
-  var main_image_width
-  var main_image_left_offset
+  var mainImageWidth
+  var mainImageLeftOffset
   var main_image_bot_margin
   var sidebar_width
   var sidebar_height
@@ -57,16 +58,16 @@ jQuery(document).ready(function ($) {
 
   function sidebar_resize () {
     if (check_window_size()) {
-      main_image_width = $('#banner-image').width()
-      main_image_left_offset = $('#banner-image').offset().left
-      main_image_bot_margin = $('#banner-image').outerHeight(true) - $('#banner-image').height()
-      sidebar_width = $('#nav-fixed').outerWidth()
-      sidebar_height = $('#nav-fixed').outerHeight()
-      sidebar_position_left = $('#banner-image').offset().left + $('#banner-image').width() - $('#nav-fixed').outerWidth()
-      sidebar_position_top = $('#banner-image').offset().top + $('#banner-image').outerHeight(true)
-      sidebar_position_top2 = $('#ubc7-unit-footer').offset().top - main_image_bot_margin - sidebar_height
-      scroll_position1 = $('#banner-image').offset().top + $('#banner-image').outerHeight()
-      scroll_position2 = $('#ubc7-footer').offset().top - sidebar_height - main_image_bot_margin - main_image_bot_margin
+      var mainImageWidth = $('#banner-image').width()
+      var mainImageLeftOffset = $('#banner-image').offset().left
+      var main_image_bot_margin = $('#banner-image').outerHeight(true) - $('#banner-image').height()
+      var sidebar_width = $('#nav-fixed').outerWidth()
+      var sidebar_height = $('#nav-fixed').outerHeight()
+      var sidebar_position_left = $('#banner-image').offset().left + $('#banner-image').width() - $('#nav-fixed').outerWidth()
+      var sidebar_position_top = $('#banner-image').offset().top + $('#banner-image').outerHeight(true)
+      var sidebar_position_top2 = $('#ubc7-unit-footer').offset().top - main_image_bot_margin - sidebar_height
+      var scroll_position1 = $('#banner-image').offset().top + $('#banner-image').outerHeight()
+      var scroll_position2 = $('#ubc7-footer').offset().top - sidebar_height - main_image_bot_margin - main_image_bot_margin
     }
   }
 
