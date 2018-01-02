@@ -36,61 +36,55 @@ jQuery(document).ready(function ($) {
     }, 800)
   })
 
-  var mainImageWidth
-  var mainImageLeftOffset
-  var main_image_bot_margin
-  var sidebar_width
-  var sidebar_height
-  var sidebar_position_left
-  var sidebar_position_top
-  var sidebar_position_top2
-  var scroll_position1
-  var scroll_position2
+  var mainImageBotMargin
+  var sidebarHeight
+  var sidebarPositionLeft
+  var sidebarPositionTop
+  var sidebarPositionTop2
+  var scrollPostion1
+  var scrollPostion2
 
-  function check_window_size () {
-    var window_size = $(window).width()
-    if (window_size > 780) {
+  function checkWindowSize () {
+    var windowSize = $(window).width()
+    if (windowSize > 780) {
       return true
     } else {
       return false
     }
   }
 
-  function sidebar_resize () {
-    if (check_window_size()) {
-      var mainImageWidth = $('#banner-image').width()
-      var mainImageLeftOffset = $('#banner-image').offset().left
-      var main_image_bot_margin = $('#banner-image').outerHeight(true) - $('#banner-image').height()
-      var sidebar_width = $('#nav-fixed').outerWidth()
-      var sidebar_height = $('#nav-fixed').outerHeight()
-      var sidebar_position_left = $('#banner-image').offset().left + $('#banner-image').width() - $('#nav-fixed').outerWidth()
-      var sidebar_position_top = $('#banner-image').offset().top + $('#banner-image').outerHeight(true)
-      var sidebar_position_top2 = $('#ubc7-unit-footer').offset().top - main_image_bot_margin - sidebar_height
-      var scroll_position1 = $('#banner-image').offset().top + $('#banner-image').outerHeight()
-      var scroll_position2 = $('#ubc7-footer').offset().top - sidebar_height - main_image_bot_margin - main_image_bot_margin
+  function sidebarResize () {
+    if (checkWindowSize()) {
+      mainImageBotMargin = $('#banner-image').outerHeight(true) - $('#banner-image').height()
+      sidebarHeight = $('#nav-fixed').outerHeight()
+      sidebarPositionLeft = $('#banner-image').offset().left + $('#banner-image').width() - $('#nav-fixed').outerWidth()
+      sidebarPositionTop = $('#banner-image').offset().top + $('#banner-image').outerHeight(true)
+      sidebarPositionTop2 = $('#ubc7-unit-footer').offset().top - mainImageBotMargin - sidebarHeight
+      scrollPostion1 = $('#banner-image').offset().top + $('#banner-image').outerHeight()
+      scrollPostion2 = $('#ubc7-footer').offset().top - sidebarHeight - mainImageBotMargin - mainImageBotMargin
     }
   }
 
-  function sidebar_position () {
-    sidebar_resize()
-    var y_scroll_pos = window.pageYOffset
-    console.log(y_scroll_pos)
-    if (y_scroll_pos <= scroll_position1) {
+  function sidebarPosition () {
+    sidebarResize()
+    var yScrollPos = window.pageYOffset
+    console.log(yScrollPos)
+    if (yScrollPos <= scrollPostion1) {
       $('#nav-fixed').css('position', 'absolute')
-      $('#nav-fixed').css('top', sidebar_position_top + 'px')
-      $('#nav-fixed').css('left', sidebar_position_left + 'px')
-    } else if (y_scroll_pos > scroll_position1 && y_scroll_pos < scroll_position2) {
+      $('#nav-fixed').css('top', sidebarPositionTop + 'px')
+      $('#nav-fixed').css('left', sidebarPositionLeft + 'px')
+    } else if (yScrollPos > scrollPostion1 && yScrollPos < scrollPostion2) {
       $('#nav-fixed').css('position', 'fixed')
-      $('#nav-fixed').css('top', main_image_bot_margin + 'px')
-      $('#nav-fixed').css('left', sidebar_position_left + 'px')
-    } else if (y_scroll_pos >= scroll_position2) {
+      $('#nav-fixed').css('top', mainImageBotMargin + 'px')
+      $('#nav-fixed').css('left', sidebarPositionLeft + 'px')
+    } else if (yScrollPos >= scrollPostion2) {
       $('#nav-fixed').css('position', 'absolute')
-      $('#nav-fixed').css('top', sidebar_position_top2 + 'px')
-      $('#nav-fixed').css('left', sidebar_position_left + 'px')
+      $('#nav-fixed').css('top', sidebarPositionTop2 + 'px')
+      $('#nav-fixed').css('left', sidebarPositionLeft + 'px')
     }
   }
-  sidebar_position()
+  sidebarPosition()
 
-  $(window).on('scroll', sidebar_position)
-  $(window).on('resize', sidebar_position)
+  $(window).on('scroll', sidebarPosition)
+  $(window).on('resize', sidebarPosition)
 })
