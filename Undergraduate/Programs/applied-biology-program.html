@@ -1,6 +1,6 @@
 <script src="https://use.fontawesome.com/47b0aee693.js" async></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js" async></script>
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js" async></script>
 <div class="image-region no-padding">
     <img id="banner" src="http://lfs-ps.sites.olt.ubc.ca/files/2016/10/26574827821_97e3478d0e_k_resized.jpg" alt="Applied Biology Program Banner"
@@ -8,47 +8,67 @@
     <div class="header-text">
         <div class="bound container">
             <div class="message">
-                 <p class="large-intro">Applied Biology Program</p>
-                 <h2 style="color: white;">Interested in <span class="interests" style="text-align: center; font-weight: 600; border-bottom: 4px solid #82B541;"></span></h2>
+                <p class="large-intro">Applied Biology Program</p>
+                <h2 style="color: white;">Interested in
+                    <span class="interests" style="text-align: center; font-weight: 600; border-bottom: 4px solid #82B541;"></span>
+                </h2>
             </div>
         </div>
     </div>
 </div>
 <div id="main-content" class="container"></div>
 <script>
-        var getDivMainRole = document.querySelector('div[role="main"]');
-        var getMainContent = document.getElementById('main-content');
-        var getContent = document.getElementById('content');
-        var getContainer = document.getElementById('container');
-        var getImageRegion = document.getElementsByClassName('image-region')[0];
-        var getBreadcrumb = document.getElementsByClassName('breadcrumb')[0];
-        getDivMainRole.insertBefore(getMainContent, getDivMainRole.childNodes[0]);
-        getMainContent.insertBefore(getContent, getMainContent.childNodes[0]);
-        getContainer.insertBefore(getImageRegion, getContainer.childNodes[0]);
-        (function loadBanner()
-        {
-            var image = document.createElement('img');
-            image.src = 'http://lfs-ps.sites.olt.ubc.ca/files/2016/10/26574827821_97e3478d0e_k_resized.jpg';
-            image.onload = function() {
-                document.getElementById('banner').src = image.src;
-            };
-        })();
- </script>
+    var getDivMainRole = document.querySelector('div[role="main"]');
+    var getMainContent = document.getElementById('main-content');
+    var getContent = document.getElementById('content');
+    var getContainer = document.getElementById('container');
+    var getImageRegion = document.getElementsByClassName('image-region')[0];
+    var getBreadcrumb = document.getElementsByClassName('breadcrumb')[0];
+    getDivMainRole.insertBefore(getMainContent, getDivMainRole.childNodes[0]);
+    getMainContent.insertBefore(getContent, getMainContent.childNodes[0]);
+    getContainer.insertBefore(getImageRegion, getContainer.childNodes[0]);
+    (function loadBanner() {
+        var image = document.createElement('img');
+        image.src = 'http://lfs-ps.sites.olt.ubc.ca/files/2016/10/26574827821_97e3478d0e_k_resized.jpg';
+        image.onload = function () {
+            document.getElementById('banner').src = image.src;
+        };
+    })();
+</script>
 <div class="row-fluid">
     <div class="span12 no-margin-bottom">
-        <h3>In UBC's Applied Biology program, you will explore the real-world application of the life sciences to the management of land, animals and food production. Applied Biology at the Faculty of Land and Food Systems is different from other biological sciences programs in that it's customizable to what you're most interested in learning. The program is built around practical learning experiences, critical thinking, and a systems approach that integrates technical knowledge with sustainability and ethics. You will graduate with the skills and knowledge to take a leadership role in sustainable food production and the responsible use of land, water and animals.</h3>
+        <h3>In UBC's Applied Biology program, you will explore the real-world application of the life sciences to the management
+            of land, animals and food production. Applied Biology at the Faculty of Land and Food Systems is different from
+            other biological sciences programs in that it's customizable to what you're most interested in learning. The
+            program is built around practical learning experiences, critical thinking, and a systems approach that integrates
+            technical knowledge with sustainability and ethics. You will graduate with the skills and knowledge to take a
+            leadership role in sustainable food production and the responsible use of land, water and animals.</h3>
         <div class="row-fluid">
             <h2>Majors Offered</h2>
-            <h3>Explore the majors offered in the Applied Biology program at UBC. For each major, you'll find a brief summary of what's involved, some courses you might take as part of your studies, career possibilities for when you graduate, and links to alumni who are using their Applied Biology degree in their careers.</h3>
+            <h3>Explore the majors offered in the Applied Biology program at UBC. For each major, you'll find a brief summary
+                of what's involved, some courses you might take as part of your studies, career possibilities for when you
+                graduate, and links to alumni who are using their Applied Biology degree in their careers.</h3>
             <div class="span12 no-margin-left">
                 <div class="span4 box" id="training">
-                    <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/current-students/applied-biology/applied-animal-biology/"> <span class="center-box"> <h3 class="box-name">Applied Animal Biology</h3> </span> </a>
+                    <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/current-students/applied-biology/applied-animal-biology/">
+                        <span class="center-box">
+                            <h3 class="box-name">Applied Animal Biology</h3>
+                        </span>
+                    </a>
                 </div>
                 <div class="span4 box" id="training">
-                    <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/current-students/applied-biology/applied-plant-and-soil-sciences/"> <span class="center-box"> <h3 class="box-name">Applied Plant and Soil Sciences</h3> </span> </a>
+                    <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/current-students/applied-biology/applied-plant-and-soil-sciences/">
+                        <span class="center-box">
+                            <h3 class="box-name">Applied Plant and Soil Sciences</h3>
+                        </span>
+                    </a>
                 </div>
                 <div class="span4 box" id="training">
-                    <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/current-students/applied-biology/food-and-the-environment/"> <span class="center-box"> <h3 class="box-name">Food and the Environment</h3> </span> </a>
+                    <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/current-students/applied-biology/food-and-the-environment/">
+                        <span class="center-box">
+                            <h3 class="box-name">Food and the Environment</h3>
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -59,17 +79,17 @@
     <div class="slider-wrap withSideArrow">
         <div class="span12 profile-slick-slider undergraduate-profile-slider">
             [loop query="posts_per_page=7&amp;category_name=featured-profile"]
-                <div class="profile-wrapper">
-                    [link_with_content]
-                    <a class="profile-link">
-                        <div class="profile-link-wrapper">
-                            [image_with_src img_class="featured-profiles"]
-                            <h2 class="profile-name">[cf featured-name]</h2>
-                            <h3 class="profile-program">[cf featured-program]</h3>
-                            [cf featured-blurb]
-                        </div>
-                    </a>
-                </div>
+            <div class="profile-wrapper">
+                [link_with_content]
+                <a class="profile-link">
+                    <div class="profile-link-wrapper">
+                        [image_with_src img_class="featured-profiles"]
+                        <h2 class="profile-name">[cf featured-name]</h2>
+                        <h3 class="profile-program">[cf featured-program]</h3>
+                        [cf featured-blurb]
+                    </div>
+                </a>
+            </div>
             [/loop]
         </div>
         <div class="slider-arrow-wrap slider-prev-wrap">
@@ -81,7 +101,9 @@
     </div>
     <div class="span12">
         <a class="btn explore-more" href="http://lfs-ps.sites.olt.ubc.ca/featured-profiles/" title="Read more stories of the people in the Faculty of Land and Food Systems">
-            <span>READ MORE STORIES <i class="icon-angle-right"></i></span>
+            <span>READ MORE STORIES
+                <i class="icon-angle-right"></i>
+            </span>
         </a>
     </div>
 </div>
