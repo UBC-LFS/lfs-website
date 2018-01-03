@@ -1,62 +1,92 @@
 <script src="https://use.fontawesome.com/47b0aee693.js" async></script>
 <div class="image-region no-padding">
-    <img id="banner" src="http://lfs-ps.sites.olt.ubc.ca/files/2016/10/26574827821_97e3478d0e_k_resized.jpg"/>
+    <img id="banner" src="http://lfs-ps.sites.olt.ubc.ca/files/2016/10/26574827821_97e3478d0e_k_resized.jpg" />
     <div class="header-text">
         <div class="bound container">
             <div class="message">
-                 <p class="large-intro">Food, Nutrition, and Health (BSc)</p>
+                <p class="large-intro">Food, Nutrition, and Health (BSc)</p>
             </div>
         </div>
     </div>
 </div>
 <div id="main-content" class="container"></div>
 <script>
-        var getDivMainRole = document.querySelector('div[role="main"]');
-        var getMainContent = document.getElementById('main-content');
-        var getContent = document.getElementById('content');
-        var getContainer = document.getElementById('container');
-        var getImageRegion = document.getElementsByClassName('image-region')[0];
-        var getBreadcrumb = document.getElementsByClassName('breadcrumb')[0];
-        getDivMainRole.insertBefore(getMainContent, getDivMainRole.childNodes[0]);
-        getMainContent.insertBefore(getContent, getMainContent.childNodes[0]);
-        getContainer.insertBefore(getImageRegion, getContainer.childNodes[0]);
-        (function loadBanner()
-        {
-            var image = document.createElement('img');
-            image.src = 'http://lfs-ps.sites.olt.ubc.ca/files/2016/10/26574827821_97e3478d0e_k_resized.jpg';
-            image.onload = function() {
-                document.getElementById('banner').src = image.src;
-            };
-        })();
- </script>
- <div class="row-fluid">
-        <div class="span12 no-margin-bottom">
-            <h3>UBC's Food, Nutrition and Health program spans the continuum from the production and processing of food to its marketing, consumption, and impact on community and individual health. Within the Food, Nutrition and Health program, you can choose your major to align with your interests and professional goals. Hands-on practical learning, opportunities to connect with industry professionals and collaborative problem-solving are just some of the real-world competencies you'll develop. Earn a professional designation, build a foundation for medical or graduate studies, or prepare for a career in global food markets — all of it is possible in Food, Nutrition and Health.</h3>
-            <div class="row-fluid">
-                <h2>Majors Offered</h2>
-                <h3>Explore the majors offered in the Food, Nutrition and Health program at UBC. For each major, you'll find a brief summary of what's involved, some courses you might take as part of your studies, career possibilities for when you graduate, and links to alumni who are using their Food, Nutrition and Health degree in their careers.</h3>
-                <div class="span12 no-margin-left">
-                    <div class="span4 box" id="training">
-                        <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/undergraduate/food-nutrition-and-health/dietetics/"> <span class="center-box"> <h3 class="box-name">Dietetics</h3> </span> </a>
-                    </div>
-                    <div class="span4 box" id="training">
-                        <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/undergraduate/food-nutrition-and-health/food-science/"> <span class="center-box"> <h3 class="box-name">Food Science</h3> </span> </a>
-                    </div>
-                    <div class="span4 box" id="training">
-                        <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/undergraduate/food-nutrition-and-health/food-nutrition-and-health-major/"> <span class="center-box"> <h3 class="box-name">Food, Nutrition, and Health Major</h3> </span> </a>
-                    </div>
+    var getDivMainRole = document.querySelector('div[role="main"]');
+    var getMainContent = document.getElementById('main-content');
+    var getContent = document.getElementById('content');
+    var getContainer = document.getElementById('container');
+    var getImageRegion = document.getElementsByClassName('image-region')[0];
+    var getBreadcrumb = document.getElementsByClassName('breadcrumb')[0];
+    getDivMainRole.insertBefore(getMainContent, getDivMainRole.childNodes[0]);
+    getMainContent.insertBefore(getContent, getMainContent.childNodes[0]);
+    getContainer.insertBefore(getImageRegion, getContainer.childNodes[0]);
+    (function loadBanner() {
+        var image = document.createElement('img');
+        image.src = 'http://lfs-ps.sites.olt.ubc.ca/files/2016/10/26574827821_97e3478d0e_k_resized.jpg';
+        image.onload = function () {
+            document.getElementById('banner').src = image.src;
+        };
+    })();
+</script>
+<div class="row-fluid">
+    <div class="span12 no-margin-bottom">
+        <h3>UBC's Food, Nutrition and Health program spans the continuum from the production and processing of food to its marketing,
+            consumption, and impact on community and individual health. Within the Food, Nutrition and Health program, you
+            can choose your major to align with your interests and professional goals. Hands-on practical learning, opportunities
+            to connect with industry professionals and collaborative problem-solving are just some of the real-world competencies
+            you'll develop. Earn a professional designation, build a foundation for medical or graduate studies, or prepare
+            for a career in global food markets — all of it is possible in Food, Nutrition and Health.</h3>
+        <div class="row-fluid">
+            <h2>Majors Offered</h2>
+            <h3>Explore the majors offered in the Food, Nutrition and Health program at UBC. For each major, you'll find a brief
+                summary of what's involved, some courses you might take as part of your studies, career possibilities for
+                when you graduate, and links to alumni who are using their Food, Nutrition and Health degree in their careers.</h3>
+            <div class="span12 no-margin-left">
+                <div class="span4 box" id="training">
+                    <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/undergraduate/food-nutrition-and-health/dietetics/">
+                        <span class="center-box">
+                            <h3 class="box-name">Dietetics</h3>
+                        </span>
+                    </a>
                 </div>
-                <div class="span12 no-margin-left">
-                    <div class="span4 box" id="training">
-                        <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/undergraduate/food-nutrition-and-health/nutritional-sciences/"> <span class="center-box"> <h3 class="box-name">Nutritional Sciences</h3> </span> </a>
-                    </div>
-                    <div class="span4 box" id="training">
-                        <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/undergraduate/food-nutrition-and-health/food-and-nutritional-sciences-double-major"> <span class="center-box"> <h3 class="box-name">Food and Nutritional Sciences Double Major</h3> </span> </a>
-                    </div>
-                    <div class="span4 box" id="training">
-                        <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/undergraduate/food-nutrition-and-health/food-market-analysis/"> <span class="center-box"> <h3 class="box-name">Food Market Analysis</h3> </span> </a>
-                    </div>
+                <div class="span4 box" id="training">
+                    <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/undergraduate/food-nutrition-and-health/food-science/">
+                        <span class="center-box">
+                            <h3 class="box-name">Food Science</h3>
+                        </span>
+                    </a>
+                </div>
+                <div class="span4 box" id="training">
+                    <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/undergraduate/food-nutrition-and-health/food-nutrition-and-health-major/">
+                        <span class="center-box">
+                            <h3 class="box-name">Food, Nutrition, and Health Major</h3>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="span12 no-margin-left">
+                <div class="span4 box" id="training">
+                    <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/undergraduate/food-nutrition-and-health/nutritional-sciences/">
+                        <span class="center-box">
+                            <h3 class="box-name">Nutritional Sciences</h3>
+                        </span>
+                    </a>
+                </div>
+                <div class="span4 box" id="training">
+                    <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/undergraduate/food-nutrition-and-health/food-and-nutritional-sciences-double-major">
+                        <span class="center-box">
+                            <h3 class="box-name">Food and Nutritional Sciences Double Major</h3>
+                        </span>
+                    </a>
+                </div>
+                <div class="span4 box" id="training">
+                    <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/undergraduate/food-nutrition-and-health/food-market-analysis/">
+                        <span class="center-box">
+                            <h3 class="box-name">Food Market Analysis</h3>
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+</div>

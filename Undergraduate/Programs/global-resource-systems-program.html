@@ -1,31 +1,57 @@
 <script src="https://use.fontawesome.com/47b0aee693.js" async></script>
 <div class="image-region no-padding">
-    <img id="banner" src="http://lfs-ps.sites.olt.ubc.ca/files/2016/10/26574827821_97e3478d0e_k_resized.jpg"/>
+    <img id="banner" src="http://lfs-ps.sites.olt.ubc.ca/files/2016/10/26574827821_97e3478d0e_k_resized.jpg" />
     <div class="header-text">
         <div class="bound container">
             <div class="message">
-                 <p class="large-intro">Global Resource Systems (BSc)</p>
+                <p class="large-intro">Food, Nutrition, and Health (BSc)</p>
             </div>
         </div>
     </div>
 </div>
 <div id="main-content" class="container"></div>
 <script>
-        var getDivMainRole = document.querySelector('div[role="main"]');
-        var getMainContent = document.getElementById('main-content');
-        var getContent = document.getElementById('content');
-        var getContainer = document.getElementById('container');
-        var getImageRegion = document.getElementsByClassName('image-region')[0];
-        var getBreadcrumb = document.getElementsByClassName('breadcrumb')[0];
-        getDivMainRole.insertBefore(getMainContent, getDivMainRole.childNodes[0]);
-        getMainContent.insertBefore(getContent, getMainContent.childNodes[0]);
-        getContainer.insertBefore(getImageRegion, getContainer.childNodes[0]);
-        (function loadBanner()
-        {
-            var image = document.createElement('img');
-            image.src = 'http://lfs-ps.sites.olt.ubc.ca/files/2016/10/26574827821_97e3478d0e_k_resized.jpg';
-            image.onload = function() {
-                document.getElementById('banner').src = image.src;
-            };
-        })();
+    var getDivMainRole = document.querySelector('div[role="main"]');
+    var getMainContent = document.getElementById('main-content');
+    var getContent = document.getElementById('content');
+    var getContainer = document.getElementById('container');
+    var getImageRegion = document.getElementsByClassName('image-region')[0];
+    var getBreadcrumb = document.getElementsByClassName('breadcrumb')[0];
+    getDivMainRole.insertBefore(getMainContent, getDivMainRole.childNodes[0]);
+    getMainContent.insertBefore(getContent, getMainContent.childNodes[0]);
+    getContainer.insertBefore(getImageRegion, getContainer.childNodes[0]);
+    (function loadBanner() {
+        var image = document.createElement('img');
+        image.src = 'http://lfs-ps.sites.olt.ubc.ca/files/2016/10/26574827821_97e3478d0e_k_resized.jpg';
+        image.onload = function () {
+            document.getElementById('banner').src = image.src;
+        };
+    })();
 </script>
+<div class="row-fluid">
+    <div class="span12 no-margin-bottom">
+        <h3>International in scope and interdisciplinary in nature, UBC's Global Resource Systems program is a degree you design
+            for yourself, centered on local and international resource issues. You will select a region of the world to focus
+            on, as well as a resource discipline within the Faculty of Land and Food Systems. With these as your focal point,
+            you will develop a richly layered understanding of international resource issues by taking courses across the
+            arts, sciences and social sciences. You will explore complex resource problems. You will travel to another country.
+            You will graduate prepared to participate on the international stage, bringing your insight and education to
+            bear on some of the world's most multilayered resource-driven problems.</h3>
+        <div class="row-fluid">
+            <h2>Majors Offered</h2>
+            <h3>Global Resource Systems (GRS) is a major in itself — and it's one you design entirely for yourself. Find out
+                more about what GRS involves, some courses you might take as part of your studies, and career possibilities
+                for when you graduate. We've also got links to alumni bios, where you can read about how LFS grads are using
+                their Global Resource Systems degree in their careers.</h3>
+            <div class="span12 no-margin-left">
+                <div class="span4 box" id="training">
+                    <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/undergraduate/global-resource-systems/global-resource-systems/">
+                        <span class="center-box">
+                            <h3 class="box-name">Global Resource Systems</h3>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
