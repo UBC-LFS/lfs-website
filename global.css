@@ -36,10 +36,12 @@ h1 {
     font-weight: 400;
     margin-bottom: 1%;   
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+    color: #4e5134;
 }
 h2 {
     font-weight: 400;
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+    color: #4e5134;
 }
 h3 {
     font-size: 150%;
@@ -47,13 +49,16 @@ h3 {
     font-weight: 400;
     font-weight: 400;
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+    color: #4e5134;
 }
 h4 {
     font-weight: 400;
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+    color: #4e5134;
 }
 p, td {
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+    color: #4e5134;
     font-size: 1.1em;
     line-height: 1.5;
 }
@@ -98,7 +103,7 @@ li, ul {
     right: 0px;
     height: inherit;
     width: 85px;
-    background: #eb513a;
+    background: #8c925e;
     padding: 0px 20px;
 }
 #ubc7-unit .apply-now-button span {
@@ -109,7 +114,7 @@ li, ul {
     text-align: center;
 }
 #ubc7-unit-navigation #menu-top-nav li.apply-button {
-    background-color: #eb513a;
+    background-color: #8c925e;
 }
 #ubc7-unit-navigation #menu-top-nav li.apply-button a {
     color: white;
@@ -118,7 +123,7 @@ li, ul {
     padding-top: 0px !important;
 }
 .border-bottom {
-    border-bottom: 1px solid #b2c6d3;
+    border-bottom: 1px solid #8c925e;
     padding-bottom: 30px;
 }
 .btn {
