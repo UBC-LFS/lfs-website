@@ -3,7 +3,10 @@
     <div class="homepage-post-wrapper">
         [loop query="posts_per_page=6&amp;category_name=homepage-posts"]
         <div class="homepage-post">
-            [image_with_src img_class="homepage-post-img"]
+            <div class="source-link" style="display: none;">[link_with_content]</div>
+            <div class="target-link">
+                [image_with_src img_class="homepage-post-img"]
+            </div>
             <div class="homepage-post-content">
                 <h3 class="homepage-post-title">[cf homepage-post-title]</h3>
                 <p class="homepage-post-p">[cf homepage-post-blurb]</p>
@@ -32,14 +35,17 @@
     <h2>MEET OUR COMMUNITY</h2>
     <div class="featured-profile-wrapper">
         [loop query="posts_per_page=3&amp;category_name=featured-profile"]
-            <div class="featured-profile">
+        <div class="featured-profile">
+            <div class="source-link" style="display: none;">[link_with_content]</div>
+            <div class="target-link">
                 [image_with_src img_class="featured-profile-img"]
-                <div class="featured-profile-content">
-                     <h2 class="featured">[cf featured-name]</h2>
-                     <h3 class="featured">[cf featured-program]</h3>
-                     [cf featured-blurb]
-                </div>
             </div>
+            <div class="featured-profile-content">
+                <h2 class="featured">[cf featured-name]</h2>
+                <h3 class="featured">[cf featured-program]</h3>
+                [cf featured-blurb]
+            </div>
+        </div>
         [/loop]
     </div>
     <div style="margin-top: 20px;">
