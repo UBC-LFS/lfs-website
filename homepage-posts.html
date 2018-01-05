@@ -1,7 +1,13 @@
 <div class="row-fluid border-bottom">
-  <div class="homepage-posts">
-      <div>hello</div>
-      <div>hello</div>
-      <div>hello</div>
+  <div class="homepage-post-wrapper">
+    [loop query="posts_per_page=6&amp;category_name=homepage-posts"]
+      <div class="homepage-post">
+        [image_with_src img_class="homepage-post-img"]
+        <div class="homepage-post-content">
+          <h3>[cf homepage-post-title]</h3>
+          <p>[cf homepage-post-blurb]</p>
+        </div>
+      </div>
+    [/loop]
   </div>
 </div>

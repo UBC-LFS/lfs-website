@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js" async></script>
 <div class="website-alerts-container">
     <div class="website-alert weather-alert">
@@ -10,16 +10,19 @@
                     </td>
                     <td class="content-text">
                         [loop query="category_name=website-alerts"]
+                        <p>
+                            <span>
+                                <b>WEATHER ADVISORY:</b>
+                            </span>
+                            <span class="alert-check weather" data-alert-type="weather-alert">[cf alert-weather]</span>
+                        </p>
+                        <p>Updated: Dec 20, 2013 6:15AM PST
                             <p>
-                                <span><b>WEATHER ADVISORY:</b></span>
-                                <span class="alert-check weather" data-alert-type = "weather-alert">[cf alert-weather]</span>
-                            </p>
-                            <p>Updated: Dec 20, 2013 6:15AM PST<p>
-                        [/loop]
+                                [/loop]
                     </td>
                 </tr>
             </table>
-            <button type = "button" class = "close" data-dismiss = "alert" aria-hidden = "true">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
                 &times;
             </button>
         </div>
@@ -28,7 +31,7 @@
     <div class="website-alert page-alert">
         <div class="website-alert-content">
             <p class="alert-check website-content-text"></p>
-            <button type = "button" class = "close" aria-hidden = "true">
+            <button type="button" class="close" aria-hidden="true">
                 &times;
             </button>
         </div>
@@ -37,25 +40,89 @@
 </div>
 
 <div class="website-alert-texts">
-[loop query="category_name=website-alerts"]
+    [loop query="category_name=website-alerts"]
     <p class="alert-text">[cf alert-home-1]</p>
     <p class="alert-text">[cf alert-home-2]</p>
     <p class="alert-text">[cf alert-home-3]</p>
-[/loop]
+    [/loop]
 </div>
-<div class="row-fluid border-bottom">
-    <div class="homepage-posts">
-        <div>hello</div>
-        <div>hello</div>
-        <div>hello</div>
+
+<div class="image-region no-padding">
+    <img id="banner" src="http://lfs-ps.sites.olt.ubc.ca/files/2017/03/homepage_blurred.jpg" alt="Homepage Banner">
+    <div class="header-text">
+        <div class="bound container">
+            <div class="message">
+                <p class="large-intro">The Faculty of Land and Food Systems</p>
+            </div>
+        </div>
     </div>
 </div>
-<div class="row-fluid border-bottom" id="join-us"></div>
+<div id="main-content" class="container"></div>
+<script>
+    var getDivMainRole = document.querySelector('div[role="main"]');
+    var getMainContent = document.getElementById('main-content');
+    var getContent = document.getElementById('content');
+    var getContainer = document.getElementById('container');
+    var getImageRegion = document.getElementsByClassName('image-region')[0];
+    var getWebsiteAlerts = document.getElementsByClassName('website-alerts-container')[0];
+    getDivMainRole.insertBefore(getMainContent, getDivMainRole.childNodes[0]);
+    getMainContent.insertBefore(getContent, getMainContent.childNodes[0]);
+    getContainer.insertBefore(getImageRegion, getContainer.childNodes[0]);
+    getContainer.insertBefore(getWebsiteAlerts, getContainer.childNodes[0]);
+    (function loadBanner() {
+        var image = document.createElement('img');
+        image.src = 'http://lfs-ps.sites.olt.ubc.ca/files/2017/03/20089902805_7c5e1729d1_o_r1.jpg';
+        image.onload = function () {
+            document.getElementById('banner').src = image.src;
+        };
+    })();
+</script>
+<div class="row-fluid border-bottom">
+    <h3>
+        The UBC Faculty of Land and Food Systems uses student-centered learning to educate new generations of scientists equipped
+        to solve the most fundamental issues faced by society — those focused around human health, a sustainable food supply
+        and the responsible use of finite land and water resources. To that end, Faculty initiatives foster and support:
+        research excellence, innovative active learning environments, strong community connections, and global and local
+        collaborations.
+    </h3>
+</div>
+<div class="row-fluid border-bottom" id="join-us">
     <h2>Join us</h2>
     <div class="span12">
-        <div class="span4 box" id="prospective-students"> <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/prospective/" title="Visit the Faculty of Land and Food System's prospective students page"> <span class="center-box"> <h3 class="box-name">Prospective Students</h3> </span> </a> </div>
-        <div class="span4 box" id="current-students"> <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/undergraduate/" title="Visit the Faculty of Land and Food System's current students page"> <span class="center-box"> <h3 class="box-name">Current Students</h3> </span> </a> </div>
-        <div class="span4 box" id="graduate-students"> <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/graduate/" title="Visit the Faculty of Land and Food System's graduate students page"> <span class="center-box"> <h3 class="box-name">Graduate Students</h3> </span> </a> </div>
+        <div class="span4 box" id="prospective-students">
+            <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/prospective/" title="Visit the Faculty of Land and Food System's prospective students page">
+                <span class="center-box">
+                    <h3 class="box-name">Prospective Students</h3>
+                </span>
+            </a>
+        </div>
+        <div class="span4 box" id="current-students">
+            <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/undergraduate/" title="Visit the Faculty of Land and Food System's current students page">
+                <span class="center-box">
+                    <h3 class="box-name">Current Students</h3>
+                </span>
+            </a>
+        </div>
+        <div class="span4 box" id="graduate-students">
+            <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/graduate/" title="Visit the Faculty of Land and Food System's graduate students page">
+                <span class="center-box">
+                    <h3 class="box-name">Graduate Students</h3>
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="row-fluid border-bottom">
+    <div class="homepage-post-wrapper">
+        [loop query="posts_per_page=6&amp;category_name=homepage-posts"]
+        <div class="homepage-post">
+            [image_with_src img_class="homepage-post-img"]
+            <div class="homepage-post-content">
+                <h3>[cf homepage-post-title]</h3>
+                <p>[cf homepage-post-blurb]</p>
+            </div>
+        </div>
+        [/loop]
     </div>
 </div>
 <div class="row-fluid border-bottom">
@@ -63,17 +130,17 @@
     <div class="slider-wrap withSideArrow">
         <div class="span12 profile-slick-slider homepage-slider">
             [loop query="posts_per_page=7&amp;category_name=featured-profile"]
-                <div class="profile-wrapper">
-                    [link_with_content]
-                    <a class="profile-link">
-                        <div class="profile-link-wrapper">
-                            [image_with_src img_class="featured-profiles"]
-                            <h2 class="profile-name">[cf featured-name]</h2>
-                            <h3 class="profile-program">[cf featured-program]</h3>
-                            [cf featured-blurb]
-                        </div>
-                    </a>
-                </div>
+            <div class="profile-wrapper">
+                [link_with_content]
+                <a class="profile-link">
+                    <div class="profile-link-wrapper">
+                        [image_with_src img_class="featured-profiles"]
+                        <h2 class="profile-name">[cf featured-name]</h2>
+                        <h3 class="profile-program">[cf featured-program]</h3>
+                        [cf featured-blurb]
+                    </div>
+                </a>
+            </div>
             [/loop]
         </div>
         <div class="slider-arrow-wrap slider-prev-wrap">
@@ -84,37 +151,41 @@
         </div>
     </div>
     <a class="btn explore-more" href="http://lfs-ps.sites.olt.ubc.ca/featured-profiles/" title="Read more stories of the people in the Faculty of Land and Food Systems">
-        <span>READ MORE STORIES <i class="icon-angle-right"></i></span>
+        <span>READ MORE STORIES
+            <i class="icon-angle-right"></i>
+        </span>
     </a>
 </div>
 <div class="row-fluid border-bottom" id="news-section">
     <h2>In the News</h2>
     <div id="home-news">
         [loop query="posts_per_page=6&amp;category_name=news"]
-            <div class="news-container">
-                [link_with_content]
-                <div class="image-wrapper">
-                    <a class ="display" href="">
-                        [image_with_src]
-                    </a>
-                </div>
-                <div class="content-wrapper">
-                    <a class="display news_title" href="">
-                        [cf news-title-long]
-                    </a>
-                    <p class="news_paragraph">
-                        [cf news-blurb]
-                    </p>
-                    <a class="display news_author" href="">
-                        [cf news-author]
-                    </a>
-                </div>
+        <div class="news-container">
+            [link_with_content]
+            <div class="image-wrapper">
+                <a class="display" href="">
+                    [image_with_src]
+                </a>
             </div>
+            <div class="content-wrapper">
+                <a class="display news_title" href="">
+                    [cf news-title-long]
+                </a>
+                <p class="news_paragraph">
+                    [cf news-blurb]
+                </p>
+                <a class="display news_author" href="">
+                    [cf news-author]
+                </a>
+            </div>
+        </div>
         [/loop]
     </div>
     <div class="span12 read-more">
         <a class="btn explore-more" style="margin-right:0;" href="http://reachout.landfood.ubc.ca/" title="Read more news">
-            <span>READ MORE NEWS <i class="icon-angle-right"></i></span>
+            <span>READ MORE NEWS
+                <i class="icon-angle-right"></i>
+            </span>
         </a>
     </div>
 </div>
@@ -123,47 +194,53 @@
     <div id="event-slider">
         <!--add in showpastevents=false below to show only upcoming events-->
         [eo_events ]
-            <div class="event-vertical-center-wrap">
-                <div class="event-wrap">
-                    <div class="event-image">%event_thumbnail{medium}%</div>
-                    <a href="%event_url%" class="event-link-copy"></a>
-                    <a href="%event_url%" class="event-link">
-                        <div class="event-hover">
-                            <div class="event-text-wrap">
-                                <div class="event-title">
-                                    <p>%event_title%</p>
-                                </div>
-                                <div class="event-date">
-                                    <p>%start{jS M Y}% at %start{g:i:a}%</p>
-                                </div>
-                                <div class="event-description">
-                                    <p>%event_content%
-                                    </p>
-                                </div>
+        <div class="event-vertical-center-wrap">
+            <div class="event-wrap">
+                <div class="event-image">%event_thumbnail{medium}%</div>
+                <a href="%event_url%" class="event-link-copy"></a>
+                <a href="%event_url%" class="event-link">
+                    <div class="event-hover">
+                        <div class="event-text-wrap">
+                            <div class="event-title">
+                                <p>%event_title%</p>
+                            </div>
+                            <div class="event-date">
+                                <p>%start{jS M Y}% at %start{g:i:a}%</p>
+                            </div>
+                            <div class="event-description">
+                                <p>%event_content%
+                                </p>
                             </div>
                         </div>
-                    </a>
-                    <div class="event-view-position">
-                        <div class="event-view-button">
-                            <a href="%event_url%" class="event-button-link">
-                                View
-                            </a>
-                        </div>
+                    </div>
+                </a>
+                <div class="event-view-position">
+                    <div class="event-view-button">
+                        <a href="%event_url%" class="event-button-link">
+                            View
+                        </a>
                     </div>
                 </div>
             </div>
+        </div>
         [/eo_events]
-        <div class="event-prev-wrap eventArrow"><p class="event-prev">&lsaquo;</p></div>
-        <div class="event-next-wrap eventArrow"><p class="event-next">&rsaquo;</p></div>
+        <div class="event-prev-wrap eventArrow">
+            <p class="event-prev">&lsaquo;</p>
+        </div>
+        <div class="event-next-wrap eventArrow">
+            <p class="event-next">&rsaquo;</p>
+        </div>
     </div>
     <div class="span12 read-more">
         <a class="btn explore-more" style="margin-right:0;" href="http://lfs-ps.sites.olt.ubc.ca/events/" title="Read more stories of the people in the Faculty of Land and Food Systems">
-            <span>SEE CALENDAR OF EVENTS <i class="icon-angle-right"></i></span>
+            <span>SEE CALENDAR OF EVENTS
+                <i class="icon-angle-right"></i>
+            </span>
         </a>
     </div>
 </div>
 <script>
-[].forEach.call(document.getElementsByClassName('eo-events-shortcode'), function(x) {
-    x.className += ' events';
-})
+    [].forEach.call(document.getElementsByClassName('eo-events-shortcode'), function (x) {
+        x.className += ' events';
+    })
 </script>
