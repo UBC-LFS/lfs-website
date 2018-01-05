@@ -1,27 +1,7 @@
 <script src="https://use.fontawesome.com/47b0aee693.js" async></script>
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js" async></script>
-<div class="website-alerts-container">
-    [loop query="category_name=website-alerts"]
-    <div class="website-alert page-alert">
-        <div class="website-alert-content">
-            <p class="alert-check website-content-text"></p>
-            <button type = "button" class = "close" data-dismiss = "website-individual-alert-outer" aria-hidden = "true">
-                &times;
-            </button>
-        </div>
-    </div>
-    [/loop]
-</div>
-<div class="website-alert-texts">
-[loop query="category_name=website-alerts"]
-    <p class="alert-text">[cf alert-undergraduate-1]</p>
-    <p class="alert-text">[cf alert-undergraduate-2]</p>
-    <p class="alert-text">[cf alert-undergraduate-3]</p>
-[/loop]
-</div>
 <div class="image-region no-padding">
-    <img id="banner" src="http://lfs-ps.sites.olt.ubc.ca/files/2016/11/23100550015_1b2ac90e31_k.jpg" alt="Current Students Banner"/>
+    <img id="banner" src="http://lfs-ps.sites.olt.ubc.ca/files/2016/11/23100550015_1b2ac90e31_k.jpg" alt="Current Students Banner"
+    />
     <div class="header-text">
         <div class="bound container">
             <div class="message">
@@ -43,18 +23,20 @@
     getMainContent.insertBefore(getContent, getMainContent.childNodes[0]);
     getContainer.insertBefore(getImageRegion, getContainer.childNodes[0]);
     getContainer.insertBefore(getWebsiteAlerts, getBreadcrumb);
-    (function loadBanner()
-        {
-            var image = document.createElement('img');
-            image.src = 'http://lfs-ps.sites.olt.ubc.ca/files/2016/11/23100550015_1b2ac90e31_k.jpg';
-            image.onload = function() {
-                document.getElementById('banner').src = image.src;
-            };
-        })();
+    (function loadBanner() {
+        var image = document.createElement('img');
+        image.src = 'http://lfs-ps.sites.olt.ubc.ca/files/2016/11/23100550015_1b2ac90e31_k.jpg';
+        image.onload = function () {
+            document.getElementById('banner').src = image.src;
+        };
+    })();
 </script>
 <div class="row-fluid border-bottom">
     <h3>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quae, nostrum id harum, magni blanditiis ipsum enim est et aliquid illo perferendis mollitia quasi delectus vel velit ad provident consequuntur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quis modi temporibus consequatur nostrum neque quae expedita, voluptates quam debitis quasi dolor esse, eligendi porro ex dignissimos a sunt ut!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quae, nostrum id harum, magni blanditiis ipsum enim est
+        et aliquid illo perferendis mollitia quasi delectus vel velit ad provident consequuntur? Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Laborum quis modi temporibus consequatur nostrum neque quae expedita, voluptates quam
+        debitis quasi dolor esse, eligendi porro ex dignissimos a sunt ut!
     </h3>
 </div>
 <div class="row-fluid border-bottom" id="explore-programs">
@@ -63,17 +45,23 @@
         <div class="span4">
             <h3>Applied Biology</h3>
             <p>Interested in? </p>
-            <a href="http://lfs-ps.sites.olt.ubc.ca/current-students/applied-biology/" title="Vist the Applied Biology Program Page">Learn more <i class="icon-angle-right"></i></a>
+            <a href="http://lfs-ps.sites.olt.ubc.ca/current-students/applied-biology/" title="Vist the Applied Biology Program Page">Learn more
+                <i class="icon-angle-right"></i>
+            </a>
         </div>
         <div class="span4">
             <h3>Food, Nutrition, and Health</h3>
             <p>Interested in? </p>
-            <a href="http://lfs-ps.sites.olt.ubc.ca/current-students/food-nutrition-and-health/" title="Vist the Food, Nutrition, and Health Program Page">Learn more <i class="icon-angle-right"></i></a>
+            <a href="http://lfs-ps.sites.olt.ubc.ca/current-students/food-nutrition-and-health/" title="Vist the Food, Nutrition, and Health Program Page">Learn more
+                <i class="icon-angle-right"></i>
+            </a>
         </div>
         <div class="span4">
             <h3>Global Resource Systems</h3>
             <p>Interested in? </p>
-            <a href="http://lfs-ps.sites.olt.ubc.ca/current-students/global-resource-systems/" title="Vist the Global Resource System Program Page">Learn more <i class="icon-angle-right"></i></a>
+            <a href="http://lfs-ps.sites.olt.ubc.ca/current-students/global-resource-systems/" title="Vist the Global Resource System Program Page">Learn more
+                <i class="icon-angle-right"></i>
+            </a>
         </div>
     </div>
 </div>
@@ -82,15 +70,18 @@
     <div class="span12 no-margin-left">
         <div class="span4">
             <h3>Year 1: Getting Started</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eum reprehenderit dolorem dicta repudiandae quasi cupiditate mollitia molestiae, natus, repellat sed quas veniam quam quos ad qui, dignissimos. Ab, sed?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eum reprehenderit dolorem dicta repudiandae
+                quasi cupiditate mollitia molestiae, natus, repellat sed quas veniam quam quos ad qui, dignissimos. Ab, sed?</p>
         </div>
         <div class="span4">
             <h3>Year 2: Getting Grounded</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eum reprehenderit dolorem dicta repudiandae quasi cupiditate mollitia molestiae, natus, repellat sed quas veniam quam quos ad qui, dignissimos. Ab, sed?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eum reprehenderit dolorem dicta repudiandae
+                quasi cupiditate mollitia molestiae, natus, repellat sed quas veniam quam quos ad qui, dignissimos. Ab, sed?</p>
         </div>
         <div class="span4">
             <h3>Year 3 &amp; 4: Getting Focused</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eum reprehenderit dolorem dicta repudiandae quasi cupiditate mollitia molestiae, natus, repellat sed quas veniam quam quos ad qui, dignissimos. Ab, sed?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eum reprehenderit dolorem dicta repudiandae
+                quasi cupiditate mollitia molestiae, natus, repellat sed quas veniam quam quos ad qui, dignissimos. Ab, sed?</p>
         </div>
     </div>
 </div>
@@ -99,18 +90,26 @@
     <div class="span12 no-margin-left">
         <div class="span4">
             <h3>Classroom</h3>
-            <p>Complement your in-classroom experience, discover new opportunities to apply your education in a hands-on way, and invest in your own academic</p>
-            <a href="http://lfs-ps.sites.olt.ubc.ca/current-students/classroom/">Learn more <i class="icon-angle-right"></i></a>
+            <p>Complement your in-classroom experience, discover new opportunities to apply your education in a hands-on way,
+                and invest in your own academic</p>
+            <a href="http://lfs-ps.sites.olt.ubc.ca/current-students/classroom/">Learn more
+                <i class="icon-angle-right"></i>
+            </a>
         </div>
         <div class="span4">
             <h3>Campus</h3>
             <p>These campus opportunities can help you gain valuable experience while giving back and having fun!</p>
-            <a href="http://lfs-ps.sites.olt.ubc.ca/current-students/campus/">Learn more <i class="icon-angle-right"></i></a>
+            <a href="http://lfs-ps.sites.olt.ubc.ca/current-students/campus/">Learn more
+                <i class="icon-angle-right"></i>
+            </a>
         </div>
         <div class="span4">
             <h3>Community</h3>
-            <p>Connect with the community beyond the Vancouver campus, network with current industry professionals and gain experiences that will help you </p>
-            <a href="http://lfs-ps.sites.olt.ubc.ca/current-students/community/">Learn more <i class="icon-angle-right"></i></a>
+            <p>Connect with the community beyond the Vancouver campus, network with current industry professionals and gain
+                experiences that will help you </p>
+            <a href="http://lfs-ps.sites.olt.ubc.ca/current-students/community/">Learn more
+                <i class="icon-angle-right"></i>
+            </a>
         </div>
     </div>
 </div>
@@ -118,39 +117,34 @@
     <div class="row-fluid" style="width:80%;text-align:center;margin:auto;">
         <i class="fa fa-question-circle-o" aria-hidden="true" style="font-size:5em;margin-top:20px;"></i>
         <h2>Contact the UBC LFS Student Advising Office</h2>
-        <p style="font-size: 1.2em">Medical issues, personal problems? Confused about applying for a minor, taking a term off, Faculty requirements, or whether you're eligible to graduate?</p>
-        <a href="http://lfs-ps.sites.olt.ubc.ca/student-services/#connect" style="margin:auto; width:200px;" class="btn btn-large btn-block" title="Contact Student Services">Contact Us</a>
+        <p style="font-size: 1.2em">Medical issues, personal problems? Confused about applying for a minor, taking a term off, Faculty requirements,
+            or whether you're eligible to graduate?</p>
+        <a href="http://lfs-ps.sites.olt.ubc.ca/student-services/#connect" style="margin:auto; width:200px;" class="btn btn-large btn-block"
+            title="Contact Student Services">Contact Us</a>
     </div>
 </div>
-<div class="row-fluid" id="peers-profile">
-    <h2>Our Community</h2>
-    <div class="slider-wrap withSideArrow">
-        <div class="span12 profile-slick-slider undergraduate-profile-slider">
-            [loop query="posts_per_page=7&amp;category_name=featured-profile"]
-                <div class="profile-wrapper">
-                    [link_with_content]
-                    <a class="profile-link">
-                        <div class="profile-link-wrapper">
-                            [image_with_src img_class="featured-profiles"]
-                            <h2 class="profile-name">[cf featured-name]</h2>
-                            <h3 class="profile-program">[cf featured-program]</h3>
-                            [cf featured-blurb]
-                        </div>
-                    </a>
-                </div>
-            [/loop]
+<div class="row-fluid border-bottom">
+    <h2>MEET OUR COMMUNITY</h2>
+    <div class="featured-profile-wrapper">
+        [loop query="posts_per_page=3&amp;category_name=featured-profile"]
+        <div class="featured-profile">
+            <div class="source-link" style="display: none;">[link_with_content]</div>
+            <div class="target-link">
+                [image_with_src img_class="featured-profile-img"]
+            </div>
+            <div class="featured-profile-content">
+                <h2 class="featured">[cf featured-name]</h2>
+                <h3 class="featured">[cf featured-program]</h3>
+                <p class="homepage-post-p">[cf featured-blurb]</p>
+            </div>
         </div>
-        <div class="slider-arrow-wrap slider-prev-wrap">
-            <p class="slider-prev">&lsaquo;</p>
-        </div>
-        <div class="slider-arrow-wrap slider-next-wrap">
-            <p class="slider-next">&rsaquo;</p>
-        </div>
+        [/loop]
     </div>
-    <div class="span12">
+    <div style="margin-top: 20px;">
         <a class="btn explore-more" href="http://lfs-ps.sites.olt.ubc.ca/featured-profiles/" title="Read more stories of the people in the Faculty of Land and Food Systems">
-            <span>READ MORE STORIES <i class="icon-angle-right"></i></span>
+            <span>READ MORE STORIES
+                <i class="icon-angle-right"></i>
+            </span>
         </a>
     </div>
 </div>
-
