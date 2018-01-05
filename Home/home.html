@@ -43,44 +43,14 @@
     <p class="alert-text">[cf alert-home-3]</p>
 [/loop]
 </div>
-
-<div class="image-region no-padding">
-    <img id="banner" src="http://lfs-ps.sites.olt.ubc.ca/files/2017/03/homepage_blurred.jpg" alt="Homepage Banner">
-    <div class="header-text">
-        <div class="bound container">
-            <div class="message">
-                <p class="large-intro">The Faculty of Land and Food Systems</p>
-            </div>
-        </div>
+<div class="row-fluid border-bottom">
+    <div class="homepage-posts">
+        <div>hello</div>
+        <div>hello</div>
+        <div>hello</div>
     </div>
 </div>
-<div id="main-content" class="container"></div>
-<script>
-    var getDivMainRole = document.querySelector('div[role="main"]');
-    var getMainContent = document.getElementById('main-content');
-    var getContent = document.getElementById('content');
-    var getContainer = document.getElementById('container');
-    var getImageRegion = document.getElementsByClassName('image-region')[0];
-    var getWebsiteAlerts = document.getElementsByClassName('website-alerts-container')[0];
-    getDivMainRole.insertBefore(getMainContent, getDivMainRole.childNodes[0]);
-    getMainContent.insertBefore(getContent, getMainContent.childNodes[0]);
-    getContainer.insertBefore(getImageRegion, getContainer.childNodes[0]);
-    getContainer.insertBefore(getWebsiteAlerts, getContainer.childNodes[0]);
-    (function loadBanner()
-    {
-        var image = document.createElement('img');
-        image.src = 'http://lfs-ps.sites.olt.ubc.ca/files/2017/03/20089902805_7c5e1729d1_o_r1.jpg';
-        image.onload = function() {
-            document.getElementById('banner').src = image.src;
-        };
-    })();
-</script>
-<div class="row-fluid border-bottom">
-    <h3>
-      The UBC Faculty of Land and Food Systems uses student-centered learning to educate new generations of scientists equipped to solve the most fundamental issues faced by society — those focused around human health, a sustainable food supply and the responsible use of finite land and water resources. To that end, Faculty initiatives foster and support: research excellence, innovative active learning environments, strong community connections, and global and local collaborations.
-    </h3>
-</div>
-<div class="row-fluid border-bottom" id="join-us">
+<div class="row-fluid border-bottom" id="join-us"></div>
     <h2>Join us</h2>
     <div class="span12">
         <div class="span4 box" id="prospective-students"> <a class="overlay" href="http://lfs-ps.sites.olt.ubc.ca/prospective/" title="Visit the Faculty of Land and Food System's prospective students page"> <span class="center-box"> <h3 class="box-name">Prospective Students</h3> </span> </a> </div>
