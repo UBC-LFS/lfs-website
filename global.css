@@ -130,21 +130,6 @@ img {
     vertical-align: middle;
     width: 100%;
 }
-img.featured-profiles {
-  height: auto;
-    max-width: 100%;
-    vertical-align: middle;
-    border-radius: 50%;
-    max-width: 100%;
-    margin: auto;
-}
-.featured-container {
-    padding: 10px;
-}
-.featured-container:hover {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-}
 h2.featured {
     text-align: center;
     font-size: 1.4em;
