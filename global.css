@@ -1,3 +1,37 @@
+/* Featured Profile */
+.featured-profile-wrapper {
+
+}
+
+.featured-profile:first-child {
+    margin-left: 0;
+}
+
+.featured-profile {
+    vertical-align: top;
+    display: inline-block;
+    width: calc(33.333% - 13.333333333px);
+    margin-left: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.featured-profile:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.featured-profile-content {
+    padding: 15px;
+}
+
+.featured-profile-img {
+    width: 100%
+}
+
+.featured-profile-name {
+    margin-top: 0;
+}
+
 .banner {
   background: #3ba648;
   text-align: center;
@@ -71,6 +105,7 @@ li, ul {
     line-height: 150%;
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
     text-shadow: 0 0 1px rgba(0,0,0,0.6);
+    color: white;
 }
 .header-text {
     position: absolute;
@@ -151,13 +186,13 @@ h3.box-name {
 .explore-more {
     float: right;
     background-color: transparent;
-    color: #002145;
+    color: #4e5134;
     background-image: none;
     margin-right: 30px;
 } 
 .apply-button {
     background-color: transparent;
-    color: #002145;
+    color: #4e5134;
     background-image: none;
 }
 div.intro {
@@ -175,7 +210,7 @@ div.intro {
 }
 .tab-pane {
     background-color: transparent;
-    color: #002145;
+    color: #4e5134;
     background-image: none;
 }
 .icon-chevron-up {
