@@ -1,12 +1,7 @@
 /* Featured Profile */
-.featured-profile-wrapper {
-
-}
-
 .featured-profile:first-child {
     margin-left: 0;
 }
-
 .featured-profile {
     vertical-align: top;
     display: inline-block;

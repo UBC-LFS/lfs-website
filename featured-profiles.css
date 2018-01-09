@@ -1,12 +1,7 @@
-#profiles a { 
-  text-decoration: none;
-  display: none;
+.featured-profile:nth-child(3n+1) {
+  margin-left: 0;
 }
 
-#profiles a.profile-link {
-  display:inline-block;
-}
-#profiles > div > div:hover {
-  opacity: 0.5;
-  filter: alpha(opacity=50); 
+.featured-profile:nth-child(n+4) {
+  margin-top: 20px;
 }
