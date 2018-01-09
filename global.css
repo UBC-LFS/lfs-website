@@ -175,7 +175,6 @@ h2.featured {
     font-size: 1.4em;
 }
 h3.featured {
-    color: #0680a6;
     text-align: center;
     font-size: 1em;
     margin-top: 1%;
@@ -313,7 +312,7 @@ div.intro {
         padding-left: 20px;
     }
     .full-width-container {
-    margin-left: 0px !important;
+        margin-left: 0px !important;
     }
 }
 @media screen and (max-width: 978px) {
