@@ -22,11 +22,10 @@
     getMainContent.insertBefore(getContent, getMainContent.childNodes[0]);
     getContainer.insertBefore(getImageRegion, getContainer.childNodes[0]);
     getContainer.insertBefore(getWebsiteAlerts, getBreadcrumb);
-     (function loadBanner()
-    {
+    (function loadBanner() {
         var image = document.createElement('img');
         image.src = 'http://lfs-ps.sites.olt.ubc.ca/files/2016/10/26574827821_97e3478d0e_k_resized.jpg';
-        image.onload = function() {
+        image.onload = function () {
             document.getElementById('banner').src = image.src;
         };
     })();
@@ -56,12 +55,16 @@
         <div class="span6">
             <div class="ranking-number" id="ranking-world">100</div>
             <div class="ranking-title">World</div>
-            <div class="source"><a class="no-text-decoration" href="https://www.timeshighereducation.com/world-university-rankings/2017/subject-ranking/life-sciences#!/page/0/length/25/sort_by/rank_label/sort_order/asc/cols/rank_only">Times Higher Education</a></div>
+            <div class="source">
+                <a class="no-text-decoration" href="https://www.timeshighereducation.com/world-university-rankings/2017/subject-ranking/life-sciences#!/page/0/length/25/sort_by/rank_label/sort_order/asc/cols/rank_only">Times Higher Education</a>
+            </div>
         </div>
         <div class="span6 no-margin-left">
             <div class="ranking-number" id="ranking-canada">100</div>
             <div class="ranking-title">Canada</div>
-            <div class="source"><a class="no-text-decoration" href="https://www.timeshighereducation.com/world-university-rankings/2017/subject-ranking/life-sciences#!/page/0/length/25/sort_by/rank_label/sort_order/asc/cols/rank_only">Times Higher Education</a></div>
+            <div class="source">
+                <a class="no-text-decoration" href="https://www.timeshighereducation.com/world-university-rankings/2017/subject-ranking/life-sciences#!/page/0/length/25/sort_by/rank_label/sort_order/asc/cols/rank_only">Times Higher Education</a>
+            </div>
         </div>
     </div>
 </div>
@@ -74,10 +77,18 @@
         </div>
         <div class="span10">
             <h3 class="no-margin-top">Dr. Rickey Yada, Dean</h3>
-            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eum reprehenderit dolorem dicta repudiandae quasi cupiditate mollitia molestiae, natus, repellat sed quas veniam quam quos ad qui, dignissimos. Ab, sed?</span>
-                <span>Soluta sit iste et, hic, repudiandae incidunt eos dolor dolore vel ullam doloribus molestiae dolorem sunt aliquam sint pariatur aspernatur perspiciatis ea magnam alias nobis esse veniam! Hic error, distinctio.</span>
-                <span>Ab odio accusamus ut laudantium atque qui et, minus quidem officiis neque itaque mollitia vero aspernatur alias excepturi quos modi numquam labore, quisquam suscipit vel. Blanditiis, voluptates, fuga. Magnam, autem!</span>
-                <span>Ab, quo. Id dicta unde totam non similique laborum aspernatur repellat libero minima a, natus hic enim eos, iusto quod iure, voluptate delectus maxime. Facilis est possimus dolores unde? Minus.</span></p>
+            <p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eum reprehenderit dolorem dicta repudiandae
+                    quasi cupiditate mollitia molestiae, natus, repellat sed quas veniam quam quos ad qui, dignissimos. Ab,
+                    sed?</span>
+                <span>Soluta sit iste et, hic, repudiandae incidunt eos dolor dolore vel ullam doloribus molestiae dolorem sunt
+                    aliquam sint pariatur aspernatur perspiciatis ea magnam alias nobis esse veniam! Hic error, distinctio.</span>
+                <span>Ab odio accusamus ut laudantium atque qui et, minus quidem officiis neque itaque mollitia vero aspernatur
+                    alias excepturi quos modi numquam labore, quisquam suscipit vel. Blanditiis, voluptates, fuga. Magnam,
+                    autem!</span>
+                <span>Ab, quo. Id dicta unde totam non similique laborum aspernatur repellat libero minima a, natus hic enim eos,
+                    iusto quod iure, voluptate delectus maxime. Facilis est possimus dolores unde? Minus.</span>
+            </p>
         </div>
     </div>
 </div>
@@ -112,7 +123,10 @@
 </div>
 <div class="row-fluid border-bottom" id="outcomes">
     <h2>Outcomes</h2>
-    <p>Learn more about career options by going to <a href="http://lfs-ps.sites.olt.ubc.ca/current-students/build-my-career/">Build by Career</a> and <a href="http://lfs-ps.sites.olt.ubc.ca/current-students/what-can-i-do-with-my-major/">What Can I Do With My Major</a></p>
+    <p><p>Learn more</p> about career options by going to
+        <a href="http://lfs-ps.sites.olt.ubc.ca/current-students/build-my-career/">Build by Career</a> and
+        <a href="http://lfs-ps.sites.olt.ubc.ca/current-students/what-can-i-do-with-my-major/">What Can I Do With My Major</a>
+    </p>
 </div>
 <div class="row-fluid border-bottom" id="outside-classroom">
     <h2>Outside the Classroom</h2>
@@ -133,17 +147,23 @@
         <div class="span4">
             <h3>Applied Biology</h3>
             <p>Interested in? </p>
-            <a href="http://lfs-ps.sites.olt.ubc.ca/current-students/applied-biology/" title="Vist the Applied Biology Program Page">Learn more <i class="icon-angle-right"></i></a>
+            <a href="http://lfs-ps.sites.olt.ubc.ca/current-students/applied-biology/" title="Vist the Applied Biology Program Page"><p>Learn more</p>
+                <i class="icon-angle-right"></i>
+            </a>
         </div>
         <div class="span4">
             <h3>Food, Nutrition, and Health</h3>
             <p>Interested in? </p>
-            <a href="http://lfs-ps.sites.olt.ubc.ca/current-students/food-nutrition-and-health/" title="Vist the Food, Nutrition, and Health Program Page">Learn more <i class="icon-angle-right"></i></a>
+            <a href="http://lfs-ps.sites.olt.ubc.ca/current-students/food-nutrition-and-health/" title="Vist the Food, Nutrition, and Health Program Page"><p>Learn more</p>
+                <i class="icon-angle-right"></i>
+            </a>
         </div>
         <div class="span4">
             <h3>Global Resource Systems</h3>
             <p>Interested in? </p>
-            <a href="http://lfs-ps.sites.olt.ubc.ca/current-students/global-resource-systems/" title="Vist the Global Resource System Program Page">Learn more <i class="icon-angle-right"></i></a>
+            <a href="http://lfs-ps.sites.olt.ubc.ca/current-students/global-resource-systems/" title="Vist the Global Resource System Program Page"><p>Learn more</p>
+                <i class="icon-angle-right"></i>
+            </a>
         </div>
     </div>
 </div>
@@ -157,7 +177,9 @@
                 nemo.
             </p>
             <a class="btn explore-more no-margin-right" href="https://www.ubc.ca/admissions/" title="Visit the admissions requirements page">
-                <span>ADMISSION REQUIREMENTS <i class="icon-angle-right"></i> </span>
+                <span>ADMISSION REQUIREMENTS
+                    <i class="icon-angle-right"></i>
+                </span>
             </a>
         </div>
         <div class="span6">
@@ -166,7 +188,9 @@
                 voluptate qui ratione consectetur eligendi, aspernatur. Distinctio repellendus aliquam, omnis, aliquid facilis
                 cumque sit.</p>
             <a class="btn explore-more no-margin-right" href="http://you.ubc.ca/financial-planning" title="Visit the financial planning page">
-                <span>FINANCIAL PLANNING <i class="icon-angle-right"></i> </span>
+                <span>FINANCIAL PLANNING
+                    <i class="icon-angle-right"></i>
+                </span>
             </a>
         </div>
     </div>
@@ -174,11 +198,13 @@
         <div class="span6">
             <h3>Contact Student Advising</h3>
             <p>Burning questions about Land and Food Systems? Don't let your questions go unanswered. Contact our advisors to
-                learn more. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ipsam iusto eligendi incidunt
+                <p>Learn more</p>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ipsam iusto eligendi incidunt
                 inventore velit quasi, ratione explicabo expedita, iste, consectetur rerum nesciunt doloribus omnis magnam
                 cum dolores. Sed, pariatur.</p>
             <a class="btn explore-more no-margin-right" href="http://lfs-ps.sites.olt.ubc.ca/student-services/" title="Visit the student advising page">
-                <span>CONTACT US <i class="icon-angle-right"></i></span>
+                <span>CONTACT US
+                    <i class="icon-angle-right"></i>
+                </span>
             </a>
         </div>
         <div class="span6">
@@ -187,7 +213,9 @@
                 Totam architecto aliquam necessitatibus placeat vero distinctio neque vitae, natus sapiente corrupti nesciunt.
                 Molestiae accusamus quae in.</p>
             <a class="btn explore-more no-margin-right" href="https://account.you.ubc.ca/ubc/apply/apply_now.ezc" title="Visit the apply now page">
-                <span>APPLY NOW <i class="icon-angle-right"></i> </span>
+                <span>APPLY NOW
+                    <i class="icon-angle-right"></i>
+                </span>
             </a>
         </div>
     </div>
