@@ -27,6 +27,10 @@
     margin-top: 0;
 }
 
+img.featured-profile {
+    width: 100%;
+}
+
 .banner {
   background: #3ba648;
   text-align: center;
@@ -85,7 +89,7 @@ h4 {
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
     color: #4e5134;
 }
-p, td {
+p, td, a {
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
     color: #4e5134;
     font-size: 1.1em;
