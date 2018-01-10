@@ -1,0 +1,43 @@
+.center-box {
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.box-name {
+  color: white;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.box {
+  background-size: cover;
+  height: 180px;
+  padding: 0;
+}
+
+/* images for boxes */
+#dietetics {
+  background-image: url()
+}
+
+#food-science {
+  background-image: url()
+}
+
+#fnh {
+  background-image: url()
+}
+
+#nutritional-sciences {
+  background-image: url()
+}
+
+#food-and-nutritional-sciences-double-major {
+  background-image: url()
+}
+
+#food-market-analysis {
+  background-image: url()
+}
