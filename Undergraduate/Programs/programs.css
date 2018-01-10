@@ -16,7 +16,7 @@
     height: 180px;
     padding: 0;
 }
-h1.page-title {
+/* h1.page-title {
     display: none;
 }
 #peers-profile  div.featured-person > a {
@@ -47,7 +47,6 @@ h1.page-title {
         font-size: 17px;
     }
 }
-/*978 - 979 --> width 245*/
 @media screen and (min-width: 767px) and (max-width: 978px) {
     #apply-sidebar {
         width: 205px;
@@ -122,4 +121,4 @@ h1.page-title {
 }
 #apply-sidebar > div {
     text-align: center;
-}
+} */
