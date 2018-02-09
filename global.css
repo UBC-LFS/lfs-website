@@ -379,7 +379,6 @@ div.intro {
   font-weight:bold;
 }
 
-
 .blockquote {
   font-weight:800;
   font-style:italic;
@@ -387,3 +386,13 @@ div.intro {
   padding:1em;
   font-size:150%;  
 }
+
+#ubc7-unit-identifier {
+    margin-left: -17px;
+    font-size: 27px;
+}
+
+#ubc7-vancouver-campus {	 	 
+    display: none; 	 	 
+}	 	
+  
