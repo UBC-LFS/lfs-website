@@ -172,11 +172,16 @@ img {
 h2.featured {
     text-align: center;
     font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 h3.featured {
     text-align: center;
     font-size: 1em;
     margin-top: 1%;
+}
+p.featured {
+    text-align: center;
 }
 h3.box-name {
     margin: auto;
