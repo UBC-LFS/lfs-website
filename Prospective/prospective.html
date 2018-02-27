@@ -22,15 +22,8 @@
     getMainContent.insertBefore(getContent, getMainContent.childNodes[0]);
     getContainer.insertBefore(getImageRegion, getContainer.childNodes[0]);
     getContainer.insertBefore(getWebsiteAlerts, getBreadcrumb);
-    (function loadBanner() {
-        var image = document.createElement('img');
-        image.src = 'http://lfs-ps.sites.olt.ubc.ca/files/2016/10/26574827821_97e3478d0e_k_resized.jpg';
-        image.onload = function () {
-            document.getElementById('banner').src = image.src;
-        };
-    })();
 </script>
-<div class="row-fluid">
+<div class="row-fluid-fluid">
     <div class="span4">
         <button class="btn btn-large btn-block" id="admissions-button" title="Scroll to the admission requirements section">Admissions</button>
     </div>
@@ -42,7 +35,7 @@
     </div>
 </div>
 <div class="row-fluid border-bottom" id="trigger-animation intro">
-    <h3 style="margin-bottom: 3%">Founded in 1914, the UBC Faculty of Land and Food Systems has worked for over a century to address global issues surrounding
+    <h3>Founded in 1914, the UBC Faculty of Land and Food Systems has worked for over a century to address global issues surrounding
         health and sustainable land and food systems. Today, our world faces unprecedented challenges of climate change,
         population growth, food and nutrition insecurity, and water shortages, challenges that our researchers and students
         are hard at work to solve. As one of the top 25 Life Sciences Schools in the world, the Faculty is uniquely positioned
@@ -51,7 +44,7 @@
 <div class="row-fluid border-bottom" id="world-best">
     <h2>Among the world's best</h2>
     <p>The Faculty of Land and Food Systems is ranked as one of the top ... </p>
-    <div class="span12 no-margin-left">
+    <div class="row-fluid-fluid">
         <div class="span6">
             <div class="ranking-number" id="ranking-world">100</div>
             <div class="ranking-title">World</div>
@@ -59,7 +52,7 @@
                 <a class="no-text-decoration" href="https://www.timeshighereducation.com/world-university-rankings/2017/subject-ranking/life-sciences#!/page/0/length/25/sort_by/rank_label/sort_order/asc/cols/rank_only">Times Higher Education</a>
             </div>
         </div>
-        <div class="span6 no-margin-left">
+        <div class="span6">
             <div class="ranking-number" id="ranking-canada">100</div>
             <div class="ranking-title">Canada</div>
             <div class="source">
@@ -70,7 +63,7 @@
 </div>
 <div class="row-fluid border-bottom" id="dean-welcome">
     <h2>Welcome from the Dean</h2>
-    <div class="span12">
+    <div class="row-fluid-fluid">
         <div class="span2" style="text-align: center">
             <img style="width: auto; height: auto;" src="http://lfs-ps.sites.olt.ubc.ca/files/2016/11/13562115125_d4c47495af_z-266x400.jpg"
                 alt="dean">
@@ -131,7 +124,7 @@
     <h2>Outside the Classroom</h2>
     <p>Explain concept of outside the classroom experiences as being changes to enhance your learning and overall development
         throughout your undergraduate degree…</p>
-    <div class="span12 no-margin-left">
+    <div class="row-fluid-fluid">
         <div class="span6">
             <h4>Experiential Learning Opportunities</h4>
         </div>
@@ -142,7 +135,7 @@
 </div>
 <div class="row-fluid border-bottom" id="explore-programs">
     <h2>Explore our Bachelor of Science programs</h2>
-    <div class="span12 no-margin-left">
+    <div class="row-fluid-fluid">
         <div class="span4">
             <h3>Applied Biology</h3>
             <p>Interested in? </p>
@@ -173,7 +166,7 @@
 </div>
 <div class="row-fluid" id="admissions">
     <h2>Admissions</h2>
-    <div class="span12 no-margin-left">
+    <div class="row-fluid-fluid">
         <div class="span6">
             <h3>Admission Requirements</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quae voluptatem ad ut blanditiis reprehenderit,
@@ -198,7 +191,7 @@
             </a>
         </div>
     </div>
-    <div class="span12 no-margin-left">
+    <div class="row-fluid-fluid">
         <div class="span6">
             <h3>Contact Student Advising</h3>
             <p>Burning questions about Land and Food Systems? Don't let your questions go unanswered. Contact our advisors to
