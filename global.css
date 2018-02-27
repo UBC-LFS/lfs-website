@@ -395,4 +395,22 @@ div.intro {
 #ubc7-vancouver-campus {	 	 
     display: none; 	 	 
 }	 	
-  
+
+.nav-tabs>.active>a, .nav-tabs>.active>a:hover, .nav-tabs>.active>a:active, .nav-tabs>.active>a:focus {
+    background-color: #4e5134;
+    border: #4e5134;
+}
+
+.nav-tabs>li>a {
+    background-color: #b0b58c;
+    border: #b0b58c;
+    background: #b0b58c;
+}
+
+.nav-tabs>li>a:hover {
+    background-color: #4e5134;
+}
+
+.nav-tabs {
+    width: 100% !important;
+}
