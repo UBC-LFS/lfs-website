@@ -1,7 +1,7 @@
 /* global jQuery */
 jQuery(document).ready(function ($) {
   var animated = false
-  var counterTarget = document.getElementById('count').getElementsByClassName('span12')
+  var counterTarget = document.getElementById('count').getElementsByClassName('row-fluid')
   var countTrigger = $(counterTarget[0]).offset().top
   var countTrigger2 = $(counterTarget[1]).offset().top
 

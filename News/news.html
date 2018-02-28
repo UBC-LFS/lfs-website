@@ -1,4 +1,4 @@
-<div class="span12" style="margin-left: 0;">
+<div class="row-fluid">
     [loop query="posts_per_page=3&amp;category_name=featured-news"] 
     <div class="span6 news">
         <h4 class="news-title">[cf news-title]</h4>
@@ -9,7 +9,7 @@
     [/loop]
     <div class="span6" id="non-featured-news-section">
         [loop query="posts_per_page=10&amp;category_name=news" pagination="true"] 
-            <div class="span12 news" style="margin-left: 0;">
+            <div class="row-fluid news" style="margin-left: 0;">
                 [link_with_content]
                 <a href="" class="non-featured-news">
                     <div class="span9">
