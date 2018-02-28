@@ -92,14 +92,16 @@
     <div class="featured-profile-wrapper">
         [loop query="posts_per_page=3&amp;category_name=featured-profile"]
         <div class="featured-profile">
-            <div class="source-link" style="display: none;">[link_with_content]</div>
-            <div class="target-link">
-                [image_with_src img_class="featured-profile-img"]
-            </div>
-            <div class="featured-profile-content">
-                <h2 class="featured">[cf featured-name]</h2>
-                <h3 class="featured">[cf featured-program]</h3>
-                <p class="homepage-post-p">[cf featured-blurb]</p>
+            <div class="featured-profile-block">
+                <div class="source-link" style="display: none;">[link_with_content]</div>
+                <div class="target-link">
+                    [image_with_src img_class="featured-profile-img"]
+                </div>
+                <div class="featured-profile-content">
+                    <h2 class="featured">[cf featured-name]</h2>
+                    <h3 class="featured">[cf featured-program]</h3>
+                    <p class="homepage-post-p">[cf featured-blurb]</p>
+                </div>
             </div>
         </div>
         [/loop]

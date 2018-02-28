@@ -114,15 +114,16 @@ h4 {
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
     color: #4e5134;
 }
-p, td, a, i, li, ul {
+p, td {
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
     color: #4e5134;
     font-size: 1.2em;
     line-height: 1.5;
 }
-
-.menu-item {
-    font-size: 0.8em;
+a, i, li, ul {
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+    color: #4e5134;
+    font-size: 1.1em;
 }
 
 .large-intro {
@@ -440,6 +441,7 @@ div.intro {
 
 .nav-tabs>li>a:hover {
     background-color: #4e5134;
+    border: #4e5134;
 }
 
 .nav-tabs {
