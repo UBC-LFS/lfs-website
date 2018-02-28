@@ -19,7 +19,7 @@
     display: inline-block;
 }
 
-.featured-profile:hover {
+.featured-profile-block:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
@@ -33,6 +33,27 @@
 
 .featured-profile-name {
     margin-top: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .featured-profile-wrapper {
+        -webkit-column-count: 2;
+       /* Chrome, Safari, Opera */
+        -moz-column-count: 2;
+       /* Firefox */
+        column-count: 2;
+        column-gap: 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .featured-profile-wrapper {
+        -webkit-column-count: 1;
+       /* Chrome, Safari, Opera */
+        -moz-column-count: 1;
+       /* Firefox */
+        column-count: 1;
+    }
 }
 
 .banner {
