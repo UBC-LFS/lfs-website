@@ -245,7 +245,7 @@ h2 {
     color: #4e5134;
 }
 h3 {
-    font-size: 150%;
+    font-size: 165%;
     line-height: 180%;
     font-weight: 400;
     font-weight: 400;
@@ -263,10 +263,16 @@ p, td {
     font-size: 1.3em;
     line-height: 1.65;
 }
-a, i, li, ul {
+li, ul {
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
     color: #4e5134;
-    font-size: 1.03em;
+    font-size: 1.13em;
+    line-height: 1.65;
+}
+
+a {
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+    color: #4e5134;
 }
 
 .large-intro {
