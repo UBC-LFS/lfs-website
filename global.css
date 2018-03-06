@@ -260,19 +260,30 @@ h4 {
 p, td {
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
     color: #4e5134;
-    font-size: 1.3em;
+    font-size: 17px;
     line-height: 1.65;
 }
-li, ul {
+li, ul, ol {
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
     color: #4e5134;
-    font-size: 1.13em;
+    font-size: 17px;
     line-height: 1.65;
 }
 
 a {
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
     color: #4e5134;
+}
+
+/*  fonts */
+html {
+    font-size: 17px;
+}
+@media (max-width: 900px){
+    html { font-size: 15px; }
+}
+@media (max-width: 400px) {
+    html { font-size: 13px; }
 }
 
 .large-intro {
