@@ -197,7 +197,27 @@
    } */
 
 }
-
+/* Gallery */
+.gallery ul {
+    display: flex;
+    margin: 0 -2px;
+    list-style-type: none;
+}
+.gallery ul li {
+    min-width: 25%;
+    border: 1px solid #fff;
+    border-width: 4px 2px 4px;
+}
+@media screen and (max-width: 900px) {
+    .gallery ul li {
+        min-width: 33%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .gallery ul li {
+        min-width: 50%;
+    }
+}
 
 .banner {
   background: #3ba648;

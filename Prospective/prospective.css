@@ -22,16 +22,3 @@
 h1.page-title {
     display: none;
 }
-#span12-0 {
-    margin-left: 0;
-    margin-bottom: 0;
-}
-
-.nav {
-    border-bottom: none;
-}
-.btn {
-    background-color: transparent;
-    color: #4e5134;
-    background-image: none;
-}
