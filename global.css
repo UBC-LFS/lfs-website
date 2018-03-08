@@ -348,7 +348,10 @@ html {
     padding-bottom: 30px;
 }
 .btn {
-  font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;  
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;  
+    background-color: transparent;
+    color: #4e5134;
+    background-image: none;
 }
 img {
     height: auto;

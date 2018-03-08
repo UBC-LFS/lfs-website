@@ -1,15 +1,3 @@
-p {
-    font-size: 100%;
-}
-.course-name {
-    color: white;
-    text-align: center;
-}
 h1.page-title {
     display: none;
-}
-.btn {
-    background-color: transparent;
-    color: #4e5134;
-    background-image: none;
 }
