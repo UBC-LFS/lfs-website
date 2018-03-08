@@ -1,14 +1,14 @@
 /* global jQuery */
 document.addEventListener('DOMContentLoaded', function (event) {
-  var sources = document.getElementsByClassName('source-link')
-  var targets = document.getElementsByClassName('target-link')
-  Array.prototype.forEach.call(sources, function (source, i) {
-    var a = document.createElement('a')
-    a.href = source.children[0].href
-    a.appendChild(targets[i].children[0])
-    var wrapper = a.outerHTML
-    document.getElementsByClassName('target-link')[i].innerHTML = wrapper
-  })
+  // var sources = document.getElementsByClassName('source-link')
+  // var targets = document.getElementsByClassName('target-link')
+  // Array.prototype.forEach.call(sources, function (source, i) {
+  //   var a = document.createElement('a')
+  //   a.href = source.children[0].href
+  //   a.appendChild(targets[i].children[0])
+  //   var wrapper = a.outerHTML
+  //   document.getElementsByClassName('target-link')[i].innerHTML = wrapper
+  // })
 
   var animated = false
   var topHeightToCounter = jQuery('#ranking-world').offset().top
@@ -17,10 +17,12 @@ document.addEventListener('DOMContentLoaded', function (event) {
     var yScrollPosition = window.pageYOffset + jQuery(window).height() - jQuery('#ranking-world').height() * 2 / 3
     var yScrollPosition2 = window.pageYOffset - jQuery('#ranking-world').height() * 2 / 5
     if (yScrollPosition > topHeightToCounter && yScrollPosition2 < topHeightToCounter && !animated) {
-      var rankingWorld = new CountUp('ranking-world', 100, 25)
+      var rankingWorld = new CountUp('ranking-world', 100, 25, 0, 3)
       var rankingCanada = new CountUp('ranking-canada', 100, 2, 0, 3)
+      var rankingCountry = new CountUp('ranking-country', 0, 56, 0, 3)
       jQuery('#ranking-world').scroll(rankingWorld.start())
       jQuery('#ranking-canada').scroll(rankingCanada.start())
+      jQuery('#ranking-country').scroll(rankingCountry.start())
       animated = true
     }
   }
