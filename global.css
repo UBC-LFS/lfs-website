@@ -136,6 +136,10 @@
     margin-bottom: 20px;
 }
 
+.major-card:hover {
+    background-color: #ccc;
+}
+
 .major-card-block {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -372,6 +376,9 @@ html {
     background-color: transparent;
     color: #4e5134;
     background-image: none;
+}
+.btn:hover {
+    background-color: #4e5134 !important;
 }
 img {
     height: auto;
