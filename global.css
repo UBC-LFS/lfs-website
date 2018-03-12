@@ -288,14 +288,15 @@ h4 {
 p, td, i {
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
     color: #4e5134;
-    font-size: 17px;
-    line-height: 1.65;
+    font-size: 18px;
+    line-height: 2;
+    margin: 0 0 20px;
 }
 li, ul, ol {
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
     color: #4e5134;
-    font-size: 17px;
-    line-height: 1.65;
+    font-size: 18px;
+    line-height: 2;
 }
 
 a {
@@ -315,11 +316,17 @@ html {
 }
 
 .large-intro {
-    font-size: 400%;
+    font-size: 500%;
     line-height: 150%;
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
     text-shadow: 0 0 1px rgba(0,0,0,0.6);
     color: white;
+}
+.large-intro span {
+    background: #8c925e; /* fallback color */
+    background: #8c925eD9;
+    padding-left: 15px; 
+    padding-right: 15px; 
 }
 .header-text {
     position: absolute;
