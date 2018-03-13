@@ -365,7 +365,7 @@ a {
     background-image: none;
 }
 .btn:hover {
-    background-color: #4e5134 !important;
+    background-color: #8c925e !important;
 }
 img {
     height: auto;
@@ -507,14 +507,14 @@ div.intro {
 .navigation-links {
     display: none;
 }
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
     .large-intro {
         font-size: 300%;
     }
     li.menu-item {
         font-size: 15px;
     }
-}
+} */
 @media screen and (max-width: 979px) {
     #container {
         padding-top: 0px !important;
