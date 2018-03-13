@@ -1,7 +1,0 @@
-.featured-profile:nth-child(3n+1) {
-  margin-left: 0;
-}
-
-.featured-profile:nth-child(n+4) {
-  margin-top: 20px;
-}
