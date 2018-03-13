@@ -141,11 +141,11 @@
 }
 
 .major-card-title {
-    padding: 15px;
+    padding: 0 15px 0 15px;
 }
 
 .major-card-content {
-    padding: 15px;
+    padding: 0 15px 15px 15px;
 }
 
 .major-card-img {
