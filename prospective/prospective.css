@@ -1,0 +1,24 @@
+.ranking-number {
+    text-align: center;
+    font-size: 6em;
+    line-height: 1.2em;
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+    color: #4e5134;
+}
+.ranking-title {
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+    color: #4e5134;
+}
+.source {
+    text-align: center;
+    font-size: 0.7em;
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+    color: #4e5134 !important;
+}
+h1.page-title {
+    display: none;
+}

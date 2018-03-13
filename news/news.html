@@ -1,0 +1,26 @@
+<div class="row-fluid">
+    [loop query="posts_per_page=3&amp;category_name=featured-news"] 
+    <div class="span6 news">
+        <h4 class="news-title">[cf news-title]</h4>
+        [image_with_src]
+        <p class="news-blurb">[cf news-blurb]</p>
+        [link_with_content ]
+    </div>   
+    [/loop]
+    <div class="span6" id="non-featured-news-section">
+        [loop query="posts_per_page=10&amp;category_name=news" pagination="true"] 
+            <div class="row-fluid news" style="margin-left: 0;">
+                [link_with_content]
+                <a href="" class="non-featured-news">
+                    <div class="span9">
+                        <h4 class="news-title">[cf news-title]</h4>
+                        <p class="news-blurb">[cf news-blurb]</p>
+                    </div>
+                    <div class="span3 center-image">
+                         [image_with_src img_class="vertical-align-center"]
+                    </div>
+                </a>
+            </div>
+        [/loop]
+    </div>
+</div>
