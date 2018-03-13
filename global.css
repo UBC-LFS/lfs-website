@@ -103,11 +103,6 @@
         column-count: 2;
         column-gap: 10px;
    }
-   /* .target-link {
-       width: 25%;
-       position: relative;
-       float: left;
-   } */
 
    .card-content {
        float: left;
@@ -122,11 +117,6 @@
         column-count: 1;
         column-gap: 20px;
    }
-   /* .target-link {
-       width: 25%;
-       position: relative;
-       float: left;
-   } */
 
 }
 
@@ -135,10 +125,6 @@
     display: block;
     margin-bottom: 20px;
 }
-
-/* .major-card:hover {
-    background-color: #ccc;
-} */
 
 .major-card.no-link:hover {
     background-color: white;
@@ -225,14 +211,6 @@
     .gallery ul li {
         min-width: 50%;
     }
-}
-
-.banner {
-  background: #3ba648;
-  text-align: center;
-}
-.text-style {
-  color: white;
 }
 #content {
     margin-left: auto;
