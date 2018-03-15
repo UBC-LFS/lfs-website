@@ -14,6 +14,7 @@ jQuery(document).ready(function ($) {
       new CountUp('faculty', 0, 45, 0, 3).start()
       new CountUp('staff', 0, 66, 0, 3).start()
       new CountUp('alumni', 0, 6700, 0, 3).start()
+      new CountUp('ranking', 0, 25, 0, 3).start()
       animated = true
     }
   }
