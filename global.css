@@ -414,15 +414,6 @@ h3.box-name {
     color: white;
     transition: background 0s;
 }
-/* .ripple {
-    background-position: center;
-    transition: background 0.8s;
-}
-.ripple:active {
-    background-color: #ccc;
-    background-size: 100%;
-    transition: background 0s;
-} */
 .apply-button {
     background-color: transparent;
     color: #4e5134;
