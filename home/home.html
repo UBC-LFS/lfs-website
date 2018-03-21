@@ -17,12 +17,9 @@
     var getContent = document.getElementById('content');
     var getContainer = document.getElementById('container');
     var getImageRegion = document.getElementsByClassName('image-region')[0];
-    var getWebsiteAlerts = document.getElementsByClassName('website-alerts-container')[0];
-    var getBreadcrumb = document.getElementsByClassName('breadcrumb')[0];
     getDivMainRole.insertBefore(getMainContent, getDivMainRole.childNodes[0]);
     getMainContent.insertBefore(getContent, getMainContent.childNodes[0]);
     getContainer.insertBefore(getImageRegion, getContainer.childNodes[0]);
-    getContainer.insertBefore(getWebsiteAlerts, getBreadcrumb);
 </script>
 <div class="row-fluid border-bottom" style="margin-top: 20px;">
     <h3 class="intro">
@@ -64,7 +61,7 @@
                 <div class="major-card">
                     <div class="major-card-block">
                         <div class="major-card-img">
-                            <img src="http://lfs-ps.sites.olt.ubc.ca/files/2018/03/get-grounded.jpg" alt="">
+                            <img src="http://lfs-ps.sites.olt.ubc.ca/files/2018/03/get-grounded-banner-1.jpg" alt="">
                         </div>
                         <div class="major-card-title">
                             <h3>Get Grounded</h3>
@@ -252,16 +249,19 @@
     <h2>Meet Our Community</h2>
     <div class="featured-profile-wrapper">
         [loop query="posts_per_page=3&amp;category_name=featured-profile"]
-        <div class="featured-profile">
-            <div class="featured-profile-block">
-                <div class="source-link" style="display: none;">[link_with_content]</div>
-                <div class="target-link">
+        <div class="target-link">
+            <div class="source-link" style="display: none;">[link_with_content]</div>
+            <div class="featured-profile">
+                <div class="featured-profile-block">
                     [image_with_src img_class="featured-profile-img"]
-                </div>
-                <div class="featured-profile-content">
-                    <h2 class="featured">[cf featured-name]</h2>
-                    <h3 class="featured">[cf featured-program]</h3>
-                    <p class="featured">[cf featured-blurb]</p>
+                    <div class="featured-profile-content">
+                        <h2 class="featured">[cf featured-name]</h2>
+                        <h3 class="featured">[cf featured-program]</h3>
+                        <p class="featured">[cf featured-blurb]</p>
+                    </div>
+                    <div class="cta-btn">
+                        <span>READ MORE</span>
+                    </div>
                 </div>
             </div>
         </div>[/loop]
@@ -272,7 +272,7 @@
         </span>
     </a>
 </div>
-<div class="row-fluid border-bottom">
+<div class="row-fluid">
     <h2>Upcoming Events</h2>
     <!-- [eo_events ]
     <div class="featured-profile-wrapper">

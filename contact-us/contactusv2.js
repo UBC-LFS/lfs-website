@@ -3,7 +3,7 @@ jQuery(document).ready(function ($) {
   $('#main-content').prepend($('#content'))
   $('#main-content').prepend($('.breadcrumb'))
 
-    // declare hours here
+  // declare hours here
   var deanHours = {
     'Monday': [[9, 12.5], [13, 16.5]],
     'Tuesday': [[9, 12.5], [13, 16.5]],
@@ -40,23 +40,23 @@ jQuery(document).ready(function ($) {
   var hour = d.getHours()
   var minute = d.getMinutes()
 
-   // Jon added
+  // Jon added
 
   var UTChour = d.getUTCHours()
   var difference = 8
 
   var isPST = function () {
-        // create new variable because I don't want to alter the UTC time
+    // create new variable because I don't want to alter the UTC time
     var UTChr = UTChour
-        // check to see if it is currently daylight savings to see whether it should be 8 or 7 hours
+    // check to see if it is currently daylight savings to see whether it should be 8 or 7 hours
     isDaylightSaving() ? difference-- : difference
 
-        /* if the current UTC time is less than 8 then add 24 to the number so that we can make the comparison with user's computer time
+    /* if the current UTC time is less than 8 then add 24 to the number so that we can make the comparison with user's computer time
            can't find the difference between eg. 3 and 19 (UTChour and hour) */
     if (UTChr < difference) {
       UTChr += 24
     }
-        /* if the user is in the PST time zone, then we can run the function(s) that will display the circle beside the correct day,
+    /* if the user is in the PST time zone, then we can run the function(s) that will display the circle beside the correct day,
         otherwise just display circle beside the Office Hour header */
     if ((UTChr - hour) === difference) {
       isOpen()
@@ -65,13 +65,13 @@ jQuery(document).ready(function ($) {
     }
   }
 
-    // end of code that Jon added
+  // end of code that Jon added
 
   var isOpen = function (timeObject) {
     var hoursOpenToday = timeObject[convertDayToString(day)]
     if (hoursOpenToday === 'Closed') return false
     var currentTime = hour + minute / 60
-        // check if hours is split into two chunks or one
+    // check if hours is split into two chunks or one
     if (hoursOpenToday[0].length === 2) {
       var morning = hoursOpenToday[0]
       var afternoon = hoursOpenToday[1]
@@ -80,7 +80,7 @@ jQuery(document).ready(function ($) {
     return false
   }
 
-    // test cases for Dean's office
+  // test cases for Dean's office
   minute = 0
   day = 0 // Sunday
   console.log('this should evaluate to FALSE', isOpen(deanHours))

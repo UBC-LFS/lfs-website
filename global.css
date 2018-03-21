@@ -35,6 +35,13 @@
     margin-top: 0;
 }
 
+.featured-profile:hover > .featured-profile-block > .cta-btn {
+    background-color: #8c925e;
+    color: white;
+    transition: background 0s;
+}
+
+
 @media only screen and (max-width: 767px) {
     .featured-profile-wrapper {
         -webkit-column-count: 2;
