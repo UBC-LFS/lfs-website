@@ -263,6 +263,30 @@
         <a href="http://lfs-ps.sites.olt.ubc.ca/undergraduate/">undergraduate</a> and
         <a href="http://lfs-ps.sites.olt.ubc.ca/graduate/">graduate</a> programs; at the bottom of each page you'll find a list of where our people have found their purpose
         after graduation.</p>
+    <div class="featured-profile-wrapper">
+        [loop query="posts_per_page=3&amp;category_name=featured-profile"]
+        <div class="target-link">
+            <div class="source-link" style="display: none;">[link_with_content]</div>
+            <div class="featured-profile">
+                <div class="featured-profile-block">
+                    [image_with_src img_class="featured-profile-img"]
+                    <div class="featured-profile-content">
+                        <h2 class="featured">[cf featured-name]</h2>
+                        <h3 class="featured">[cf featured-program]</h3>
+                        <p class="featured">[cf featured-blurb]</p>
+                    </div>
+                    <div class="cta-btn">
+                        <span>READ MORE</span>
+                    </div>
+                </div>
+            </div>
+        </div>[/loop]
+    </div>
+    <a class="btn cta-btn" href="http://lfs-ps.sites.olt.ubc.ca/featured-profiles/" title="Read more stories of the people in the Faculty of Land and Food Systems">
+        <span>READ MORE STORIES
+            <i class="icon-angle-right"></i>
+        </span>
+    </a>
 </div>
 <div class="row-fluid border-bottom">
     <h2>Admissions Info</h2>
