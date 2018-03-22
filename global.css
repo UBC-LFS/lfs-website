@@ -411,6 +411,20 @@ p.featured {
 h3.box-name {
     margin: auto;
 }
+/* accordion */
+.accordion-heading a {
+    font-size: 165%;
+    line-height: 150%;
+    font-weight: 800;
+    font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
+    color: #4e5134;
+    padding: 20px 20px !important;
+}
+
+.accordion-heading a:hover {
+    background-color: #8c925e;
+}
+
 .cta-btn {
     float: right;
     background-color: transparent;
