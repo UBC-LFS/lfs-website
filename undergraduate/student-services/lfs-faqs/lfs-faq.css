@@ -1,0 +1,9 @@
+.icon-chevron-down, .icon-chevron-up {
+  float: right;
+  margin-right: -4px;
+  margin-top: 4px;
+}
+
+.accordion-heading:hover > .accordion-toggle > .icon-chevron-down {
+  color: white; 
+}
