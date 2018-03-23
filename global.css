@@ -425,6 +425,10 @@ h3.box-name {
     background-color: #8c925e;
 }
 
+.accordion-heading a:active {
+    background-color: #8c925e;
+}
+
 .cta-btn {
     float: right;
     background-color: transparent;
