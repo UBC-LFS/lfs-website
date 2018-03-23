@@ -1,65 +1,54 @@
-<div class="row-fluid border-bottom">
-    <div class="span8">
-        <div class="row-fluid border-bottom">
-            <h2>Rotating Stories/Profiles</h2>
-        </div>
-        <div class="row-fluid">
-            <h2>Short Blurb</h2>
-        </div>
-        <div class="row-fluid ">
-            <div class="span4 box">
-                <a class="overlay" href=""> 
-                    <span class="center-box">
-                        <h3 class="box-name"> Get Involved </h3>
-                    </span> 
-                </a>
-            </div>
-            <div class="span4 box">
-                <a class="overlay" href=""> 
-                    <span class="center-box">
-                        <h3 class="box-name"> Stay Connected </h3>
-                    </span> 
-                </a>
-            </div>
-            <div class="span4 box">
-                <a class="overlay" href=""> 
-                    <span class="center-box">
-                        <h3 class="box-name"> Support </h3>
-                    </span> 
-                </a>
-            </div>
-        </div>
-        <div class="row-fluid border-bottom">
-            <div class="span4 box">
-                <a class="overlay" href=""> 
-                    <span class="center-box">
-                        <h3 class="box-name"> Benefits and Services </h3>
-                    </span> 
-                </a>
-            </div>
-            <div class="span4 box">
-                <a class="overlay" href=""> 
-                    <span class="center-box">
-                        <h3 class="box-name"> Events </h3>
-                    </span> 
-                </a>
-            </div>
-            <div class="span4 box">
-                <a class="overlay" href=""> 
-                    <span class="center-box">
-                        <h3 class="box-name"> Update Contact </h3>
-                    </span> 
-                </a>
-            </div>
-        </div>
-        <div class="row-fluid">
-            <h2>Featured Profile/Event</h2>
-        </div>
-    </div>
-    <div class="span4">
-        <div class="row-fluid">
-
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+    crossorigin="anonymous"></script>
+<div class="image-region no-padding">
+    <img id="banner" src="http://lfs-ps.sites.olt.ubc.ca/files/2018/03/get-grounded-banner-1.jpg" alt="research-banner" />
+    <div class="header-text">
+        <div class="container">
+            <p class="large-intro">
+                <span>ALUMNI &amp; COMMUNITY</span>
+            </p>
         </div>
     </div>
 </div>
-    
+<div id="main-content" class="container"></div>
+<script>
+    var getDivMainRole = document.querySelector('div[role="main"]');
+    var getMainContent = document.getElementById('main-content');
+    var getContent = document.getElementById('content');
+    var getContainer = document.getElementById('container');
+    var getImageRegion = document.getElementsByClassName('image-region')[0];
+    var getBreadcrumb = document.getElementsByClassName('breadcrumb')[0];
+    getDivMainRole.insertBefore(getMainContent, getDivMainRole.childNodes[0]);
+    getMainContent.insertBefore(getContent, getMainContent.childNodes[0]);
+    getContainer.insertBefore(getImageRegion, getContainer.childNodes[0]);
+</script>
+<div class="row-fluid border-bottom">
+    <h3 class="intro">
+        The Faculty of Land and Food Systems fosters strong linkages and partnerships with the community through volunteerism, student
+        initiatives and research. As a member of the community or alumni, there are numerous ways to stay connected with
+        the Faculty including donations, volunteering, courses, presentations, community events, or hiring and mentoring
+        students. If you are an alumni or community member interested in learning more about how you can get involved with
+        the Faculty of Land and Food Systems, please visit our
+        <a href="http://alumni.landfood.ubc.ca/">Alumni &amp; Community Portal</a>.
+    </h3>
+</div>
+<div class="row-fluid border-bottom">
+    <h2>Contact</h2>
+    <div class="row-fluid">
+        <div class="span6">
+            <h3>Karla Carreras</h3>
+            <p>Student Engagement Office</p>
+        </div>
+        <div class="span6">
+            <h3>Natalie Lim</h3>
+            <p>Post a Job or Hire a Student</p>
+        </div>
+    </div>
+</div>
+<div class="row-fluid border-bottom">
+    <h2>Public Interest</h2>
+
+</div>
+<div class="row-fluid">
+    <h2>Recent Alumni News</h2>
+</div>
