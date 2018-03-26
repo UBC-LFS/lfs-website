@@ -76,30 +76,29 @@
         <p>If you are already in the Food Science major and have specific questions about restricted electives and Directed Studies, please contact your program advisor, <a href="mailto:vmeasday.advising@ubc.ca">Vivien Measday</a>.</p>
     </div>
 </div>
-<div class="row-fluid">
 <h2>Meet Our Community</h2>
-<div class="featured-profile-wrapper">
-[loop query="posts_per_page=3&amp;category_name=featured-profile"]
-<div class="featured-profile">
-<div class="featured-profile-block">
-<div class="source-link" style="display: none;">[link_with_content]</div>
-<div class="target-link">
-[image_with_src img_class="featured-profile-img"]
-</div>
-<div class="featured-profile-content">
-<h2 class="featured">[cf featured-name]</h2>
-<h3 class="featured">[cf featured-program]</h3>
-<p class="homepage-post-p">[cf featured-blurb]</p>
-</div>
-</div>
-</div>
-[/loop]
-</div>
-<div style="margin-top: 20px;">
-<a class="btn explore-more" href="http://lfs-ps.sites.olt.ubc.ca/featured-profiles/" title="Read more stories of the people in the Faculty of Land and Food Systems">
-<span>READ MORE STORIES
-<i class="icon-angle-right"></i>
-</span>
-</a>
-</div>
+    <div class="featured-profile-wrapper">
+        [loop query="posts_per_page=3&amp;category_name=featured-profile"]
+        <div class="target-link">
+            <div class="source-link" style="display: none;">[link_with_content]</div>
+            <div class="featured-profile">
+                <div class="featured-profile-block">
+                    [image_with_src img_class="featured-profile-img"]
+                    <div class="featured-profile-content">
+                        <h2 class="featured">[cf featured-name]</h2>
+                        <h3 class="featured">[cf featured-program]</h3>
+                        <p class="featured">[cf featured-blurb]</p>
+                    </div>
+                    <div class="cta-btn">
+                        <span>READ MORE</span>
+                    </div>
+                </div>
+            </div>
+        </div>[/loop]
+    </div>
+    <a class="btn cta-btn" href="http://lfs-ps.sites.olt.ubc.ca/featured-profiles/" title="Read more stories of the people in the Faculty of Land and Food Systems">
+        <span>READ MORE STORIES
+            <i class="icon-angle-right"></i>
+        </span>
+    </a>
 </div>
