@@ -577,6 +577,9 @@ div.intro {
     }
 }
 @media screen and (max-width: 767px) {
+    .breadcrumb {
+        display: none;
+    }
     .large-intro {
         font-size: 375%;
     }
@@ -595,7 +598,7 @@ div.intro {
     h2 {
         font-size: 200%
     }
-    p {
+    p, li, ul, ol, td, i, a {
         font-size: 100%;
     }
     .btn {
