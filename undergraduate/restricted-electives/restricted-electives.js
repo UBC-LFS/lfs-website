@@ -1,27 +1,39 @@
 /* global jQuery */
 const RESTRICTED_ELECTIVES = [
   {
-    name: 'APBI 260',
+    dept: 'APBI',
+    code: 260,
+    title: 'Agroecology I',
     re: ['aab', 'apss', 'fte', 'd', 'ns']
   },
   {
-    name: 'APBI 311',
+    dept: 'APBI',
+    code: 318,
+    title: 'Applied Plant Breeding',
     re: ['aab']
   },
   {
-    name: 'APBI 402',
+    dept: 'APBI',
+    code: 328,
+    title: 'Weed Science',
     re: ['apss', 'ns']
   },
   {
-    name: 'APBI 407',
+    dept: 'APBI',
+    code: 360,
+    title: 'Agroecology II',
     re: ['d', 'ns']
   },
   {
-    name: 'APBI 270',
+    dept: 'APBI',
+    code: 401,
+    title: 'Soil Processes',
     re: ['aab', 'apss', 'fte', 'd', 'ns']
   },
   {
-    name: 'APBI 101',
+    dept: 'APBI',
+    code: 402,
+    title: 'Sustainable Soil Management',
     re: ['aab', 'fte', 'ns']
   }
 ]
