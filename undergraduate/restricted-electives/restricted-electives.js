@@ -1,3 +1,4 @@
+/* global jQuery */
 const RESTRICTED_ELECTIVES = [
   {
     name: 'APBI 260',
@@ -28,10 +29,11 @@ const RESTRICTED_ELECTIVES = [
 document.addEventListener('DOMContentLoaded', function () {
   const selectCoursesByRE = (re, courses) => courses.filter(course => course.re.includes(re)).map(course => course.name)
   const createTable = selectedRE => {
-
+    const courses = selectCoursesByRE(selectedRE, RESTRICTED_ELECTIVES)
+    console.log(courses)
   }
   document.getElementById('reSelector').addEventListener('change', function () {
-    console.log(jQuery('#reSelector').val())
-    createTable(jQuery('#reSelector').val())
+    const selected = jQuery('#reSelector').val()
+    createTable(selected)
   })
 })
