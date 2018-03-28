@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function (event) {
+document.addEventListener('DOMContentLoaded', function () {
   var sources = document.getElementsByClassName('source-link')
   var targets = document.getElementsByClassName('target-link')
   Array.from(sources).forEach(function (source, i) {
