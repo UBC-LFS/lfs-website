@@ -1,19 +1,15 @@
 /* global jQuery */
 jQuery(document).ready(function ($) {
   var animated = false
-  var counterTarget = document.getElementById('count').getElementsByClassName('row-fluid')
-  var countTrigger = $(counterTarget[0]).offset().top
-  var countTrigger2 = $(counterTarget[1]).offset().top
+  var counterTarget = document.getElementById('count')
+  var countTrigger = $(counterTarget).offset().top
 
   function countDetect () {
     var yScrollPos = window.pageYOffset + $(window).height() - $(counterTarget[0]).height() * 4 / 7
     var yScrollPos2 = window.pageYOffset - $(counterTarget[1]).height() * 2 / 7
-    if (yScrollPos > countTrigger && yScrollPos2 < countTrigger2 && !animated) {
+    if (yScrollPos > countTrigger && yScrollPos2 < countTrigger && !animated) {
       new CountUp('undergraduate-students', 0, 1400, 0, 3).start()
       new CountUp('graduate-students', 0, 150, 0, 3).start()
-      new CountUp('faculty', 0, 45, 0, 3).start()
-      new CountUp('staff', 0, 66, 0, 3).start()
-      new CountUp('alumni', 0, 6700, 0, 3).start()
       new CountUp('ranking', 0, 25, 0, 3).start()
       animated = true
     }
