@@ -1,0 +1,511 @@
+<!-- 
+  cf Fields 
+  faculty-education
+  faculty-email
+  faculty-first-name
+  faculty-last-name
+  faculty-office
+  faculty-phone-number
+  faculty-publications
+  faculty-research
+  faculty-teaching
+  faculty-title
+
+-->
+<style>
+  .icon-chevron-down,
+  .icon-chevron-up {
+    float: right;
+    margin-right: -4px;
+    margin-top: 4px;
+  }
+  .accordion-heading:hover>.accordion-toggle>.icon-chevron-down {
+    color: white;
+  }
+  p {
+    margin: 10px 0;
+  }
+  .faculty-profile {
+    display: block;
+    width: 200px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;  
+  }
+</style>
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+  crossorigin="anonymous"></script>
+<div class="row-fluid" style="margin-top:20px;">
+  <div class="span4">
+    [image_with_src img_class="faculty-profile"]
+    <h2 style="text-align:center;">[cf faculty-first-name] [cf faculty-last-name]</h2>
+    <h4 style="text-align:center; margin-top:0;">[cf faculty-title]</h4>
+    <p style=" margin:0; font-size:13px;">
+      <i class="fas fa-phone"></i> [cf faculty-phone-number]
+    </p>
+    <p style=" margin:0; font-size:13px;">
+      <i class="fas fa-envelope"></i>
+      <a href="mailto:rickey.yada@ubc.ca">rickey.yada@ubc.ca</a>
+    </p>
+    <p style=" margin:0; font-size:13px;">
+      <i class="fab fa-twitter"></i>
+      <a href="https://twitter.com/ubcLFSDean">@ubcLFSDean</a>
+    </p>
+    <p style=" margin:0; font-size:13px;">
+      <i class="fas fa-location-arrow"></i>
+      MacMillan Building 248, 2357 Main Mall
+    </p>
+  </div>
+  <div class="span8">
+    [accordions collapsible=true active=false] 
+      [accordion title="Education"] 
+        [cf faculty-education] 
+      [/accordion] 
+      [accordion title="Research"]
+        [cf faculty-research]
+      [/accordion] 
+      [accordion title="Teaching"]
+        [cf faculty-teaching]
+      [/accordion]
+      [accordion title="Selected Publications"] 
+        [cf faculty-publications]
+      [/accordion] 
+      [accordion title="Awards &amp; Honours"]
+        [cf faculty-awards]
+      [/accordion]
+      [accordion title="Additional Information"]
+      <h3>
+          Scholarly and Professional Activities
+        </h3>
+        <p>
+          2014-2016         President, International Union of Food Science and Technology (IUFoST)
+        </p>
+        
+        <p>
+          2014-Present     Member, ILSI North America Board
+        </p>
+        
+        <p>
+          2014                  External Reviewer, Department of Nutritional Sciences, University of Toronto.  Feb.
+        </p>
+        
+        <p>
+          2013                  Chair, Grant Selection Panel, Agriculture and Agri-Food Canada, Food Committee
+        </p>
+        
+        <p>
+          2013                  Member, Criteria Group of the Branded Food Products Database Public-Private Partnership, International Life Sciences North America, Washington, DC
+        </p>
+        
+        <p>
+          2012-2013         Co-Chair, Materials Characterization Task Group, NanoRelease project, International Life Sciences Research Foundation
+        </p>
+        
+        <p>
+          2012-2014         President-elect, International Union of Food Science and Technology
+        </p>
+        
+        <p>
+          2012-Present     Vice Chair, Institute Advisory Board, CIHR Institute Nutrition, Metabolism and Diabetes
+        </p>
+        
+        <p>
+          2012-Present     Member, Nanotechnology Working Group, International Council for Science (ICSU), Committee on Data for Science and Technology (CODATA)
+        </p>
+        
+        <p>
+          2012-2014         Member, Program Committee, Benefiq Meeting, Institute of Nutraceuticals and Functional Food, University of Laval
+        </p>
+        
+        <p>
+          2012-2013         Member, Multidisciplinary Advisory Committee, Canada Foundation for Innovation
+        </p>
+        
+        <p>
+          2011-2014         Co-Chair, Conference Committee, 17th World Congress of Food Science and Technology, International Union of Food Science and Technology (IUFoST), Montreal, PQ
+        </p>
+        
+        <p>
+          2011-2013         Member, The Chroma Project, University of Guelph
+        </p>
+        
+        <p>
+          2011-2012         Member, Grant Selection Panel, Agriculture and Agri-Food Canada, Food Committee
+        </p>
+        
+        <p>
+          2011-2012         Chair, Technical Advisory Committee, Heart and Stroke Foundation of Canada
+        </p>
+        
+        <p>
+          2010-2012         Chair, Scientific Council, International Union of Food Science and Technology (IUFoST)
+        </p>
+        
+        <p>
+          2010-2012         Co-Chair, Technical Committee, 16th World Congress of Food Science and Technology, International Union of Food Science and Technology (IUFoST), Iguassu Falls, Brazil
+        </p>
+        
+        <p>
+          2010-Present     Member, Institute Advisory Board, CIHR Institute of Nutrition, Metabolism and Diabetes
+        </p>
+        
+        <p>
+          2010-Present     Member, Food Expert Advisory Committee, Health Canada
+        </p>
+        
+        <p>
+          2010-2011         International Scientific Advisory Committee,          Neutrons and Food Workshop – 31 Oct – 3 Nov 2010, Sydney Australia
+        </p>
+        
+        <p>
+          2010-2013         Advisory Board, Nanolyse, 7th Framework Project, Characterization of Nanoparticles in Food
+        </p>
+        
+        <p>
+          2010-Present     International Advisory Board, International Society for Nutraceuticals and Functional Foods
+        </p>
+        
+        <p>
+          2010-Present     Editorial Board, Journal of Functional Foods
+        </p>
+        
+        <p>
+          2009-Present     President, CIFST Scholarship Trust Fund
+        </p>
+        
+        <p>
+          2009-Present     Member, Technical Advisory Committee, Heart and Stroke of Canada
+        </p>
+        
+        <p>
+          2009-Present     Advisory Editor, Woodhead Publishing Ltd. Cambridge, UK
+        </p>
+        
+        <p>
+          2009                  Reviewer, Canada-California Strategic Innovation Partnership Program, Health, Life Sciences and Medical Technologies Panel
+        </p>
+        
+         <p>
+           
+         </p>
+        
+        <p>
+          2008-2011         Member, Board of Directors, Western Canadian Functional Food & Natural Health Product Network (WCFN)
+        </p>
+        
+        <p>
+          2008-2009         Chair, NSERC Strategic Grants Panel, Food and Bioproducts
+        </p>
+        
+        <p>
+          2008-2009         Chair, Science Reports and Emerging Issues Committee, Institute of Food Technologists
+        </p>
+        
+        <p>
+          2008-2010         Chair-elect, Scientific Council, International Union of Food Science and Technology (IUFoST)
+        </p>
+        
+        <p>
+          2008                  Member, Institute of Food Technologists, Scientific Advisory Panel
+        </p>
+        
+        <p>
+          2007-2008         Member, Scientific Technical Committee, 14th World Food Congress, Shanghai, China 19-24 Oct. 2008
+        </p>
+        
+        <p>
+          2007-2008         Member, Scientific Technical Committee, Joint Agriculture and Agri-Food Canada and Canadian Institute of Food Science and Technology Annual Meeting, 25-27 May 2008
+        </p>
+        
+        <p>
+          2007-2008         Member, NSERC Strategic Grants Panel, Food and Bioproducts
+        </p>
+        
+        <p>
+          2007                  Member, External Review Panel, Division for Science and Process Engineering of Agricultural Products, INRA (French Agricultural Research Institute), Oct.
+        </p>
+        
+        <p>
+          2007                  Chair, Strategic Networks Grant Panel, Discovery and applications of marine active materials Network, University of Quebec at Rimouski
+        </p>
+        
+        <p>
+          2007                  Member, Canadian Space Agency – NSERC Review Panel
+        </p>
+        
+        <p>
+          2007                  Member, Canada Foundation for Innovation, Outcomes Review Panel – Brock University
+        </p>
+        
+        <p>
+          2006                  Member, Science Reports and Emerging Issues Committee, Institute of Food Technologists
+        </p>
+        
+        <p>
+          2006-Present     Member, Nanotechnology Working Group, Institute of Food Technologists
+        </p>
+        
+        <p>
+          2006-Present     Member, Canadian Nutrigenomics Committee, Genome Canada
+        </p>
+        
+        <p>
+          2006-2010         Member, Users Advisory Group, The European Food Information Resource Network (EuroFIR), European Network of Excellence on Food Composition Databank Systems
+        </p>
+        
+        <p>
+          2005-2009         Member, Engineering and Physical Sciences Research Council Peer Review College, UK
+        </p>
+        
+        <p>
+          2005-Present     Reviewer, Biotechnology and Biological Sciences Research Council (BBSRC), UK
+        </p>
+        
+        <p>
+          2005- 2006        Member, International Co-Operation Committee, Food Safety and Quality Program, Framework 6, European Commission
+        </p>
+        
+        <p>
+          2005-Present     Member, Research Management Committee, PrioNet, Networks of Centres of Excellence
+        </p>
+        
+        <p>
+          2005-2006         Chair, Awards Committee, Canadian Institute of Food Science and Technology
+        </p>
+        
+        <p>
+          2005                  External Panel Member, Food, Nutrition and Health Program, Faculty of Agricultural Sciences, University of British Columbia July 2005
+        </p>
+        
+        <p>
+          2005                  External Review Panel, Department of Food Science, University of Manitoba, May 2005
+        </p>
+        
+        <p>
+          2004-Present     Member, Adjudication Panel, Canada Foundation for Innovation
+        </p>
+        
+        <p>
+          2004-2012         Member, School of Nutrition Advisory Council, Ryerson University
+        </p>
+        
+        <p>
+          2004-2005         President, Canadian Institute of Food Science and Technology
+        </p>
+        
+        <p>
+          2004                  Co-Chair, Organizing Committee, Canadian Institute of Food Science and Technology Annual Meeting, University of Guelph, 16-19 May 2004
+        </p>
+        
+        <p>
+          2003-2005         Chair, Global Partnerships Program, NSERC
+        </p>
+        
+        <p>
+          2003-2005         Chair, Program Evaluation Committee, NSERC
+        </p>
+        
+        <p>
+          2003                  President-Elect, Canadian Institute of Food Science and Technology
+        </p>
+        
+        <p>
+          2003                  Co-Chair, Organizing Committee, Canadian Institute of Food Science and Technology Annual Meeting, University of Guelph, May
+        </p>
+        
+        <p>
+          2002-2009         Member, Organizing Committee, Annual J.R. Brunner Protein Symposium, Michigan State Univ.
+        </p>
+        
+        <p>
+          2002-Present     Advisory Editor, Food Science and Technology Series, Marcel Dekker Inc.
+        </p>
+        
+        <p>
+          2002-Present     Vice-President and Treasurer, Canadian Institute of Food Science and Technology
+        </p>
+        
+        <p>
+          2002-2004         Member, New Opportunities Fund, Canada Foundation for Innovation
+        </p>
+        
+        <p>
+          2001-Present     Member, Audit Committee, International Union of Food Science and Technology
+        </p>
+        
+        <p>
+          2001                  Chair, Potato Symposium, Joint Potato Association of America and International Horticultural Congress, Toronto 11-17 Aug 2002
+        </p>
+        
+        <p>
+          2001-2002         Member, Program Evaluation Committee, NSERC
+        </p>
+        
+        <p>
+          2001                  Chair, Site Visit Team, NSERC Research Network proposal, Herbal Research Network, University of British Columbia
+        </p>
+        
+        <p>
+          2001                  Member, Multidisciplinary Advisory Committee, Canada Foundation for Innovation
+        </p>
+        
+        <p>
+          2001                  Chair, Expert Panel Mid-Term Review, Networks of Centres of Excellence, Canadian Arthritis Network and the Mathematics of Information Technology and Complex Systems
+        </p>
+        
+        <p>
+          2000-2002         Member, Advisory Group on Interdisciplinary Research, NSERC
+        </p>
+        
+        <p>
+          2000                  Chair, Focus Group Biosciences, NSERC Strategic Grants Program
+        </p>
+        
+        <p>
+          2000                  Member, Expert Panel on the Future of Food Biotechnology, Royal Society of Canada
+        </p>
+        
+        <p>
+          2000                  External Reviewer, Department Review, Department of Applied Microbiology and Food Science, University of Saskatchewan.
+        </p>
+        
+        <p>
+          2000                  Group Chair, Major Facilities Access Grant Competition, NSERC
+        </p>
+        
+        <p>
+          2000                  Chair, Site Visit Team, Canada Foundation for Innovation, Functional Foods and Nutraceuticals Centre, University of Manitoba
+        </p>
+        
+        <p>
+          2000                  Co-organizer, Molecular designs of food proteins for industrial application symposium, Pacifichem Congress, Dec 2000
+        </p>
+        
+        <p>
+          2000                  Co-organizer, Industrial enzymes symposium, Pacifichem Congress, Dec 2000
+        </p>
+        
+        <p>
+          1999-Present     North American Editor, Trends in Food Science and Technology, Elsevier Science
+        </p>
+        
+        <p>
+          1999                  Chair, Major Facilities Access Grants, NSERC
+        </p>
+        
+        <p>
+          1999                  Co-Chair, “Issues at the Cross-Roads of Nutrition and Food Science” Symposium, 10th World Food Congress, Sydney Australia, Oct 1999
+        </p>
+        
+        <p>
+          1999                  Member, Selection Committee – Human Rights Director, University of Guelph
+        </p>
+        
+        <p>
+          1999                  Co-Chair, “Issues at the Cross-Roads of Nutrition and Food Science” Symposium, 10th World Food Congress, Sydney Australia, Oct
+        </p>
+        
+        <p>
+          1998-Present     Emeritus Editor in Chief, Food Research International Journal, Elsevier Science
+        </p>
+        
+        <p>
+          1998-2001         Group Chair, Life Sciences, NSERC
+        </p>
+        
+        <p>
+          1998-2001         Member, Committee on Research Grants, NSERC
+        </p>
+        
+        <p>
+          1998-2001         Member, International Opportunities Fund, Grant Selection Committee, NSERC
+        </p>
+        
+        <p>
+          1998-2001         Member, Scholarship Board, Food Industry Suppliers of Canada Scholarship Trust
+        </p>
+        
+        <p>
+          1998-2000         Chair, Judicial Committee, Univ. Guelph
+        </p>
+        
+        <p>
+          1998-2000         Member, Senate, Univ. Guelph
+        </p>
+        
+        <p>
+          1998-1999         Member, Research Grants Appeals Advisor, NSERC
+        </p>
+        
+        <p>
+          1998                  External Examiner, Department Review, Department of Biochemistry, Memorial University of Newfoundland
+        </p>
+        
+        <p>
+          1998                  External Examiner, Department Review, Department of Agricultural, Food & Nutritional Sciences, University of Alberta
+        </p>
+        
+        <p>
+          1997-1998         Member, Project Vision, University of Guelph
+        </p>
+        
+        <p>
+          1997                  Co-Chair, Functional Properties of Food Components Symposium, 5th Chemical Congress of North America, Cancun, Mexico
+        </p>
+        
+        <p>
+          1996-Present     Member, Editorial Board, Journal of Food Biochemistry
+        </p>
+        
+        <p>
+          1996-1998         Acting Chair, Department of Food Science, University of Guelph
+        </p>
+        
+        <p>
+          1995-2001         Co-Chair, Joint Committee of International Union of Nutritional Science and International Union of Food Science and Technology, Committee 1/1, Food Standards, Terminology and Informatics
+        </p>
+        
+        <p>
+          1995-1999         Member, International Union of Food Science and Technology Congress Advisory Committee
+        </p>
+        
+        <p>
+          1993-1997         Research Co-ordinator, Ontario Potato Growers’ Marketing Board
+        </p>
+        
+        <p>
+          1992-1999         Member, President’s Advisory Committee on Sexual Harassment, University of Guelph
+        </p>
+        
+        <p>
+          1992-1998         Editor in Chief, Food Research International Journal, Elsevier Science
+        </p>
+        
+        <p>
+          1992-1998         Secretary, Ontario Potato Cultivar Evaluation Association
+        </p>
+        
+        <p>
+          1990-1997         Secretary, Fruit and Vegetable Products and Processing Subcommittee, Ontario Food Research and Services Committee
+        </p>
+        
+        <p>
+          1987-Present     Reviewer, Natural Sciences and Engineering Research Council Discovery Grants
+        </p>
+        
+        <p>
+          1985-Present     Board Member, Ontario Regional Potato Committee
+        </p>
+      [/accordion]
+    [/accordions]
+  </div>
+</div>
+
+
+<script>
+  jQuery(document).ready(function ($) {
+    var arrow = '<i class="icon-chevron-down"></i>'
+    $('.accordion-toggle').append(arrow)
+  })
+
+</script>
