@@ -32,6 +32,36 @@
     margin-left: auto;
     margin-right: auto;  
   }
+  .education::before {
+    font-family: "Font Awesome 5 Solid";
+    content: "\f19d";
+    display: none;
+  }
+  .research::before {
+    font-family: "Font Awesome 5 Solid";
+    content: "\f0c3";
+    display: none;
+  }
+  .teaching::before {
+    font-family: "Font Awesome 5 Solid";
+    content: "\f0c0";
+    display: none;
+  }
+  .publication::before {
+    font-family: "Font Awesome 5 Solid";
+    content: "\f02d";
+    display: none;
+  }
+  .awards::before {
+    font-family: "Font Awesome 5 Solid";
+    content: "\f091";
+    display: none;
+  }
+  .info::before {
+    font-family: "Font Awesome 5 Solid";
+    content: "\f05a";
+    display: none;
+  }
 </style>
 <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
   crossorigin="anonymous"></script>
@@ -58,22 +88,22 @@
   </div>
   <div class="span8">
     [accordions collapsible=true active=false] 
-      [accordion title="Education"] 
+      [accordion title=" Education" style="education"] 
         [cf faculty-education] 
       [/accordion] 
-      [accordion title="Research"]
+      [accordion title=" Research" style="research"]
         [cf faculty-research]
       [/accordion] 
-      [accordion title="Teaching"]
+      [accordion title=" Teaching" style="teaching"]
         [cf faculty-teaching]
       [/accordion]
-      [accordion title="Selected Publications"] 
+      [accordion title=" Selected Publications" style="publication"] 
         [cf faculty-publications]
       [/accordion] 
-      [accordion title="Awards &amp; Honours"]
+      [accordion title=" Awards &amp; Honours" style="awards"]
         [cf faculty-awards]
       [/accordion]
-      [accordion title="Additional Information"]
+      [accordion title=" Additional Information" style="info"]
       <h3>
           Scholarly and Professional Activities
         </h3>
@@ -507,5 +537,5 @@
     var arrow = '<i class="icon-chevron-down"></i>'
     $('.accordion-toggle').append(arrow)
   })
-
+  FontAwesomeConfig = { searchPseudoElements: true };
 </script>
