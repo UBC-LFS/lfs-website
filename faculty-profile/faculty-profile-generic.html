@@ -1,0 +1,114 @@
+<!-- 
+  cf Fields 
+  faculty-education
+  faculty-email
+  faculty-first-name
+  faculty-last-name
+  faculty-office
+  faculty-phone-number
+  faculty-publications
+  faculty-research
+  faculty-teaching
+  faculty-title
+
+-->
+<style>
+  .icon-chevron-down,
+  .icon-chevron-up {
+    float: right;
+    margin-right: -4px;
+    margin-top: 4px;
+  }
+  .accordion-heading:hover>.accordion-toggle>.icon-chevron-down {
+    color: white;
+  }
+  p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  .faculty-profile {
+    display: block;
+    width: 200px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;  
+  }
+  .education::before {
+    font-family: "Font Awesome 5 Solid";
+    content: "\f19d";
+    display: none;
+  }
+  .research::before {
+    font-family: "Font Awesome 5 Solid";
+    content: "\f0c3";
+    display: none;
+  }
+  .teaching::before {
+    font-family: "Font Awesome 5 Solid";
+    content: "\f0c0";
+    display: none;
+  }
+  .publication::before {
+    font-family: "Font Awesome 5 Solid";
+    content: "\f02d";
+    display: none;
+  }
+  .awards::before {
+    font-family: "Font Awesome 5 Solid";
+    content: "\f091";
+    display: none;
+  }
+  .info::before {
+    font-family: "Font Awesome 5 Solid";
+    content: "\f05a";
+    display: none;
+  }
+</style>
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+  crossorigin="anonymous"></script>
+<div class="row-fluid" style="margin-top:20px;">
+  <div class="span4">
+    [image_with_src img_class="faculty-profile"]
+    <h2 style="text-align:center;">[cf faculty-first-name] [cf faculty-last-name]</h2>
+    <h4 style="text-align:center; margin-top:0;">[cf faculty-title]</h4>
+    <p style=" margin:0; font-size:13px;">
+      <i class="fas fa-phone"></i> [cf faculty-phone-number]
+    </p>
+    <p style=" margin:0; font-size:13px;">
+      <i class="fas fa-envelope"></i>
+      <a href="mailto:christine.scaman@ubc.ca">christine.scaman@ubc.ca</a>
+    </p>
+    <p style=" margin:0; font-size:13px;">
+      <i class="fas fa-location-arrow"></i>
+      [cf faculty-address]
+    </p>
+  </div>
+  <div class="span8">
+    [accordions collapsible=true active=false] 
+      [accordion title=" Education" style="education"] 
+        [cf faculty-education] 
+      [/accordion] 
+      [accordion title=" Research" style="research"]
+        [cf faculty-research]
+      [/accordion] 
+      [accordion title=" Teaching" style="teaching"]
+        [cf faculty-teaching]
+      [/accordion]
+      [accordion title=" Selected Publications" style="publication"] 
+        [cf faculty-publications]
+      [/accordion]
+      [accordion title=" Awards &amp; Honours" style="awards"]
+        [cf faculty-awards]
+      [/accordion] 
+    [/accordions]
+  </div>
+</div>
+
+
+<script>
+  jQuery(document).ready(function ($) {
+    var arrow = '<i class="icon-chevron-down"></i>'
+    $('.accordion-toggle').append(arrow)
+  })
+  FontAwesomeConfig = { searchPseudoElements: true };
+</script>
