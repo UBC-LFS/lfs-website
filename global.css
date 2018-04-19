@@ -677,3 +677,7 @@ div.intro {
 .nav-tabs {
     width: 100% !important;
 }
+
+.menu-item {
+    font-size: 15px;
+}
