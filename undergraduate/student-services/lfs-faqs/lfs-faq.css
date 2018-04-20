@@ -7,3 +7,7 @@
 .accordion-heading:hover > .accordion-toggle > .icon-chevron-down {
   color: white; 
 }
+
+h1.entry-title {
+  display:none; 
+}
