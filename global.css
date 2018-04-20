@@ -393,6 +393,9 @@ a:hover, a:active, a:focus {
 .btn:hover {
     background-color: #8c925e !important;
 }
+a.btn:hover {
+    background-color: #002145 !important;
+}
 img {
     height: auto;
     max-width: 100% !important;
@@ -679,5 +682,13 @@ div.intro {
 }
 
 .menu-item {
+    font-size: 13px;
+}
+
+#ubc7-unit-menu .nav>li>a {
+    padding: 10px 10px 11px;
+}
+
+#ubc7-unit-menu .dropdown .btn-group .btn {
     font-size: 13px;
 }
