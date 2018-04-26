@@ -89,6 +89,19 @@
 <div class="row-fluid border-bottom">
   <h2>Faculty Members</h2>
   <div class="card-wrapper">
+      [loop query="posts_per_page=20&category_name=graduate-food-science"]
+        <div class="card">
+          <div class="card-block">
+            <div class="card-img">
+              [image_with_src img_class="faculty-profile"]
+            </div>
+            <div class="card-content">
+              <h2 class="featured">
+                Dr. [cf faculty-first-name] [cf faculty-last-name]
+              </h2><h3 class="featured">[cf faculty-title]</h3>[cf faculty-interests]</div></div></div>[/loop]</div>
+    </div>
+
+  <!-- <div class="card-wrapper">
     <div class="card">
       <div class="card-block">
         <div class="card-img">
@@ -204,7 +217,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
 <div class="row-fluid border-bottom">
   <h2>Collaborations</h2>
