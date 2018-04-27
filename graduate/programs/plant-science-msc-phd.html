@@ -62,103 +62,19 @@
 <div class="row-fluid border-bottom">
   <h2>Faculty Members</h2>
   <div class="card-wrapper">
-    <div class="card">
-      <div class="card-block">
-        <div class="card-img">
-          <img src="http://lfs-ps.sites.olt.ubc.ca/files/2018/03/rick-barichello-square-crop.jpg" alt="">
-        </div>
-        <div class="card-content">
-          <h2 class="featured">Dr. Simone Castellarin</h3>
-            <h3 class="featured">Assistant Professor</h3>
-            <p>Physiological and molecular aspects that underlay fruit ripening and the biosynthesis of secondary metabolites; how these are modulated by the environment and viticultural practices</p>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-block">
-        <div class="card-img">
-          <img src="http://lfs-ps.sites.olt.ubc.ca/files/2018/03/brian-ellis-square-crop.jpg" alt="">
-        </div>
-        <div class="card-content">
-          <h2 class="featured">Dr. Brian Ellis</h3>
-            <h3 class="featured">Professor</h3>
-            <p>Plant biotechnology; plant signal transduction; enzymology and metabolism</p>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-block">
-        <div class="card-img">
-          <img src="http://lfs-ps.sites.olt.ubc.ca/files/2018/03/juli-carrillo-square-crop.jpg" alt="">
-        </div>
-        <div class="card-content">
-          <h2 class="featured">Dr. Murray Isman</h3>
-            <h3 class="featured">Professor</h3>
-            <p>Botanical pesticides; pesticide toxicology; Insect antifeedants; insect behaviour and memory</p>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-block">
-        <div class="card-img">
-          <img src="http://lfs-ps.sites.olt.ubc.ca/files/2018/03/eduaro-jovel-square-crop.jpg" alt="">
-        </div>
-        <div class="card-content">
-          <h2 class="featured">Dr. Eduardo Jovel</h3>
-            <h3 class="featured">Associate Professor</h3>
-            <p>Ethnobotany; mycology; natural product chemistry; Aboriginal health</p>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-block">
-        <div class="card-img">
-          <img src="http://lfs-ps.sites.olt.ubc.ca/files/2018/03/sumeet-gulatis-square-crop.jpg" alt="">
-        </div>
-        <div class="card-content">
-          <h2 class="featured">Dr. James Kronstad</h3>
-            <h3 class="featured">Professor</h3>
-            <p>Fungal pathogenesis; signal transduction; cereal diseases; sporulation; morphogenesis; molecular genetics</p>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-block">
-        <div class="card-img">
-          <img src="http://lfs-ps.sites.olt.ubc.ca/files/2018/03/andrew-riseman-square-crop.jpg" alt="">
-        </div>
-        <div class="card-content">
-          <h2 class="featured">Dr. Andrew Riseman</h3>
-            <h3 class="featured">Associate Professor</h3>
-            <p>Ornamental plant breeding; plant tissue culture technologies; biotic and abiotic stress resistance</p>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-block">
-        <div class="card-img">
-          <img src="http://lfs-ps.sites.olt.ubc.ca/files/2018/03/carol-mcausland-square-crop.jpg" alt="">
-        </div>
-        <div class="card-content">
-          <h2 class="featured">Dr. Mahesh Upadhyaya</h3>
-            <h3 class="featured">Professor</h3>
-            <p>Weed ecophysiology; effects of environmental stresses; seed dormancy and germination</p>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-block">
-        <div class="card-img">
-          <img src="http://lfs-ps.sites.olt.ubc.ca/files/2018/03/juli-carrillo-square-crop.jpg" alt="">
-        </div>
-        <div class="card-content">
-          <h2 class="featured">Dr. Juli Carrillo</h3>
-            <h3 class="featured">Assistant Professor</h3>
-            <p>Plant-Insect Ecology and Evolution Lab</p>
-        </div>
-      </div>
-    </div>
-  </div>
+      [loop query="posts_per_page=20&category_name=graduate-plant-science"]
+      <div class="card target-link">
+        <div class="source-link" style="display: none;">[link_with_content]</div>
+        <div class="card-block">
+          <div class="card-img">
+            [image_with_src img_class="faculty-profile"]
+          </div>
+          <div class="card-content">
+            <h2 class="featured">
+              Dr. [cf faculty-first-name] [cf faculty-last-name]
+            </h2><h3 class="featured">[cf faculty-title]</h3>[cf faculty-interests]</div></div></div>[/loop]</div>
+  
+          </div>
 </div>
 <div class="row-fluid border-bottom">
   <h2>Collaborations</h2>
