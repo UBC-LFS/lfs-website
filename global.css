@@ -321,10 +321,9 @@ a:hover, a:active, a:focus {
     color: #8c925e;
 }
 
-
-.accordion-group a:hover, a:active, a:focus {
+/* .accordion-group a:hover, a:active, a:focus {
     color: #8c925eD9;
-}
+} */
 
 .large-intro {
     font-size: 500%;
