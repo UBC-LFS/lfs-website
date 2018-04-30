@@ -303,6 +303,10 @@ li, ul, ol {
     line-height: 2;
 }
 
+ul, ol {
+    margin: 0 0 15px 45px;
+}
+
 span.trail-end {
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
     color: #4e5134;
