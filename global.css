@@ -284,6 +284,9 @@ h3.intro {
     font-weight: 100;
     line-height: 200%;
 }
+h3 > i {
+    font-size: inherit
+}
 h4 {
     font-weight: 400;
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;
