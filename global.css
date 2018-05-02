@@ -599,7 +599,7 @@ div.intro {
         display: none;
     }
     .large-intro {
-        font-size: 375%;
+        font-size: 375% !important;
     }
    .span12 {
         margin-bottom: 0;
@@ -641,13 +641,13 @@ div.intro {
 }
 @media screen and (max-width: 480px) {
     .large-intro {
-        font-size: 180%;
+        font-size: 180% !important;
         padding: 0;
     }
 }
 @media screen and (max-width: 300px) {
     .large-intro {
-        font-size: 110%;
+        font-size: 110% !important;
     }
 }
 .tg td{padding:8px 8px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
