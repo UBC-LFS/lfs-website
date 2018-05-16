@@ -10,7 +10,7 @@ jQuery(document).ready(function ($) {
     if (yScrollPos > countTrigger && yScrollPos2 < countTrigger && !animated) {
       new CountUp('undergraduate-students', 0, 1400, 0, 3).start()
       new CountUp('graduate-students', 0, 150, 0, 3).start()
-      new CountUp('ranking', 0, 25, 0, 3).start()
+      new CountUp('ranking', 100, 21, 0, 3).start()
       animated = true
     }
   }

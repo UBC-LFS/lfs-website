@@ -17,11 +17,11 @@ document.addEventListener('DOMContentLoaded', function (event) {
     var yScrollPosition = window.pageYOffset + jQuery(window).height() - jQuery('#ranking-world').height() * 2 / 3
     var yScrollPosition2 = window.pageYOffset - jQuery('#ranking-world').height() * 2 / 5
     if (yScrollPosition > topHeightToCounter && yScrollPosition2 < topHeightToCounter && !animated) {
-      var rankingWorld = new CountUp('ranking-world', 100, 25, 0, 3)
-      var rankingCanada = new CountUp('ranking-canada', 100, 2, 0, 3)
+      var rankingWorld = new CountUp('ranking-world', 100, 21, 0, 3)
+      // var rankingCanada = new CountUp('ranking-canada', 100, 2, 0, 3)
       var rankingCountry = new CountUp('ranking-country', 0, 56, 0, 3)
       jQuery('#ranking-world').scroll(rankingWorld.start())
-      jQuery('#ranking-canada').scroll(rankingCanada.start())
+      // jQuery('#ranking-canada').scroll(rankingCanada.start())
       jQuery('#ranking-country').scroll(rankingCountry.start())
       animated = true
     }
