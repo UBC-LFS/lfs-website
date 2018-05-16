@@ -623,7 +623,7 @@ div.intro {
         margin-bottom: 10px;
     }
 }
-@media screen and (min-width: 571px) {
+@media screen and (min-width: 725px) {
     #ubc7-unit-navigation #menu-top-nav li.apply-button {
         display: none;
     }
@@ -631,7 +631,7 @@ div.intro {
         display: block;
     }
 }
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 724px) {
     #ubc7-unit .container .apply-now-button {
         display: none;
     }
