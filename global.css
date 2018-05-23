@@ -708,3 +708,6 @@ div.intro {
     font-size: 13px;
 }
 
+img.thumbnail {
+    width: 150px;
+}
