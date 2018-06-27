@@ -11,3 +11,12 @@
 h1.entry-title {
   display:none; 
 }
+
+.accordion-inner {
+  background-color: #F8F8F8;
+}
+
+.accordion-heading a {
+  font-weight: 500;
+  font-size: 120%;
+}
