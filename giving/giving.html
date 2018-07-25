@@ -1,5 +1,7 @@
 <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
   crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <div class="videoWrapper">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/jsx_zye5TlQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
@@ -27,12 +29,18 @@
   </h3>
 </div>
 <div class="row-fluid border-bottom">
-  <div class="span3">
-
+  [loop query="posts_per_page=10&amp;category_name=alumni-news"]
+  <div>
+    <div class="row-fluid">
+      <div class="span3">[image_with_src]</div>
+      <div class="span9">
+        <h3>[cf alumni-news-title]</h3>
+        <p>[cf alumni-news-blurb]</p>
+        <div style="float: right;">[link_with_content content="(read more)"]</div>
+      </div>
+    </div>
   </div>
-  <div class="span8">
-    
-  </div>
+  [/loop]
 </div>
 <div class="row-fluid border-bottom">
   <div class="row-fluid">
