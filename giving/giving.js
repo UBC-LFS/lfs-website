@@ -4,9 +4,6 @@ jQuery(document).ready(function ($) {
     dots: true,
     infinite: true,
     slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: $('.student_testimonial_prev'),
-    nextArrow: $('.student_testimonial_next')
+    slidesToScroll: 1
   })
 })
