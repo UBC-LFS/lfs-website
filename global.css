@@ -66,23 +66,24 @@
 /* Cards */
 
 .card-wrapper {
-    -webkit-column-count: 4;
+    -webkit-column-count: 3;
    /* Chrome, Safari, Opera */
-    -moz-column-count: 4;
+    -moz-column-count: 3;
    /* Firefox */
-    column-count: 4;
+    column-count: 3;
     column-gap: 20px;
 }
 
 .card {
     display: block;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .card-block {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     display: inline-block;
+    width: 100%;
 }
 
 .card:hover {
