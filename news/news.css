@@ -1,29 +1,3 @@
-.news {
-    box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.2), 1px 1px 2px 1px rgba(0, 0, 0, 0.19);
+.news-image {
+    margin: 20px 0 10px 0
 }
-.news:hover {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-}
-.news-title {
-    text-align: center;
-}
-.news-blurb {
-    padding: 0 10px;
-}
-.span12 {
-    margin-bottom: 5%;
-}
-@media screen and (max-width: 767px) {
-   .span12 {
-        margin-bottom: 0;
-    }
-}
-/*#non-featured-news-section > .news > a
-{
-    display: none;
-}
-#non-featured-news-section > .news > a.non-featured-news
-{
-    display: block;
-}*/
