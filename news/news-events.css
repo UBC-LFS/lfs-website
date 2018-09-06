@@ -1,3 +1,7 @@
 .news-image {
     margin: 20px 0 10px 0
 }
+
+.news-outlet {
+    text-align: right;
+}
