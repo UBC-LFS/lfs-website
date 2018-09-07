@@ -400,6 +400,10 @@ a:hover, a:active, a:focus {
     border-bottom: 1px solid #8c925e;
     padding-bottom: 30px;
 }
+.border-right {
+    border-right: 1px solid #8c925e;
+    padding-right: 30px;
+}
 .btn {
     font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, sans-serif;  
     background-color: transparent;

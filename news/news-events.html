@@ -1,59 +1,66 @@
 <div class="row-fluid">
-  [loop query="posts_per_page=10&amp;category_name=news" pagination="true"]
-  <div class="target-link">
-    <div class="source-link" style="display: none;">[link_with_content]</div>
-    <div class="row-fluid border-bottom">
-      <div class="span9">
-        <h3 class="news-title">[the_title]</h3>
-        <p class="news-blurb">[cf news-blurb]</p>
-        <p>[the_date]</p>
+  <div class="span7 border-right">
+    <div class="row-fluid">
+      <h1>LFS News and Events</h1>
+      [loop query="posts_per_page=10&amp;category_name=news" pagination="true"]
+      <div class="target-link">
+        <div class="source-link" style="display: none;">[link_with_content]</div>
+        <div class="row-fluid border-bottom">
+          <div class="span3">
+            [image_with_src img_class="news-image"]
+          </div>
+          <div class="span9">
+            <h3 class="news-title">[the_title]</h3>
+            <p class="news-blurb">[cf news-blurb]</p>
+            <p>[the_date]</p>
+          </div>
+        </div>
       </div>
-      <div class="span3">
-        [image_with_src img_class="news-image"]
+      [/loop]
+    </div>
+  </div>
+  <div class="span5">
+    <div class="row-fluid">
+      <h1>Media Coverage</h1>
+      <div class="row-fluid">
+        <div class="span3 news-outlet">
+          <p>
+            UBC News
+          </p>
+        </div>
+        <div class="span9">
+          <p>
+            <a href="https://news.ubc.ca/2018/05/31/sugar-loss-during-baking-means-calorie-counts-could-be-off/">Sugar loss during
+              baking means calorie counts could be off</a>
+          </p>
+        </div>
       </div>
-    </div>
-  </div>
-  [/loop]
-</div>
-<div class="row-fluid">
-  <h1>LFS in the News</h1>
-  <div class="row-fluid">
-    <div class="span3 news-outlet">
-      <p>
-        UBC News
-      </p>
-    </div>
-    <div class="span9">
-      <p>
-        <a href="https://news.ubc.ca/2018/05/31/sugar-loss-during-baking-means-calorie-counts-could-be-off/">Sugar loss during
-          baking means calorie counts could be off</a>
-      </p>
-    </div>
-  </div>
-  <div class="row-fluid">
-    <div class="span3 news-outlet">
-      <p>
-        UBC News
-      </p>
-    </div>
-    <div class="span9">
-      <p>
-        <a href="https://news.ubc.ca/2018/05/31/sugar-loss-during-baking-means-calorie-counts-could-be-off/">Sugar loss during
-          baking means calorie counts could be off</a>
-      </p>
-    </div>
-  </div>
-  <div class="row-fluid">
-    <div class="span3 news-outlet">
-      <p>
-        UBC News
-      </p>
-    </div>
-    <div class="span9">
-      <p>
-        <a href="https://news.ubc.ca/2018/05/31/sugar-loss-during-baking-means-calorie-counts-could-be-off/">Sugar loss during
-          baking means calorie counts could be off</a>
-      </p>
+      <div class="row-fluid">
+        <div class="span3 news-outlet">
+          <p>
+            UBC News
+          </p>
+        </div>
+        <div class="span9">
+          <p>
+            <a href="https://news.ubc.ca/2018/05/31/sugar-loss-during-baking-means-calorie-counts-could-be-off/">Sugar loss during
+              baking means calorie counts could be off</a>
+          </p>
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div class="span3 news-outlet">
+          <p>
+            UBC News
+          </p>
+        </div>
+        <div class="span9">
+          <p>
+            <a href="https://news.ubc.ca/2018/05/31/sugar-loss-during-baking-means-calorie-counts-could-be-off/">Sugar loss during
+              baking means calorie counts could be off</a>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
