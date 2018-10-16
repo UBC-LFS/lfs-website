@@ -38,3 +38,43 @@
 </div>
 </div>
 </div>
+<script src="https://use.fontawesome.com/47b0aee693.js" async></script>
+<div class="image-region"><img id="banner" src="https://lfs-ps.sites.olt.ubc.ca/files/2018/03/food-science-banner.jpg" alt="research banner" />
+<div class="header-text">
+        <div class="container">
+            <p class="large-intro"><span>Postdoctoral Fellows</span></p>
+        </div>
+    </div>
+</div>
+</div>
+<h3 class="intro">Postdoctoral Fellows at UBC can access networks and resources to support their professional development, health and well-being. Visit the websites below to find out what is available.</h3>
+<div class="row-fluid">
+<div class="row-fluid">
+<div class="span3">
+<a href="http://blogs.ubc.ca/ubcpda/resources/">
+<div class="major-card">
+<div class="major-card-block">
+<div class="major-card-title">
+<h3>UBC Postdoctoral Fellow Association</h3>
+</div>
+<div class="major-card-img"><img src="https://lfs-ps.sites.olt.ubc.ca/files/2018/10/PDALogo-500x82.jpg" alt="ubc pda" /></div>
+</div>
+</div>
+</a>
+
+</div>
+<div class="span3">
+<a href="https://www.grad.ubc.ca/about-us/newsletter/postdoctoral-fellows-office">
+<div class="major-card">
+<div class="major-card-block">
+<div class="major-card-title">
+<h3>UBC Postdoctoral Fellows Office</h3>
+</div>
+<div class="major-card-img"><img src="https://lfs-ps.sites.olt.ubc.ca/files/2018/10/UBC-PFO-500x200.jpg" alt="ubc pfo" /></div>
+</div>
+</div>
+</a>
+
+</div>
+</div>
+</div>
